@@ -1,3 +1,3 @@
-<a href="mailto:bremner-comment-%%KEY%%@pivot.cs.unb.ca">Send Comment</a>
+<a href="mailto:user-comment-%%KEY%%@host.some.org">Send Comment</a>
 
 [[Read Comments|comments/%%KEY%%]]
