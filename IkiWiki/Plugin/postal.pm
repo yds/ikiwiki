@@ -31,6 +31,9 @@ package IkiWiki::Plugin::postal;
 use warnings;
 use strict;
 use IkiWiki 2.00;
+use Compress::LZF ;
+use MIME::Base64::URLSafe; 
+
 
 sub import
 {
@@ -48,17 +51,23 @@ sub pagetemplate (@)
     if ($template->query (name => "comments") &&
 	! defined $template->param ('comments'))
     {
-	debug('got template');
+	debug("adding comments to ".$page);
+	my $key = urlsafe_b64encode(compress($page));
+	debug("using key ".$key);
+
+
 	my $content;
 	my $comment_page = bestlink ($page, "comments") || return;
 	my $comment_file = $pagesources{$comment_page} || return;
 	#my $pagetype = pagetype ($comment_file);
 	# Check if ``$pagetype eq 'html'''?
 	$content = readfile (srcfile ($comment_file));
-
 	if (defined $content && length $content)
 	{
-	    debug('got comment file');
+	    $content =~ s/%%KEY%%/$key/g;
+
+	    debug("comment blurb: ". $content);
+
 	    $template->param (comments =>
 	      IkiWiki::linkify ($page, $destpage, $content))
 	}
