@@ -1,0 +1,10 @@
+
+dependencies:
+
+Module				Debian Package
+------	        		--------------
+
+IkiWiki 			ikiwiki
+Compress::LZF 			not yet
+MIME::Base64::URLSafe 		libmime-base64-urlsafe-perl
+Mail::Internet			libmailtools-perl	
