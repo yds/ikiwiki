@@ -41,10 +41,10 @@ local part of an address: "!#$%&'*+-/=?^_`{|}~". On the other hand, it
 seems common in practice to block addresses having "%!/|`#&?" in the
 local part.  The idea is to restrict ourselves to basic ASCII
 alphanumerics, plus a small set of printable ASCII, namely "=_+-~.".
-Spaces are replaced with "_", the characters "A-Za-z0-9.\+\-~" encode
-as themselves, and everything else is written "=USTR=" where USTR is
-the base64 (using "A-Za-z0-9\+\-\." as digits) encoding of the unicode
-character code.
+Spaces are replaced with "_", "/" with "~", the characters
+"A-Za-z0-9.\+\-~" encode as themselves, and everything else is written
+"=USTR=" where USTR is the base64 (using "A-Za-z0-9\+\-\." as digits)
+encoding of the unicode character code.
 
 The characters '+' and '-' are pretty widely used to attach suffixes
 (although usually only one works on a given mail host). It seems ok to
@@ -94,9 +94,11 @@ sub decode_str($){
 sub encode_ytext($){
     my $str=shift;
     # "=" we use as an escape, and '_' for space
-    $str=~ s/([^a-zA-Z0-9+\-~. ])/"=".encode_num(ord($1))."="/ge;
+    $str=~ s/([^a-zA-Z0-9+\-\/. ])/"=".encode_num(ord($1))."="/ge;
+    
+    $str=~ s|/|~|g;
     $str=~ s/ /_/g;
-
+    
     return $str;
 };
 
@@ -104,7 +106,7 @@ sub decode_ytext($){
     my $str = shift;
     $str=~ s/=([a-zA-Z0-9+\-\.])+=/ decode_str($1)/eg;
     $str=~ s/_/ /g;
-
+    $str=~ s|~|/|g;
     return $str;
 }
 

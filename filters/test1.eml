@@ -1,29 +1,29 @@
-From bremner@unb.ca Tue Jul 01 08:47:05 2008
+From bremner@unb.ca Tue Jul 01 09:22:23 2008
 Return-path: <bremner@unb.ca>
-Envelope-to: bremner-comment-blog=v=posts=v=user_level_NetworkManager_dispatcher@pivot.cs.unb.ca
-Delivery-date: Tue, 01 Jul 2008 08:47:05 -0300
+Envelope-to: bremner-comment-blog~posts~filling_in_forms_with_pdftk@pivot.cs.unb.ca
+Delivery-date: Tue, 01 Jul 2008 09:22:23 -0300
 Received: from [141.44.229.26] (helo=rocinante.cs.unb.ca)
 	by pivot.cs.unb.ca with esmtps (TLS-1.0:RSA_AES_256_CBC_SHA1:32)
 	(Exim 4.69)
 	(envelope-from <bremner@unb.ca>)
-	id 1KDeK9-0006DB-7Y
-	for bremner-comment-blog=v=posts=v=user_level_NetworkManager_dispatcher@pivot.cs.unb.ca; Tue, 01 Jul 2008 08:47:05 -0300
+	id 1KDesI-0006HF-VQ
+	for bremner-comment-blog~posts~filling_in_forms_with_pdftk@pivot.cs.unb.ca; Tue, 01 Jul 2008 09:22:23 -0300
 Received: from bremner by rocinante.cs.unb.ca with local (Exim 4.69)
 	(envelope-from <bremner@unb.ca>)
-	id 1KDeJF-0007AA-Hp
-	for bremner-comment-blog=v=posts=v=user_level_NetworkManager_dispatcher@pivot.cs.unb.ca; Tue, 01 Jul 2008 13:46:09 +0200
+	id 1KDerP-0008FX-CM
+	for bremner-comment-blog~posts~filling_in_forms_with_pdftk@pivot.cs.unb.ca; Tue, 01 Jul 2008 14:21:27 +0200
 From: David Bremner <bremner@unb.ca>
 Organization: University of New Brunswick, Alpha Centurai Campus
-To: bremner-comment-blog=v=posts=v=user_level_NetworkManager_dispatcher@pivot.cs.unb.ca
-Subject: this is a test of the postal plugin
-Date: Tue, 1 Jul 2008 13:46:09 +0200
+To: bremner-comment-blog~posts~filling_in_forms_with_pdftk@pivot.cs.unb.ca
+Subject: this is a test of special casing for /
+Date: Tue, 1 Jul 2008 14:21:27 +0200
 User-Agent: KMail/1.9.9
 MIME-Version: 1.0
 Content-Type: text/plain;
   charset="us-ascii"
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
-Message-Id: <200807011346.09526.bremner@unb.ca>
+Message-Id: <200807011421.27352.bremner@unb.ca>
 X-Host-Lookup-Failed: Reverse DNS lookup failed for 141.44.229.26 (failed)
 X-Sender-Verified: bremner@unb.ca
 
