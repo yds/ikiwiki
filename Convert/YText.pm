@@ -64,7 +64,7 @@ sub encode_num($){
     my $str="";
 
     while ($num>0){
-	$remainder=$num % 64;
+	my $remainder=$num % 64;
 	$num=$num >> 6;
 	
 	$str = $digits[$remainder].$str;

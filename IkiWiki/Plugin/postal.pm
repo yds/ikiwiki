@@ -1,8 +1,8 @@
 # A plugin for ikiwiki to implement adding a footer with a comment URL
 # based on a template file and a key representing the current page
 
-# Copyright Â© 2007 Thomas Schwinge <tschwinge@gnu.org>
-# Copyright Â© 2008 David Bremner <tschwinge@gnu.org>
+# Copyright © 2007 Thomas Schwinge <tschwinge@gnu.org>
+# Copyright © 2008 David Bremner <tschwinge@gnu.org>
 #
 # This program is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by the
@@ -31,7 +31,7 @@ package IkiWiki::Plugin::postal;
 use warnings;
 use strict;
 use IkiWiki 2.00;
-
+use Convert::YText 'encode_ytext';
 
 
 sub import
@@ -51,40 +51,27 @@ sub pagetemplate (@)
 	! defined $template->param ('comments'))
     {
 	debug("adding comments to ".$page);
-	my $key = uri_escape_utf8($page);
+	my $key = encode_ytext($page);
 	debug("using key ".$key);
 
 
 	my $content;
 	my $comment_page = bestlink ($page, "comments") || return;
 	my $comment_file = $pagesources{$comment_page} || return;
-	#my $pagetype = pagetype ($comment_file);
-	# Check if ``$pagetype eq 'html'''?
+
 	$content = readfile (srcfile ($comment_file));
 	if (defined $content && length $content)
 	{
 	    $content =~ s/%%KEY%%/$key/g;
+	    $content =~ s/%%PAGE%%/$page/g;
 
 	    debug("comment blurb: ". $content);
 
 	    $template->param (comments =>
-	      IkiWiki::linkify ($page, $destpage, $content))
+			      IkiWiki::linkify ($page, $destpage, $content)) 
 	}
     }
 }
-
-sub strict_rfc2822_escape($){
-# according to rfc 2822, the following non-alphanumerics are OK for
-# the local part of an address: "!#$%&'*+-/=?^_`{|}~". On the other
-# hand, a fairly common exim configuration, for example, blocks
-# addresses having "@%!/|`#&?" in the local part.  '+' and '-' are
-# pretty widely used to attach suffixes (although usually only one
-# works on a given mail host).
-    my $str=shift;
-
-    $str=s/[^a-zA-Z0-9+\-~_]/= ord($1)/;
-
-};
 
 
 1;
