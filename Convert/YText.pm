@@ -72,9 +72,27 @@ sub encode_num($){
     
     return $str;
 }
+sub decode_str($){
+    my $str=shift;
+    my @chars=split "",$str;
+    my $num=0;
+
+    while (scalar(@chars)>0){
+	my $remainder=index $digit_string,$chars[0];
+	
+	# convert this to carp or something
+	die if ($remainder <0);
+
+	$num=$num << 6;
+	$num+=$remainder;
+	print STDERR "num=$num\n";
+	shift @chars;
+    }
+    
+    return chr($num);
+}
 sub encode_ytext($){
     my $str=shift;
-
     # "=" we use as an escape, and '_' for space
     $str=~ s/([^a-zA-Z0-9+\-~. ])/"=".encode_num(ord($1))."="/ge;
     $str=~ s/ /_/g;
@@ -84,7 +102,10 @@ sub encode_ytext($){
 
 sub decode_ytext($){
     my $str = shift;
-    $str=~ s/=([a-zA-Z0-9+\-\.])+=/ decode_num($1)/eg;
+    $str=~ s/=([a-zA-Z0-9+\-\.])+=/ decode_str($1)/eg;
+    $str=~ s/_/ /g;
+
+    return $str;
 }
 
 =head1 TODO
