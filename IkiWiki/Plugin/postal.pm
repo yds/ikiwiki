@@ -31,8 +31,7 @@ package IkiWiki::Plugin::postal;
 use warnings;
 use strict;
 use IkiWiki 2.00;
-use Compress::LZF ;
-use MIME::Base64::URLSafe; 
+
 
 
 sub import
@@ -43,7 +42,7 @@ sub import
 sub pagetemplate (@)
 {
     my %params = @_;
-    my $page = $params{page};
+    my $page = IkiWiki::pagetitle($params{page});
     my $destpage = $params{destpage};
 
     my $template = $params{template};
@@ -52,7 +51,7 @@ sub pagetemplate (@)
 	! defined $template->param ('comments'))
     {
 	debug("adding comments to ".$page);
-	my $key = urlsafe_b64encode(compress($page));
+	my $key = uri_escape_utf8($page);
 	debug("using key ".$key);
 
 
@@ -74,4 +73,18 @@ sub pagetemplate (@)
     }
 }
 
-1
+sub strict_rfc2822_escape($){
+# according to rfc 2822, the following non-alphanumerics are OK for
+# the local part of an address: "!#$%&'*+-/=?^_`{|}~". On the other
+# hand, a fairly common exim configuration, for example, blocks
+# addresses having "@%!/|`#&?" in the local part.  '+' and '-' are
+# pretty widely used to attach suffixes (although usually only one
+# works on a given mail host).
+    my $str=shift;
+
+    $str=s/[^a-zA-Z0-9+\-~_]/= ord($1)/;
+
+};
+
+
+1;
