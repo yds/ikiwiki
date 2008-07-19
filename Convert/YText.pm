@@ -57,6 +57,9 @@ a regular character. The character '.' also seems mostly permissable.
 =cut
 
 our $digit_string="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-.";
+
+our $valid_rex=qr{[A-Za-z0-9\+\-\.\=\_\~]+};
+
 our @digits=split "",$digit_string;
 
 sub encode_num($){
