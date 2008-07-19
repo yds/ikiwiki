@@ -17,14 +17,22 @@ die "configuration file is mandatory" unless ($config_file);
 
 my %config=IkiWiki::Setup::load($config_file);
 
-my $maildir=$config{postal_maildir};
-my $prefix=$config{postal_prefix};
+my $maildir=$config{postal_maildir} || die "maildir not set";
+
+my $prefix=$config{postal_prefix} || die "prefix not set";
 
 $mail=Email::Filter->new(emergency => $maildir);
 
 my $to=$mail->to;
 if ($to =~ m/$prefix($Convert::YText::valid_rex)/){
     my $key=decode_ytext($1);
-    print $key;
+
+    print $key,"\n";
+    $mail->simple->header_set('X-IkiPostal-Key',$key);
+
+    my @path=split(qr{/},$key);
+
 };
 
+$mail->accept("testbox");
+ 
