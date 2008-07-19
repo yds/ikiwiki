@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 use Email::Filter;
-use Convert::YText 'decode_ytext';
+use Convert::YText qw(decode_ytext encode_ytext);
 
 # we need at least version 2.54 of IkiWiki for the new config api
 BEGIN { require IkiWiki; die unless ($IkiWiki::version >= 2.54) }
@@ -27,12 +27,19 @@ my $to=$mail->to;
 if ($to =~ m/$prefix($Convert::YText::valid_rex)/){
     my $key=decode_ytext($1);
 
-    print $key,"\n";
     $mail->simple->header_set('X-IkiPostal-Key',$key);
 
+    # need to somehow escape the names. Here we use the fact that YText 
+    # cannot have @ signs.
     my @path=split(qr{/},$key);
+    map { $_=encode_ytext($_); s/\./@/g } @path;
+    
+    my $mailbox=$maildir . "/.".join(".",@path)."/" ;
+    
+    $mail->accept($mailbox);
+
 
 };
 
-$mail->accept("testbox");
+
  
