@@ -12,9 +12,9 @@ use IkiWiki::Setup::Standard {
 
 	# Be sure to customise these..
 	srcdir => "in",
-	destdir => "out",
+	destdir => "/tmp/test-wiki",
 
-	url => "http://example.org/wiki",
+	url => "file:///tmp/test-wiki/",
 	#cgiurl => "http://example.org/wiki/ikiwiki.cgi",
 	#templatedir => "/usr/share/ikiwiki/templates",
 	#underlaydir => "/usr/share/ikiwiki/basewiki",
@@ -139,12 +139,13 @@ use IkiWiki::Setup::Standard {
 	#multimarkdown => 1,
 
 	# To add plugins, list them here.
+	    add_plugins=>[qw{mailbox}],
 	#add_plugins => [qw{goodstuff search wikitext camelcase
 	#                   htmltidy fortune sidebar map rst anonok}],
 	# If you want to disable any of the default plugins, list them here.
 	#disable_plugins => [qw{inline htmlscrubber passwordauth openid}],
 	# To add a directory to the perl search path, use this.
-	#libdir => "/home/me/.ikiwiki/",
+	libdir => "..",
 	
 	# To override environment variable settings, you can list values here.
 	#ENV => {
