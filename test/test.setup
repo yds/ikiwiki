@@ -16,7 +16,7 @@ use IkiWiki::Setup::Standard {
 
 	url => "file:///tmp/test-wiki/",
 	#cgiurl => "http://example.org/wiki/ikiwiki.cgi",
-	#templatedir => "/usr/share/ikiwiki/templates",
+	templatedir => $ENV{PWD}."/../templates",
 	#underlaydir => "/usr/share/ikiwiki/basewiki",
 
 	# Subversion stuff.

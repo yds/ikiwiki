@@ -12,42 +12,9 @@ use IkiWiki 2.00;
 use Email::Folder;
 
 sub import { #{{{
-	hook(type => "getopt", id => "mailbox",  call => \&getopt);
-	hook(type => "checkconfig", id => "mailbox", call => \&checkconfig);
-	hook(type => "needsbuild", id => "mailbox", call => \&needsbuild);
 	hook(type => "preprocess", id => "mailbox", call => \&preprocess);
-	hook(type => "filter", id => "mailbox", call => \&filter);
-	hook(type => "linkify", id => "mailbox", call => \&linkify);
-	hook(type => "scan", id => "mailbox", call => \&scan);
-	hook(type => "htmlize", id => "mailbox", call => \&htmlize);
-	hook(type => "sanitize", id => "mailbox", call => \&sanitize);
-	hook(type => "postscan", id => "mailbox", call => \&postscan);
-	hook(type => "format", id => "mailbox", call => \&format);
-	hook(type => "pagetemplate", id => "mailbox", call => \&pagetemplate);
-	hook(type => "templatefile", id => "mailbox", call => \&templatefile);
-	hook(type => "delete", id => "mailbox", call => \&delete);
-	hook(type => "change", id => "mailbox", call => \&change);
-	hook(type => "cgi", id => "mailbox", call => \&cgi);
-	hook(type => "auth", id => "mailbox", call => \&auth);
-	hook(type => "sessioncgi", id => "mailbox", call => \&sessioncgi);
-	hook(type => "canedit", id => "mailbox", call => \&canedit);
-	hook(type => "editcontent", id => "mailbox", call => \&editcontent);
-	hook(type => "formbuilder_setup", id => "mailbox", call => \&formbuilder_setup);
-	hook(type => "formbuilder", id => "mailbox", call => \&formbuilder);
-	hook(type => "savestate", id => "mailbox", call => \&savestate);
 } # }}}
 
-sub getopt () { #{{{
-	debug("mailbox plugin getopt");
-} #}}}
-
-sub checkconfig () { #{{{
-	debug("mailbox plugin checkconfig");
-} #}}}
-
-sub needsbuild () { #{{{
-	debug("mailbox plugin needsbuild");
-} #}}}
 
 sub preprocess (@) { #{{{
 	my %params=@_;
@@ -55,151 +22,18 @@ sub preprocess (@) { #{{{
 	my $page=$params{page};
 	my $type=$params{type} || 'maildir';
 
-	print STDERR join("\n",%params);
+	my $path=$params{path} ||  error gettext("missing parameter") . " path";
 
-	error("path is mandatory") if (!defined($params{path}));
-
-	# note, mbox is not a directory
+	# note, mbox is not a directory, needs to be special cased
 	my $dir=bestdir($page,$params{path}) || 
 	    error("could not find ".$params{path});
 
-	$dir = $config{srcdir} ."/" . $dir;
+	$params{path} = $config{srcdir} ."/" . $dir;
 
-	return  format_mailbox(path=>$dir);
+	return  format_mailbox(path=>$dir,%params);
 
 } # }}}
 
-sub filter (@) { #{{{
-	my %params=@_;
-	
-	
-#	debug("mailbox plugin: path=".$params{path});
-
-	return $params{content};
-} # }}}
-
-sub linkify (@) { #{{{
-	my %params=@_;
-	
-	debug("mailbox plugin running as linkify");
-
-	return $params{content};
-} # }}}
-
-sub scan (@) { #{{{a
-	my %params=@_;
-
-	debug("mailbox plugin running as scan");
-} # }}}
-
-sub htmlize (@) { #{{{
-	my %params=@_;
-
-	debug("mailbox plugin running as htmlize");
-
-	return $params{content};
-} # }}}
-
-sub sanitize (@) { #{{{
-	my %params=@_;
-	
-	debug("mailbox plugin running as a sanitizer");
-
-	return $params{content};
-} # }}}
-
-sub postscan (@) { #{{{
-	my %params=@_;
-	
-	debug("mailbox plugin running as postscan");
-} # }}}
-
-sub format (@) { #{{{
-	my %params=@_;
-	
-	debug("mailbox plugin running as a formatter");
-
-	return $params{content};
-} # }}}
-
-sub pagetemplate (@) { #{{{
-	my %params=@_;
-	my $page=$params{page};
-	my $template=$params{template};
-	
-	debug("mailbox plugin running as a pagetemplate hook");
-} # }}}
-
-sub templatefile (@) { #{{{
-	my %params=@_;
-	my $page=$params{page};
-	
-	debug("mailbox plugin running as a templatefile hook");
-} # }}}
-
-sub delete (@) { #{{{
-	my @files=@_;
-
-	debug("mailbox plugin told that files were deleted: @files");
-} #}}}
-
-sub change (@) { #{{{
-	my @files=@_;
-
-	debug("mailbox plugin told that changed files were rendered: @files");
-} #}}}
-
-sub cgi ($) { #{{{
-	my $cgi=shift;
-
-	debug("mailbox plugin running in cgi");
-} #}}}
-
-sub auth ($$) { #{{{
-	my $cgi=shift;
-	my $session=shift;
-
-	debug("mailbox plugin running in auth");
-} #}}}
-
-sub sessionncgi ($$) { #{{{
-	my $cgi=shift;
-	my $session=shift;
-
-	debug("mailbox plugin running in sessioncgi");
-} #}}}
-
-sub canedit ($$$) { #{{{
-	my $page=shift;
-	my $cgi=shift;
-	my $session=shift;
-
-	debug("mailbox plugin running in canedit");
-} #}}}
-
-sub editcontent ($$$) { #{{{
-	my %params=@_;
-
-	debug("mailbox plugin running in editcontent");
-
-	return $params{content};
-} #}}}
-
-sub formbuilder_setup (@) { #{{{
-	my %params=@_;
-	
-	debug("mailbox plugin running in formbuilder_setup");
-} # }}}
-
-sub formbuilder (@) { #{{{
-	my %params=@_;
-	
-	debug("mailbox plugin running in formbuilder");
-} # }}}
-
-sub savestate () { #{{{
-	debug("mailbox plugin running in savestate");
-} #}}}
 
 ### The guts of the plugin
 ### parameters 
@@ -209,8 +43,30 @@ sub format_mailbox(@){
     my $header_list=$params{headers} || "subject,from";
 
     my $folder=Email::Folder->new($path) || error("mailbox could not be opened");
-    return join "\n", map { format(message=>$_) } $folder->messages;
+    return join "\n", map { format_message(message=>$_) } $folder->messages;
 
+}
+
+sub format_message(@){
+    my  %params=@_;
+
+    my $message=$params{message} || 
+	error gettext("missing parameter"). "message";
+
+    my $template= 
+	template("email.tmpl") || error gettext("missing template");
+    
+
+    my @headers=map { {'HEADERNAME'=>$_,'VAL'=>$message->header($_)} } 
+    $message->header_names;
+
+    $template->param(HEADERS=>[@headers]);
+
+    $template->param(body=>$message->body);
+
+    my $output=$template->output();
+    print STDERR $output;
+    return $output;
 }
 
 ### Utilities
@@ -248,5 +104,24 @@ sub bestdir ($$) { #{{{
 } #}}}
 
 
+
+sub fill_template(@){
+    my  %params=@_;
+    my $template = $params{template} || error gettext("missing parameter");
+
+    $params{basename}=IkiWiki::basename($params{page});
+
+    foreach my $param (keys %params) {
+	if ($template->query(name => $param)) {
+	    $template->param($param =>
+			     IkiWiki::htmlize($params{page}, $params{destpage},
+					      pagetype($pagesources{$params{page}}),
+					      $params{$param}));
+	}
+	if ($template->query(name => "raw_$param")) {
+	    $template->param("raw_$param" => $params{$param});
+	}
+    }
+}
 
 1
