@@ -55,24 +55,25 @@ sub preprocess (@) { #{{{
 	my $page=$params{page};
 	my $type=$params{type} || 'maildir';
 
+	print STDERR join("\n",%params);
+
 	error("path is mandatory") if (!defined($params{path}));
 
 	# note, mbox is not a directory
 	my $dir=bestdir($page,$params{path}) || 
 	    error("could not find ".$params{path});
 
-	my $folder=Email::Folder->new($dir);
+	$dir = $config{srcdir} ."/" . $dir;
 
-	    
-	    
-	return "mailbox plugin result";
+	return  format_mailbox(path=>$dir);
+
 } # }}}
 
 sub filter (@) { #{{{
 	my %params=@_;
 	
-
-	debug("mailbox plugin: path=".$params{path});
+	
+#	debug("mailbox plugin: path=".$params{path});
 
 	return $params{content};
 } # }}}
@@ -200,6 +201,17 @@ sub savestate () { #{{{
 	debug("mailbox plugin running in savestate");
 } #}}}
 
+### The guts of the plugin
+### parameters 
+sub format_mailbox(@){
+    my %params=@_;
+    my $path=$params{path} || error("path parameter mandatory");
+    my $header_list=$params{headers} || "subject,from";
+
+    my $folder=Email::Folder->new($path) || error("mailbox could not be opened");
+    return join "\n", map { format(message=>$_) } $folder->messages;
+
+}
 
 ### Utilities
 
