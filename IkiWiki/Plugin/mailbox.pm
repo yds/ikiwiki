@@ -15,7 +15,6 @@ sub import { #{{{
 	hook(type => "preprocess", id => "mailbox", call => \&preprocess);
 } # }}}
 
-
 sub preprocess (@) { #{{{
 	my %params=@_;
 	
@@ -47,6 +46,13 @@ sub format_mailbox(@){
 
 }
 
+sub make_pair($$){
+    my $message=shift;
+    my $name=shift;
+    my $val=$message->header($_);
+    my $hash={'HEADERNAME'=>$name,'VAL'=>$val};
+    return $hash;
+}
 sub format_message(@){
     my  %params=@_;
 
@@ -56,16 +62,14 @@ sub format_message(@){
     my $template= 
 	template("email.tmpl") || error gettext("missing template");
     
-
-    my @headers=map { {'HEADERNAME'=>$_,'VAL'=>$message->header($_)} } 
-    $message->header_names;
+    my @headers=map { make_pair($message,$_) } 
+	$message->header_names;
 
     $template->param(HEADERS=>[@headers]);
 
     $template->param(body=>$message->body);
 
     my $output=$template->output();
-    print STDERR $output;
     return $output;
 }
 
