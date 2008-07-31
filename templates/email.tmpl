@@ -1,0 +1,20 @@
+<div class="mailmessage">
+  <TMPL_VAR NAME="TEST">
+  <div class="mailheaders">
+
+    <TMPL_LOOP NAME="HEADERS">
+      <span class="headername">
+	<TMPL_VAR NAME="HEADERNAME"> 
+      </span>
+      <span class="headerval">
+	<TMPL_VAR NAME="VAL">
+      </span>
+      <br>
+    </TMPL_LOOP>
+  </div><!--.mailheaders-->
+
+  <div class="mailbody">
+    <TMPL_VAR NAME="BODY">
+  </div><!--.mailbody-->
+
+</div><!--.mailmessage-->
