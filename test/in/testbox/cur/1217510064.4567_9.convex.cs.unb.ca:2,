@@ -1,0 +1,112 @@
+Path: news.gmane.org!not-for-mail
+From: "Sandro Tosi" <matrixhasu@gmail.com>
+Newsgroups: gmane.linux.debian.devel.quality-assurance,gmane.linux.debian.devel.mentors
+Subject: Re: RFS: wmnetselect (updated package, QA upload, RC bugfix)
+Date: Wed, 30 Jul 2008 08:04:01 +0200
+Lines: 21
+Approved: news@gmane.org
+Message-ID: <8b2d7b4d0807292304oabd5a23j27353146cff1a1ee@mail.gmail.com>
+References: <8b2d7b4d0807271321q11b20181of38f0e5f9e64cc5b@mail.gmail.com>
+	 <20080728213153.GR11882@mail-vs.djpig.de>
+	 <8b2d7b4d0807291102w76d1efe2q8ec332c3b728210c@mail.gmail.com>
+	 <20080729185248.GU11882@mail-vs.djpig.de>
+NNTP-Posting-Host: lo.gmane.org
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Trace: ger.gmane.org 1217397902 24680 80.91.229.12 (30 Jul 2008 06:05:02 GMT)
+X-Complaints-To: usenet@ger.gmane.org
+NNTP-Posting-Date: Wed, 30 Jul 2008 06:05:02 +0000 (UTC)
+To: debian-mentors <debian-mentors@lists.debian.org>, debian-qa@lists.debian.org
+Original-X-From: bounce-debian-qa=debian-qa=m.gmane.org@lists.debian.org Wed Jul 30 08:05:51 2008
+Return-path: <bounce-debian-qa=debian-qa=m.gmane.org@lists.debian.org>
+Envelope-to: debian-qa@m.gmane.org
+Original-Received: from liszt.debian.org ([82.195.75.100])
+	by lo.gmane.org with esmtp (Exim 4.50)
+	id 1KO4oP-0001kx-TH
+	for debian-qa@m.gmane.org; Wed, 30 Jul 2008 08:05:47 +0200
+Original-Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 5D98813A5F50; Wed, 30 Jul 2008 06:04:16 +0000 (UTC)
+Old-Return-Path: <matrixhasu@gmail.com>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-10.7 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST,
+	MENTORSRFS,SARE_MSGID_LONG40 autolearn=failed version=3.2.3
+X-Original-To: lists-debian-qa@liszt.debian.org
+Delivered-To: lists-debian-qa@liszt.debian.org
+Original-Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id DC31113A5E1B
+	for <lists-debian-qa@liszt.debian.org>; Wed, 30 Jul 2008 06:04:09 +0000 (UTC)
+Original-Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 10570-78 for <lists-debian-qa@liszt.debian.org>;
+	Wed, 30 Jul 2008 06:04:06 +0000 (UTC)
+Original-Received: from rv-out-0708.google.com (rv-out-0708.google.com [209.85.198.251])
+	by liszt.debian.org (Postfix) with ESMTP id 0D21C13A5EC5
+	for <debian-qa@lists.debian.org>; Wed, 30 Jul 2008 06:04:04 +0000 (UTC)
+Original-Received: by rv-out-0708.google.com with SMTP id k29so275549rvb.30
+        for <debian-qa@lists.debian.org>; Tue, 29 Jul 2008 23:04:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:in-reply-to:mime-version:content-type
+         :content-transfer-encoding:content-disposition:references;
+        bh=o9dH0+UBmS9ejcaZOXXpov2AGzk9WlRyctaOljwwk7k=;
+        b=FQ/4jee8uIV0BsFf3pYxSM/xrOvzQh0dMMLpR55y1VGIZdGzLu8TjSuEf/krw3v7kJ
+         51pL+IviMirXSZWPg9Vi0ejosqs9tUiicQRrc0hGc+b6NVH0rv8ZOYghq8cjYfbZPVjr
+         BaD3BTtBHMXtRW9p0u8kPLzUnpPfxjW+Mg+0g=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version
+         :content-type:content-transfer-encoding:content-disposition
+         :references;
+        b=OxPMgf0HaR+qXtLokyriBkC3Twr1X77/epAbIWqOv2SvrN/AsDYanW6rv0K7fVKLgS
+         7qO3n6XCmkc9JsCYXeBsqSTnC/ZhcL3zSBPpYyAgLxhF2E0IZ2ENNTtkszkyxTnR8Tdh
+         BLtrCeiRyv0rQNJ8KZyPhYpZXoayIsHOZgElU=
+Original-Received: by 10.141.89.13 with SMTP id r13mr3949460rvl.88.1217397841981;
+        Tue, 29 Jul 2008 23:04:01 -0700 (PDT)
+Original-Received: by 10.141.202.10 with HTTP; Tue, 29 Jul 2008 23:04:01 -0700 (PDT)
+In-Reply-To: <20080729185248.GU11882@mail-vs.djpig.de>
+Content-Disposition: inline
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-4.663 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5, MENTORSRFS=-0.3, SARE_MSGID_LONG40=0.637]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <oF04nskyz9G.A.oCH.gRAkIB@liszt>
+Resent-From: debian-qa@lists.debian.org
+X-Mailing-List: <debian-qa@lists.debian.org> archive/latest/14691
+X-Loop: debian-qa@lists.debian.org
+List-Id: <debian-qa.lists.debian.org>
+List-Post: <mailto:debian-qa@lists.debian.org>
+List-Help: <mailto:debian-qa-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-qa-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-qa-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-qa-request@lists.debian.org
+Resent-Date: Wed, 30 Jul 2008 06:04:16 +0000 (UTC)
+Xref: news.gmane.org gmane.linux.debian.devel.quality-assurance:8678 gmane.linux.debian.devel.mentors:32297
+Archived-At: <http://permalink.gmane.org/gmane.linux.debian.devel.quality-assurance/8678>
+
+On Tue, Jul 29, 2008 at 20:52, Frank Lichtenheld <djpig@debian.org> wrote:
+> On Tue, Jul 29, 2008 at 08:02:51PM +0200, Sandro Tosi wrote:
+>> On Mon, Jul 28, 2008 at 23:31, Frank Lichtenheld <djpig@debian.org> wrote:
+>> > Please fix the following compiler warnings:
+> [...]
+>> >
+>> > Usually just some missing standard header inclusions.
+>>
+>> Yep, stdlib.h. Thanks for the warn, I've fixed it and reuploaded at
+>> the same location:
+>
+> Uploaded.
+
+Thanks, Frank!!
+
+-- 
+Sandro Tosi (aka morph, Morpheus, matrixhasu)
+My website: http://matrixhasu.altervista.org/
+Me at Debian: http://wiki.debian.org/SandroTosi
+
+

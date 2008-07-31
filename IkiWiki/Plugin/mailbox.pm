@@ -10,6 +10,7 @@ use warnings;
 use strict;
 use IkiWiki 2.00;
 use Email::Folder;
+use CGI 'escapeHTML';
 
 sub import { #{{{
 	hook(type => "preprocess", id => "mailbox", call => \&preprocess);
@@ -50,6 +51,9 @@ sub make_pair($$){
     my $message=shift;
     my $name=shift;
     my $val=$message->header($_);
+    
+    $val = escapeHTML($val);
+
     my $hash={'HEADERNAME'=>$name,'VAL'=>$val};
     return $hash;
 }
@@ -67,7 +71,7 @@ sub format_message(@){
 
     $template->param(HEADERS=>[@headers]);
 
-    $template->param(body=>$message->body);
+    $template->param(body=>escapeHTML($message->body));
 
     my $output=$template->output();
     return $output;

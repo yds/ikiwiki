@@ -1,0 +1,131 @@
+Path: news.gmane.org!not-for-mail
+From: "Sandro Tosi" <matrixhasu@gmail.com>
+Newsgroups: gmane.linux.debian.devel.mentors,gmane.linux.debian.devel.quality-assurance
+Subject: Re: RFS: wmnetselect (updated package, QA upload, RC bugfix)
+Date: Tue, 29 Jul 2008 20:02:51 +0200
+Lines: 42
+Approved: news@gmane.org
+Message-ID: <8b2d7b4d0807291102w76d1efe2q8ec332c3b728210c@mail.gmail.com>
+References: <8b2d7b4d0807271321q11b20181of38f0e5f9e64cc5b@mail.gmail.com>
+	 <20080728213153.GR11882@mail-vs.djpig.de>
+NNTP-Posting-Host: lo.gmane.org
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Trace: ger.gmane.org 1217354597 10201 80.91.229.12 (29 Jul 2008 18:03:17 GMT)
+X-Complaints-To: usenet@ger.gmane.org
+NNTP-Posting-Date: Tue, 29 Jul 2008 18:03:17 +0000 (UTC)
+To: debian-mentors <debian-mentors@lists.debian.org>, debian-qa@lists.debian.org
+Original-X-From: bounce-debian-mentors=debian-mentors=m.gmane.org@lists.debian.org Tue Jul 29 20:04:06 2008
+Return-path: <bounce-debian-mentors=debian-mentors=m.gmane.org@lists.debian.org>
+Envelope-to: debian-mentors@m.gmane.org
+Original-Received: from liszt.debian.org ([82.195.75.100])
+	by lo.gmane.org with esmtp (Exim 4.50)
+	id 1KNtYH-0001FD-DV
+	for debian-mentors@m.gmane.org; Tue, 29 Jul 2008 20:04:01 +0200
+Original-Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 2492613A5E34; Tue, 29 Jul 2008 18:03:04 +0000 (UTC)
+Old-Return-Path: <matrixhasu@gmail.com>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-10.7 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST,
+	MENTORSRFS,SARE_MSGID_LONG40 autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Original-Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id DDBAE13A5E05
+	for <lists-debian-mentors@liszt.debian.org>; Tue, 29 Jul 2008 18:02:57 +0000 (UTC)
+Original-Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 30807-95 for <lists-debian-mentors@liszt.debian.org>;
+	Tue, 29 Jul 2008 18:02:54 +0000 (UTC)
+Original-Received: from rv-out-0708.google.com (rv-out-0708.google.com [209.85.198.242])
+	by liszt.debian.org (Postfix) with ESMTP id 6842813A5D05
+	for <debian-mentors@lists.debian.org>; Tue, 29 Jul 2008 18:02:54 +0000 (UTC)
+Original-Received: by rv-out-0708.google.com with SMTP id k29so5491558rvb.30
+        for <debian-mentors@lists.debian.org>; Tue, 29 Jul 2008 11:02:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:in-reply-to:mime-version:content-type
+         :content-transfer-encoding:content-disposition:references;
+        bh=pOdvm/PtdGJ2kTSkLtKDwbzvykPIG5aEqUywuuxIs1Y=;
+        b=NMcvBtsnJyO7GDpcCIYrVf7E/KAJWTXRgCmysxeq14EsDlvJ0Mk7T50K6vBJj6LYxq
+         oivy1mQ76WCKz3TyoOqE7nqMvV88tPl+btN+JLE7aO8GSI2RiSwGZQClOnKooBeUoarL
+         RCkRcEXtZIM1H4/PVZ7/UErHSlBiY3b1kh+kw=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version
+         :content-type:content-transfer-encoding:content-disposition
+         :references;
+        b=Cb+2WwliCuQNZ7TbEUuXh8McmmzzjdCpKTylas0KiX8nNY0Wmf3OMkRXu11kJP7IMS
+         vkaE3sR4ZSMvajnXinDoNkoXgYtzDUSmSi5hfAp+P5wCdo7ak17/wMTXccy2fgg5uyRF
+         +OJgrCaOH2hNPYvXTvlOUNoGfQdbPxULfq9O0=
+Original-Received: by 10.141.141.3 with SMTP id t3mr3456393rvn.255.1217354571325;
+        Tue, 29 Jul 2008 11:02:51 -0700 (PDT)
+Original-Received: by 10.141.202.10 with HTTP; Tue, 29 Jul 2008 11:02:51 -0700 (PDT)
+In-Reply-To: <20080728213153.GR11882@mail-vs.djpig.de>
+Content-Disposition: inline
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-4.663 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5, MENTORSRFS=-0.3, SARE_MSGID_LONG40=0.637]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <Qa35fsduoWJ.A.2vH.Yt1jIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42364
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Tue, 29 Jul 2008 18:03:04 +0000 (UTC)
+Xref: news.gmane.org gmane.linux.debian.devel.mentors:32285 gmane.linux.debian.devel.quality-assurance:8674
+Archived-At: <http://permalink.gmane.org/gmane.linux.debian.devel.mentors/32285>
+
+On Mon, Jul 28, 2008 at 23:31, Frank Lichtenheld <djpig@debian.org> wrote:
+> Please fix the following compiler warnings:
+> wmnetselect.c: In function 'usage':
+> wmnetselect.c:203: warning: incompatible implicit declaration of built-in function 'exit'
+> wmnetselect.c: In function 'main':
+> wmnetselect.c:305: warning: incompatible implicit declaration of built-in function 'exit'
+> wmnetselect.c:317: warning: incompatible implicit declaration of built-in function 'exit'
+> wmnetselect.c:358: warning: incompatible implicit declaration of built-in function 'exit'
+> wmnetselect.c:475: warning: incompatible implicit declaration of built-in function 'exit'
+> wmnetselect.c: In function 'CreatePixmap':
+> wmnetselect.c:531: warning: incompatible implicit declaration of built-in function 'exit'
+> wmnetselect.c: In function 'ProcessSelection':
+> wmnetselect.c:620: warning: incompatible implicit declaration of built-in function 'free'
+> wmnetselect.c:641: warning: incompatible implicit declaration of built-in function 'free'
+> wmnetselect.c: In function 'Selection2Bookmark':
+> wmnetselect.c:677: warning: incompatible implicit declaration of built-in function 'free'
+> wmnetselect.c: In function 'URLSelection':
+> wmnetselect.c:715: warning: incompatible implicit declaration of built-in function 'free'
+> wmnetselect.c: In function 'Search4Selection':
+> wmnetselect.c:758: warning: incompatible implicit declaration of built-in function 'free'
+> wmnetselect.c: In function 'killchar':
+> wmnetselect.c:794: warning: incompatible implicit declaration of built-in function 'free'
+>
+> Usually just some missing standard header inclusions.
+
+Yep, stdlib.h. Thanks for the warn, I've fixed it and reuploaded at
+the same location:
+
+- URL: http://mentors.debian.net/debian/pool/main/w/wmnetselect
+- Source repository: deb-src http://mentors.debian.net/debian unstable
+main contrib non-free
+- dget http://mentors.debian.net/debian/pool/main/w/wmnetselect/wmnetselect_0.85-6.dsc
+
+Thanks,
+Sandro
+
+-- 
+Sandro Tosi (aka morph, Morpheus, matrixhasu)
+My website: http://matrixhasu.altervista.org/
+Me at Debian: http://wiki.debian.org/SandroTosi
+
+

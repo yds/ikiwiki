@@ -1,0 +1,116 @@
+Path: news.gmane.org!not-for-mail
+From: "Sandro Tosi" <matrixhasu@gmail.com>
+Newsgroups: gmane.linux.debian.devel.quality-assurance,gmane.linux.debian.devel.mentors
+Subject: Re: RFS: gnochm (updated package, QA upload)
+Date: Sat, 26 Jul 2008 17:00:26 +0200
+Lines: 24
+Approved: news@gmane.org
+Message-ID: <8b2d7b4d0807260800i208de91dyd5991819a45c8c3e@mail.gmail.com>
+References: <8b2d7b4d0807260634t693897d9l55baf66305bed6ee@mail.gmail.com>
+	 <m3abg44tsn.fsf@neo.luffy.cx>
+	 <8b2d7b4d0807260717u4f265543kae3216593f37b062@mail.gmail.com>
+	 <m3vdys3d5n.fsf@neo.luffy.cx>
+NNTP-Posting-Host: lo.gmane.org
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+X-Trace: ger.gmane.org 1217084451 20638 80.91.229.12 (26 Jul 2008 15:00:51 GMT)
+X-Complaints-To: usenet@ger.gmane.org
+NNTP-Posting-Date: Sat, 26 Jul 2008 15:00:51 +0000 (UTC)
+To: debian-mentors <debian-mentors@lists.debian.org>, debian-qa@lists.debian.org
+Original-X-From: bounce-debian-qa=debian-qa=m.gmane.org@lists.debian.org Sat Jul 26 17:01:39 2008
+Return-path: <bounce-debian-qa=debian-qa=m.gmane.org@lists.debian.org>
+Envelope-to: debian-qa@m.gmane.org
+Original-Received: from liszt.debian.org ([82.195.75.100])
+	by lo.gmane.org with esmtp (Exim 4.50)
+	id 1KMlH5-0000hy-Rx
+	for debian-qa@m.gmane.org; Sat, 26 Jul 2008 17:01:35 +0200
+Original-Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6FD9313A5477; Sat, 26 Jul 2008 15:00:39 +0000 (UTC)
+Old-Return-Path: <matrixhasu@gmail.com>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.6 required=4.0 tests=FOURLA,GMAIL,LDOSUBSCRIBER,
+	LDO_WHITELIST,MENTORSRFS,SARE_MSGID_LONG40 autolearn=failed version=3.2.3
+X-Original-To: lists-debian-qa@liszt.debian.org
+Delivered-To: lists-debian-qa@liszt.debian.org
+Original-Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 095D913A5276
+	for <lists-debian-qa@liszt.debian.org>; Sat, 26 Jul 2008 15:00:33 +0000 (UTC)
+Original-Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 08543-81 for <lists-debian-qa@liszt.debian.org>;
+	Sat, 26 Jul 2008 15:00:29 +0000 (UTC)
+Original-Received: from rv-out-0708.google.com (rv-out-0708.google.com [209.85.198.250])
+	by liszt.debian.org (Postfix) with ESMTP id 2BC0E13A51BC
+	for <debian-qa@lists.debian.org>; Sat, 26 Jul 2008 15:00:29 +0000 (UTC)
+Original-Received: by rv-out-0708.google.com with SMTP id k29so4131657rvb.30
+        for <debian-qa@lists.debian.org>; Sat, 26 Jul 2008 08:00:26 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:in-reply-to:mime-version:content-type
+         :content-transfer-encoding:content-disposition:references;
+        bh=896xX/pyGtbRDqXa99Exi5t60Xcy/587vtZhWAMOTtw=;
+        b=iT+Irt3uuJohv50c2E9JvnkS/8+/czlMgqstdIAU4TxmAmVwmP4TT8Srtqy0qhzMkd
+         L4X1668asznkymKDXrxnTs2TeTAzFO1EP5MrnPIArTyg+FW2D4Lt/dddunhfY8rrITm3
+         qkZcnOOM4B+qRoKYkRJo5+DrIX3+arKOc537c=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version
+         :content-type:content-transfer-encoding:content-disposition
+         :references;
+        b=ZYeGn++kfpH73yTvPPUkdtD5q6xpfu05Y8E45/xaRf3eu2h09ItS0kgJIzrCfDZ0ue
+         6QV+G54A4FR4EtenkkGDMhD6Zrje0xt+Mgaju2aVV20nzjdmLwQEI29vw8tHF4fbo7Rx
+         i+pSIuJOTUq/4nq0DtSghs9/lnNLmzrntg3t8=
+Original-Received: by 10.141.164.13 with SMTP id r13mr1461593rvo.53.1217084426250;
+        Sat, 26 Jul 2008 08:00:26 -0700 (PDT)
+Original-Received: by 10.141.202.10 with HTTP; Sat, 26 Jul 2008 08:00:26 -0700 (PDT)
+In-Reply-To: <m3vdys3d5n.fsf@neo.luffy.cx>
+Content-Disposition: inline
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-5.563 tagged_above=3.6 required=5.3
+	tests=[BAYES_00=-2, FOURLA=0.1, GMAIL=1, LDO_WHITELIST=-5,
+	MENTORSRFS=-0.3, SARE_MSGID_LONG40=0.637]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <YlnFA003ixJ.A.r4.XwziIB@liszt>
+Resent-From: debian-qa@lists.debian.org
+X-Mailing-List: <debian-qa@lists.debian.org> archive/latest/14666
+X-Loop: debian-qa@lists.debian.org
+List-Id: <debian-qa.lists.debian.org>
+List-Post: <mailto:debian-qa@lists.debian.org>
+List-Help: <mailto:debian-qa-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-qa-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-qa-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-qa-request@lists.debian.org
+Resent-Date: Sat, 26 Jul 2008 15:00:39 +0000 (UTC)
+Xref: news.gmane.org gmane.linux.debian.devel.quality-assurance:8653 gmane.linux.debian.devel.mentors:32193
+Archived-At: <http://permalink.gmane.org/gmane.linux.debian.devel.quality-assurance/8653>
+
+On Sat, Jul 26, 2008 at 16:58, Vincent Bernat <bernat@debian.org> wrote:
+> OoO Vers la  fin de l'apr=E8s-midi du samedi 26  juillet 2008, vers 16:17=
+,
+> "Sandro Tosi" <matrixhasu@gmail.com> disait :
+>
+>>> With CDBS, I think that you just need to depend on autotools-dev.
+>
+>> Ah, thanks! I read in the build log that CDBS automatically replace
+>> them with the ones in /usr/share/misc/ so I "skip" that lintian
+>> errors.
+>
+> This is  done only  if you  have autotools-dev installed.  It is  only a
+> Recommends.
+
+I've filed a bug (#492481) because I don't know who will be the next upload=
+er.
+
+Cheers,
+--=20
+Sandro Tosi (aka morph, Morpheus, matrixhasu)
+My website: http://matrixhasu.altervista.org/
+Me at Debian: http://wiki.debian.org/SandroTosi
+
+

@@ -1,0 +1,118 @@
+Path: news.gmane.org!not-for-mail
+From: Vincent Bernat <bernat@debian.org>
+Newsgroups: gmane.linux.debian.devel.quality-assurance,gmane.linux.debian.devel.mentors
+Subject: Re: RFS: gnochm (updated package, QA upload)
+Date: Sat, 26 Jul 2008 16:14:00 +0200
+Organization: Debian
+Lines: 35
+Approved: news@gmane.org
+Message-ID: <m3abg44tsn.fsf@neo.luffy.cx>
+References: <8b2d7b4d0807260634t693897d9l55baf66305bed6ee@mail.gmail.com>
+NNTP-Posting-Host: lo.gmane.org
+Mime-Version: 1.0
+Content-Type: multipart/signed; boundary="=-=-=";
+	micalg=pgp-sha1; protocol="application/pgp-signature"
+X-Trace: ger.gmane.org 1217081664 12976 80.91.229.12 (26 Jul 2008 14:14:24 GMT)
+X-Complaints-To: usenet@ger.gmane.org
+NNTP-Posting-Date: Sat, 26 Jul 2008 14:14:24 +0000 (UTC)
+To: debian-mentors <debian-mentors@lists.debian.org>,  debian-qa@lists.debian.org
+Original-X-From: bounce-debian-qa=debian-qa=m.gmane.org@lists.debian.org Sat Jul 26 16:15:14 2008
+Return-path: <bounce-debian-qa=debian-qa=m.gmane.org@lists.debian.org>
+Envelope-to: debian-qa@m.gmane.org
+Original-Received: from liszt.debian.org ([82.195.75.100])
+	by lo.gmane.org with esmtp (Exim 4.50)
+	id 1KMkYA-0001PV-6U
+	for debian-qa@m.gmane.org; Sat, 26 Jul 2008 16:15:10 +0200
+Original-Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 32D4F13A58C6; Sat, 26 Jul 2008 14:14:14 +0000 (UTC)
+Old-Return-Path: <bernat@luffy.cx>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-11.6 required=4.0 tests=ALL_TRUSTED,FOURLA,GMAIL,
+	LDOSUBSCRIBER,LDO_WHITELIST,MENTORSRFS autolearn=failed version=3.2.3
+X-Original-To: lists-debian-qa@liszt.debian.org
+Delivered-To: lists-debian-qa@liszt.debian.org
+Original-Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 0035413A5876
+	for <lists-debian-qa@liszt.debian.org>; Sat, 26 Jul 2008 14:14:08 +0000 (UTC)
+Original-Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 08657-35 for <lists-debian-qa@liszt.debian.org>;
+	Sat, 26 Jul 2008 14:14:05 +0000 (UTC)
+Original-Received: from bart.luffy.cx (bart.luffy.cx [IPv6:2a01:198:201::7])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client did not present a certificate)
+	by liszt.debian.org (Postfix) with ESMTP id 1E0F713A57B2
+	for <debian-qa@lists.debian.org>; Sat, 26 Jul 2008 14:14:05 +0000 (UTC)
+Original-Received: by bart.luffy.cx (Postfix, from userid 65534)
+	id BA29D14898; Sat, 26 Jul 2008 16:14:02 +0200 (CEST)
+Original-Received: from neo.luffy.cx (cl-350.bru-01.be.sixxs.net [IPv6:2001:6f8:202:15d::2])
+	by bart.luffy.cx (Postfix) with ESMTP id 8EF721461B;
+	Sat, 26 Jul 2008 16:14:02 +0200 (CEST)
+Original-Received: from neo.luffy.cx (localhost.localdomain [127.0.0.1])
+	by neo.luffy.cx (Postfix) with ESMTP id EEE713811F;
+	Sat, 26 Jul 2008 16:14:00 +0200 (CEST)
+In-Reply-To: <8b2d7b4d0807260634t693897d9l55baf66305bed6ee@mail.gmail.com>
+	(Sandro Tosi's message of "Sat, 26 Jul 2008 15:34:26 +0200")
+User-Agent: Gnus/5.110011 (No Gnus v0.11) Emacs/22.2 (x86_64-pc-linux-gnu)
+X-PGP-KeyID: 0xF22A794E
+X-PGP-Fingerprint: 5854 AF2B 65B2 0E96 2161  E32B 285B D7A1 F22A 794E
+Mail-Followup-To: debian-mentors      <debian-mentors@lists.debian.org>,
+	debian-qa@lists.debian.org
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-7.865 tagged_above=3.6 required=5.3
+	tests=[ALL_TRUSTED=-1.665, BAYES_00=-2, FOURLA=0.1, GMAIL=1,
+	LDO_WHITELIST=-5, MENTORSRFS=-0.3]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <qJ0DVcdpNyL.A.TG.2EziIB@liszt>
+Resent-From: debian-qa@lists.debian.org
+X-Mailing-List: <debian-qa@lists.debian.org> archive/latest/14662
+X-Loop: debian-qa@lists.debian.org
+List-Id: <debian-qa.lists.debian.org>
+List-Post: <mailto:debian-qa@lists.debian.org>
+List-Help: <mailto:debian-qa-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-qa-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-qa-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-qa-request@lists.debian.org
+Resent-Date: Sat, 26 Jul 2008 14:14:14 +0000 (UTC)
+Xref: news.gmane.org gmane.linux.debian.devel.quality-assurance:8649 gmane.linux.debian.devel.mentors:32184
+Archived-At: <http://permalink.gmane.org/gmane.linux.debian.devel.quality-assurance/8649>
+
+--=-=-=
+Content-Type: text/plain; charset=iso-8859-15
+Content-Transfer-Encoding: quoted-printable
+
+OoO En ce d=E9but d'apr=E8s-midi  ensoleill=E9 du samedi 26 juillet 2008, v=
+ers
+15:34, "Sandro Tosi" <matrixhasu@gmail.com> disait=A0:
+
+> Dear mentors,
+> I am looking for a sponsor for the new version 0.9.11-2
+> (QA Upload) of package "gnochm".
+
+Uploaded. Thanks.
+
+You might want to fix this in a future upload:
+E: gnochm source: outdated-autotools-helper-file config.sub 2003-06-18
+
+With CDBS, I think that you just need to depend on autotools-dev.
+=2D-=20
+Each module should do one thing well.
+            - The Elements of Programming Style (Kernighan & Plauger)
+
+--=-=-=
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEARECAAYFAkiLMSgACgkQKFvXofIqeU4dogCgrSiTlivi8N/vHkBb62Ra9cde
+L8gAoIgicaY+8rPjwYQ+DsHWjRpSBGVA
+=0bA+
+-----END PGP SIGNATURE-----
+--=-=-=--
+
+

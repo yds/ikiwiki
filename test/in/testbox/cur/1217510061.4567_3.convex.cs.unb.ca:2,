@@ -1,0 +1,149 @@
+Path: news.gmane.org!not-for-mail
+From: "Sandro Tosi" <matrixhasu@gmail.com>
+Newsgroups: gmane.linux.debian.devel.quality-assurance,gmane.linux.debian.devel.mentors
+Subject: Re: RFS: wmnetselect (updated package, QA upload, RC bugfix)
+Date: Mon, 28 Jul 2008 08:13:50 +0200
+Lines: 57
+Approved: news@gmane.org
+Message-ID: <8b2d7b4d0807272313t4e22e6a3h35ef1ed7ecf450b2@mail.gmail.com>
+References: <8b2d7b4d0807271321q11b20181of38f0e5f9e64cc5b@mail.gmail.com>
+	 <20080728014744.GH11882@mail-vs.djpig.de>
+NNTP-Posting-Host: lo.gmane.org
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Trace: ger.gmane.org 1217225651 22718 80.91.229.12 (28 Jul 2008 06:14:11 GMT)
+X-Complaints-To: usenet@ger.gmane.org
+NNTP-Posting-Date: Mon, 28 Jul 2008 06:14:11 +0000 (UTC)
+To: debian-mentors <debian-mentors@lists.debian.org>, debian-qa@lists.debian.org
+Original-X-From: bounce-debian-qa=debian-qa=m.gmane.org@lists.debian.org Mon Jul 28 08:15:00 2008
+Return-path: <bounce-debian-qa=debian-qa=m.gmane.org@lists.debian.org>
+Envelope-to: debian-qa@m.gmane.org
+Original-Received: from liszt.debian.org ([82.195.75.100])
+	by lo.gmane.org with esmtp (Exim 4.50)
+	id 1KNM0Z-0006Xu-Ry
+	for debian-qa@m.gmane.org; Mon, 28 Jul 2008 08:14:59 +0200
+Original-Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A46FE13A547E; Mon, 28 Jul 2008 06:14:03 +0000 (UTC)
+Old-Return-Path: <matrixhasu@gmail.com>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.3 required=4.0 tests=IMPRONONCABLE_1,LDOSUBSCRIBER,
+	LDO_WHITELIST,MENTORSRFS,MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2,SARE_MSGID_LONG40 autolearn=failed version=3.2.3
+X-Original-To: lists-debian-qa@liszt.debian.org
+Delivered-To: lists-debian-qa@liszt.debian.org
+Original-Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 29BD313A5464
+	for <lists-debian-qa@liszt.debian.org>; Mon, 28 Jul 2008 06:13:57 +0000 (UTC)
+Original-Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 02745-53 for <lists-debian-qa@liszt.debian.org>;
+	Mon, 28 Jul 2008 06:13:54 +0000 (UTC)
+Original-Received: from rv-out-0708.google.com (rv-out-0708.google.com [209.85.198.250])
+	by liszt.debian.org (Postfix) with ESMTP id BDBB413A5447
+	for <debian-qa@lists.debian.org>; Mon, 28 Jul 2008 06:13:53 +0000 (UTC)
+Original-Received: by rv-out-0708.google.com with SMTP id k29so4620810rvb.30
+        for <debian-qa@lists.debian.org>; Sun, 27 Jul 2008 23:13:50 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:in-reply-to:mime-version:content-type
+         :content-transfer-encoding:content-disposition:references;
+        bh=X0O+1FsjHRZmScBx+DUodJeTzq65J1AdjwFl430apes=;
+        b=dW9tiY8w60vYHKj6W0ybVKEb8Dg2CyTAb4z9sjGnULqihodcEtMCnf/bdLab0p/q2H
+         HdtOsf/4Oa+D9YxU96nS9MW+wjuIPQLZH5EKuZv5UQuBiUQ9LR2RWXVvH+f+J0B/Mq93
+         duN2SbLfzE4W6bRIsvfZeV+FQr1/dkb/XnxiA=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version
+         :content-type:content-transfer-encoding:content-disposition
+         :references;
+        b=heZ2mxV6Q8vNzFGUk/D+MhPT1+4TcW+SYwkvGqaXuDD5+19gZlhYsEtj0KVuDpuCLL
+         IvkqaWi32evWmiCxHwsTOLquK7QHyHLmFdqUplQJWNkX/SukUk8yXLoSuSwDGrmS9iyB
+         aMNEUTdEgi/C+y1/0h1MWA5sREKdSVdLLffCQ=
+Original-Received: by 10.141.141.3 with SMTP id t3mr2162300rvn.124.1217225630906;
+        Sun, 27 Jul 2008 23:13:50 -0700 (PDT)
+Original-Received: by 10.141.202.10 with HTTP; Sun, 27 Jul 2008 23:13:50 -0700 (PDT)
+In-Reply-To: <20080728014744.GH11882@mail-vs.djpig.de>
+Content-Disposition: inline
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-3.343 tagged_above=3.6 required=5.3
+	tests=[IMPRONONCABLE_1=1, LDO_WHITELIST=-5, MENTORSRFS=-0.3,
+	MURPHY_DRUGS_REL8=0.02, MURPHY_WRONG_WORD1=0.1,
+	MURPHY_WRONG_WORD2=0.2, SARE_MSGID_LONG40=0.637]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <nHREn7dHr9J.A.ehB.rOWjIB@liszt>
+Resent-From: debian-qa@lists.debian.org
+X-Mailing-List: <debian-qa@lists.debian.org> archive/latest/14681
+X-Loop: debian-qa@lists.debian.org
+List-Id: <debian-qa.lists.debian.org>
+List-Post: <mailto:debian-qa@lists.debian.org>
+List-Help: <mailto:debian-qa-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-qa-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-qa-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-qa-request@lists.debian.org
+Resent-Date: Mon, 28 Jul 2008 06:14:03 +0000 (UTC)
+Xref: news.gmane.org gmane.linux.debian.devel.quality-assurance:8668 gmane.linux.debian.devel.mentors:32241
+Archived-At: <http://permalink.gmane.org/gmane.linux.debian.devel.quality-assurance/8668>
+
+Hi Frank,
+thanks for the review!
+
+On Mon, Jul 28, 2008 at 03:47, Frank Lichtenheld <djpig@debian.org> wrote:
+> On Sun, Jul 27, 2008 at 10:21:28PM +0200, Sandro Tosi wrote:
+>> It builds these binary packages:
+>> wmnetselect - enhanced Iceweasel launch button designed for WindowMaker
+>>
+>> The package appears to be lintian clean.
+>>
+>> I'm not really happy about direct upstream code modification, but
+>> didn't want to introduce a patch system so I've just modified the
+>> manpage to replace Netscape/Mozilla with Iceweasel/Iceape.
+>>
+>> The upload would fix these bugs: 419932
+>
+> I think you will need some code fixes, too...
+>
+> e.g.
+> $ rgrep mozilla . | head -n 3
+> ./wmnetselect.c:/* default executable is mozilla, may be overridden by command line parameter */
+> ./wmnetselect.c:#define EXECUTABLE "mozilla"
+> ./wmnetselect.c:    "                         Defaults to mozilla",
+
+Well, I've checked and mozilla is managed via alternatives to be iceweasel:
+
+$ ls -l $(which mozilla)
+lrwxrwxrwx 1 root root 25 2007-11-06 00:02 /usr/bin/mozilla ->
+/etc/alternatives/mozilla
+$ ls -l /etc/alternatives/mozilla
+lrwxrwxrwx 1 root root 18 2008-07-19 13:19 /etc/alternatives/mozilla
+-> /usr/bin/iceweasel
+
+So it's working: or is it only on my system?
+
+> Also you will need to verify that this does actually something useful
+> afterwards.
+
+Sure, I verified this too: if you double left-click the app, it open a
+new tab in iceweasel, if you right-click it will open a tab for
+google.com and if you paste with middle-click that text is passed to
+iceweasel to be opened as URL.
+
+> I actually skipped this package because I thought this wasn't worth the
+> effort.
+
+Of course it's not a critical package, but it didn't take too long to do it.
+
+Thanks,
+Sandro
+
+-- 
+Sandro Tosi (aka morph, Morpheus, matrixhasu)
+My website: http://matrixhasu.altervista.org/
+Me at Debian: http://wiki.debian.org/SandroTosi
+
+

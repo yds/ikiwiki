@@ -1,0 +1,123 @@
+Path: news.gmane.org!not-for-mail
+From: Nico Golde <nico@ngolde.de>
+Newsgroups: gmane.linux.debian.devel.quality-assurance,gmane.linux.debian.devel.mentors
+Subject: Re: RFS: wmnetselect (updated package, QA upload, RC bugfix)
+Date: Mon, 28 Jul 2008 11:26:14 +0200
+Lines: 44
+Approved: news@gmane.org
+Message-ID: <20080728092614.GF22366@ngolde.de>
+References: <8b2d7b4d0807271321q11b20181of38f0e5f9e64cc5b@mail.gmail.com> <20080728014744.GH11882@mail-vs.djpig.de> <8b2d7b4d0807272313t4e22e6a3h35ef1ed7ecf450b2@mail.gmail.com>
+NNTP-Posting-Host: lo.gmane.org
+Mime-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="UBnjLfzoMQYIXCvq"
+X-Trace: ger.gmane.org 1217237216 22952 80.91.229.12 (28 Jul 2008 09:26:56 GMT)
+X-Complaints-To: usenet@ger.gmane.org
+NNTP-Posting-Date: Mon, 28 Jul 2008 09:26:56 +0000 (UTC)
+To: debian-qa@lists.debian.org,
+	debian-mentors <debian-mentors@lists.debian.org>
+Original-X-From: bounce-debian-qa=debian-qa=m.gmane.org@lists.debian.org Mon Jul 28 11:27:45 2008
+Return-path: <bounce-debian-qa=debian-qa=m.gmane.org@lists.debian.org>
+Envelope-to: debian-qa@m.gmane.org
+Original-Received: from liszt.debian.org ([82.195.75.100])
+	by lo.gmane.org with esmtp (Exim 4.50)
+	id 1KNP16-000163-BV
+	for debian-qa@m.gmane.org; Mon, 28 Jul 2008 11:27:44 +0200
+Original-Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A337A13A547F; Mon, 28 Jul 2008 09:26:47 +0000 (UTC)
+Old-Return-Path: <nico@ngolde.de>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-10.3 required=4.0 tests=GMAIL,LDOSUBSCRIBER,
+	LDO_WHITELIST,MENTORSRFS autolearn=failed version=3.2.3
+X-Original-To: lists-debian-qa@liszt.debian.org
+Delivered-To: lists-debian-qa@liszt.debian.org
+Original-Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 82DC613A5454
+	for <lists-debian-qa@liszt.debian.org>; Mon, 28 Jul 2008 09:26:41 +0000 (UTC)
+Original-Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 29891-92 for <lists-debian-qa@liszt.debian.org>;
+	Mon, 28 Jul 2008 09:26:38 +0000 (UTC)
+Original-Received: from mo-p00-ob.rzone.de (mo-p00-ob.rzone.de [81.169.146.161])
+	by liszt.debian.org (Postfix) with ESMTP id 7212013A53FC;
+	Mon, 28 Jul 2008 09:26:38 +0000 (UTC)
+X-RZG-CLASS-ID: mo00
+X-RZG-AUTH: :KHkJeFmIefYsEPPKCBl/ZNLv/wXfcKuujweZef2IiPbnG1Hpql+PuSVCXPTFuieNMhU=
+Original-Received: from ngolde.de (e178196109.adsl.alicedsl.de [85.178.196.109])
+	by post.webmailer.de (fruni mo2) (RZmta 16.47)
+	with ESMTP id Z01ee3k6S6faxY ; Mon, 28 Jul 2008 11:26:33 +0200 (MEST)
+	(envelope-from: <nico@ngolde.de>)
+Original-Received: by ngolde.de (Postfix, from userid 1000)
+	id 7ACE5A3144; Mon, 28 Jul 2008 11:26:14 +0200 (CEST)
+Mail-Followup-To: debian-qa@lists.debian.org,
+	debian-mentors <debian-mentors@lists.debian.org>
+Content-Disposition: inline
+In-Reply-To: <8b2d7b4d0807272313t4e22e6a3h35ef1ed7ecf450b2@mail.gmail.com>
+X-Mailer: netcat 1.10
+X-GPG: 0x73647cff
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-4.3 tagged_above=3.6 required=5.3 tests=[GMAIL=1,
+	LDO_WHITELIST=-5, MENTORSRFS=-0.3]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <GvWPwd7V14O.A.pOC.XDZjIB@liszt>
+Resent-From: debian-qa@lists.debian.org
+X-Mailing-List: <debian-qa@lists.debian.org> archive/latest/14684
+X-Loop: debian-qa@lists.debian.org
+List-Id: <debian-qa.lists.debian.org>
+List-Post: <mailto:debian-qa@lists.debian.org>
+List-Help: <mailto:debian-qa-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-qa-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-qa-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-qa-request@lists.debian.org
+Resent-Date: Mon, 28 Jul 2008 09:26:47 +0000 (UTC)
+Xref: news.gmane.org gmane.linux.debian.devel.quality-assurance:8671 gmane.linux.debian.devel.mentors:32245
+Archived-At: <http://permalink.gmane.org/gmane.linux.debian.devel.quality-assurance/8671>
+
+
+--UBnjLfzoMQYIXCvq
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+Hi Sandro,
+* Sandro Tosi <matrixhasu@gmail.com> [2008-07-28 10:53]:
+> On Mon, Jul 28, 2008 at 03:47, Frank Lichtenheld <djpig@debian.org> wrote:
+> > On Sun, Jul 27, 2008 at 10:21:28PM +0200, Sandro Tosi wrote:
+[...]=20
+> > e.g.
+> > $ rgrep mozilla . | head -n 3
+> > ./wmnetselect.c:/* default executable is mozilla, may be overridden by =
+command line parameter */
+> > ./wmnetselect.c:#define EXECUTABLE "mozilla"
+> > ./wmnetselect.c:    "                         Defaults to mozilla",
+>=20
+> Well, I've checked and mozilla is managed via alternatives to be icewease=
+l:
+
+Not everyone uses iceweasel..
+Cheers
+Nico
+--=20
+Nico Golde - http://ngolde.de - nion@jabber.ccc.de - GPG: 0x73647CFF
+For security reasons, all text in this mail is double-rot13 encrypted.
+http://people.debian.org/~nion/sponsoring-checklist.html
+
+--UBnjLfzoMQYIXCvq
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEARECAAYFAkiNkLYACgkQHYflSXNkfP9CDQCeN2qhPoZM/8IKVZ/6VcV74clP
+++8An0NC5C055+Anv7Ck8NAp8KmzGl9/
+=RJdC
+-----END PGP SIGNATURE-----
+
+--UBnjLfzoMQYIXCvq--
+
+

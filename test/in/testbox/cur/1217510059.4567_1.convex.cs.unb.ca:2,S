@@ -1,0 +1,120 @@
+Path: news.gmane.org!not-for-mail
+From: "Sandro Tosi" <matrixhasu@gmail.com>
+Newsgroups: gmane.linux.debian.devel.quality-assurance,gmane.linux.debian.devel.mentors
+Subject: RFS: wmnetselect (updated package, QA upload, RC bugfix)
+Date: Sun, 27 Jul 2008 22:21:28 +0200
+Lines: 34
+Approved: news@gmane.org
+Message-ID: <8b2d7b4d0807271321q11b20181of38f0e5f9e64cc5b@mail.gmail.com>
+NNTP-Posting-Host: lo.gmane.org
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Trace: ger.gmane.org 1217190116 8871 80.91.229.12 (27 Jul 2008 20:21:56 GMT)
+X-Complaints-To: usenet@ger.gmane.org
+NNTP-Posting-Date: Sun, 27 Jul 2008 20:21:56 +0000 (UTC)
+To: debian-mentors <debian-mentors@lists.debian.org>, debian-qa@lists.debian.org
+Original-X-From: bounce-debian-qa=debian-qa=m.gmane.org@lists.debian.org Sun Jul 27 22:22:45 2008
+Return-path: <bounce-debian-qa=debian-qa=m.gmane.org@lists.debian.org>
+Envelope-to: debian-qa@m.gmane.org
+Original-Received: from liszt.debian.org ([82.195.75.100])
+	by lo.gmane.org with esmtp (Exim 4.50)
+	id 1KNClJ-0005sr-PC
+	for debian-qa@m.gmane.org; Sun, 27 Jul 2008 22:22:37 +0200
+Original-Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4379513A5BDD; Sun, 27 Jul 2008 20:21:41 +0000 (UTC)
+Old-Return-Path: <matrixhasu@gmail.com>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-10.6 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST,
+	MENTORSRFS,MURPHY_DRUGS_REL8,SARE_MSGID_LONG40 autolearn=failed version=3.2.3
+X-Original-To: lists-debian-qa@liszt.debian.org
+Delivered-To: lists-debian-qa@liszt.debian.org
+Original-Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id E0C5013A5BD9
+	for <lists-debian-qa@liszt.debian.org>; Sun, 27 Jul 2008 20:21:34 +0000 (UTC)
+Original-Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 24577-25 for <lists-debian-qa@liszt.debian.org>;
+	Sun, 27 Jul 2008 20:21:32 +0000 (UTC)
+Original-Received: from rv-out-0708.google.com (rv-out-0708.google.com [209.85.198.243])
+	by liszt.debian.org (Postfix) with ESMTP id B83F013A5AC1
+	for <debian-qa@lists.debian.org>; Sun, 27 Jul 2008 20:21:31 +0000 (UTC)
+Original-Received: by rv-out-0708.google.com with SMTP id k29so4477103rvb.30
+        for <debian-qa@lists.debian.org>; Sun, 27 Jul 2008 13:21:28 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:mime-version:content-type:content-transfer-encoding
+         :content-disposition;
+        bh=uOErF6k9u7lGFChjhvacpGbemUGFzZHt2CitPnaIkGU=;
+        b=erdTYCynocGBrVsWfAJIa0hhZ2qvMTrXC4RCiuMG3P8pIjY/bjohGqgSq6DZ8DyL+J
+         Q3Fm+5FHl5sCsI+6RGCs99xiw71VAlY/D85gfDcMRyi89lfL2lAAqXP49zPhJj/TzwbB
+         08VDxi4HE1XqCiK4HkkfDj7A4OmsLkEetxiiU=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type
+         :content-transfer-encoding:content-disposition;
+        b=iWe9QOObxKWLMYBWGY57MnBHGFQpZNGdi/meEzJUi6qtZXm9Z2MhaA3V3OH+HTEmkq
+         mudYMmNQ5G1sFMlPSFuHKW39L7b85zEvDoUTG0RNxl/QP3nzCoJSc652N6Er23Q8E6sE
+         XmzZ5Zl2dHatlrDqiNqk0s8/h8Pl62a2EPmwA=
+Original-Received: by 10.140.203.9 with SMTP id a9mr1963980rvg.288.1217190088587;
+        Sun, 27 Jul 2008 13:21:28 -0700 (PDT)
+Original-Received: by 10.141.202.10 with HTTP; Sun, 27 Jul 2008 13:21:28 -0700 (PDT)
+Content-Disposition: inline
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-6.643 tagged_above=3.6 required=5.3
+	tests=[BAYES_00=-2, LDO_WHITELIST=-5, MENTORSRFS=-0.3,
+	MURPHY_DRUGS_REL8=0.02, SARE_MSGID_LONG40=0.637]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <mtYbjmf1zsL.A.QKE.VjNjIB@liszt>
+Resent-From: debian-qa@lists.debian.org
+X-Mailing-List: <debian-qa@lists.debian.org> archive/latest/14679
+X-Loop: debian-qa@lists.debian.org
+List-Id: <debian-qa.lists.debian.org>
+List-Post: <mailto:debian-qa@lists.debian.org>
+List-Help: <mailto:debian-qa-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-qa-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-qa-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-qa-request@lists.debian.org
+Resent-Date: Sun, 27 Jul 2008 20:21:41 +0000 (UTC)
+Xref: news.gmane.org gmane.linux.debian.devel.quality-assurance:8666 gmane.linux.debian.devel.mentors:32235
+Archived-At: <http://permalink.gmane.org/gmane.linux.debian.devel.quality-assurance/8666>
+
+Dear mentors,
+
+I am looking for a sponsor for the new version 0.85-6
+(QA upload) of package "wmnetselect".
+
+It builds these binary packages:
+wmnetselect - enhanced Iceweasel launch button designed for WindowMaker
+
+The package appears to be lintian clean.
+
+I'm not really happy about direct upstream code modification, but
+didn't want to introduce a patch system so I've just modified the
+manpage to replace Netscape/Mozilla with Iceweasel/Iceape.
+
+The upload would fix these bugs: 419932
+
+The package can be found on mentors.debian.net:
+- URL: http://mentors.debian.net/debian/pool/main/w/wmnetselect
+- Source repository: deb-src http://mentors.debian.net/debian unstable
+main contrib non-free
+- dget http://mentors.debian.net/debian/pool/main/w/wmnetselect/wmnetselect_0.85-6.dsc
+
+I would be glad if someone uploaded this package for me.
+
+Kind regards
+ Sandro Tosi
+
+
+-- 
+Sandro Tosi (aka morph, Morpheus, matrixhasu)
+My website: http://matrixhasu.altervista.org/
+Me at Debian: http://wiki.debian.org/SandroTosi
+
+
