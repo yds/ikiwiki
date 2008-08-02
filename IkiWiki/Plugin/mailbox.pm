@@ -10,11 +10,26 @@ use warnings;
 use strict;
 use IkiWiki 2.00;
 use Email::Folder;
+use Email::Thread;
 use CGI 'escapeHTML';
+use Data::Dumper;
+
+my %metaheaders;
 
 sub import { #{{{
 	hook(type => "preprocess", id => "mailbox", call => \&preprocess);
+	hook(type => "scan", id => "mailbox", call => \&scan);
+	hook(type => "pagetemplate", id=>"mailbox", call => \&pagetemplate);
 } # }}}
+
+sub scan(@){
+	my %params=@_;
+	my $page=$params{page};
+
+	debug('calling scan');
+	push @{$metaheaders{$page}}, 
+	       '<link rel="stylesheet" href="mailbox.css" type="text/css"/>'
+}
 
 sub preprocess (@) { #{{{
 	my %params=@_;
@@ -23,6 +38,11 @@ sub preprocess (@) { #{{{
 	my $type=$params{type} || 'maildir';
 
 	my $path=$params{path} ||  error gettext("missing parameter") . " path";
+	
+	my $output="";
+
+	# hmm, this should probably only be inserted once per page.
+	$output .= htmllink($page,$page,"mailbox.css",rel=>"stylesheet",type=>"text/css");
 
 	# note, mbox is not a directory, needs to be special cased
 	my $dir=bestdir($page,$params{path}) || 
@@ -30,8 +50,9 @@ sub preprocess (@) { #{{{
 
 	$params{path} = $config{srcdir} ."/" . $dir;
 
-	return  format_mailbox(path=>$dir,%params);
+	$output.=  format_mailbox(path=>$dir,%params);
 
+	return $output;
 } # }}}
 
 
@@ -42,8 +63,36 @@ sub format_mailbox(@){
     my $path=$params{path} || error("path parameter mandatory");
 
     my $folder=Email::Folder->new($path) || error("mailbox could not be opened");
-    return join "\n", map { format_message(message=>$_) } $folder->messages;
+    my $threader=new Email::Thread($folder->messages);
 
+    $threader->thread();
+
+    return join "\n", map { format_thread(thread=>$_) } $threader->rootset;
+}
+
+sub format_thread(@){
+    my %params=@_;
+    
+    my $thread=$params{thread} || error gettext("missing parameter") . "thread";
+
+    my $output="";
+
+    if ($thread->message) {
+	$output .= format_message(message=>$thread->message);
+    } else {
+	$output .= sprintf gettext("Message %s not available"), $thread;
+    }
+
+    if ($thread->child){
+	$output .= '<div class="emailthreadindent">' .
+	    format_thread(thread=>$thread->child).
+	    '</div>';
+    }
+
+    if ($thread->next){
+	$output .= format_thread(thread=>$thread->next);
+    }
+    return $output;
 }
 
 sub make_pair($$){
@@ -81,7 +130,7 @@ sub format_message(@){
 sub format_body($){
     my $body=shift;
 
-    # it is not completely clear to me the right way to go here.  some
+    # it is not completely clear to me the right way to go here.  
     # passing things straight to markdown is not working all that
     # well.
     return "<pre>".escapeHTML($body)."</pre>";
@@ -120,25 +169,19 @@ sub bestdir ($$) { #{{{
        return "";
 } #}}}
 
+sub pagetemplate (@) { #{{{
+	my %params=@_;
+        my $page=$params{page};
+        my $destpage=$params{destpage};
+        my $template=$params{template};
 
-
-sub fill_template(@){
-    my  %params=@_;
-    my $template = $params{template} || error gettext("missing parameter");
-
-    $params{basename}=IkiWiki::basename($params{page});
-
-    foreach my $param (keys %params) {
-	if ($template->query(name => $param)) {
-	    $template->param($param =>
-			     IkiWiki::htmlize($params{page}, $params{destpage},
-					      pagetype($pagesources{$params{page}}),
-					      $params{$param}));
+	if (exists $metaheaders{$page} && $template->query(name => "meta")) {
+		# avoid duplicate meta lines
+		my %seen;
+		$template->param(meta => join("\n", grep { (! $seen{$_}) && ($seen{$_}=1) } @{$metaheaders{$page}}));
 	}
-	if ($template->query(name => "raw_$param")) {
-	    $template->param("raw_$param" => $params{$param});
-	}
-    }
 }
 
-1
+
+
+1;

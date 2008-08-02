@@ -1,0 +1,16 @@
+
+/* ikiwiki local style sheet */
+
+/* Add local styling here, instead of modifying style.css. */
+
+
+
+
+.headername {
+font-weight: bold;
+  }
+
+.emailthreadindent{
+position: relative;
+left: 5%;
+}
