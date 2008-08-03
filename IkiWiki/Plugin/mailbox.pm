@@ -39,10 +39,7 @@ sub preprocess (@) { #{{{
 
 	my $path=$params{path} ||  error gettext("missing parameter") . " path";
 	
-	my $output="";
-
 	# hmm, this should probably only be inserted once per page.
-	$output .= htmllink($page,$page,"mailbox.css",rel=>"stylesheet",type=>"text/css");
 
 	# note, mbox is not a directory, needs to be special cased
 	my $dir=bestdir($page,$params{path}) || 
@@ -50,9 +47,8 @@ sub preprocess (@) { #{{{
 
 	$params{path} = $config{srcdir} ."/" . $dir;
 
-	$output.=  format_mailbox(path=>$dir,%params);
+	return  format_mailbox(path=>$dir,%params);
 
-	return $output;
 } # }}}
 
 
