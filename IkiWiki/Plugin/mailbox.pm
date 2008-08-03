@@ -4,10 +4,13 @@
 # Copyright (c) 2008 David Bremner <bremner@unb.ca>
 # This file is distributed under the Artistic License/GPL2+
 
+use Email::MIME;
+package Email::MIMEFolder;
+use base 'Email::Folder';
+sub bless_message { return  Email::MIME->new($_[1]) };
+
 package IkiWiki::Plugin::mailbox;
 
-use warnings;
-use strict;
 use IkiWiki 2.00;
 use Email::Folder;
 use Email::Thread;
@@ -26,7 +29,6 @@ sub scan(@){
 	my %params=@_;
 	my $page=$params{page};
 
-	debug('calling scan');
 	push @{$metaheaders{$page}}, 
 	       '<link rel="stylesheet" href="mailbox.css" type="text/css"/>'
 }
@@ -58,7 +60,7 @@ sub format_mailbox(@){
     my %params=@_;
     my $path=$params{path} || error("path parameter mandatory");
 
-    my $folder=Email::Folder->new($path) || error("mailbox could not be opened");
+    my $folder=Email::MIMEFolder->new($path) || error("mailbox could not be opened");
     my $threader=new Email::Thread($folder->messages);
 
     $threader->thread();
@@ -111,15 +113,21 @@ sub format_message(@){
     
     my $template= 
 	template("email.tmpl") || error gettext("missing template");
-    
+
+    my $output="";
+
     my @names = grep  {m/$keep_headers/;}  ($message->header_names);
     my @headers=map { make_pair($message,$_) } @names;
     
 
     $template->param(HEADERS=>[@headers]);
-    $template->param(body=>format_body($message->body));
 
-    my $output=$template->output();
+
+    my $body= join("\n", map { $_->body }  $message->parts);
+
+    $template->param(body=>format_body($body));
+
+    $output .= $template->output();
     return $output;
 }
 

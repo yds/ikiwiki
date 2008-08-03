@@ -3,4 +3,5 @@ Required perl modules (only top level dependencies are listed)
 
 Email::Folder
 Email::Thread
+Email::Mime
 CGI (distributed with perl 5.10.0; maybe before?)
