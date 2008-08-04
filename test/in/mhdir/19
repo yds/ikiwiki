@@ -1,0 +1,112 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Wed Jul 30 15:30:29 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Wed, 30 Jul 2008 15:30:29 -0300
+Received: from mailserv4.its.unb.ca ([131.202.1.27])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KOGRR-0006Uq-Dy
+	for bremner@pivot.cs.unb.ca; Wed, 30 Jul 2008 15:30:29 -0300
+Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
+	by mailserv4.its.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6UIULNv000743
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 15:30:24 -0300
+Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id BBAA2444024
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 15:30:21 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id 81B83444011
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 15:30:21 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 138DA13A58CC; Wed, 30 Jul 2008 18:30:19 +0000 (UTC)
+Old-Return-Path: <toots@rastageeks.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-11.0 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST
+	autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id E3D1913A56DA
+	for <lists-debian-mentors@liszt.debian.org>; Wed, 30 Jul 2008 18:30:12 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 14209-01 for <lists-debian-mentors@liszt.debian.org>;
+	Wed, 30 Jul 2008 18:30:10 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_FROM_MX=-3.1 <client=88.191.17.132> <helo=mail.rastageeks.org> <from=toots@rastageeks.org> <to=debian-mentors@lists.debian.org>, rate: -6.1
+Received: from mail.rastageeks.org (www.rastageeks.org [88.191.17.132])
+	by liszt.debian.org (Postfix) with ESMTP id 7AC3013A56C4
+	for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 18:30:00 +0000 (UTC)
+Received: from ras-macintosh.local (rob92-9-88-161-115-205.fbx.proxad.net [88.161.115.205])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mail.rastageeks.org (Postfix) with ESMTP id DBC51A421E;
+	Wed, 30 Jul 2008 20:29:57 +0200 (CEST)
+From: Romain Beauxis <toots@rastageeks.org>
+To: debian-mentors@lists.debian.org
+Subject: Re: versioned Build-Depends on debhelper
+Date: Wed, 30 Jul 2008 20:30:15 +0200
+User-Agent: KMail/1.9.9
+Cc: Stanislav Maslovski <stanislav.maslovski@gmail.com>
+References: <20080730182218.GA23851@shota.mine.nu>
+In-Reply-To: <20080730182218.GA23851@shota.mine.nu>
+MIME-Version: 1.0
+Content-Type: text/plain;
+  charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+Message-Id: <200807302030.15264.toots@rastageeks.org>
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv4.its.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-5 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <TJuzkY0b7oO.A.SoE.6MLkIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42394
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Wed, 30 Jul 2008 18:30:19 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.30.181052
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_700_799 0, __BOUNCE_CHALLENGE_SUBJ 0, __CD 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+Le Wednesday 30 July 2008 20:22:18 Stanislav Maslovski, vous avez =E9crit=
+=A0:
+> Hello again,
+
+	Hi !
+
+> My sponsor asked me to delete versioned build dependency on
+> debhelper. I had it in the form "debhelper (>=3D 5)" and changed
+> it to just "debhelper". I am wondering if this is right.
+>
+> In debian/compat I put "5".
+
+Why didn't you ask him directly ?
+
+I believe the fact that current etch already sips debhelper >=3D 5
+makes this versioned build-dep void..
+
+
+Romain
+=2D-=20
+And all the crowd comes in day by day
+No one stop it in anyway
+And all the peacemaker turn war officer
+Hear what I say
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

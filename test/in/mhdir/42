@@ -1,0 +1,128 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Sat Aug 02 20:53:06 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Sat, 02 Aug 2008 20:53:06 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KPQuI-0001gf-57
+	for bremner@pivot.cs.unb.ca; Sat, 02 Aug 2008 20:53:06 -0300
+Received: from mx3.nbpei-ecn.ca (mx3.nbpei-ecn.ca [198.164.163.196])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m72NqwAq018154
+	for <bremner@unb.ca>; Sat, 2 Aug 2008 20:53:01 -0300
+Received: from mx3.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 86A331050DD
+	for <bremner@unb.ca>; Sat,  2 Aug 2008 20:52:58 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx3.nbpei-ecn.ca (Postfix) with ESMTP id 2A7BC104EE6
+	for <bremner@unb.ca>; Sat,  2 Aug 2008 20:52:58 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4389D13A53BD; Sat,  2 Aug 2008 23:52:53 +0000 (UTC)
+Old-Return-Path: <kibi@ikibiki.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.7 required=4.0 tests=ALL_TRUSTED,LDO_WHITELIST,
+	MENTORSRFS,MURPHY_DRUGS_REL8 autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 7F88913A50EA
+	for <lists-debian-mentors@liszt.debian.org>; Sat,  2 Aug 2008 23:52:46 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 11018-42 for <lists-debian-mentors@liszt.debian.org>;
+	Sat, 2 Aug 2008 23:52:43 +0000 (UTC)
+Received: from dedibox.ebzao.info (ipv6.ebzao.info [IPv6:2001:6f8:385::2])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client CN "dedibox.ebzao.info", Issuer "CA Cert Signing Authority" (not verified))
+	by liszt.debian.org (Postfix) with ESMTP id 3485513A529B
+	for <debian-mentors@lists.debian.org>; Sat,  2 Aug 2008 23:52:43 +0000 (UTC)
+Received: from localhost (localhost [127.0.0.1])
+	by dedibox.ebzao.info (Postfix) with ESMTP id A78616BC3
+	for <debian-mentors@lists.debian.org>; Sun,  3 Aug 2008 01:52:40 +0200 (CEST)
+Received: from dedibox.ebzao.info ([127.0.0.1])
+	by localhost (dedibox.ebzao.info [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id uCG--XIkewod for <debian-mentors@lists.debian.org>;
+	Sun,  3 Aug 2008 01:52:40 +0200 (CEST)
+Received: from evy.ikibiki.org (localhost [127.0.0.1])
+	(using TLSv1 with cipher ADH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by dedibox.ebzao.info (Postfix) with ESMTPS id 80F48501E
+	for <debian-mentors@lists.debian.org>; Sun,  3 Aug 2008 01:52:40 +0200 (CEST)
+Received: by evy.ikibiki.org (Postfix, from userid 1000)
+	id 6299D8877; Sun,  3 Aug 2008 01:52:04 +0200 (CEST)
+Date: Sun, 3 Aug 2008 01:52:04 +0200
+From: Cyril Brulebois <kibi@debian.org>
+To: debian-mentors@lists.debian.org
+Subject: Re: RFS: scrot (updated package)
+Message-ID: <20080802235204.GV4563@ikibiki.org>
+References: <b3e93d820808012149u58d99ba2y54690a7f2092c9fa@mail.gmail.com> <20080802052053.GO14057@debianrules.debiancolombia.org> <87tze37zkz.fsf@benfinney.id.au>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="fJQl6v7wpCzjkhZo"
+Content-Disposition: inline
+In-Reply-To: <87tze37zkz.fsf@benfinney.id.au>
+Organization: Debian
+User-Agent: Mutt/1.5.18 (2008-05-17)
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-8.945 tagged_above=3.6 required=5.3
+	tests=[ALL_TRUSTED=-1.665, BAYES_00=-2, LDO_WHITELIST=-5,
+	MENTORSRFS=-0.3, MURPHY_DRUGS_REL8=0.02]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <NIwf4nwt4vL.A.NuE.VNPlIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42461
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Sat,  2 Aug 2008 23:52:53 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.8.2.233611
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_900_999 0, __BOUNCE_CHALLENGE_SUBJ 0, __CD 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+
+--fJQl6v7wpCzjkhZo
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+Ben Finney <ben+debian@benfinney.id.au> (03/08/2008):
+> The "quilt" format is favoured by many, but is certainly not mandatory
+> nor even "best practice".
+
+That could be understood as the dpkg quilt format. While what is
+favoured is only using quilt to manage the patches, which makes a huge
+difference.
+
+Mraw,
+KiBi.
+
+--fJQl6v7wpCzjkhZo
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEARECAAYFAkiU8yMACgkQeGfVPHR5Nd2f+gCfdetUIKnuduPRi4FywDJAiJGp
+2cYAn2YpAtmjTC4ss4RXiPmw8igmKrPX
+=AOum
+-----END PGP SIGNATURE-----
+
+--fJQl6v7wpCzjkhZo--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,112 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Thu Jul 31 23:23:36 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Thu, 31 Jul 2008 23:23:36 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KOkIq-0006Y2-MW
+	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 23:23:36 -0300
+Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m712NSG8017198
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 23:23:31 -0300
+Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id C8A8E44407E
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 23:23:28 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id 636C1444069
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 23:23:28 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 264BA13A53A2; Fri,  1 Aug 2008 02:23:25 +0000 (UTC)
+Old-Return-Path: <thomas@goirand.fr>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-11.0 required=4.0 tests=FOURLA,LDOSUBSCRIBER,
+	LDO_WHITELIST,MENTORSRFS,MISSING_HEADERS autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id EEFE813A5363
+	for <lists-debian-mentors@liszt.debian.org>; Fri,  1 Aug 2008 02:23:18 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 24183-39 for <lists-debian-mentors@liszt.debian.org>;
+	Fri, 1 Aug 2008 02:23:16 +0000 (UTC)
+X-policyd-weight: using cached result; rate: -6.1
+X-Greylist: delayed 1664 seconds by postgrey-1.27 at liszt; Fri, 01 Aug 2008 02:23:15 UTC
+Received: from node0103.gplhost.net (node0103.gplhost.net [66.251.193.20])
+	by liszt.debian.org (Postfix) with ESMTP id E76BA13A5321
+	for <debian-mentors@lists.debian.org>; Fri,  1 Aug 2008 02:23:09 +0000 (UTC)
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by node0103.gplhost.net (Postfix) with ESMTP id 590C926C0F2
+	for <debian-mentors@lists.debian.org>; Fri,  1 Aug 2008 01:56:32 +0000 (UTC)
+Received: from node0103.gplhost.net ([127.0.0.1])
+	by localhost (node0103.gplhost.net [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id mbKYePU1uB0u for <debian-mentors@lists.debian.org>;
+	Fri,  1 Aug 2008 01:56:26 +0000 (UTC)
+Received: from [127.0.0.1] (unknown [203.174.86.99])
+	by node0103.gplhost.net (Postfix) with ESMTP id 6458126C009
+	for <debian-mentors@lists.debian.org>; Fri,  1 Aug 2008 01:56:25 +0000 (UTC)
+Message-ID: <48926CC3.9090903@goirand.fr>
+Date: Fri, 01 Aug 2008 09:54:11 +0800
+From: Thomas Goirand <thomas@goirand.fr>
+Organization: GPLHost
+User-Agent: Icedove 1.5.0.14eol (X11/20080724)
+MIME-Version: 1.0
+CC: debian-mentors@lists.debian.org
+Subject: Re: RFS: paris-traceroute (updated package)
+References: <d8ec8f980807310700v27d87b18v88e1bfebaa552790@mail.gmail.com>
+In-Reply-To: <d8ec8f980807310700v27d87b18v88e1bfebaa552790@mail.gmail.com>
+X-Enigmail-Version: 0.94.2.0
+OpenPGP: id=98EF9A49
+Content-Type: text/plain; charset=UTF-8
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-3.301 tagged_above=3.6 required=5.3
+	tests=[FOURLA=0.1, LDO_WHITELIST=-5, MENTORSRFS=-0.3,
+	MISSING_HEADERS=1.899]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <957YKC5xygJ.A.KaB.dOnkIB@liszt>
+To: debian-mentors@lists.debian.org
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42426
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Fri,  1 Aug 2008 02:23:25 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.8.1.20811
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_600_699 0, __BOUNCE_CHALLENGE_SUBJ 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+Content-Transfer-Encoding: quoted-printable
+X-MIME-Autoconverted: from 8bit to quoted-printable by mailserv2.unb.ca id m712NSG8017198
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+Herv=C3=A9 Rousseau wrote:
+> Dear mentors,
+>=20
+> I am looking for a sponsor for the new version 0.92-dev-2
+> of my package "paris-traceroute".
+>=20
+> It builds these binary packages:
+> paris-traceroute - New version of well known tool traceroute
+
+What's the advantage of paris-traceroute comparing to the old one and to
+mtr (and mtr-tiny) for example? If it does the same, or less than the
+other 2, it's useless to work on it, IMHO.
+
+Thomas
+
+
+--=20
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

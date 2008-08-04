@@ -1,0 +1,1304 @@
+From - Sun Aug 03 21:06:32 2008
+X-Mozilla-Status: 0011
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+>From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 06:44:00 2008
+Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Thu, 31 Jul 2008 06:44:00 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
+	id 1KOUhT-0004Mn-8O
+	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 06:44:00 -0300
+Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6V9hpij017380
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 06:43:54 -0300
+Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 7FCF2444018
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 06:43:51 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id 1F1F044404E
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 06:43:51 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D01AE13A6323; Thu, 31 Jul 2008 09:43:48 +0000 (UTC)
+Old-Return-Path: <debian-kde@m.gmane.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-11.0 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST
+	autolearn=failed version=3.2.3
+X-Original-To: lists-debian-kde@liszt.debian.org
+Delivered-To: lists-debian-kde@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 9F4D613A631A
+	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 09:43:42 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 05963-61 for <lists-debian-kde@liszt.debian.org>;
+	Thu, 31 Jul 2008 09:43:39 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_FROM_IP=-2 (check from: .gmane. - helo: .ciao.gmane. - helo-domain: .gmane.)  FROM/MX_MATCHES_HELO(DOMAIN)=-2 <client=80.91.229.2> <helo=ciao.gmane.org> <from=debian@m.gmane.org> <to=debian-kde@lists.debian.org>, rate: -7
+Received: from ciao.gmane.org (main.gmane.org [80.91.229.2])
+	(using TLSv1 with cipher AES256-SHA (256/256 bits))
+	(Client did not present a certificate)
+	by liszt.debian.org (Postfix) with ESMTP id AA8DB13A630C
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 09:43:33 +0000 (UTC)
+Received: from list by ciao.gmane.org with local (Exim 4.43)
+	id 1KOUh0-0006p9-Ng
+	for debian-kde@lists.debian.org; Thu, 31 Jul 2008 09:43:30 +0000
+Received: from x1-6-00-1b-2f-09-8e-4f.k132.webspeed.dk ([80.163.18.233])
+        by main.gmane.org with esmtp (Gmexim 0.1 (Debian))
+        id 1AlnuQ-0007hv-00
+        for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 09:43:30 +0000
+Received: from bofhenator by x1-6-00-1b-2f-09-8e-4f.k132.webspeed.dk with local (Gmexim 0.1 (Debian))
+        id 1AlnuQ-0007hv-00
+        for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 09:43:30 +0000
+X-Injected-Via-Gmane: http://gmane.org/
+To: debian-kde@lists.debian.org
+From: Magnus Pedersen <bofhenator@gmail.com>
+Subject:  Re: Do you now when amarok 2 pakages in experimental?
+Date:  Thu, 31 Jul 2008 11:43:18 +0200
+Lines: 34
+Message-ID: <g6s1fp$2hr$1@ger.gmane.org>
+References:  <200807311046.37761.basaburu@basatu.org>
+Mime-Version:  1.0
+Content-Type:  text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding:  7bit
+X-Complaints-To: usenet@ger.gmane.org
+X-Gmane-NNTP-Posting-Host: x1-6-00-1b-2f-09-8e-4f.k132.webspeed.dk
+User-Agent: Mozilla-Thunderbird 2.0.0.14 (X11/20080509)
+In-Reply-To: <200807311046.37761.basaburu@basatu.org>
+Sender: news <news@ger.gmane.org>
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-ht
+X-Amavis-Spam-Status: No, score=-5 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <ZKeL8o55GxM.A.qPB.UlYkIB@liszt>
+Resent-From: debian-kde@lists.debian.org
+X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28961
+X-Loop: debian-kde@lists.debian.org
+List-Id: <debian-kde.lists.debian.org>
+List-Post: <mailto:debian-kde@lists.debian.org>
+List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-kde-request@lists.debian.org
+Resent-Date: Thu, 31 Jul 2008 09:43:48 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.93122
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1200_1299 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __CP_MEDIA_2_BODY 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __FRAUD_419_WEBMAIL 0, __FRAUD_419_WEBMAIL_FROM 0, __FROM_GMAIL 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
+
+BasaBuru wrote:
+> Aupa
+> 
+> I liked amarok, and i look any pages with them, amarok 2 beta, is prety.
+> 
+> I'm compile beta 2 but isn't boot.
+> 
+> the message is very extrange.
+> 
+> said:
+> 
+> Amarok could not find any collection plugins. Amarok is now updating the KDE 
+> configuration database. Please wait a couple of minutes, then restart Amarok.
+> If this does not help, it is likely that Amarok is installed under the wrong 
+> prefix, please fix your installation using:
+> $ cd /path/to/amarok/source-code/
+> $ su -c "make uninstall"
+> $ ./configure --prefix=`kde-config --prefix` && su -c "make install"
+> $ kbuildsycoca4
+> $ amarok
+> the solution is absurd, for compile beta 2 you must be use cmake, isn't 
+> .configure
+> I'm look for information on the net and nothing. :) i'm a few inutil, think so
+> I'm think is more well and confiable if the kde team, compile packages for us.
+> izan funtsa
+> BasaBuru
+> 
+> 
+> 
+> 
+You could try these: 
+http://www.kde-apps.org/content/show.php/Amarok+2?content=85474
+
+/Magnus
+
+
+-- 
+To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+
+
+From - Sun Aug 03 21:06:32 2008
+X-Mozilla-Status: 0011
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+>From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 07:09:23 2008
+Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Thu, 31 Jul 2008 07:09:23 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
+	id 1KOV63-0004Oh-UI
+	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 07:09:23 -0300
+Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VA9GrH022248
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 07:09:18 -0300
+Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 396E8444059
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 07:09:16 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id CC84C444007
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 07:09:15 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A633013A637E; Thu, 31 Jul 2008 10:09:13 +0000 (UTC)
+Old-Return-Path: <ana@debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=0.0 required=4.0 tests=none autolearn=no version=3.2.3
+X-Original-To: lists-debian-kde@liszt.debian.org
+Delivered-To: lists-debian-kde@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id B525D13A631A
+	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 09:51:42 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 32688-36 for <lists-debian-kde@liszt.debian.org>;
+	Thu, 31 Jul 2008 09:51:39 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_MX=-3.1 (check from: .debian. - helo: .ekaia. - helo-domain: .ekaia.)  FROM/MX_MATCHES_NOT_HELO(DOMAIN)=0 <client=70.87.222.228> <helo=ekaia.org> <from=ana@debian.org> <to=debian-kde@lists.debian.org>, rate: -6.1
+Received: from ekaia.org (ekaia.org [70.87.222.228])
+	by liszt.debian.org (Postfix) with ESMTP id BD45313A631D
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 09:51:33 +0000 (UTC)
+Received: by ekaia.org (Postfix, from userid 1001)
+	id AA39F298202; Thu, 31 Jul 2008 11:51:28 +0200 (CEST)
+Date: Thu, 31 Jul 2008 11:51:28 +0200
+From: Ana Guerrero <ana@debian.org>
+To: Magnus Pedersen <bofhenator@gmail.com>
+Cc: debian-kde@lists.debian.org
+Subject: Re: Do you now when amarok 2 pakages in experimental?
+Message-ID: <20080731095128.GA13782@ekaia.org>
+References: <200807311046.37761.basaburu@basatu.org> <g6s1fp$2hr$1@ger.gmane.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <g6s1fp$2hr$1@ger.gmane.org>
+User-Agent: Mutt/1.5.13 (2006-08-11)
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-ht
+X-Amavis-Spam-Status: No, score=0 tagged_above=3.6 required=5.3 tests=[none]
+X-Rc-Spam: 2007-10-04_01
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <qyLe6HB8GQ.A.KtG.J9YkIB@liszt>
+Resent-From: debian-kde@lists.debian.org
+X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28962
+X-Loop: debian-kde@lists.debian.org
+List-Id: <debian-kde.lists.debian.org>
+List-Post: <mailto:debian-kde@lists.debian.org>
+List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-kde-request@lists.debian.org
+Resent-Date: Thu, 31 Jul 2008 10:09:13 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.95517
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1500_1599 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __CD 0, __CP_MEDIA_2_BODY 0, __CP_URI_IN_BODY 0, __CT 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
+
+On Thu, Jul 31, 2008 at 11:43:18AM +0200, Magnus Pedersen wrote:
+> BasaBuru wrote:
+> >Aupa
+> >
+> >I liked amarok, and i look any pages with them, amarok 2 beta, is prety.
+> >
+> >I'm compile beta 2 but isn't boot.
+> >
+> >the message is very extrange.
+> >
+> >said:
+> >
+> >Amarok could not find any collection plugins. Amarok is now updating the 
+> >KDE configuration database. Please wait a couple of minutes, then restart 
+> >Amarok.
+> >If this does not help, it is likely that Amarok is installed under the 
+> >wrong prefix, please fix your installation using:
+> >$ cd /path/to/amarok/source-code/
+> >$ su -c "make uninstall"
+> >$ ./configure --prefix=`kde-config --prefix` && su -c "make install"
+> >$ kbuildsycoca4
+> >$ amarok
+> >the solution is absurd, for compile beta 2 you must be use cmake, isn't 
+> >.configure
+> >I'm look for information on the net and nothing. :) i'm a few inutil, 
+> >think so
+> >I'm think is more well and confiable if the kde team, compile packages for 
+> >us.
+> >izan funtsa
+> >BasaBuru
+> >
+> >
+> >
+> >
+> You could try these: 
+> http://www.kde-apps.org/content/show.php/Amarok+2?content=85474
+>
+
+Please do not recommend non official stuff... quality can be good or not so
+good, and they can break your system.
+AFAIK, current amarok's mantainer have not uploaded packages yet because they
+are too much experimental :) 
+
+Ana
+
+
+-- 
+To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+
+
+From - Sun Aug 03 21:06:32 2008
+X-Mozilla-Status: 0011
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+>From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 07:38:39 2008
+Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Thu, 31 Jul 2008 07:38:39 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
+	id 1KOVYN-0004S8-MM
+	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 07:38:39 -0300
+Received: from mx3.nbpei-ecn.ca (mx3.nbpei-ecn.ca [198.164.163.196])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VAcWDr029707
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 07:38:34 -0300
+Received: from mx3.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 1559FDADBF
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 07:38:32 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx3.nbpei-ecn.ca (Postfix) with ESMTP id 97B02DAD99
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 07:38:31 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id CE6F713A58A7; Thu, 31 Jul 2008 10:38:29 +0000 (UTC)
+Old-Return-Path: <debian-kde@m.gmane.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-10.9 required=4.0 tests=FOURLA,LDOSUBSCRIBER,
+	LDO_WHITELIST autolearn=failed version=3.2.3
+X-Original-To: lists-debian-kde@liszt.debian.org
+Delivered-To: lists-debian-kde@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 770A313A581A
+	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 10:38:23 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 30550-27 for <lists-debian-kde@liszt.debian.org>;
+	Thu, 31 Jul 2008 10:38:20 +0000 (UTC)
+X-policyd-weight: using cached result; rate: -7
+Received: from ciao.gmane.org (main.gmane.org [80.91.229.2])
+	(using TLSv1 with cipher AES256-SHA (256/256 bits))
+	(Client did not present a certificate)
+	by liszt.debian.org (Postfix) with ESMTP id 48E3A13A5824
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 10:38:14 +0000 (UTC)
+Received: from list by ciao.gmane.org with local (Exim 4.43)
+	id 1KOVXs-0000mQ-K3
+	for debian-kde@lists.debian.org; Thu, 31 Jul 2008 10:38:08 +0000
+Received: from x1-6-00-1b-2f-09-8e-4f.k132.webspeed.dk ([80.163.18.233])
+        by main.gmane.org with esmtp (Gmexim 0.1 (Debian))
+        id 1AlnuQ-0007hv-00
+        for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 10:38:08 +0000
+Received: from bofhenator by x1-6-00-1b-2f-09-8e-4f.k132.webspeed.dk with local (Gmexim 0.1 (Debian))
+        id 1AlnuQ-0007hv-00
+        for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 10:38:08 +0000
+X-Injected-Via-Gmane: http://gmane.org/
+To: debian-kde@lists.debian.org
+From: Magnus Pedersen <bofhenator@gmail.com>
+Subject:  Re: Do you now when amarok 2 pakages in experimental?
+Date:  Thu, 31 Jul 2008 12:37:55 +0200
+Lines: 14
+Message-ID: <g6s4m6$d3t$1@ger.gmane.org>
+References:  <200807311046.37761.basaburu@basatu.org> <g6s1fp$2hr$1@ger.gmane.org> <20080731095128.GA13782@ekaia.org>
+Mime-Version:  1.0
+Content-Type:  text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding:  7bit
+X-Complaints-To: usenet@ger.gmane.org
+X-Gmane-NNTP-Posting-Host: x1-6-00-1b-2f-09-8e-4f.k132.webspeed.dk
+User-Agent: Mozilla-Thunderbird 2.0.0.14 (X11/20080509)
+In-Reply-To: <20080731095128.GA13782@ekaia.org>
+Sender: news <news@ger.gmane.org>
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-ht
+X-Amavis-Spam-Status: No, score=-4.9 tagged_above=3.6 required=5.3 tests=[FOURLA=0.1,
+	LDO_WHITELIST=-5]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <tEIX1g15Q4O.A.VZF.lYZkIB@liszt>
+Resent-From: debian-kde@lists.debian.org
+X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28963
+X-Loop: debian-kde@lists.debian.org
+List-Id: <debian-kde.lists.debian.org>
+List-Post: <mailto:debian-kde@lists.debian.org>
+List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-kde-request@lists.debian.org
+Resent-Date: Thu, 31 Jul 2008 10:38:29 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.101655
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_600_699 0, __BOUNCE_CHALLENGE_SUBJ 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __FRAUD_419_WEBMAIL 0, __FRAUD_419_WEBMAIL_FROM 0, __FROM_GMAIL 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
+
+Ana Guerrero wrote:
+>> You could try these: 
+>> http://www.kde-apps.org/content/show.php/Amarok+2?content=85474
+>>
+> 
+> Please do not recommend non official stuff... quality can be good or not so
+> good, and they can break your system.
+> AFAIK, current amarok's mantainer have not uploaded packages yet because they
+> are too much experimental :) 
+
+I agree that the quality of non-official packages is an unknown, but 
+from there to not link to them is, IMHO, a long way?
+
+/Magnus
+
+
+-- 
+To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+
+
+From - Sun Aug 03 21:06:32 2008
+X-Mozilla-Status: 0011
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+>From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 09:09:20 2008
+Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Thu, 31 Jul 2008 09:09:20 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
+	id 1KOWy8-0004ac-PJ
+	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 09:09:20 -0300
+Received: from mx4.nbpei-ecn.ca (mx4.nbpei-ecn.ca [198.164.163.197])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VC9Ccr023473
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 09:09:15 -0300
+Received: from mx4.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id E22E87C4048
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 09:09:12 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx4.nbpei-ecn.ca (Postfix) with ESMTP id 9E01F7C4045
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 09:09:12 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E0CF713A61D2; Thu, 31 Jul 2008 12:09:10 +0000 (UTC)
+Old-Return-Path: <ana@debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=0.1 required=4.0 tests=FOURLA autolearn=no
+	version=3.2.3
+X-Original-To: lists-debian-kde@liszt.debian.org
+Delivered-To: lists-debian-kde@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 06CDD13A58BE
+	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 11:51:53 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 10922-70 for <lists-debian-kde@liszt.debian.org>;
+	Thu, 31 Jul 2008 11:51:50 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_MX=-3.1 (check from: .debian. - helo: .ekaia. - helo-domain: .ekaia.)  FROM/MX_MATCHES_NOT_HELO(DOMAIN)=0 <client=70.87.222.228> <helo=ekaia.org> <from=ana@debian.org> <to=debian-kde@lists.debian.org>, rate: -6.1
+Received: from ekaia.org (ekaia.org [70.87.222.228])
+	by liszt.debian.org (Postfix) with ESMTP id 05A3613A588D
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 11:51:43 +0000 (UTC)
+Received: by ekaia.org (Postfix, from userid 1001)
+	id 33B91298201; Thu, 31 Jul 2008 13:51:41 +0200 (CEST)
+Date: Thu, 31 Jul 2008 13:51:41 +0200
+From: Ana Guerrero <ana@debian.org>
+To: Magnus Pedersen <bofhenator@gmail.com>
+Cc: debian-kde@lists.debian.org
+Subject: Re: Do you now when amarok 2 pakages in experimental?
+Message-ID: <20080731115140.GA14760@ekaia.org>
+References: <200807311046.37761.basaburu@basatu.org> <g6s1fp$2hr$1@ger.gmane.org> <20080731095128.GA13782@ekaia.org> <g6s4m6$d3t$1@ger.gmane.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <g6s4m6$d3t$1@ger.gmane.org>
+User-Agent: Mutt/1.5.13 (2006-08-11)
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-ht
+X-Amavis-Spam-Status: No, score=0.1 tagged_above=3.6 required=5.3 tests=[FOURLA=0.1]
+X-Rc-Spam: 2007-10-04_01
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <kNQq8hTIx8B.A.-JG.mtakIB@liszt>
+Resent-From: debian-kde@lists.debian.org
+X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28964
+X-Loop: debian-kde@lists.debian.org
+List-Id: <debian-kde.lists.debian.org>
+List-Post: <mailto:debian-kde@lists.debian.org>
+List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-kde-request@lists.debian.org
+Resent-Date: Thu, 31 Jul 2008 12:09:10 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.115652
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_1099 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __CD 0, __CP_URI_IN_BODY 0, __CT 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
+
+On Thu, Jul 31, 2008 at 12:37:55PM +0200, Magnus Pedersen wrote:
+> Ana Guerrero wrote:
+> >>You could try these: 
+> >>http://www.kde-apps.org/content/show.php/Amarok+2?content=85474
+> >>
+> >
+> >Please do not recommend non official stuff... quality can be good or not so
+> >good, and they can break your system.
+> >AFAIK, current amarok's mantainer have not uploaded packages yet because 
+> >they
+> >are too much experimental :) 
+> 
+> I agree that the quality of non-official packages is an unknown, but 
+> from there to not link to them is, IMHO, a long way?
+>
+
+who said you can not link it? you do not know the knowledge of the person who
+you are answering so making a notice about it coming from non official repos
+(that are not supported), is a very good idea.
+I guess a better rewording of my email would be:" do not recommend non offcial
+stuff without stating it is non official and it could break your system".
+
+Ana
+
+
+-- 
+To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+
+
+From - Sun Aug 03 21:06:32 2008
+X-Mozilla-Status: 0011
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+>From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 09:45:19 2008
+Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Thu, 31 Jul 2008 09:45:19 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
+	id 1KOXWx-0004eP-8y
+	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 09:45:19 -0300
+Received: from mx3.nbpei-ecn.ca (mx3.nbpei-ecn.ca [198.164.163.196])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VCjBF1007758
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 09:45:14 -0300
+Received: from mx3.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id B3C59DCC9E
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 09:45:10 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx3.nbpei-ecn.ca (Postfix) with ESMTP id 5623CDCC9D
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 09:45:10 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 83A4313A6343; Thu, 31 Jul 2008 12:45:04 +0000 (UTC)
+Old-Return-Path: <basaburu@basatu.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-11.0 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST
+	autolearn=failed version=3.2.3
+X-Original-To: lists-debian-kde@liszt.debian.org
+Delivered-To: lists-debian-kde@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id F34EF13A6098
+	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 12:44:57 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 32041-99 for <lists-debian-kde@liszt.debian.org>;
+	Thu, 31 Jul 2008 12:44:55 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_IP=-2 (check from: .basatu. - helo: .mx1.grupoikusnet. - helo-domain: .grupoikusnet.)  FROM/MX_MATCHES_NOT_HELO(DOMAIN)=0 <client=91.121.11.45> <helo=mx1.grupoikusnet.com> <from=basaburu@basatu.org> <to=debian-kde@lists.debian.org>, rate: -5
+Received: from mx1.grupoikusnet.com (extranet.grupoikusnet.com [91.121.11.45])
+	by liszt.debian.org (Postfix) with ESMTP id 2814713A61D3
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 12:44:45 +0000 (UTC)
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mx1.grupoikusnet.com (Postfix) with ESMTP id F03181FA06
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 14:44:42 +0200 (CEST)
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: Debian amavisd-new at mx1.grupoikusnet.com
+Received: from mx1.grupoikusnet.com ([127.0.0.1])
+	by localhost (extranet.grupoikusnet.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id WEpXQrDzqn3W for <debian-kde@lists.debian.org>;
+	Thu, 31 Jul 2008 14:44:36 +0200 (CEST)
+Received: from hal.ikusnet.com (unknown [217.76.134.179])
+	by mx1.grupoikusnet.com (Postfix) with ESMTP id 8DBA3A9FE4
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 14:44:36 +0200 (CEST)
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by hal.ikusnet.com (Postfix) with ESMTP id EACF72FA868
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 14:44:35 +0200 (CEST)
+Received: from hal.ikusnet.com ([127.0.0.1])
+	by localhost (hal.ikusnet.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 19871-05 for <debian-kde@lists.debian.org>;
+	Thu, 31 Jul 2008 14:44:21 +0200 (CEST)
+Received: from basatu.localnet (238.Red-83-61-23.staticIP.rima-tde.net [83.61.23.238])
+	by hal.ikusnet.com (Postfix) with ESMTP id AFA352FA859
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 14:44:08 +0200 (CEST)
+From: BasaBuru <basaburu@basatu.org>
+To: debian-kde@lists.debian.org
+Subject: Re: Do you now when amarok 2 pakages in experimental?
+Date: Thu, 31 Jul 2008 14:44:22 +0200
+User-Agent: KMail/1.10.0 (Linux/2.6.26; KDE/4.1.0; x86_64; ; )
+References: <200807311046.37761.basaburu@basatu.org> <g6s1fp$2hr$1@ger.gmane.org>
+In-Reply-To: <g6s1fp$2hr$1@ger.gmane.org>
+MIME-Version: 1.0
+Content-Type: text/plain;
+  charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+Message-Id: <200807311444.22470.basaburu@basatu.org>
+X-Virus-Scanned: by amavisd-new-20030616-p10 (Debian) at ikusnet.com
+X-Virus-Scanned: at lists.debian.org with policy bank en-ht
+X-Amavis-Spam-Status: No, score=-5 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <rwvWICmFaYI.A._dG.QPbkIB@liszt>
+Resent-From: debian-kde@lists.debian.org
+X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28965
+X-Loop: debian-kde@lists.debian.org
+List-Id: <debian-kde.lists.debian.org>
+List-Post: <mailto:debian-kde@lists.debian.org>
+List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-kde-request@lists.debian.org
+Resent-Date: Thu, 31 Jul 2008 12:45:04 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.123116
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='FROM_NAME_ONE_WORD 0.05, BODY_SIZE_1000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_500_599 0, __BOUNCE_CHALLENGE_SUBJ 0, __CD 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
+
+El Thursday 31 July 2008 11:43:18 Magnus Pedersen escribi=F3:
+
+>
+> You could try these:
+> http://www.kde-apps.org/content/show.php/Amarok+2?content=3D85474
+
+Yes i now. but...
+
+1. Is unoffical, then you maybe have any problems.
+
+2. Is only for i386 i can't probe
+
+3. i'm not sure what is make compile.=20
+
+4. If official package is not, i prefer compile it's my self
+
+thanks for link
+
+BasaBuru
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+
+
+From - Sun Aug 03 21:06:32 2008
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+>From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 12:58:24 2008
+Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Thu, 31 Jul 2008 12:58:24 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
+	id 1KOaXo-0004xa-Dy
+	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 12:58:24 -0300
+Received: from mx4.nbpei-ecn.ca (mx4.nbpei-ecn.ca [198.164.163.197])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VFwDcw019086
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 12:58:19 -0300
+Received: from mx4.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 500E47C4050
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 12:58:18 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx4.nbpei-ecn.ca (Postfix) with ESMTP id E51617C4047
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 12:58:17 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4E2CD13A6442; Thu, 31 Jul 2008 15:58:16 +0000 (UTC)
+Old-Return-Path: <ferdinand@telegraafnet.nl>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-11.0 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST
+	autolearn=failed version=3.2.3
+X-Original-To: lists-debian-kde@liszt.debian.org
+Delivered-To: lists-debian-kde@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 2927513A5B97
+	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 15:58:10 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 20657-36 for <lists-debian-kde@liszt.debian.org>;
+	Thu, 31 Jul 2008 15:58:07 +0000 (UTC)
+X-policyd-weight: using cached result; rate: -6.1
+X-Greylist: delayed 474 seconds by postgrey-1.27 at liszt; Thu, 31 Jul 2008 15:58:07 UTC
+Received: from smtp0.telegraaf.nl (smtp0.telegraaf.nl [217.196.45.192])
+	by liszt.debian.org (Postfix) with ESMTP id 3BE8013A5213
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 15:58:01 +0000 (UTC)
+Received: from smtp0.telegraaf.nl (localhost [127.0.0.1])
+	by smtp0.telegraaf.nl (Postfix) with ESMTP id BDCB33682B0
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 17:49:58 +0200 (CEST)
+Received: from office.telegraafnet.nl (olijfje.telegraafnet.nl [10.41.0.9])
+	by smtp0.telegraaf.nl (Postfix) with ESMTP id B120F3680FD
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 17:49:58 +0200 (CEST)
+Received: by office.telegraafnet.nl (Postfix, from userid 1136)
+	id A25C81618E1; Thu, 31 Jul 2008 17:49:58 +0200 (CEST)
+Date: Thu, 31 Jul 2008 17:49:58 +0200
+To: debian-kde@lists.debian.org
+Subject: Upgrade was mostly fine, but a few problems left
+Message-ID: <20080731154958.GA5100@telegraafnet.nl>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.9i
+From: ferdinand@telegraafnet.nl (Ferdinand Smit)
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: ClamAV using ClamSMTP
+X-Virus-Scanned: at lists.debian.org with policy bank en-ht
+X-Amavis-Spam-Status: No, score=-5 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <mW8r_3DbNiE.A.lWC.YEekIB@liszt>
+Resent-From: debian-kde@lists.debian.org
+X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28966
+X-Loop: debian-kde@lists.debian.org
+List-Id: <debian-kde.lists.debian.org>
+List-Post: <mailto:debian-kde@lists.debian.org>
+List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-kde-request@lists.debian.org
+Resent-Date: Thu, 31 Jul 2008 15:58:16 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.154524
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_1099 0, BODY_SIZE_5000_LESS 0, __CD 0, __CT 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
+
+Hi,
+
+I've upgraded my system to 4.1 by aptitude -t experimental install kde4.
+It 
+looks a bit scary so i created backup and got the install done.
+
+The upgrade was fine ! Great job ! KDE 4.1 looks and works nice !
+
+But ... there are a few problems left, that i can not fix:
+* Where did my address book and my calender go in kontact ? Can i import
+* them 
+again in kontact 4.1 ? My mail and my mail settings seems fine.
+* At First my alt-tab was working accordingly the settings of "Desktop
+* Effects 
+Settings" but now is it only using some old alt-tab behavior and does it
+not 
+listen to changes in the "Desktop Effect Settings". Probably it's just a 
+setting somewhere, but i can not find it.
+* How do i added programs (-links) to the panel ?
+* The effects are a little bit slow on a 'Intel(R) Core(TM)2 Duo CPU
+* 2Gz, Intel 
+Mobile GM965/GL960'. Is that normal ?
+
+Regards,
+Ferdinand
+
+
+-- 
+To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+
+
+From - Sun Aug 03 21:06:32 2008
+X-Mozilla-Status: 0011
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+>From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 13:13:17 2008
+Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Thu, 31 Jul 2008 13:13:17 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
+	id 1KOamD-0004zE-4u
+	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 13:13:17 -0300
+Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VGD9kd024398
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 13:13:12 -0300
+Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 80493444072
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 13:13:09 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id 1E96544406B
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 13:13:09 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B7B0C13A6429; Thu, 31 Jul 2008 16:13:07 +0000 (UTC)
+Old-Return-Path: <perezmeyer@gmail.com>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BLOGSPOT,LDOSUBSCRIBER,
+	LDO_WHITELIST autolearn=failed version=3.2.3
+X-Original-To: lists-debian-kde@liszt.debian.org
+Delivered-To: lists-debian-kde@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 6E3D513A641E
+	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 16:13:01 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 09963-17 for <lists-debian-kde@liszt.debian.org>;
+	Thu, 31 Jul 2008 16:12:58 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_IP=-2 (check from: .gmail. - helo: .yw-out-1718.google. - helo-domain: .google.)  FROM/MX_MATCHES_HELO(DOMAIN)=-2 IN_PM_RFCI=0.1 <client=74.125.46.152> <helo=yw-out-1718.google.com> <from=perezmeyer@gmail.com> <to=debian-kde@lists.debian.org>, rate: -6.9
+Received: from yw-out-1718.google.com (yw-out-1718.google.com [74.125.46.152])
+	by liszt.debian.org (Postfix) with ESMTP id 74E1413A640E
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 16:12:43 +0000 (UTC)
+Received: by yw-out-1718.google.com with SMTP id 5so325711ywr.30
+        for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 09:12:41 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:from:to:subject:date
+         :user-agent:references:in-reply-to:x-face:mime-version:content-type
+         :content-transfer-encoding:message-id;
+        bh=+we4wAcRrH4ag8iPbvJhCKRs3Q7nc0bhm1sKf9KizQ0=;
+        b=TsQ5oqNsVyqLoqOA37pwZhtHDDRUgjkio3RtTwy8l6CtDTYVhsUNVoDuohjbY8tlmG
+         NCuaJF3eo/wwPALzjPDaUu64TsDyrWyM5p1KwhO0g5lk4lMt6/uShkOpR2OH+99gbYyo
+         HIYnsNtalHkocPDcJBY/GAmNzIF3SqwUroMNs=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=from:to:subject:date:user-agent:references:in-reply-to:x-face
+         :mime-version:content-type:content-transfer-encoding:message-id;
+        b=gNdQgzWEHj53XDmkNd8MOWLFgEi/xgvjzDMLGPfNab5Y65XXbodC2HAtOnhsgOgS+0
+         7LaWAbPPVOUaKRg12aH8IQyodKjZ9K+jOJ6YDGjw9OYI1MKoCWvb9ozM7nIBABmvqlw3
+         1homfskVCy3TYcGNotrQgzRUFFeNVFexSX/9w=
+Received: by 10.114.159.17 with SMTP id h17mr10332650wae.227.1217520760498;
+        Thu, 31 Jul 2008 09:12:40 -0700 (PDT)
+Received: from dumbledore.localnet ( [190.1.22.76])
+        by mx.google.com with ESMTPS id 5sm23293ywd.8.2008.07.31.09.12.38
+        (version=TLSv1/SSLv3 cipher=RC4-MD5);
+        Thu, 31 Jul 2008 09:12:39 -0700 (PDT)
+From: Lisandro =?iso-8859-1?q?Dami=E1n_Nicanor_P=E9rez_Meyer?= <perezmeyer@gmail.com>
+To: debian-kde@lists.debian.org
+Subject: Re: Upgrade was mostly fine, but a few problems left
+Date: Thu, 31 Jul 2008 13:12:34 -0300
+User-Agent: KMail/1.10.0 (Linux/2.6.25-2-686; KDE/4.1.0; i686; ; )
+References: <20080731154958.GA5100@telegraafnet.nl>
+In-Reply-To: <20080731154958.GA5100@telegraafnet.nl>
+X-Face: &O7POA^t$8Gq0El|^zM9V:*jgn,ETU\1A73;Zdeojd,G(a";/Y0Fu|/*_jQF+@3';#.O@
+ =?utf-8?q?=26=0A=09=2ET?="FaLh+5o_F,\lrKg~{JYYVM20<P[J.ve7:7m;51A=i@"XBI].=`ZFX4h@tGL>
+ =?utf-8?q?Q1I=26fUN=0A=094?=<\TGcR5=
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+  boundary="nextPart4479863.OBGFDyufmS";
+  protocol="application/pgp-signature";
+  micalg=pgp-sha1
+Content-Transfer-Encoding: 7bit
+Message-Id: <200807311312.34725.perezmeyer@gmail.com>
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-ht
+X-Amavis-Spam-Status: No, score=-2 tagged_above=3.6 required=5.3 tests=[BLOGSPOT=3,
+	LDO_WHITELIST=-5]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <gX2fvl-LMpM.A.j6F.TSekIB@liszt>
+Resent-From: debian-kde@lists.debian.org
+X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28967
+X-Loop: debian-kde@lists.debian.org
+List-Id: <debian-kde.lists.debian.org>
+List-Post: <mailto:debian-kde@lists.debian.org>
+List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-kde-request@lists.debian.org
+Resent-Date: Thu, 31 Jul 2008 16:13:07 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.155821
+X-PerlMx-Spam: Gauge=IIIIIIIII, Probability=9%, Report='BLOGSPOT_URI 0.5, BODY_ENDS_IN_URL_NOT_WWW 0, BODY_SIZE_1700_1799 0, BODY_SIZE_5000_LESS 0, ECARD_WORD 0, __BOUNCE_CHALLENGE_SUBJ 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __FRAUD_419_WEBMAIL 0, __FRAUD_419_WEBMAIL_FROM 0, __FROM_GMAIL 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
+
+--nextPart4479863.OBGFDyufmS
+Content-Type: text/plain;
+  charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+On Thursday 31 July 2008 12:49:58 Ferdinand Smit wrote:
+> Hi,
+>
+> I've upgraded my system to 4.1 by aptitude -t experimental install kde4.
+> It
+> looks a bit scary so i created backup and got the install done.
+>
+> The upgrade was fine ! Great job ! KDE 4.1 looks and works nice !
+>
+> But ... there are a few problems left, that i can not fix:
+> * Where did my address book and my calender go in kontact ? Can i import
+> * them
+> again in kontact 4.1 ? My mail and my mail settings seems fine.
+
+They didn't go. KDE 4 is using ~/.kde4 to store all data, while KDE 3 uses=
+=20
+~/.kde
+
+What I did was to copy ~./kde/share/ to ~./kd/share, in a console without k=
+de=20
+running. It is not the best solution I guess, but it worked for me.
+
+The rest I cannot say. I don't use effects as I have a %$&$%&$% NVidia card=
+=20
+
+=2D-=20
+La ciencia sin la religi=F3n es renga,
+la religi=F3n sin la ciencia es ciega.
+ Albert Einstein
+
+Lisandro Dami=E1n Nicanor P=E9rez Meyer
+http://perezmeyer.com.ar/
+http://perezmeyer.blogspot.com/
+
+
+--nextPart4479863.OBGFDyufmS
+Content-Type: application/pgp-signature; name=signature.asc 
+Content-Description: This is a digitally signed message part.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEABECAAYFAkiR5HIACgkQXGiQYciCD6cqhwCgiyYRq4EMSOvoG1kJxMapT0rw
+aR0An1kb8XxgZLnDXzNWmIh0woU4T+tQ
+=kHwS
+-----END PGP SIGNATURE-----
+
+--nextPart4479863.OBGFDyufmS--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+
+
+From - Sun Aug 03 21:06:32 2008
+X-Mozilla-Status: 0011
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+>From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 13:57:15 2008
+Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Thu, 31 Jul 2008 13:57:15 -0300
+Received: from mailserv4.its.unb.ca ([131.202.1.27])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
+	id 1KObSl-00054l-Fd
+	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 13:57:15 -0300
+Received: from mx4.nbpei-ecn.ca (mx4.nbpei-ecn.ca [198.164.163.197])
+	by mailserv4.its.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VGv56w017425
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 13:57:10 -0300
+Received: from mx4.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 1259C7C402F
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 13:57:09 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx4.nbpei-ecn.ca (Postfix) with ESMTP id AACC67C4028
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 13:57:08 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E3E2913A6460; Thu, 31 Jul 2008 16:55:27 +0000 (UTC)
+Old-Return-Path: <basaburu@basatu.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-11.0 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST
+	autolearn=failed version=3.2.3
+X-Original-To: lists-debian-kde@liszt.debian.org
+Delivered-To: lists-debian-kde@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 02D9513A6451
+	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 16:55:20 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 09963-68 for <lists-debian-kde@liszt.debian.org>;
+	Thu, 31 Jul 2008 16:55:14 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_IP=-2 (check from: .basatu. - helo: .mx1.grupoikusnet. - helo-domain: .grupoikusnet.)  FROM/MX_MATCHES_NOT_HELO(DOMAIN)=0 <client=91.121.11.45> <helo=mx1.grupoikusnet.com> <from=basaburu@basatu.org> <to=debian-kde@lists.debian.org>, rate: -5
+Received: from mx1.grupoikusnet.com (extranet.grupoikusnet.com [91.121.11.45])
+	by liszt.debian.org (Postfix) with ESMTP id 4026A13A6465
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 16:54:53 +0000 (UTC)
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mx1.grupoikusnet.com (Postfix) with ESMTP id 907111FA10
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 18:54:46 +0200 (CEST)
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv4.its.unb.ca
+X-Virus-Scanned: Debian amavisd-new at mx1.grupoikusnet.com
+Received: from mx1.grupoikusnet.com ([127.0.0.1])
+	by localhost (extranet.grupoikusnet.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id cz0CbvjYj-yn for <debian-kde@lists.debian.org>;
+	Thu, 31 Jul 2008 18:54:39 +0200 (CEST)
+Received: from hal.ikusnet.com (unknown [217.76.134.179])
+	by mx1.grupoikusnet.com (Postfix) with ESMTP id 5AE19A9FDD
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 18:54:39 +0200 (CEST)
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by hal.ikusnet.com (Postfix) with ESMTP id B44E42FA824
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 18:54:38 +0200 (CEST)
+Received: from hal.ikusnet.com ([127.0.0.1])
+	by localhost (hal.ikusnet.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 32414-09 for <debian-kde@lists.debian.org>;
+	Thu, 31 Jul 2008 18:54:27 +0200 (CEST)
+Received: from basatu.localnet (238.Red-83-61-23.staticIP.rima-tde.net [83.61.23.238])
+	by hal.ikusnet.com (Postfix) with ESMTP id 7F4D62FA858
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 18:54:26 +0200 (CEST)
+From: BasaBuru <basaburu@basatu.org>
+To: debian-kde@lists.debian.org
+Subject: Re: Upgrade was mostly fine, but a few problems left
+Date: Thu, 31 Jul 2008 18:54:43 +0200
+User-Agent: KMail/1.10.0 (Linux/2.6.26; KDE/4.1.0; x86_64; ; )
+References: <20080731154958.GA5100@telegraafnet.nl> <200807311312.34725.perezmeyer@gmail.com>
+In-Reply-To: <200807311312.34725.perezmeyer@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain;
+  charset="iso-8859-15"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+Message-Id: <200807311854.44009.basaburu@basatu.org>
+X-Virus-Scanned: by amavisd-new-20030616-p10 (Debian) at ikusnet.com
+X-Virus-Scanned: at lists.debian.org with policy bank en-ht
+X-Amavis-Spam-Status: No, score=-5 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <BFy2o13htAB.A.o8H._5ekIB@liszt>
+Resent-From: debian-kde@lists.debian.org
+X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28968
+X-Loop: debian-kde@lists.debian.org
+List-Id: <debian-kde.lists.debian.org>
+List-Post: <mailto:debian-kde@lists.debian.org>
+List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-kde-request@lists.debian.org
+Resent-Date: Thu, 31 Jul 2008 16:55:27 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.164418
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='FROM_NAME_ONE_WORD 0.05, BODY_SIZE_1000_LESS 0, BODY_SIZE_300_399 0, BODY_SIZE_5000_LESS 0, ECARD_WORD 0, __BOUNCE_CHALLENGE_SUBJ 0, __CD 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
+
+El Thursday 31 July 2008 18:12:34 Lisandro Dami=E1n Nicanor P=E9rez Meyer=20
+escribi=F3:
+
+> The rest I cannot say. I don't use effects as I have a %$&$%&$% NVidia ca=
+rd
+
+Do you true the new nvidia driver???
+
+It's no work?
+
+BasaBuru
+
+
+-- 
+To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+
+
+From - Sun Aug 03 21:06:32 2008
+X-Mozilla-Status: 0011
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+>From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 14:20:21 2008
+Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Thu, 31 Jul 2008 14:20:21 -0300
+Received: from mailserv4.its.unb.ca ([131.202.1.27])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
+	id 1KObp7-0005AM-HA
+	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 14:20:21 -0300
+Received: from mx3.nbpei-ecn.ca (mx3.nbpei-ecn.ca [198.164.163.196])
+	by mailserv4.its.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VHKD1X026376
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 14:20:16 -0300
+Received: from mx3.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id BC9E9E126E
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 14:20:13 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx3.nbpei-ecn.ca (Postfix) with ESMTP id 4E858E11AE
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 14:20:13 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 15E9913A648F; Thu, 31 Jul 2008 17:20:11 +0000 (UTC)
+Old-Return-Path: <perezmeyer@gmail.com>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BLOGSPOT,FOURLA,LDOSUBSCRIBER,
+	LDO_WHITELIST autolearn=failed version=3.2.3
+X-Original-To: lists-debian-kde@liszt.debian.org
+Delivered-To: lists-debian-kde@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 1B56213A6487
+	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 17:20:04 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 09963-91 for <lists-debian-kde@liszt.debian.org>;
+	Thu, 31 Jul 2008 17:20:01 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_IP=-2 (check from: .gmail. - helo: .qw-out-1920.google. - helo-domain: .google.)  FROM/MX_MATCHES_HELO(DOMAIN)=-2 IN_PM_RFCI=0.1 <client=74.125.92.146> <helo=qw-out-1920.google.com> <from=perezmeyer@gmail.com> <to=debian-kde@lists.debian.org>, rate: -6.9
+Received: from qw-out-1920.google.com (qw-out-1920.google.com [74.125.92.146])
+	by liszt.debian.org (Postfix) with ESMTP id B8F1E13A6458
+	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 17:19:54 +0000 (UTC)
+Received: by qw-out-1920.google.com with SMTP id 4so105670qwk.18
+        for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 10:19:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:from:to:subject:date
+         :user-agent:references:in-reply-to:x-face:mime-version:content-type
+         :content-transfer-encoding:message-id;
+        bh=NBniFi5IX6jJxPMydTm2ot/H5CnYBzFknkDlUyefVTc=;
+        b=g99RVa8lRbBwDiKtQwHTiMI+vQUHQfOIIXA00xtNZy99uIVsOzFHtoUcH56UdrGV22
+         9uh+fuJc0F8/+fPyw8pd+Ajvj7dHAFOeco+wv+OGgSkmYxPgpnwfttcHg5jVGj6UMJjm
+         lAIMoefjwL5RxXkD9pQ1CMEKf0HLAJIPJvG5A=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=from:to:subject:date:user-agent:references:in-reply-to:x-face
+         :mime-version:content-type:content-transfer-encoding:message-id;
+        b=I77AeAkatiTtf66n0iX/CEGwLCNMxk0HFvLlVCJOIw+TJg5M7v1IVBRun11yUKvtYn
+         99eqM8gYGnnjKkHtYqNOxPYrrCz6ikAIrlf6zBTzBsuGIRD8AwmGzyezm4hVEwrWko2o
+         URR8UCXkkypFiPR0vN7oKQjsAj4jTgji7CC6w=
+Received: by 10.215.14.5 with SMTP id r5mr6545234qai.41.1217524791670;
+        Thu, 31 Jul 2008 10:19:51 -0700 (PDT)
+Received: from dumbledore.localnet ( [190.1.22.76])
+        by mx.google.com with ESMTPS id 7sm52137ywo.7.2008.07.31.10.19.48
+        (version=TLSv1/SSLv3 cipher=RC4-MD5);
+        Thu, 31 Jul 2008 10:19:50 -0700 (PDT)
+From: Lisandro =?iso-8859-15?q?Dami=E1n_Nicanor_P=E9rez_Meyer?= <perezmeyer@gmail.com>
+To: debian-kde@lists.debian.org
+Subject: Re: Upgrade was mostly fine, but a few problems left
+Date: Thu, 31 Jul 2008 14:19:44 -0300
+User-Agent: KMail/1.10.0 (Linux/2.6.25-2-686; KDE/4.1.0; i686; ; )
+References: <20080731154958.GA5100@telegraafnet.nl> <200807311312.34725.perezmeyer@gmail.com> <200807311854.44009.basaburu@basatu.org>
+In-Reply-To: <200807311854.44009.basaburu@basatu.org>
+X-Face: &O7POA^t$8Gq0El|^zM9V:*jgn,ETU\1A73;Zdeojd,G(a";/Y0Fu|/*_jQF+@3';#.O@
+ =?utf-8?q?=26=0A=09=2ET?="FaLh+5o_F,\lrKg~{JYYVM20<P[J.ve7:7m;51A=i@"XBI].=`ZFX4h@tGL>
+ =?utf-8?q?Q1I=26fUN=0A=094?=<\TGcR5=
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+  boundary="nextPart1338689.gb6M2R9Bna";
+  protocol="application/pgp-signature";
+  micalg=pgp-sha1
+Content-Transfer-Encoding: 7bit
+Message-Id: <200807311419.45020.perezmeyer@gmail.com>
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv4.its.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-ht
+X-Amavis-Spam-Status: No, score=-1.9 tagged_above=3.6 required=5.3 tests=[BLOGSPOT=3,
+	FOURLA=0.1, LDO_WHITELIST=-5]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <zzd76l5M7dD.A.rKB.KRfkIB@liszt>
+Resent-From: debian-kde@lists.debian.org
+X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28969
+X-Loop: debian-kde@lists.debian.org
+List-Id: <debian-kde.lists.debian.org>
+List-Post: <mailto:debian-kde@lists.debian.org>
+List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-kde-request@lists.debian.org
+Resent-Date: Thu, 31 Jul 2008 17:20:11 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.170120
+X-PerlMx-Spam: Gauge=IIIIIIIII, Probability=9%, Report='BLOGSPOT_URI 0.5, BODY_ENDS_IN_URL_NOT_WWW 0, BODY_SIZE_1300_1399 0, BODY_SIZE_5000_LESS 0, ECARD_WORD 0, __BOUNCE_CHALLENGE_SUBJ 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __FRAUD_419_WEBMAIL 0, __FRAUD_419_WEBMAIL_FROM 0, __FROM_GMAIL 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
+
+--nextPart1338689.gb6M2R9Bna
+Content-Type: text/plain;
+  charset="iso-8859-15"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+On Thursday 31 July 2008 13:54:43 BasaBuru wrote:
+> El Thursday 31 July 2008 18:12:34 Lisandro Dami=E1n Nicanor P=E9rez Meyer
+>
+> escribi=F3:
+> > The rest I cannot say. I don't use effects as I have a %$&$%&$% NVidia
+> > card
+>
+> Do you true the new nvidia driver???
+>
+> It's no work?
+It has always been a disaster on my system, but the only way to get GLSL an=
+d=20
+OpenGL working.
+
+
+=2D-=20
+She got her good looks from her father. He's a plastic surgeon.
+ -- Groucho Marx
+
+Lisandro Dami=E1n Nicanor P=E9rez Meyer
+http://perezmeyer.com.ar/
+http://perezmeyer.blogspot.com/
+
+
+--nextPart1338689.gb6M2R9Bna
+Content-Type: application/pgp-signature; name=signature.asc 
+Content-Description: This is a digitally signed message part.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEABECAAYFAkiR9DAACgkQXGiQYciCD6dDVQCg1RT+9URnI0mP+y67Oeee+3cC
+DRsAnibLhKcJ5unWW+/DWObajPcJjyk7
+=zjfo
+-----END PGP SIGNATURE-----
+
+--nextPart1338689.gb6M2R9Bna--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+
+
+From - Sun Aug 03 21:06:32 2008
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+>From bounce-debian-kde=bremner=unb.ca@lists.debian.org Fri Aug 01 00:42:34 2008
+Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Fri, 01 Aug 2008 00:42:34 -0300
+Received: from mailserv4.its.unb.ca ([131.202.1.27])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
+	id 1KOlXG-0006h3-Cw
+	for bremner@pivot.cs.unb.ca; Fri, 01 Aug 2008 00:42:34 -0300
+Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
+	by mailserv4.its.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m713gQNU008910
+	for <bremner@unb.ca>; Fri, 1 Aug 2008 00:42:29 -0300
+Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id AF76E444037
+	for <bremner@unb.ca>; Fri,  1 Aug 2008 00:42:26 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id 501BE44407E
+	for <bremner@unb.ca>; Fri,  1 Aug 2008 00:42:26 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 49CC213A4AD6; Fri,  1 Aug 2008 03:42:07 +0000 (UTC)
+Old-Return-Path: <ferdinand@smitplaza.com>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=0.0 required=4.0 tests=none autolearn=no version=3.2.3
+X-Original-To: lists-debian-kde@liszt.debian.org
+Delivered-To: lists-debian-kde@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 0183913A51D9
+	for <lists-debian-kde@liszt.debian.org>; Fri,  1 Aug 2008 03:24:53 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 23321-92 for <lists-debian-kde@liszt.debian.org>;
+	Fri, 1 Aug 2008 03:24:50 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_IP=-2 (check from: .smitplaza. - helo: .webmail10.mail.sp.isp-net. - helo-domain: .isp-net.)  FROM/MX_MATCHES_NOT_HELO(DOMAIN)=0 <client=217.149.192.62> <helo=webmail10.mail.sp.isp-net.nl> <from=ferdinand@smitplaza.com> <to=debian-kde@lists.debian.org>, rate: -5
+X-Greylist: delayed 47414 seconds by postgrey-1.27 at liszt; Fri, 01 Aug 2008 03:24:50 UTC
+Received: from webmail10.mail.sp.isp-net.nl (webmail10.mail.sp.isp-net.nl [217.149.192.62])
+	by liszt.debian.org (Postfix) with ESMTP id 19BCE13A5176
+	for <debian-kde@lists.debian.org>; Fri,  1 Aug 2008 03:24:43 +0000 (UTC)
+Received: from william.smitplaza.com by webmail10.mail.sp.isp-net.nl
+	via 39-48-223.ftth.xms.internl.net [85.223.48.39] with ESMTP for <debian-kde@lists.debian.org>
+	id m6VEERvL028669 (8.13.2/2.04); Thu, 31 Jul 2008 16:14:27 +0200 (MEST)
+Received: from wlan.smitplaza.com ([10.0.0.100] helo=fertop.localnet)
+	by william.smitplaza.com with esmtp (Exim 4.69)
+	(envelope-from <ferdinand@smitplaza.com>)
+	id 1KOYvC-0004VE-MT
+	for debian-kde@lists.debian.org; Thu, 31 Jul 2008 16:14:27 +0200
+From: Ferdinand Smit <ferdinand@smitplaza.com>
+To: debian-kde@lists.debian.org
+Subject: Upgrade was mostly fine, but a few problems left
+Date: Thu, 31 Jul 2008 16:12:21 +0200
+User-Agent: KMail/1.10.0 (Linux/2.6.25-2-686; KDE/4.1.0; i686; ; )
+MIME-Version: 1.0
+Content-Type: text/plain;
+  charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Message-Id: <200807311612.21314.ferdinand@smitplaza.com>
+X-Spam_score: -1.8
+X-Spam_score_int: -17
+X-Spam_bar: -
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv4.its.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-ht
+X-Amavis-Spam-Status: No, score=0 tagged_above=3.6 required=5.3 tests=[none]
+X-Rc-Spam: 2007-10-04_01
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <9mw5mblLErO.A.7ZH.PYokIB@liszt>
+Resent-From: debian-kde@lists.debian.org
+X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28973
+X-Loop: debian-kde@lists.debian.org
+List-Id: <debian-kde.lists.debian.org>
+List-Post: <mailto:debian-kde@lists.debian.org>
+List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-kde-request@lists.debian.org
+Resent-Date: Fri,  1 Aug 2008 03:42:07 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.8.1.32448
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_1099 0, BODY_SIZE_5000_LESS 0, __CD 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
+
+Hi,
+
+I've upgraded my system to 4.1 by aptitude -t experimental install kde4. It 
+looks a bit scary so i created backup and got the install done.
+
+The upgrade was fine ! Great job ! KDE 4.1 looks and works nice !
+
+But ... there are a few problems left, that i can not fix:
+* Where did my address book and my calender go in kontact ? Can i import them 
+again in kontact 4.1 ? My mail and my mail settings seems fine.
+* At First my alt-tab was working accordingly the settings of "Desktop Effects 
+Settings" but now is it only using some old alt-tab behavior and does it not 
+listen to changes in the "Desktop Effect Settings". Probably it's just a 
+setting somewhere, but i can not find it.
+* How do i added programs (-links) to the panel ?
+* The effects are a little bit slow on a 'Intel(R) Core(TM)2 Duo CPU 2Gz, Intel 
+Mobile GM965/GL960'. Is that normal ?
+
+Regards,
+Ferdinand
+
+
+-- 
+To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+
+

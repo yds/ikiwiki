@@ -9,15 +9,19 @@ package Email::MIMEFolder;
 use base 'Email::Folder';
 sub bless_message { return  Email::MIME->new($_[1]) };
 
+
 package IkiWiki::Plugin::mailbox;
 
+use Email::FolderType qw(folder_type);
 use IkiWiki 2.00;
-use Email::Folder;
 use Email::Thread;
 use CGI 'escapeHTML';
 use Data::Dumper;
 
+
+
 my %metaheaders;
+
 
 sub import { #{{{
 	hook(type => "preprocess", id => "mailbox", call => \&preprocess);
@@ -37,19 +41,19 @@ sub preprocess (@) { #{{{
 	my %params=@_;
 	
 	my $page=$params{page};
-	my $type=$params{type} || 'maildir';
+	my $type=$params{type} || 'Maildir';
 
 	my $path=$params{path} ||  error gettext("missing parameter") . " path";
 	
 	# hmm, this should probably only be inserted once per page.
 
-	# note, mbox is not a directory, needs to be special cased
-	my $dir=bestdir($page,$params{path}) || 
+	my $dir=bestpath($page,$params{path}) || 
 	    error("could not find ".$params{path});
 
 	$params{path} = $config{srcdir} ."/" . $dir;
-
-	return  format_mailbox(path=>$dir,%params);
+	$params{type} = $type;
+	
+	return  format_mailbox(%params);
 
 } # }}}
 
@@ -58,9 +62,11 @@ sub preprocess (@) { #{{{
 ### parameters 
 sub format_mailbox(@){
     my %params=@_;
-    my $path=$params{path} || error("path parameter mandatory");
+    my $path=$params{path} || error gettext("missing parameter "). 'path';
+    my $type=$params{type} || error gettext("missing paramater ")."type";
 
-    my $folder=Email::MIMEFolder->new($path) || error("mailbox could not be opened");
+    debug('type='.$type);
+    my $folder=Email::MIMEFolder->new($path,reader=>'Email::Folder::'.$type) || error("mailbox could not be opened");
     my $threader=new Email::Thread($folder->messages);
 
     $threader->thread();
@@ -78,7 +84,7 @@ sub format_thread(@){
     if ($thread->message) {
 	$output .= format_message(message=>$thread->message);
     } else {
-	$output .= sprintf gettext("Message %s not available"), $thread;
+	$output .= sprintf gettext("Message %s not available"), $thread->messageid;
     }
 
     if ($thread->child){
@@ -109,7 +115,7 @@ sub format_message(@){
     my $message=$params{message} || 
 	error gettext("missing parameter"). "message";
 
-    my $keep_headers=$params{headers} || qr/^(subject|from|date)/i;
+    my $keep_headers=$params{headers} || qr/^(subject|from|date)[:]?$/i;
     
     my $template= 
 	template("email.tmpl") || error gettext("missing template");
@@ -141,10 +147,10 @@ sub format_body($){
 }
 ### Utilities
 
-# From Arpit Jain
+# based on bestdir From Arpit Jain
 # http://ikiwiki.info/todo/Bestdir_along_with_bestlink_in_IkiWiki.pm/
 # need to clarify license
-sub bestdir ($$) { #{{{
+sub bestpath ($$) { #{{{
     my $page=shift;
        my $link=shift;
        my $cwd=$page;
@@ -157,7 +163,7 @@ sub bestdir ($$) { #{{{
                my $l=$cwd;
                $l.="/" if length $l;
                $l.=$link;
-               if (-d "$config{srcdir}/$l") {
+               if (-d "$config{srcdir}/$l" || -f "$config{srcdir}/$l") {
                        return $l;
                }
        } while $cwd=~s!/?[^/]+$!!;
@@ -165,7 +171,7 @@ sub bestdir ($$) { #{{{
        if (length $config{userdir}) {
                my $l = "$config{userdir}/".lc($link);
 
-               if (-d $l) {
+               if (-d $l || -f $l) {
                        return $l;
                }
        }
@@ -184,6 +190,21 @@ sub pagetemplate (@) { #{{{
 		my %seen;
 		$template->param(meta => join("\n", grep { (! $seen{$_}) && ($seen{$_}=1) } @{$metaheaders{$page}}));
 	}
+}
+
+
+
+package Email::FolderType::MH;
+
+sub match {
+    my $folder = shift;
+    return 0 if (! -d $folder);
+    opendir DIR,$folder || error("opendir failed");
+
+    while (<DIR>){
+      return 0 if (!m|\.| && !m|\.\.| && !m|\d+|);
+    }
+    return 1;
 }
 
 

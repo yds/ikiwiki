@@ -1,0 +1,119 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Sun Aug 03 04:58:58 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Sun, 03 Aug 2008 04:58:58 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KPYUT-0002JM-Ua
+	for bremner@pivot.cs.unb.ca; Sun, 03 Aug 2008 04:58:58 -0300
+Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m737woCR016917
+	for <bremner@unb.ca>; Sun, 3 Aug 2008 04:58:52 -0300
+Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 0AE214440AA
+	for <bremner@unb.ca>; Sun,  3 Aug 2008 04:58:50 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id 9DFFE444054
+	for <bremner@unb.ca>; Sun,  3 Aug 2008 04:58:49 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 464F613A5308; Sun,  3 Aug 2008 07:58:47 +0000 (UTC)
+Old-Return-Path: <danchev@spnet.net>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-11.3 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST,
+	MENTORSRFS,MURPHY_DRUGS_REL8 autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 4CCF713A5298
+	for <lists-debian-mentors@liszt.debian.org>; Sun,  3 Aug 2008 07:58:40 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 09870-07 for <lists-debian-mentors@liszt.debian.org>;
+	Sun, 3 Aug 2008 07:58:37 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_IP=-2 (check from: .spnet. - helo: .s-janus.spnet. - helo-domain: .spnet.)  FROM/MX_MATCHES_HELO(DOMAIN)=-2 <client=212.50.2.36> <helo=s-janus.spnet.net> <from=danchev@spnet.net> <to=debian-mentors@lists.debian.org>, rate: -7
+Received: from s-janus.spnet.net (s-janus.spnet.net [212.50.2.36])
+	(using TLSv1 with cipher AES256-SHA (256/256 bits))
+	(Client did not present a certificate)
+	by liszt.debian.org (Postfix) with ESMTP id 66BB313A52F5
+	for <debian-mentors@lists.debian.org>; Sun,  3 Aug 2008 07:58:27 +0000 (UTC)
+Received: from [78.83.82.72]
+	by s-janus.spnet.net with esmtp (Exim 4.63)
+	(envelope-from <danchev@spnet.net>)
+	id 1KPYTk-00066S-Pj
+	for debian-mentors@lists.debian.org; Sun, 03 Aug 2008 10:58:12 +0300
+From: George Danchev <danchev@spnet.net>
+To: debian-mentors@lists.debian.org
+Subject: Re: RFS: scrot (updated package)
+Date: Sun, 3 Aug 2008 10:58:38 +0300
+User-Agent: KMail/1.9.9
+References: <b3e93d820808012149u58d99ba2y54690a7f2092c9fa@mail.gmail.com> <20080802052053.GO14057@debianrules.debiancolombia.org> <87tze37zkz.fsf@benfinney.id.au>
+In-Reply-To: <87tze37zkz.fsf@benfinney.id.au>
+MIME-Version: 1.0
+Content-Type: text/plain;
+  charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+Message-Id: <200808031058.39211.danchev@spnet.net>
+X-bounce-key: spectrumnets-1;danchev@spnet.net;1217750317;4010815d;
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-7.28 tagged_above=3.6 required=5.3
+	tests=[BAYES_00=-2, LDO_WHITELIST=-5, MENTORSRFS=-0.3,
+	MURPHY_DRUGS_REL8=0.02]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <71IqbOn011O.A.WWE.3UWlIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42462
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Sun,  3 Aug 2008 07:58:47 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.8.3.74651
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1200_1299 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __CD 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __HAS_BLIZZARD_RCVD 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+On Sunday 03 August 2008 02:43:24 Ben Finney wrote:
+> An=C3=ADbal Monsalve Salazar <anibal@debian.org> writes:
+> > All other upstream files should be modified with patches.
+>
+> Or by some other method that results in the Debian source package
+> format, with a pristine upstream tarball and all maintainer changes in
+> the .diff.gz.
+>
+> > So, Please put those cahnges in a series of patches in
+> > debian/patches and build depend on quilt.
+>
+> Or use some other method (e.g. a VCS and the corresponding command
+> foovcs-buildpackage) to track differences from upstream and generate
+> the changes for the Debian package.
+
+This do not exclude the usage of debian/patches. Make sure to understand th=
+at.=20
+
+> The "quilt" format is favoured by many, but is certainly not mandatory
+> nor even "best practice".
+
+Using quilt to clearly separate patches does not exclude nor contradicts wi=
+th=20
+the usage of a $VCS. Thus I don't see what are you trying to correct in=20
+Anabal's statements.
+
+=2D-=20
+pub 4096R/0E4BD0AB 2003-03-18 <people.fccf.net/danchev/key pgp.mit.edu>
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

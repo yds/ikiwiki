@@ -1,0 +1,120 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Fri Aug 01 22:11:54 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Fri, 01 Aug 2008 22:11:54 -0300
+Received: from mailserv4.its.unb.ca ([131.202.1.27])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KP5ez-0004Ts-Tj
+	for bremner@pivot.cs.unb.ca; Fri, 01 Aug 2008 22:11:54 -0300
+Received: from mx3.nbpei-ecn.ca (mx3.nbpei-ecn.ca [198.164.163.196])
+	by mailserv4.its.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m721Bhs6023774
+	for <bremner@unb.ca>; Fri, 1 Aug 2008 22:11:46 -0300
+Received: from mx3.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id EE0E2F77FF
+	for <bremner@unb.ca>; Fri,  1 Aug 2008 22:11:43 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx3.nbpei-ecn.ca (Postfix) with ESMTP id 8FF3CF78B6
+	for <bremner@unb.ca>; Fri,  1 Aug 2008 22:11:43 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 21E5313A59E5; Sat,  2 Aug 2008 01:11:41 +0000 (UTC)
+Old-Return-Path: <giuseppe@iuculano.it>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-11.3 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST,
+	MENTORSRFS autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 3003413A5139
+	for <lists-debian-mentors@liszt.debian.org>; Sat,  2 Aug 2008 01:11:35 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 06343-21 for <lists-debian-mentors@liszt.debian.org>;
+	Sat, 2 Aug 2008 01:11:32 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_FROM_MX=-3.1 <client=89.163.146.213> <helo=mail.iuculano.it> <from=giuseppe@iuculano.it> <to=debian-mentors@lists.debian.org>, rate: -6.1
+Received: from mail.iuculano.it (mail.iuculano.it [89.163.146.213])
+	by liszt.debian.org (Postfix) with ESMTP id 5903E13A5479
+	for <debian-mentors@lists.debian.org>; Sat,  2 Aug 2008 01:11:26 +0000 (UTC)
+Received: (qmail 17854 invoked by uid 0); 2 Aug 2008 03:11:23 +0200
+Received: from unknown (HELO ?10.0.0.2?) (10.0.0.2)
+  by 10.0.0.1 with ESMTPS (DHE-RSA-AES256-SHA encrypted); 2 Aug 2008 03:11:23 +0200
+Message-ID: <4893B433.2080903@iuculano.it>
+Date: Sat, 02 Aug 2008 03:11:15 +0200
+From: Giuseppe Iuculano <giuseppe@iuculano.it>
+User-Agent: Mozilla-Thunderbird 2.0.0.14 (X11/20080509)
+MIME-Version: 1.0
+To: Cyril Brulebois <kibi@debian.org>
+CC: debian-mentors@lists.debian.org, 492807@bugs.debian.org
+Subject: Re: RFS: procinfo-ng
+References: <48932274.8030000@iuculano.it> <20080801234930.GP4563@ikibiki.org>
+In-Reply-To: <20080801234930.GP4563@ikibiki.org>
+X-Enigmail-Version: 0.95.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+ protocol="application/pgp-signature";
+ boundary="------------enigF64C4833EEF0D4192584F24E"
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv4.its.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-5.3 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5, MENTORSRFS=-0.3]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <n7r6zLp-IdH.A.GWH.NR7kIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42447
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Sat,  2 Aug 2008 01:11:41 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.8.2.5813
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1100_1199 0, BODY_SIZE_5000_LESS 0, __BAT_BOUNDARY 0, __BOUNCE_CHALLENGE_SUBJ 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+This is an OpenPGP/MIME signed message (RFC 2440 and 3156)
+--------------enigF64C4833EEF0D4192584F24E
+Content-Type: text/plain; charset=ISO-8859-15
+Content-Transfer-Encoding: quoted-printable
+
+Cyril Brulebois ha scritto:
+
+> I thought the plan was to replace the old procinfo package without
+> introducing a new one?
+
+I didn't read about replacing, but my plan was a new package (procinfo-ng=
+) and
+after some testing, if procinfo maintainer agree, obsoleting procinfo (wi=
+th
+replace field and a dummy package).
+
+
+Giuseppe.
+
+
+--------------enigF64C4833EEF0D4192584F24E
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEARECAAYFAkiTtDkACgkQNxpp46476aqwRQCcCpBo+/7F/8YPrgf6pl85P0Zn
+X2AAoI9FHlXYjBdoYaVb67ffxdehhm0Q
+=AmAq
+-----END PGP SIGNATURE-----
+
+--------------enigF64C4833EEF0D4192584F24E--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

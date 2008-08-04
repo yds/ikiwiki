@@ -1,0 +1,162 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Wed Jul 30 20:16:49 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Wed, 30 Jul 2008 20:16:49 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KOKuX-00071l-K7
+	for bremner@pivot.cs.unb.ca; Wed, 30 Jul 2008 20:16:49 -0300
+Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6UNGdBa006338
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 20:16:44 -0300
+Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 7C76044403E
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 20:16:43 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id 15EB344403A
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 20:16:43 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 7A17E13A6127; Wed, 30 Jul 2008 23:16:41 +0000 (UTC)
+Old-Return-Path: <matrixhasu@gmail.com>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.4 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST,
+	ONEWORD,SARE_MSGID_LONG40 autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 2AD4F13A6101
+	for <lists-debian-mentors@liszt.debian.org>; Wed, 30 Jul 2008 23:16:35 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 01281-31 for <lists-debian-mentors@liszt.debian.org>;
+	Wed, 30 Jul 2008 23:16:32 +0000 (UTC)
+Received: from rv-out-0708.google.com (rv-out-0708.google.com [209.85.198.246])
+	by liszt.debian.org (Postfix) with ESMTP id B260013A60DF
+	for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 23:16:31 +0000 (UTC)
+Received: by rv-out-0708.google.com with SMTP id k29so269428rvb.30
+        for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 16:16:28 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:in-reply-to:mime-version:content-type
+         :content-transfer-encoding:content-disposition:references;
+        bh=VX9xNbQiXI4eAYrf7tEMv7AUIwrXCvHt0t50dsVFJkw=;
+        b=VmS91y+nSpsektEkjElxTVNncblkxMabZi+HdJqwUdUlfFFLg83FUAfUf4h7YOsWwP
+         2ZVsDmxkGontpZZKudzVzjXP8lqXm3UOHUXZvoAM5lXKWK6nDkjeGIGdesvK8xreE6nC
+         gAvnLod6X/zU0sCjNTPWQkSJAZXxqXGechS+U=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version
+         :content-type:content-transfer-encoding:content-disposition
+         :references;
+        b=R6VnmecoXNAxvKp20WeRTsFfEI0aTgawZYTtoYT3aXFlm7R3wbEXMy3tRCR4Ow7xmK
+         K23ottieP8kwyTNl9y6uCWZi1vzttifktll6pFbyrk48FJstqICirAS2rMoI9+/dVjTf
+         7QDo7HtwkoUxZY32Zi5KiJ04pGClVOmoDDfLI=
+Received: by 10.141.168.16 with SMTP id v16mr4901496rvo.233.1217459788933;
+        Wed, 30 Jul 2008 16:16:28 -0700 (PDT)
+Received: by 10.141.202.10 with HTTP; Wed, 30 Jul 2008 16:16:28 -0700 (PDT)
+Message-ID: <8b2d7b4d0807301616r62b9039bh94c4d90011362022@mail.gmail.com>
+Date: Thu, 31 Jul 2008 01:16:28 +0200
+From: "Sandro Tosi" <matrixhasu@gmail.com>
+To: debian-mentors@lists.debian.org
+Subject: Re: ftp-masters
+In-Reply-To: <20080730230743.GR21393@volo.donarmstrong.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+References: <20080730115010.GA24515@shota.mine.nu>
+	 <200807301404.49015.t.quathamer@gmx.net>
+	 <87tze7bjp5.fsf@benfinney.id.au>
+	 <8b2d7b4d0807300615m129c35f8x7789b376b958e35a@mail.gmail.com>
+	 <87ljzjatoi.fsf@benfinney.id.au>
+	 <8b2d7b4d0807301542u41a4b774pa8b5fda67554f0da@mail.gmail.com>
+	 <20080730230743.GR21393@volo.donarmstrong.com>
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-2.363 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5, ONEWORD=2, SARE_MSGID_LONG40=0.637]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <JWiqtnkepsF.A.arH.ZZPkIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42407
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Wed, 30 Jul 2008 23:16:41 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.30.230115
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_2000_2999 0, BODY_SIZE_5000_LESS 0, WEBMAIL_SOURCE 0, __BOUNCE_CHALLENGE_SUBJ 0, __C230066_P1_2 0, __CD 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __FRAUD_419_WEBMAIL 0, __FRAUD_419_WEBMAIL_FROM 0, __FROM_GMAIL 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __PHISH_SPEAR_HTTP_RECEIVED 0, __PHISH_SPEAR_STRUCTURE_1 0, __PHISH_SPEAR_STRUCTURE_2 0, __SANE_MSGID 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+On Thu, Jul 31, 2008 at 01:07, Don Armstrong <don@debian.org> wrote:
+> On Thu, 31 Jul 2008, Sandro Tosi wrote:
+>> Because it doesn't add any information for the end users,
+>
+> Sure it does. It tells end users what was changed in between the
+> REJECT and the new upload. Eliding this means that it's no longer
+> possible to trivially tell what was changed between uploads.[1]
+
+But does really an end user knows/cares about it? You are talkink from
+a developer POV, that's a little bit low-level than most of our users.
+
+>> if not confusion: it seems that 2 different version reached the
+>> archive, since the users will see 2 different entries in the
+>> changelog (for example using apt-listchanges) when indeed there is
+>> only 1 package uploaded after the one previou in the archive.
+>
+> There were two uploaded, not just one. Furthermore, it doesn't matter
+> how many have reached the archive when a user is examining changelogs.
+> All you care about is the version that you have, the version that
+> you're upgrading to, and any previous versions you had installed. None
+> of those necessarily correlate with versions that are actually in the
+> archive.
+
+mh, so the latest changelog entry should report why the previous
+upload was REJECTED, and what was done to fix it.
+
+>> Ah, did I forgot to remember that "Our priorities are our users and
+>> free software"?
+>
+> Obviously, which is why you should do what I suggested.
+>
+> You shouldn't treat changelogs of packages which happen to stop off at
+> NEW any differently, even if they get REJECTed.
+
+I suggest this only because a REJECTED package is a sort of
+half-release, and you still need to rework (hopefully a bit) the
+previous changes: you rework the previous upload (that you think it
+was right) to meet our standards.
+
+Of course, this is just what I *feel* is correct, since no ufficial
+doc is available for this.
+
+Cheers,
+Sandro
+
+> 1: Furthermore, you really should be tagging your uploads with the
+> release that you uploaded to Debian with in your VCS. You are doing
+> that, right?
+
+Of course, but I can retag ;)
+
+-- 
+Sandro Tosi (aka morph, Morpheus, matrixhasu)
+My website: http://matrixhasu.altervista.org/
+Me at Debian: http://wiki.debian.org/SandroTosi
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

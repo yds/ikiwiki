@@ -1,0 +1,108 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Thu Jul 31 20:47:37 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Thu, 31 Jul 2008 20:47:37 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KOhrt-0006IH-Gf
+	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 20:47:37 -0300
+Received: from mx3.nbpei-ecn.ca (mx3.nbpei-ecn.ca [198.164.163.196])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VNlN1c009709
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 20:47:32 -0300
+Received: from mx3.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 6AEF1E6290
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 20:47:32 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx3.nbpei-ecn.ca (Postfix) with ESMTP id F25CBE542A
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 20:47:31 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 891DA13A558D; Thu, 31 Jul 2008 23:47:23 +0000 (UTC)
+Old-Return-Path: <eagle@windlord.stanford.edu>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.0 required=4.0 tests=LDO_WHITELIST
+	autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 9882313A5582
+	for <lists-debian-mentors@liszt.debian.org>; Thu, 31 Jul 2008 23:47:17 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 21563-46 for <lists-debian-mentors@liszt.debian.org>;
+	Thu, 31 Jul 2008 23:47:14 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_IP=-2 (check from: .stanford. - helo: .smtp2.stanford. - helo-domain: .stanford.)  FROM/MX_MATCHES_HELO(DOMAIN)=-2 <client=171.67.20.25> <helo=smtp2.stanford.edu> <from=eagle@windlord.stanford.edu> <to=debian-mentors@lists.debian.org>, rate: -7
+Received: from smtp2.stanford.edu (smtp2.Stanford.EDU [171.67.20.25])
+	by liszt.debian.org (Postfix) with ESMTP id 9134E13A5580
+	for <debian-mentors@lists.debian.org>; Thu, 31 Jul 2008 23:47:08 +0000 (UTC)
+Received: from smtp2.stanford.edu (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 2CC1765B49C
+	for <debian-mentors@lists.debian.org>; Thu, 31 Jul 2008 16:47:05 -0700 (PDT)
+Received: from windlord.stanford.edu (windlord.Stanford.EDU [171.64.19.147])
+	by smtp2.stanford.edu (Postfix) with ESMTP id 0286C65A5B6
+	for <debian-mentors@lists.debian.org>; Thu, 31 Jul 2008 16:47:04 -0700 (PDT)
+Received: by windlord.stanford.edu (Postfix, from userid 1000)
+	id C4860E7924; Thu, 31 Jul 2008 16:47:04 -0700 (PDT)
+To: debian-mentors@lists.debian.org
+Subject: Re: versioned Build-Depends on debhelper
+In-Reply-To: <200807311610.12695.toots@rastageeks.org> (Romain Beauxis's message of "Thu\, 31 Jul 2008 16\:10\:12 +0200")
+User-Agent: Gnus/5.11 (Gnus v5.11) Emacs/22.2 (gnu/linux)
+References: <20080730182218.GA23851@shota.mine.nu>
+	<87ej5bgjle.fsf@windlord.stanford.edu>
+	<20080730215744.GF20919@torres.zugschlus.de>
+	<200807311610.12695.toots@rastageeks.org>
+From: Russ Allbery <rra@debian.org>
+Organization: The Eyrie
+Date: Thu, 31 Jul 2008 16:47:04 -0700
+Message-ID: <873alp8vlz.fsf@windlord.stanford.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-5 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <N9EC_DZ6HeP.A.9dE.L8kkIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42425
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Thu, 31 Jul 2008 23:47:23 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.233114
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_1099 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __CP_URI_IN_BODY 0, __CT 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+Romain Beauxis <toots@rastageeks.org> writes:
+
+> Well, while I wouldn't ask to remove a versioned build-dep, you could
+> also argue with your reasoning that all build-dep should be versioned..
+>
+> I think a relatively safe requirement is to version if it needs more
+> than the current stable (or perhaps oldstable) version.
+
+I think of debhelper as a special case since it's so easy to know what
+versioned dependency to use and it's possible to programmatically check
+that you've got the right one (against the compat file).  For most other
+cases, I would only version a dependency if I knew there was an oldstable
+(or even just stable) version that didn't support what I needed, but with
+debhelper it's just so easy to always version it for consistency.
+
+-- 
+Russ Allbery (rra@debian.org)               <http://www.eyrie.org/~eagle/>
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

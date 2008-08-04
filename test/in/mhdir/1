@@ -1,0 +1,222 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Wed Jul 30 06:23:25 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Wed, 30 Jul 2008 06:23:25 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KO7u1-0001V6-31
+	for bremner@pivot.cs.unb.ca; Wed, 30 Jul 2008 06:23:25 -0300
+Received: from mx4.nbpei-ecn.ca (mx4.nbpei-ecn.ca [198.164.163.197])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6U9NDWf015654
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 06:23:20 -0300
+Received: from mx4.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id ABA2B7C411B
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 06:23:12 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx4.nbpei-ecn.ca (Postfix) with ESMTP id B07477C40D8
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 05:52:07 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 5386513A5FD8; Wed, 30 Jul 2008 08:52:06 +0000 (UTC)
+Old-Return-Path: <jpsecher@gmail.com>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.3 required=4.0 tests=FOURLA,LDO_WHITELIST,
+	SARE_MSGID_LONG40 autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id E2A3713A5F78
+	for <lists-debian-mentors@liszt.debian.org>; Wed, 30 Jul 2008 08:51:56 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 31837-36 for <lists-debian-mentors@liszt.debian.org>;
+	Wed, 30 Jul 2008 08:51:53 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_IP=-2 (check from: .gmail. - helo: .mu-out-0910.google. - helo-domain: .google.)  FROM/MX_MATCHES_HELO(DOMAIN)=-2 IN_PM_RFCI=0.1 <client=209.85.134.185> <helo=mu-out-0910.google.com> <from=jpsecher@gmail.com> <to=debian-mentors@lists.debian.org>, rate: -6.9
+Received: from mu-out-0910.google.com (mu-out-0910.google.com [209.85.134.185])
+	by liszt.debian.org (Postfix) with ESMTP id BA66D13A5FC0
+	for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 08:51:47 +0000 (UTC)
+Received: by mu-out-0910.google.com with SMTP id w9so246610mue.0
+        for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 01:51:44 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:sender
+         :to:subject:mime-version:content-type:content-transfer-encoding
+         :content-disposition:x-google-sender-auth;
+        bh=B46qi++Qc+o45M0qCK+l/5iH6YDeThy9NnU1JgvVuzc=;
+        b=fM1zWnFLJcb5DDnMCMCkZdpxNKHL8IiAbaE9MWhtf3yoSJ1q7LBVlbygcT9xOMON0h
+         AMa17055JwBj52s6Ow1XhVdHFjp818utPP7PBU7XaNJo53h4/qmmMiKfS8CctmCJXPjY
+         +qBeA6WDFQoKqm7gHr25uMzD5li45MRNae7Rw=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:sender:to:subject:mime-version:content-type
+         :content-transfer-encoding:content-disposition:x-google-sender-auth;
+        b=hIN+6D7rniUdoS9OPBLCFiikG8ykIOb7vvgEyEKS7ZuNeOXXXynsKiWz04KN1+saX7
+         8byrqViqSmwTkXY0yIem2Xx5eGIaRAMwHKc7MLvvGJsL/E5kqvMx5PupLoKVeDuxRY2N
+         bbLcjorpwtRrlbigwtdcDuK3ILzygiD8pRqcg=
+Received: by 10.103.243.7 with SMTP id v7mr2718341mur.118.1217407904516;
+        Wed, 30 Jul 2008 01:51:44 -0700 (PDT)
+Received: by 10.103.175.12 with HTTP; Wed, 30 Jul 2008 01:51:44 -0700 (PDT)
+Message-ID: <c4f47b5b0807300151u4565bb6fi3dcb68fa9bd02d1a@mail.gmail.com>
+Date: Wed, 30 Jul 2008 10:51:44 +0200
+From: "Jens Peter Secher" <jps@debian.org>
+Sender: jpsecher@gmail.com
+To: debian-mentors@lists.debian.org
+Subject: pbuilder/pdebuild mini-howto (Was: Building a build environment)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+X-Google-Sender-Auth: 3697963bb83213d5
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-4.263 tagged_above=3.6 required=5.3
+	tests=[FOURLA=0.1, LDO_WHITELIST=-5, SARE_MSGID_LONG40=0.637]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <z-mBL7GyZYE.A.zKB.2uCkIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42381
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Wed, 30 Jul 2008 08:52:06 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.30.90610
+X-PerlMx-Spam: Gauge=IIIIIIIII, Probability=9%, Report='WEBMAIL_REPLYTO_NOT_FROM 0.5, BODY_SIZE_4000_4999 0, BODY_SIZE_5000_LESS 0, WEBMAIL_SOURCE 0, __CD 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __FRAUD_419_WEBMAIL 0, __FRAUD_419_WEBMAIL_SENDER 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __PHISH_SPEAR_HTTP_RECEIVED 0, __PHISH_SPEAR_STRUCTURE_1 0, __PHISH_SPEAR_STRUCTURE_2 0, __SANE_MSGID 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+2008/7/29 Richard Hurt <rnhurt@kangaroobox.com>:
+> I am just getting started in Debian package building and I need to know if
+> this idea is valid or if there is a better way.
+> [...]
+>  What do you use?
+
+I find pbuilder easiest to work with.  Since I am mostly running
+Testing, I have two setups, one for Sid and one for Backports.  Here is
+a mini-howto for what to do.
+
+Create a ~/deb/unstable-pbuilderrc:
+
+  DISTRIBUTION="sid"
+  BASETGZ="$HOME/var/pbuilder/$DISTRIBUTION-base.tgz"
+  BUILDPLACE="$HOME/var/pbuilder/$DISTRIBUTION"
+  MIRRORSITE="http://ftp.se.debian.org/debian"
+  USEPROC="yes"
+  USEDEVPTS="yes"
+  USEDEVFS="no"
+  BUILDRESULT="$HOME/var/presult"
+  APTCACHE="/var/cache/apt/archives"
+  APTCACHEHARDLINK="no"
+  REMOVEPACKAGES="lilo grub"
+  HOOKDIR=""
+  export DEBIAN_FRONTEND="noninteractive"
+  DEBEMAIL="Jens Peter Secher <jps@debian.org>"
+  BUILDSOURCEROOTCMD="fakeroot"
+  PBUILDERROOTCMD="sudo"
+  DEBBUILDOPTS=""
+  APTCONFDIR="$HOME/deb/apt.config"
+  BUILDUSERID="1000"
+  BINDMOUNTS=""
+  DEBOOTSTRAPOPTS[0]='--variant=buildd'
+
+And create a ~/deb/backports-pbuilderrc:
+
+  DISTRIBUTION="etch"
+  BASETGZ="$HOME/var/pbuilder/backports-base.tgz"
+  BUILDPLACE="$HOME/var/pbuilder/backports"
+  MIRRORSITE="http://ftp.se.debian.org/debian"
+  OTHERMIRROR="deb http://www.backports.org/debian/
+$DISTRIBUTION-backports main"
+  USEPROC="yes"
+  USEDEVPTS="yes"
+  USEDEVFS="no"
+  BUILDRESULT="$HOME/var/presult"
+  APTCACHE="/var/cache/apt/archives"
+  APTCACHEHARDLINK="no"
+  REMOVEPACKAGES="lilo grub"
+  HOOKDIR=""
+  export DEBIAN_FRONTEND="noninteractive"
+  DEBEMAIL="Jens Peter Secher <jps@debian.org>"
+  BUILDSOURCEROOTCMD="fakeroot"
+  PBUILDERROOTCMD="sudo"
+  DEBBUILDOPTS=""
+  APTCONFDIR="$HOME/deb/apt.config"
+  BUILDUSERID="1000"
+  BINDMOUNTS=""
+  DEBOOTSTRAPOPTS[0]='--variant=buildd'
+
+To stop apt complaining, create an
+~/deb/apt.config/apt.conf.d/allow-unauthenticated:
+
+  APT::Get::AllowUnauthenticated 1;
+
+To give pbuilder a place to store its stuff, do
+
+  mkdir -p ~/var/presults ~/var/pbuilder
+
+To create the environments, do
+
+  sudo pbuilder create --configfile ~/deb/unstable-pbuilderrc
+  sudo pbuilder create --configfile ~/deb/backports-pbuilderrc
+
+To build a new package, in your package directory
+(eg. ~/deb/libfoo/libfoo-2.13/) you then just do
+
+  pdebuild --configfile ~/deb/unstable-pbuilderrc
+
+or to build a backport, use the -sa -v options:
+
+  pdebuild --configfile ~/deb/backports-pbuilderrc --debbuildopts '-sa -v2.12-1'
+
+To manually install dependencies in the environment, you can do
+
+  sudo pbuilder login --configfile ~/deb/backports-pbuilderrc
+
+and then manually copy (source) packages into the chroot.  To tweak
+things in the environment in general, you can do
+
+  sudo pbuilder login --save-after-exec --configfile ~/deb/unstable-pbuilderrc
+
+To sponsor a package, use the -k option:
+
+  pdebuild --configfile ~/deb/unstable-pbuilderrc --debbuildopts '-kFE63E8A1'
+
+Remember to update the environments before building:
+
+  sudo /usr/sbin/pbuilder update --configfile ~/deb/unstable-pbuilderrc
+
+The resulting packages are placed in ~/var/presults, where you need to
+sign them with debsign, which works best with GPG Agent running, so put
+something like this in your .xsession file:
+
+  if test -f $HOME/.gpg-agent-info && \
+      kill -0 `cut -d: -f 2 $HOME/.gpg-agent-info` 2>/dev/null;
+  then
+      GPG_AGENT_INFO=`cat $HOME/.gpg-agent-info`
+      export GPG_AGENT_INFO
+  else
+      eval `gpg-agent --daemon`
+      echo $GPG_AGENT_INFO >$HOME/.gpg-agent-info
+  fi
+
+
+HTH,
+-- 
+                                                    Jens Peter Secher.
+_DD6A 05B0 174E BFB2 D4D9 B52E 0EE5 978A FE63 E8A1 jpsecher gmail com_.
+A. Because it breaks the logical sequence of discussion.
+Q. Why is top posting bad?
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

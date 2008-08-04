@@ -1,0 +1,123 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Wed Jul 30 16:38:14 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Wed, 30 Jul 2008 16:38:14 -0300
+Received: from mailserv4.its.unb.ca ([131.202.1.27])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KOHV0-0006c4-0O
+	for bremner@pivot.cs.unb.ca; Wed, 30 Jul 2008 16:38:14 -0300
+Received: from mx3.nbpei-ecn.ca (mx3.nbpei-ecn.ca [198.164.163.196])
+	by mailserv4.its.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6UJc6dd020005
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 16:38:09 -0300
+Received: from mx3.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 5DA7DD134E
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 16:38:06 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx3.nbpei-ecn.ca (Postfix) with ESMTP id EFB36D147A
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 16:38:05 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 8E3EA13A61C4; Wed, 30 Jul 2008 19:38:04 +0000 (UTC)
+Old-Return-Path: <don@donarmstrong.net>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=LDO_WHITELIST,ONEWORD
+	autolearn=no version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 4F25A13A61B8
+	for <lists-debian-mentors@liszt.debian.org>; Wed, 30 Jul 2008 19:37:58 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 20891-49 for <lists-debian-mentors@liszt.debian.org>;
+	Wed, 30 Jul 2008 19:37:55 +0000 (UTC)
+X-policyd-weight: using cached result; rate: -5
+Received: from rzlab.ucr.edu (rzlab.ucr.edu [138.23.92.77])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client did not present a certificate)
+	by liszt.debian.org (Postfix) with ESMTP id 2B93013A60E1
+	for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 19:37:49 +0000 (UTC)
+Received: from rzlab.ucr.edu (rzlab.ucr.edu [127.0.0.1])
+	by rzlab.ucr.edu (8.13.8/8.13.8/Debian-3) with ESMTP id m6UJbjSE013036
+	for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 12:37:45 -0700
+Received: (from remotemail@localhost)
+	by rzlab.ucr.edu (8.13.8/8.13.8/Submit) id m6UJbjt6013035
+	for debian-mentors@lists.debian.org; Wed, 30 Jul 2008 12:37:45 -0700
+Received: (nullmailer pid 19340 invoked by uid 1000);
+	Wed, 30 Jul 2008 19:37:44 -0000
+Date: Wed, 30 Jul 2008 12:37:44 -0700
+From: Don Armstrong <don@debian.org>
+To: debian-mentors@lists.debian.org
+Subject: Re: ftp-masters
+Message-ID: <20080730193744.GM21393@volo.donarmstrong.com>
+Mail-Followup-To: debian-mentors@lists.debian.org
+References: <20080730115010.GA24515@shota.mine.nu> <200807301404.49015.t.quathamer@gmx.net> <87tze7bjp5.fsf@benfinney.id.au> <8b2d7b4d0807300615m129c35f8x7789b376b958e35a@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+In-Reply-To: <8b2d7b4d0807300615m129c35f8x7789b376b958e35a@mail.gmail.com>
+User-Agent: Mutt/1.5.18 (2008-05-17)
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv4.its.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-3 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5, ONEWORD=2]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <WvoqGm73fcE.A.afH.cMMkIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42395
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Wed, 30 Jul 2008 19:38:04 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.30.192251
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1400_1499 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __C230066_P1_2 0, __CD 0, __CP_URI_IN_BODY 0, __CT 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+On Wed, 30 Jul 2008, Sandro Tosi wrote:
+> On Wed, Jul 30, 2008 at 15:11, Ben Finney <ben+debian@benfinney.id.au> wrote:
+> > Tobias Quathamer <t.quathamer@gmx.net> writes:
+> >
+> >> You can send an email to ftpmaster@d.o and ask them to REJECT your
+> >> package now, without doing further checks and then upload again. You
+> >> can even re-use the same version number then.
+> >
+> > Though there's no good reason I can see to re-use a release number
+> > after it's uploaded.
+> 
+> Because it never reach the archive, so it's better to keep the same
+> version for a REJECTED package: jumping revision is useless.
+
+There's no reason not to increment the version. You've made a release,
+and have made changes to that release. Whether it actually hits the
+archive is immaterial. You just build with the appropriate -v option,
+and you're done. Moreover, a new revision makes it easier for everyone
+to follow what had changed between a version which was reviewed by the
+ftpmasters and the next version that was uploaded.
+
+There's nothing magical about the -1 version number.
+
+
+Don Armstrong
+
+-- 
+She was alot like starbucks.
+IE, generic and expensive.
+ -- hugh macleod http://www.gapingvoid.com/Moveable_Type/archives/001376.html
+
+http://www.donarmstrong.com              http://rzlab.ucr.edu
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

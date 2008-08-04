@@ -1,0 +1,120 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Wed Jul 30 10:16:15 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Wed, 30 Jul 2008 10:16:15 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KOBXL-0005nV-TQ
+	for bremner@pivot.cs.unb.ca; Wed, 30 Jul 2008 10:16:15 -0300
+Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6UDG8jI017584
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 10:16:10 -0300
+Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 4BB0E4440BB
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 10:16:08 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id ECFFF4440B3
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 10:16:03 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 194A313A60E2; Wed, 30 Jul 2008 13:16:02 +0000 (UTC)
+Old-Return-Path: <matrixhasu@gmail.com>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.4 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST,
+	ONEWORD,SARE_MSGID_LONG40 autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 38D7113A60CD
+	for <lists-debian-mentors@liszt.debian.org>; Wed, 30 Jul 2008 13:15:55 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 10098-58 for <lists-debian-mentors@liszt.debian.org>;
+	Wed, 30 Jul 2008 13:15:52 +0000 (UTC)
+Received: from rv-out-0708.google.com (rv-out-0708.google.com [209.85.198.245])
+	by liszt.debian.org (Postfix) with ESMTP id CB65313A609A
+	for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 13:15:51 +0000 (UTC)
+Received: by rv-out-0708.google.com with SMTP id k29so7171rvb.30
+        for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 06:15:48 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:in-reply-to:mime-version:content-type
+         :content-transfer-encoding:content-disposition:references;
+        bh=PHG4uLfQsq6cpxCbPLDLfL/M8ffjEF61U/4+S5T2qIc=;
+        b=FpqURWqY6wZxddht0og94RxAM3yGc50RLHoJwcYGFjEVSzXZmASwAB1nM25Qketeje
+         7Epv4AqU+/7NlrVs+zumFE6XssJOX42v3NeJTxCQQ5QWfTN/mmrIKkBrWV80gzNXz2q7
+         AoDP4V/wGh2lFgcruP7GrYOPN7fH3Nr7trq38=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version
+         :content-type:content-transfer-encoding:content-disposition
+         :references;
+        b=X/mMKN6ckKnwy7IQok3XfBca1j0LxzLN/F/8dIHrewlphrT0zO0lBA2cbg61npsXLs
+         XFu+2r3IBC79pEIwGIrKIQ872hT0I9e5whiMdmEXPvAlsOD5m32CeWlYB2U7pBMorNx7
+         KrYg0SlCSSC+ZN+9A+4wHQLM3wijYOBh8sJAc=
+Received: by 10.141.129.14 with SMTP id g14mr4225154rvn.50.1217423748775;
+        Wed, 30 Jul 2008 06:15:48 -0700 (PDT)
+Received: by 10.141.202.10 with HTTP; Wed, 30 Jul 2008 06:15:48 -0700 (PDT)
+Message-ID: <8b2d7b4d0807300615m129c35f8x7789b376b958e35a@mail.gmail.com>
+Date: Wed, 30 Jul 2008 15:15:48 +0200
+From: "Sandro Tosi" <matrixhasu@gmail.com>
+To: debian-mentors <debian-mentors@lists.debian.org>
+Subject: Re: ftp-masters
+In-Reply-To: <87tze7bjp5.fsf@benfinney.id.au>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+References: <20080730115010.GA24515@shota.mine.nu>
+	 <200807301404.49015.t.quathamer@gmx.net>
+	 <87tze7bjp5.fsf@benfinney.id.au>
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-2.363 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5, ONEWORD=2, SARE_MSGID_LONG40=0.637]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <ysdlhHgEHDO.A.AED.SmGkIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42391
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Wed, 30 Jul 2008 13:16:02 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.30.130500
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_800_899 0, WEBMAIL_SOURCE 0, __BOUNCE_CHALLENGE_SUBJ 0, __C230066_P1_2 0, __CD 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __FRAUD_419_WEBMAIL 0, __FRAUD_419_WEBMAIL_FROM 0, __FROM_GMAIL 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __PHISH_SPEAR_HTTP_RECEIVED 0, __PHISH_SPEAR_STRUCTURE_1 0, __PHISH_SPEAR_STRUCTURE_2 0, __SANE_MSGID 0, __SXL_SIG_TIMEOUT , __SXL_URI_TIMEOUT '
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+On Wed, Jul 30, 2008 at 15:11, Ben Finney <ben+debian@benfinney.id.au> wrote:
+> Tobias Quathamer <t.quathamer@gmx.net> writes:
+>
+>> You can send an email to ftpmaster@d.o and ask them to REJECT your
+>> package now, without doing further checks and then upload again. You
+>> can even re-use the same version number then.
+>
+> Though there's no good reason I can see to re-use a release number
+> after it's uploaded.
+
+Because it never reach the archive, so it's better to keep the same
+version for a REJECTED package: jumping revision is useless.
+
+-- 
+Sandro Tosi (aka morph, Morpheus, matrixhasu)
+My website: http://matrixhasu.altervista.org/
+Me at Debian: http://wiki.debian.org/SandroTosi
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

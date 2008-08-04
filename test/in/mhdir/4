@@ -1,0 +1,122 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Thu Jul 31 03:28:42 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Thu, 31 Jul 2008 03:28:42 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KOReU-0000Fh-Ce
+	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 03:28:42 -0300
+Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6V6SPAq008050
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 03:28:34 -0300
+Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 07CDC444057
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 03:28:25 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id 9EC30444051
+	for <bremner@unb.ca>; Thu, 31 Jul 2008 03:28:24 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 0CA3913A621C; Thu, 31 Jul 2008 06:28:22 +0000 (UTC)
+Old-Return-Path: <meillo@marmaro.de>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-11.0 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST
+	autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id BAC9013A6201
+	for <lists-debian-mentors@liszt.debian.org>; Thu, 31 Jul 2008 06:28:15 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 25844-28 for <lists-debian-mentors@liszt.debian.org>;
+	Thu, 31 Jul 2008 06:28:07 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_FROM_IP=-2 (check from: .marmaro. - helo: .wp091.webpack.hosteurope. - helo-domain: .hosteurope.)  FROM/MX_MATCHES_NOT_HELO(DOMAIN)=0 <client=80.237.132.98> <helo=wp091.webpack.hosteurope.de> <from=meillo@marmaro.de> <to=debian-mentors@lists.debian.org>, rate: -5
+Received: from wp091.webpack.hosteurope.de (wp091.webpack.hosteurope.de [80.237.132.98])
+	by liszt.debian.org (Postfix) with ESMTP id C6E4A13A6208
+	for <debian-mentors@lists.debian.org>; Thu, 31 Jul 2008 06:28:01 +0000 (UTC)
+Received: from tbbf7.t.pppool.de ([89.55.187.247] helo=serveme); authenticated
+	by wp091.webpack.hosteurope.de running ExIM  using esmtpa
+	id 1KORdm-0008EZ-St; Thu, 31 Jul 2008 08:27:59 +0200
+Received: from meillo by serveme with local (masqmail 0.2.21) id
+ 1KORco-4Z0-00 for <debian-mentors@lists.debian.org>; Thu, 31 Jul 2008
+ 08:26:58 +0200
+Date: Thu, 31 Jul 2008 08:26:58 +0200
+From: markus schnalke <meillo@marmaro.de>
+To: debian-mentors@lists.debian.org
+Subject: Re: pbuilder/pdebuild mini-howto (Was: Building a build environment)
+Message-ID: <20080731062658.GD3066@serveme.schnalke.local>
+References: <c4f47b5b0807300151u4565bb6fi3dcb68fa9bd02d1a@mail.gmail.com> <20080730092902.GC3066@serveme.schnalke.local> <20080730193926.GN21393@volo.donarmstrong.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="1aa3fXZUP8Xb8QnO"
+Content-Disposition: inline
+In-Reply-To: <20080730193926.GN21393@volo.donarmstrong.com>
+User-Agent: Mutt/1.5.13 (2006-08-11)
+X-bounce-key: webpack.hosteurope.de;meillo@marmaro.de;1217485687;feb0a6f4;
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-5 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <x5ATCEDEkGD.A.5oF.FuVkIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42408
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Thu, 31 Jul 2008 06:28:22 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.61637
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_1099 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __CD 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+
+--1aa3fXZUP8Xb8QnO
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+[2008-07-30 12:39] Don Armstrong <don@debian.org>
+> On Wed, 30 Jul 2008, markus schnalke wrote:
+> > When I configured pbuilder some time ago, I couldn't manage to use
+> > different locations than /var/cache/pbuilder when using
+> > cowdancer/cowbuilder with it.
+>=20
+> You set BASEPATH instead of BASETGZ (or use --basepath instead of
+> --basetgz).
+
+Thanks ... i'm gonna try this
+
+
+meillo
+
+--1aa3fXZUP8Xb8QnO
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIkVsy6aFpZ+X9qBIRAqCEAJ9H3+7DvcTsXy64TogtqdAJORi2wACfV8sp
+mnjxfJEvH4Kldd96zGeRrl0=
+=H6j4
+-----END PGP SIGNATURE-----
+
+--1aa3fXZUP8Xb8QnO--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,139 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Wed Jul 30 19:34:16 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Wed, 30 Jul 2008 19:34:16 -0300
+Received: from mailserv4.its.unb.ca ([131.202.1.27])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KOKFI-0006w8-TM
+	for bremner@pivot.cs.unb.ca; Wed, 30 Jul 2008 19:34:16 -0300
+Received: from mx3.nbpei-ecn.ca (mx3.nbpei-ecn.ca [198.164.163.196])
+	by mailserv4.its.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6UMY5g3003634
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 19:34:07 -0300
+Received: from mx3.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 38E9DD36F5
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 19:34:05 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx3.nbpei-ecn.ca (Postfix) with ESMTP id CBDCDD3700
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 19:34:04 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id ED75113A5AA8; Wed, 30 Jul 2008 22:34:02 +0000 (UTC)
+Old-Return-Path: <debian-mentors@m.gmane.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=GMAIL,LDOSUBSCRIBER,
+	LDO_WHITELIST,ONEWORD autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id CCD2013A592C
+	for <lists-debian-mentors@liszt.debian.org>; Wed, 30 Jul 2008 22:33:56 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 15005-44 for <lists-debian-mentors@liszt.debian.org>;
+	Wed, 30 Jul 2008 22:33:54 +0000 (UTC)
+X-policyd-weight: using cached result; rate: -7
+Received: from ciao.gmane.org (main.gmane.org [80.91.229.2])
+	(using TLSv1 with cipher AES256-SHA (256/256 bits))
+	(Client did not present a certificate)
+	by liszt.debian.org (Postfix) with ESMTP id EE49713A5914
+	for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 22:33:47 +0000 (UTC)
+Received: from list by ciao.gmane.org with local (Exim 4.43)
+	id 1KOKEn-00076R-Qh
+	for debian-mentors@lists.debian.org; Wed, 30 Jul 2008 22:33:41 +0000
+Received: from eth595.vic.adsl.internode.on.net ([150.101.214.82])
+        by main.gmane.org with esmtp (Gmexim 0.1 (Debian))
+        id 1AlnuQ-0007hv-00
+        for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 22:33:41 +0000
+Received: from ben+debian by eth595.vic.adsl.internode.on.net with local (Gmexim 0.1 (Debian))
+        id 1AlnuQ-0007hv-00
+        for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 22:33:41 +0000
+X-Injected-Via-Gmane: http://gmane.org/
+To: debian-mentors@lists.debian.org
+From: Ben Finney <ben+debian@benfinney.id.au>
+Subject:  Re: ftp-masters
+Date:  Thu, 31 Jul 2008 08:33:33 +1000
+Lines: 33
+Message-ID:  <87ljzjatoi.fsf@benfinney.id.au>
+References:  <20080730115010.GA24515@shota.mine.nu> <200807301404.49015.t.quathamer@gmx.net> <87tze7bjp5.fsf@benfinney.id.au> <8b2d7b4d0807300615m129c35f8x7789b376b958e35a@mail.gmail.com>
+Mime-Version:  1.0
+Content-Type:  text/plain; charset=utf-8
+X-Complaints-To: usenet@ger.gmane.org
+X-Gmane-NNTP-Posting-Host: eth595.vic.adsl.internode.on.net
+X-Public-Key-ID: 0xBD41714B
+X-Public-Key-Fingerprint: 9CFE 12B0 791A 4267 887F  520C B7AC 2E51 BD41 714B
+X-Public-Key-URL: http://www.benfinney.id.au/contact/bfinney-gpg.asc
+X-Post-From: Ben Finney <bignose+hates-spam@benfinney.id.au>
+User-Agent: Gnus/5.11 (Gnus v5.11) Emacs/22.2 (gnu/linux)
+Cancel-Lock: sha1:+mAEwxNsMBR5Hda+f68mIlgjBFY=
+Sender: news <news@ger.gmane.org>
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv4.its.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-2 tagged_above=3.6 required=5.3 tests=[GMAIL=1,
+	LDO_WHITELIST=-5, ONEWORD=2]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <OKy4yaYfgbG.A.3sG.axOkIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42404
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Wed, 30 Jul 2008 22:34:02 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.30.221624
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1400_1499 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __C230066_P1_2 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __FRAUD_419_BODY_WEBMAIL 0, __FRAUD_419_WEBMAIL 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __HIGHBITS 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+Content-Transfer-Encoding: quoted-printable
+X-MIME-Autoconverted: from 8bit to quoted-printable by mailserv4.its.unb.ca id m6UMY5g3003634
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+"Sandro Tosi" <matrixhasu@gmail.com> writes:
+
+> On Wed, Jul 30, 2008 at 15:11, Ben Finney <ben+debian@benfinney.id.au> =
+wrote:
+> > [T]here's no good reason I can see to re-use a release number
+> > after it's uploaded.
+>=20
+> Because it never reach the archive, so it's better to keep the same
+> version for a REJECTED package
+
+Why is it better? What benefit does it bring to retain the same
+version string, including release number, for two different packages
+that have both been uploaded by the maintainer?
+
+> jumping revision is useless.
+
+It's useful because it clearly distinguishes two different package
+uploads by the maintainer. By definition, they are at least different
+enough that one was REJECTED and the later one hopes not to meet the
+same fate.
+
+That keeps discussions about which one is which easy, and it even
+makes it trivial to distinguish in the package changelog, by
+separating the two releases and describing what was done for the later
+one to make it different.
+
+That's a tangible benefit, not "useless". What is the benefit in not
+doing that?
+
+--=20
+ \         =E2=80=9CMy girlfriend has a queen sized bed; I have a court j=
+ester |
+  `\   sized bed. It's red and green and has bells on it, and the ends |
+_o__)                                         curl up.=E2=80=9D =E2=80=94=
+Steven Wright |
+Ben Finney
+
+
+--=20
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

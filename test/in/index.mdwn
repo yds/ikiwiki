@@ -1,2 +1,11 @@
 
-[[!mailbox path="testbox"]]
+## A Maildir called maildir
+
+[[!mailbox path="maildir"]]
+
+## An Mh Folder
+[[!mailbox path="mhdir" type="MH"]]
+
+## An Mbox
+
+[[!mailbox path="mbox" type="Mbox"]]

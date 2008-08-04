@@ -1,0 +1,95 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Fri Aug 01 02:57:25 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Fri, 01 Aug 2008 02:57:25 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KOndk-0006s1-MM
+	for bremner@pivot.cs.unb.ca; Fri, 01 Aug 2008 02:57:25 -0300
+Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m715vGPd030165
+	for <bremner@unb.ca>; Fri, 1 Aug 2008 02:57:19 -0300
+Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id D53AD444074
+	for <bremner@unb.ca>; Fri,  1 Aug 2008 02:57:16 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id 77013444054
+	for <bremner@unb.ca>; Fri,  1 Aug 2008 02:57:16 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6560813A528B; Fri,  1 Aug 2008 05:57:14 +0000 (UTC)
+Old-Return-Path: <herve@moulticast.net>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-10.7 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST,
+	MENTORSRFS,SARE_MSGID_LONG40 autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 69DFA13A528D
+	for <lists-debian-mentors@liszt.debian.org>; Fri,  1 Aug 2008 05:57:07 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 26175-94 for <lists-debian-mentors@liszt.debian.org>;
+	Fri, 1 Aug 2008 05:57:04 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_IP=-2 (check from: .moulticast. - helo: .rv-out-0708.google. - helo-domain: .google.)  FROM/MX_MATCHES_NOT_HELO(DOMAIN)=0 <client=209.85.198.251> <helo=rv-out-0708.google.com> <from=herve@moulticast.net> <to=debian-mentors@lists.debian.org>, rate: -5
+Received: from rv-out-0708.google.com (rv-out-0708.google.com [209.85.198.251])
+	by liszt.debian.org (Postfix) with ESMTP id 0B27113A525C
+	for <debian-mentors@lists.debian.org>; Fri,  1 Aug 2008 05:56:55 +0000 (UTC)
+Received: by rv-out-0708.google.com with SMTP id k29so978410rvb.30
+        for <debian-mentors@lists.debian.org>; Thu, 31 Jul 2008 22:56:52 -0700 (PDT)
+Received: by 10.141.113.6 with SMTP id q6mr5743424rvm.36.1217570212637;
+        Thu, 31 Jul 2008 22:56:52 -0700 (PDT)
+Received: by 10.140.171.20 with HTTP; Thu, 31 Jul 2008 22:56:52 -0700 (PDT)
+Message-ID: <d8ec8f980807312256x7be02745y94dfc520ea7d1b96@mail.gmail.com>
+Date: Fri, 1 Aug 2008 07:56:52 +0200
+From: "=?UTF-8?Q?Herv=C3=A9_Rousseau?=" <herve@moulticast.net>
+To: "Cyril Brulebois" <kibi@debian.org>, debian-mentors@lists.debian.org
+Subject: Re: RFS: paris-traceroute (updated package)
+In-Reply-To: <20080801024224.GG4563@ikibiki.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: base64
+Content-Disposition: inline
+References: <d8ec8f980807310700v27d87b18v88e1bfebaa552790@mail.gmail.com>
+	 <48926CC3.9090903@goirand.fr> <20080801024224.GG4563@ikibiki.org>
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-4.663 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5, MENTORSRFS=-0.3, SARE_MSGID_LONG40=0.637]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <QHjUKvK6kBB.A.qhG.6WqkIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42429
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Fri,  1 Aug 2008 05:57:14 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.8.1.54516
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_1099 0, BODY_SIZE_5000_LESS 0, WEBMAIL_SOURCE 0, __BOUNCE_CHALLENGE_SUBJ 0, __CD 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __PHISH_SPEAR_HTTP_RECEIVED 0, __PHISH_SPEAR_STRUCTURE_1 0, __PHISH_SPEAR_STRUCTURE_2 0, __SANE_MSGID 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+T24gRnJpLCBBdWcgMSwgMjAwOCBhdCA0OjQyIEFNLCBDeXJpbCBCcnVsZWJvaXMgPGtpYmlAZGVi
+aWFuLm9yZz4gd3JvdGU6ClsuLi5dCj4KPiBDaGVjayB0aGUgaG9tZXBhZ2VbMV0uIEhlcnbDqTog
+SSB0aGluayB5b3Ugc2hvdWxkIHJ1biB0aGUgbGF0ZXN0IGxpbnRpYW4KPiB2ZXJzaW9uIG9uIHlv
+dXIgcGFja2FnZSwgd2hpY2ggd291bGQgaGF2ZSBzcG90dGVkIHRoYXQgeW91ciBIb21lcGFnZToK
+PiBzaG91bGQgYmUgbW92ZWQgdG8gYSBwcm9wZXIgc291cmNlIGZpZWxkLCBhbmQgdGhhdCB5b3Vy
+Cj4gU3RhbmRhcmRzLVZlcnNpb24gaXMgb3V0ZGF0ZWQgKGFuZCBtYXliZSBvdGhlciwgZGlkbid0
+IGNoZWNrKS4KCk9vb3BzLAoKWWVzLCBJIGRpZG4ndCB1c2UgdGhlIGxhdGVzdCB2ZXJzaW9uIG9m
+IGxpbnRpYW4gc29ycnkuIEl0IHNob3VsZCBiZSBmaXhlZCBub3cuCgpJIGhhdmUgdXBkYXRlZCB0
+aGUgcGFja2FnZSBpbiBtZW50b3JzLmRlYmlhbi5uZXQgOgoKLSBVUkw6IGh0dHA6Ly9tZW50b3Jz
+LmRlYmlhbi5uZXQvZGViaWFuL3Bvb2wvbWFpbi9wL3BhcmlzLXRyYWNlcm91dGUKLSBTb3VyY2Ug
+cmVwb3NpdG9yeTogZGViLXNyYyBodHRwOi8vbWVudG9ycy5kZWJpYW4ubmV0L2RlYmlhbiB1bnN0
+YWJsZQptYWluIGNvbnRyaWIgbm9uLWZyZWUKLSBkZ2V0IGh0dHA6Ly9tZW50b3JzLmRlYmlhbi5u
+ZXQvZGViaWFuL3Bvb2wvbWFpbi9wL3BhcmlzLXRyYWNlcm91dGUvcGFyaXMtdHJhY2Vyb3V0ZV8w
+LjkyLWRldi0yLmRzYwoKQ2hlZXJzLAoKLS0gCkhlcnZlIFJvdXNzZWF1Cg==
+
+

@@ -1,0 +1,162 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Sun Aug 03 11:42:19 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Sun, 03 Aug 2008 11:42:19 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KPemp-0007dK-E3
+	for bremner@pivot.cs.unb.ca; Sun, 03 Aug 2008 11:42:19 -0300
+Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m73Eg9rN006381
+	for <bremner@unb.ca>; Sun, 3 Aug 2008 11:42:11 -0300
+Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 38D42444093
+	for <bremner@unb.ca>; Sun,  3 Aug 2008 11:42:09 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id C476944409C
+	for <bremner@unb.ca>; Sun,  3 Aug 2008 11:42:08 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 2739713A52A1; Sun,  3 Aug 2008 14:42:07 +0000 (UTC)
+Old-Return-Path: <iulian.udrea@googlemail.com>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.3 required=4.0 tests=FOURLA,HTML_MESSAGE,
+	IMPRONONCABLE_1,LDO_WHITELIST,MENTORSRFS,MURPHY_WRONG_WORD2,SARE_MSGID_LONG40
+	autolearn=no version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 4B2BB13A52A4
+	for <lists-debian-mentors@liszt.debian.org>; Sun,  3 Aug 2008 14:24:57 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 14741-99 for <lists-debian-mentors@liszt.debian.org>;
+	Sun, 3 Aug 2008 14:24:51 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_IP=-2 (check from: .googlemail. - helo: .wf-out-1314.google. - helo-domain: .google.)  FROM/MX_MATCHES_HELO(DOMAIN)=-2 <client=209.85.200.172> <helo=wf-out-1314.google.com> <from=iulian.udrea@googlemail.com> <to=debian-mentors@lists.debian.org>, rate: -7
+Received: from wf-out-1314.google.com (wf-out-1314.google.com [209.85.200.172])
+	by liszt.debian.org (Postfix) with ESMTP id 812D413A524E
+	for <debian-mentors@lists.debian.org>; Sun,  3 Aug 2008 14:24:44 +0000 (UTC)
+Received: by wf-out-1314.google.com with SMTP id 28so1662436wfc.18
+        for <debian-mentors@lists.debian.org>; Sun, 03 Aug 2008 07:24:41 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlemail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:sender
+         :to:subject:mime-version:content-type:x-google-sender-auth;
+        bh=nPZuDkg6zo5UL30HvCv0LCUURBND7R2NC3l3WeHSOtk=;
+        b=bXtFZGEjZsBWEb3AqaunG+6kOMC+5imNqP3QKa0BW+M1WuVpC0nlESWbGHHQIotTTw
+         VpkjTlBLPQiK/Vtkbvd3n3xRUSZecWcKGsgUorK2uX14PfuJnmArhStaAAFT2FQcf95g
+         xr1VVWDvNlqhqZjNclIgE1WbtHQ2kyrLgR5a0=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=googlemail.com; s=gamma;
+        h=message-id:date:from:sender:to:subject:mime-version:content-type
+         :x-google-sender-auth;
+        b=cxbPt0ii/LOYxB9c4k1VBYymsER/Nsaau7401adVDLH3/Z7OyqH0eccBZn9lXGNHwb
+         gFd3uyBM1K+LvefjeaSl+CKLXmZo9Qbl3uoGW71gYthY+XxUaTDwHQdZN78E8ZO+g1f7
+         bH6zf0Dr+62wyq2Sqm20kl7XdPbEbMgDRUOQM=
+Received: by 10.142.133.8 with SMTP id g8mr4561791wfd.312.1217773481159;
+        Sun, 03 Aug 2008 07:24:41 -0700 (PDT)
+Received: by 10.143.37.2 with HTTP; Sun, 3 Aug 2008 07:24:41 -0700 (PDT)
+Message-ID: <3e58361c0808030724h5ad4c814ge8f28e1896fa7d5a@mail.gmail.com>
+Date: Sun, 3 Aug 2008 15:24:41 +0100
+From: "Iulian Udrea" <iulian@ubuntu.com>
+Sender: iulian.udrea@googlemail.com
+To: debian-mentors@lists.debian.org
+Subject: RFS: gtkmm-utils
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_11931_21897706.1217773481158"
+X-Google-Sender-Auth: d3857d6873e3454c
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-4.263 tagged_above=3.6 required=5.3
+	tests=[BAYES_00=-2, FOURLA=0.1, HTML_MESSAGE=1.1, IMPRONONCABLE_1=1,
+	LDO_WHITELIST=-5, MENTORSRFS=-0.3, MURPHY_WRONG_WORD2=0.2,
+	SARE_MSGID_LONG40=0.637]
+X-Rc-Spam: 2007-10-04_01
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <fTaQ3yArl-C.A.h8D._OclIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42476
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Sun,  3 Aug 2008 14:42:07 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.8.3.142125
+X-PerlMx-Spam: Gauge=IIIIIIIII, Probability=9%, Report='WEBMAIL_REPLYTO_NOT_FROM 0.5, BODY_SIZE_3000_3999 0, BODY_SIZE_5000_LESS 0, WEBMAIL_SOURCE 0, __CP_URI_IN_BODY 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0, __FRAUD_419_WEBMAIL 0, __FRAUD_419_WEBMAIL_SENDER 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_HTML 0, __MIME_VERSION 0, __PHISH_SPEAR_HTTP_RECEIVED 0, __PHISH_SPEAR_STRUCTURE_1 0, __PHISH_SPEAR_STRUCTURE_2 0, __SANE_MSGID 0, __STOCK_PHRASE_24 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+------=_Part_11931_21897706.1217773481158
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Dear mentors,
+
+I am looking for a sponsor for my package "gtkmm-utils".
+
+gtkmm-utils is a C++ utility and widget library based on glibmm and gtkmm.
+
+Package name: gtkmm-utils
+Version: 0.3.2-1
+Upstream Authors: Marko Anastasov <marko@marko.anastasov.name> and
+                            Dodji Seketeli <dodji@seketeli.org>
+URL: http://savannah.nongnu.org/projects/gtkmm-utils
+License: LGPL
+Section: libs
+
+It builds these binary packages:
+libglibmm-utils-dev - utility functions, classes and widgets written on top
+of glibmm
+libglibmm-utils2 - utility functions, classes and widgets written on top of
+glibmm
+libgtkmm-utils-dev - utility functions, classes and widgets written on top
+of gtkmm
+libgtkmm-utils2 - utility functions, classes and widgets written on top of
+gtkmm
+
+The package appears to be lintian clean.
+
+The upload would fix these bugs: 492480
+
+The package can be found on mentors.debian.net:
+- URL: http://mentors.debian.net/debian/pool/main/g/gtkmm-utils
+- Source repository: deb-src http://mentors.debian.net/debian unstable main
+contrib non-free
+- dget
+http://mentors.debian.net/debian/pool/main/g/gtkmm-utils/gtkmm-utils_0.3.2-1.dsc
+
+
+Sincerely,
+-- 
+Iulian
+
+------=_Part_11931_21897706.1217773481158
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+<div dir="ltr">Dear mentors,<br><br>I am looking for a sponsor for my package &quot;gtkmm-utils&quot;.<br><br>gtkmm-utils is a C++ utility and widget library based on glibmm and gtkmm. <br><br>Package name: gtkmm-utils<br>
+Version: 0.3.2-1<br>Upstream Authors: Marko Anastasov &lt;<a href="mailto:marko@marko.anastasov.name">marko@marko.anastasov.name</a>&gt; and<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dodji Seketeli &lt;<a href="mailto:dodji@seketeli.org">dodji@seketeli.org</a>&gt; <br>
+URL: <a href="http://savannah.nongnu.org/projects/gtkmm-utils">http://savannah.nongnu.org/projects/gtkmm-utils</a><br>License: LGPL<br>Section: libs<br><br>It builds these binary packages:<br>libglibmm-utils-dev - utility functions, classes and widgets written on top of glibmm<br>
+libglibmm-utils2 - utility functions, classes and widgets written on top of glibmm<br>libgtkmm-utils-dev - utility functions, classes and widgets written on top of gtkmm<br>libgtkmm-utils2 - utility functions, classes and widgets written on top of gtkmm<br>
+<br>The package appears to be lintian clean.<br><br>The upload would fix these bugs: 492480<br><br>The package can be found on <a href="http://mentors.debian.net">mentors.debian.net</a>:<br>- URL: <a href="http://mentors.debian.net/debian/pool/main/g/gtkmm-utils">http://mentors.debian.net/debian/pool/main/g/gtkmm-utils</a><br>
+- Source repository: deb-src <a href="http://mentors.debian.net/debian">http://mentors.debian.net/debian</a> unstable main contrib non-free<br>- dget <a href="http://mentors.debian.net/debian/pool/main/g/gtkmm-utils/gtkmm-utils_0.3.2-1.dsc">http://mentors.debian.net/debian/pool/main/g/gtkmm-utils/gtkmm-utils_0.3.2-1.dsc</a><br>
+<br><br>Sincerely,<br>-- <br>Iulian<br></div>
+
+------=_Part_11931_21897706.1217773481158--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

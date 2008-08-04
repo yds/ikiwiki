@@ -1,0 +1,129 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Fri Aug 01 15:24:44 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Fri, 01 Aug 2008 15:24:44 -0300
+Received: from mailserv4.its.unb.ca ([131.202.1.27])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KOzIy-0003f0-Ld
+	for bremner@pivot.cs.unb.ca; Fri, 01 Aug 2008 15:24:44 -0300
+Received: from mx3.nbpei-ecn.ca (mx3.nbpei-ecn.ca [198.164.163.196])
+	by mailserv4.its.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m71IOZZn018340
+	for <bremner@unb.ca>; Fri, 1 Aug 2008 15:24:39 -0300
+Received: from mx3.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 805CEF30D5
+	for <bremner@unb.ca>; Fri,  1 Aug 2008 15:24:38 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx3.nbpei-ecn.ca (Postfix) with ESMTP id EA722F2EEB
+	for <bremner@unb.ca>; Fri,  1 Aug 2008 15:24:37 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 7345613A56F9; Fri,  1 Aug 2008 18:24:36 +0000 (UTC)
+Old-Return-Path: <bernat@luffy.cx>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-12.7 required=4.0 tests=ALL_TRUSTED,LDOSUBSCRIBER,
+	LDO_WHITELIST,MENTORSRFS autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id BDEAB13A5646
+	for <lists-debian-mentors@liszt.debian.org>; Fri,  1 Aug 2008 18:24:29 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 13863-25 for <lists-debian-mentors@liszt.debian.org>;
+	Fri, 1 Aug 2008 18:24:26 +0000 (UTC)
+Received: from bart.luffy.cx (bart.luffy.cx [IPv6:2a01:198:201::7])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client did not present a certificate)
+	by liszt.debian.org (Postfix) with ESMTP id 0B16913A54D0
+	for <debian-mentors@lists.debian.org>; Fri,  1 Aug 2008 18:24:26 +0000 (UTC)
+Received: by bart.luffy.cx (Postfix, from userid 65534)
+	id 5695A1461B; Fri,  1 Aug 2008 20:24:23 +0200 (CEST)
+Received: from neo.luffy.cx (cl-350.bru-01.be.sixxs.net [IPv6:2001:6f8:202:15d::2])
+	by bart.luffy.cx (Postfix) with ESMTP id 209A114570
+	for <debian-mentors@lists.debian.org>; Fri,  1 Aug 2008 20:24:23 +0200 (CEST)
+Received: from neo.luffy.cx (localhost.localdomain [127.0.0.1])
+	by neo.luffy.cx (Postfix) with ESMTP id E86FC3817C
+	for <debian-mentors@lists.debian.org>; Fri,  1 Aug 2008 20:24:21 +0200 (CEST)
+From: Vincent Bernat <bernat@debian.org>
+To: debian-mentors@lists.debian.org
+Subject: Re: RFS: getstream (updated package)
+In-Reply-To: <d8ec8f980808010054n60fd12f2t1b7de23d31d11728@mail.gmail.com>
+	(=?iso-8859-15?Q?=22Herv=E9?= Rousseau"'s message of "Fri, 1 Aug 2008
+ 09:54:10 +0200")
+Organization: Debian
+References: <d8ec8f980808010054n60fd12f2t1b7de23d31d11728@mail.gmail.com>
+User-Agent: Gnus/5.110011 (No Gnus v0.11) Emacs/22.2 (x86_64-pc-linux-gnu)
+X-PGP-KeyID: 0xF22A794E
+X-PGP-Fingerprint: 5854 AF2B 65B2 0E96 2161  E32B 285B D7A1 F22A 794E
+Mail-Followup-To:        =?iso-8859-15?Q?Herv=E9________Rousseau?=
+       <herve@moulticast.net>,
+	debian-mentors@lists.debian.org
+Date: Fri, 01 Aug 2008 20:24:17 +0200
+Message-ID: <m3hca4pp9q.fsf@neo.luffy.cx>
+MIME-Version: 1.0
+Content-Type: multipart/signed; boundary="=-=-=";
+	micalg=pgp-sha1; protocol="application/pgp-signature"
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv4.its.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-6.66 tagged_above=3.6 required=5.3
+	tests=[ALL_TRUSTED=-1.36, LDO_WHITELIST=-5, MENTORSRFS=-0.3]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <wvppwv9HsXJ.A.NPD.kT1kIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42438
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Fri,  1 Aug 2008 18:24:36 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.8.1.180439
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_1099 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __CP_URI_IN_BODY 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+--=-=-=
+Content-Type: text/plain; charset=iso-8859-15
+Content-Transfer-Encoding: quoted-printable
+
+OoO En cette  matin=E9e ensoleill=E9e du vendredi 01  ao=FBt 2008, vers 09:=
+54,
+"Herv=E9 Rousseau" <herve@moulticast.net> disait=A0:
+
+> - dget http://mentors.debian.net/debian/pool/main/g/getstream/getstream_2=
+0080426-1.dsc
+
+Uploaded.
+
+For a next version:
+ - remove the last "." in debian/control.
+ - CFLAGS is now set  automatically by dpkg-buildpackage, you can remove
+   the "noopt" snippet from the top of debian/rules
+=2D-=20
+ /* Identify the flock of penguins.  */
+	2.2.16 /usr/src/linux/arch/alpha/kernel/setup.c
+
+--=-=-=
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEARECAAYFAkiTVNUACgkQKFvXofIqeU7PPQCfbixsjqJe58iVdFvRKyXC7ZvG
+kmkAoMGJnsA57ha8VZL6cjVTy+auoTPD
+=JpV8
+-----END PGP SIGNATURE-----
+--=-=-=--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,113 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Wed Jul 30 16:39:54 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Wed, 30 Jul 2008 16:39:54 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KOHWc-0006cX-IQ
+	for bremner@pivot.cs.unb.ca; Wed, 30 Jul 2008 16:39:54 -0300
+Received: from mx4.nbpei-ecn.ca (mx4.nbpei-ecn.ca [198.164.163.197])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6UJdjPu012892
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 16:39:49 -0300
+Received: from mx4.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 705257C401B
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 16:39:48 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx4.nbpei-ecn.ca (Postfix) with ESMTP id 114D67C4039
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 16:39:48 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 7D6CA13A61CB; Wed, 30 Jul 2008 19:39:46 +0000 (UTC)
+Old-Return-Path: <don@donarmstrong.net>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.0 required=4.0 tests=LDO_WHITELIST
+	autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 4E17813A61B8
+	for <lists-debian-mentors@liszt.debian.org>; Wed, 30 Jul 2008 19:39:40 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 25207-39 for <lists-debian-mentors@liszt.debian.org>;
+	Wed, 30 Jul 2008 19:39:37 +0000 (UTC)
+X-policyd-weight: using cached result; rate: -5
+Received: from rzlab.ucr.edu (rzlab.ucr.edu [138.23.92.77])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client did not present a certificate)
+	by liszt.debian.org (Postfix) with ESMTP id 2F4AB13A605A
+	for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 19:39:31 +0000 (UTC)
+Received: from rzlab.ucr.edu (rzlab.ucr.edu [127.0.0.1])
+	by rzlab.ucr.edu (8.13.8/8.13.8/Debian-3) with ESMTP id m6UJdRQT013083
+	for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 12:39:27 -0700
+Received: (from remotemail@localhost)
+	by rzlab.ucr.edu (8.13.8/8.13.8/Submit) id m6UJdRXY013082
+	for debian-mentors@lists.debian.org; Wed, 30 Jul 2008 12:39:27 -0700
+Received: (nullmailer pid 19411 invoked by uid 1000);
+	Wed, 30 Jul 2008 19:39:26 -0000
+Date: Wed, 30 Jul 2008 12:39:26 -0700
+From: Don Armstrong <don@debian.org>
+To: debian-mentors@lists.debian.org
+Subject: Re: pbuilder/pdebuild mini-howto (Was: Building a build
+	environment)
+Message-ID: <20080730193926.GN21393@volo.donarmstrong.com>
+Mail-Followup-To: debian-mentors@lists.debian.org
+References: <c4f47b5b0807300151u4565bb6fi3dcb68fa9bd02d1a@mail.gmail.com> <20080730092902.GC3066@serveme.schnalke.local>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+In-Reply-To: <20080730092902.GC3066@serveme.schnalke.local>
+User-Agent: Mutt/1.5.18 (2008-05-17)
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-5 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <C5gWK32sa_I.A.UoH.COMkIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42396
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Wed, 30 Jul 2008 19:39:46 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.30.192251
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_900_999 0, __BOUNCE_CHALLENGE_SUBJ 0, __CD 0, __CP_URI_IN_BODY 0, __CT 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+On Wed, 30 Jul 2008, markus schnalke wrote:
+> When I configured pbuilder some time ago, I couldn't manage to use
+> different locations than /var/cache/pbuilder when using
+> cowdancer/cowbuilder with it.
+
+You set BASEPATH instead of BASETGZ (or use --basepath instead of
+--basetgz).
+
+
+Don Armstrong
+
+-- 
+If I had a letter, sealed it in a locked vault and hid the vault
+somewhere in New York. Then told you to read the letter, thats not
+security, thats obscurity. If I made a letter, sealed it in a vault,
+gave you the blueprints of the vault, the combinations of 1000 other
+vaults, access to the best lock smiths in the world, then told you to
+read the letter, and you still can't, thats security.
+ -- Bruce Schneier
+
+http://www.donarmstrong.com              http://rzlab.ucr.edu
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

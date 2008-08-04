@@ -1,0 +1,147 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Wed Jul 30 17:35:33 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Wed, 30 Jul 2008 17:35:33 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KOIOT-0006iS-T5
+	for bremner@pivot.cs.unb.ca; Wed, 30 Jul 2008 17:35:33 -0300
+Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6UKZQgi029790
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 17:35:28 -0300
+Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 0C25C44403D
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 17:35:26 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id 9685C444039
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 17:35:25 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E7F7913A6135; Wed, 30 Jul 2008 20:35:22 +0000 (UTC)
+Old-Return-Path: <kibi@ikibiki.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.3 required=4.0 tests=ALL_TRUSTED,FOURLA,
+	LDO_WHITELIST,ONEWORD autolearn=no version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id B32F013A58AB
+	for <lists-debian-mentors@liszt.debian.org>; Wed, 30 Jul 2008 20:35:16 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 05234-17 for <lists-debian-mentors@liszt.debian.org>;
+	Wed, 30 Jul 2008 20:35:14 +0000 (UTC)
+Received: from dedibox.ebzao.info (ipv6.ebzao.info [IPv6:2001:6f8:385::2])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client CN "dedibox.ebzao.info", Issuer "CA Cert Signing Authority" (not verified))
+	by liszt.debian.org (Postfix) with ESMTP id E53C313A58CD
+	for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 20:35:13 +0000 (UTC)
+Received: from localhost (localhost [127.0.0.1])
+	by dedibox.ebzao.info (Postfix) with ESMTP id 62BA988D7
+	for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 22:35:09 +0200 (CEST)
+Received: from dedibox.ebzao.info ([127.0.0.1])
+	by localhost (dedibox.ebzao.info [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id hwkzjDPVFHeN for <debian-mentors@lists.debian.org>;
+	Wed, 30 Jul 2008 22:35:09 +0200 (CEST)
+Received: from evy.ikibiki.org (localhost [127.0.0.1])
+	(using TLSv1 with cipher ADH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by dedibox.ebzao.info (Postfix) with ESMTPS id 2E9A188A3
+	for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 22:35:09 +0200 (CEST)
+Received: by evy.ikibiki.org (Postfix, from userid 1000)
+	id 669D6C85B8; Wed, 30 Jul 2008 22:34:38 +0200 (CEST)
+Date: Wed, 30 Jul 2008 22:34:38 +0200
+From: Cyril Brulebois <kibi@debian.org>
+To: debian-mentors@lists.debian.org
+Subject: Re: ftp-masters
+Message-ID: <20080730203438.GF4563@ikibiki.org>
+References: <20080730115010.GA24515@shota.mine.nu> <200807301404.49015.t.quathamer@gmx.net> <87tze7bjp5.fsf@benfinney.id.au> <8b2d7b4d0807300615m129c35f8x7789b376b958e35a@mail.gmail.com> <20080730193744.GM21393@volo.donarmstrong.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="URkQCorwCiZbgSAY"
+Content-Disposition: inline
+In-Reply-To: <20080730193744.GM21393@volo.donarmstrong.com>
+Organization: Debian
+User-Agent: Mutt/1.5.18 (2008-05-17)
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-4.26 tagged_above=3.6 required=5.3
+	tests=[ALL_TRUSTED=-1.36, FOURLA=0.1, LDO_WHITELIST=-5, ONEWORD=2]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <fUe97-bRkGI.A.-rE.KCNkIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42400
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Wed, 30 Jul 2008 20:35:22 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.30.202006
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1800_1899 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __C230066_P1_2 0, __CD 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+
+--URkQCorwCiZbgSAY
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+Don Armstrong <don@debian.org> (30/07/2008):
+> > Because it never reach the archive, so it's better to keep the same
+> > version for a REJECTED package: jumping revision is useless.
+>=20
+> There's no reason not to increment the version. You've made a release,
+> and have made changes to that release. Whether it actually hits the
+> archive is immaterial. You just build with the appropriate -v option,
+> and you're done.
+
+And when one checks in which revision this or that happened, that's
+quite misleading not to see any upload in the archive matching those
+revisions (yeah for QA work!).
+
+> Moreover, a new revision makes it easier for everyone to follow what
+> had changed between a version which was reviewed by the ftpmasters and
+> the next version that was uploaded.
+
+That was already discussed at length in another mentors.d.n thread
+(other threads actually). Improving the mentoring system seems to be the
+key (at least to me). Maybe Signum could post some report on his GSOC
+debexpo project?
+
+> There's nothing magical about the -1 version number.
+
+There's no need to keep intermediate work-in-progress never-uploaded
+not-matching-anything-in-the-archive revision.
+
+Mraw,
+KiBi.
+
+--URkQCorwCiZbgSAY
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEARECAAYFAkiQ0F0ACgkQeGfVPHR5Nd2fBQCdHCDNIa8YJV2hfxS754xVQZrQ
+ZhoAn2+mVeySayNvx1bVxeyvYnGbE6BC
+=lAk0
+-----END PGP SIGNATURE-----
+
+--URkQCorwCiZbgSAY--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

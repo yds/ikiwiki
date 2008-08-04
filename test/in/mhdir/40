@@ -1,0 +1,137 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Sat Aug 02 02:22:28 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Sat, 02 Aug 2008 02:22:28 -0300
+Received: from mailserv4.its.unb.ca ([131.202.1.27])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KP9ZU-0004oB-02
+	for bremner@pivot.cs.unb.ca; Sat, 02 Aug 2008 02:22:28 -0300
+Received: from mx3.nbpei-ecn.ca (mx3.nbpei-ecn.ca [198.164.163.196])
+	by mailserv4.its.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m725MKOM007833
+	for <bremner@unb.ca>; Sat, 2 Aug 2008 02:22:22 -0300
+Received: from mx3.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 172DFF9C1D
+	for <bremner@unb.ca>; Sat,  2 Aug 2008 02:22:20 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx3.nbpei-ecn.ca (Postfix) with ESMTP id AB2EFF9DA5
+	for <bremner@unb.ca>; Sat,  2 Aug 2008 02:22:17 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E5B7D13A572E; Sat,  2 Aug 2008 05:22:15 +0000 (UTC)
+Old-Return-Path: <anibal@v7w.com>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.3 required=4.0 tests=LDO_WHITELIST,MENTORSRFS,
+	MURPHY_DRUGS_REL8 autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 9101C13A5718
+	for <lists-debian-mentors@liszt.debian.org>; Sat,  2 Aug 2008 05:22:09 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 07896-08 for <lists-debian-mentors@liszt.debian.org>;
+	Sat, 2 Aug 2008 05:22:06 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_FROM_MX=-3.1 <client=209.135.157.232> <helo=aura.v7w.com> <from=anibal@v7w.com> <to=debian-mentors@lists.debian.org>, rate: -6.1
+Received: from aura.v7w.com (vs832.rosehosting.com [209.135.157.232])
+	by liszt.debian.org (Postfix) with ESMTP id 789E813A571C
+	for <debian-mentors@lists.debian.org>; Sat,  2 Aug 2008 05:21:53 +0000 (UTC)
+Received: from elida.v7w.com (60-241-92-80.static.tpgi.com.au [60.241.92.80])
+	by aura.v7w.com (Postfix) with ESMTP id 82289188032;
+	Sat,  2 Aug 2008 05:21:15 +0000 (UTC)
+Received: by elida.v7w.com (Postfix, from userid 1000)
+	id B7A065119B; Sat,  2 Aug 2008 15:20:53 +1000 (EST)
+Date: Sat, 2 Aug 2008 15:20:53 +1000
+From: =?iso-8859-1?Q?An=EDbal?= Monsalve Salazar <anibal@debian.org>
+To: William Vera <billy@billy.com.mx>
+Cc: debian-mentors <debian-mentors@lists.debian.org>
+Subject: Re: RFS: scrot (updated package)
+Message-ID: <20080802052053.GO14057@debianrules.debiancolombia.org>
+References: <b3e93d820808012149u58d99ba2y54690a7f2092c9fa@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="+HwY7O+GdaLKMYOv"
+Content-Disposition: inline
+In-Reply-To: <b3e93d820808012149u58d99ba2y54690a7f2092c9fa@mail.gmail.com>
+User-Agent: Mutt/1.5.18 (2008-05-17)
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv4.its.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-5.28 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5, MENTORSRFS=-0.3, MURPHY_DRUGS_REL8=0.02]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <EKtFf_FMiDK.A.GPB.H8-kIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42453
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Sat,  2 Aug 2008 05:22:15 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.8.2.50115
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1700_1799 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __CD 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+
+--+HwY7O+GdaLKMYOv
+Content-Type: text/plain; charset=iso-8859-1
+Content-Disposition: inline
+
+On Fri, Aug 01, 2008 at 11:49:30PM -0500, William Vera wrote:
+>I am looking for a sponsor for the new version 0.8-8 of my package
+>"scrot".
+
+Please don't include changes to autotools files in scrot_0.8-8.diff.gz
+
+All other upstream files should be modified with patches. So, Please put
+those cahnges in a series of patches in debian/patches and build depend
+on quilt.
+
+diffstat scrot_0.8-8.diff.gz
+ Makefile.am      |    8
+ Makefile.in      |  635 +++--
+ aclocal.m4       | 1111 +++++++--
+ config.guess     | 1407 ++++++++++++
+ config.sub       | 1505 +++++++++++++
+ configure        |  629 ++++-
+ debian/changelog |   92
+ debian/compat    |    1
+ debian/control   |   16
+ debian/copyright |   32
+ debian/rules     |    4
+ depcomp          |  479 ++++
+ install-sh       |  169 -
+ ltmain.sh        | 6322 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ missing          |  158 +
+ mkinstalldirs    |  117 -
+ src/Makefile.am  |    4
+ src/Makefile.in  |  509 ++--
+ src/options.c    |    4
+ 19 files changed, 12247 insertions(+), 955 deletions(-)
+
+--+HwY7O+GdaLKMYOv
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEARECAAYFAkiT7rMACgkQgY5NIXPNpFVYlwCgr+NDPdk2U7FHbYUHGDB7JntB
+PtUAn3Ftq3xnlDyeM3k0FZSNLekQw/X5
+=rAZy
+-----END PGP SIGNATURE-----
+
+--+HwY7O+GdaLKMYOv--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,131 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Wed Jul 30 18:09:35 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Wed, 30 Jul 2008 18:09:35 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KOIvP-0006l9-Er
+	for bremner@pivot.cs.unb.ca; Wed, 30 Jul 2008 18:09:35 -0300
+Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6UL9Pcx005938
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 18:09:30 -0300
+Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 393A9444018
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 18:09:29 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id CB96B44406B
+	for <bremner@unb.ca>; Wed, 30 Jul 2008 18:09:28 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B180713A558A; Wed, 30 Jul 2008 21:09:23 +0000 (UTC)
+Old-Return-Path: <don@donarmstrong.net>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.9 required=4.0 tests=FVGT_m_MULTI_ODD,
+	LDO_WHITELIST,MDO_DATING2,ONEWORD autolearn=no version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 3C21D13A555C
+	for <lists-debian-mentors@liszt.debian.org>; Wed, 30 Jul 2008 21:09:17 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 30169-89 for <lists-debian-mentors@liszt.debian.org>;
+	Wed, 30 Jul 2008 21:09:14 +0000 (UTC)
+X-policyd-weight: using cached result; rate: -5
+Received: from rzlab.ucr.edu (rzlab.ucr.edu [138.23.92.77])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client did not present a certificate)
+	by liszt.debian.org (Postfix) with ESMTP id BBBA013A5286
+	for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 21:09:07 +0000 (UTC)
+Received: from rzlab.ucr.edu (rzlab.ucr.edu [127.0.0.1])
+	by rzlab.ucr.edu (8.13.8/8.13.8/Debian-3) with ESMTP id m6UL93vO004859
+	for <debian-mentors@lists.debian.org>; Wed, 30 Jul 2008 14:09:03 -0700
+Received: (from remotemail@localhost)
+	by rzlab.ucr.edu (8.13.8/8.13.8/Submit) id m6UL93LP004858
+	for debian-mentors@lists.debian.org; Wed, 30 Jul 2008 14:09:03 -0700
+Received: (nullmailer pid 28214 invoked by uid 1000);
+	Wed, 30 Jul 2008 21:08:57 -0000
+Date: Wed, 30 Jul 2008 14:08:57 -0700
+From: Don Armstrong <don@debian.org>
+To: debian-mentors@lists.debian.org
+Subject: Re: ftp-masters
+Message-ID: <20080730210857.GO21393@volo.donarmstrong.com>
+Mail-Followup-To: debian-mentors@lists.debian.org
+References: <20080730115010.GA24515@shota.mine.nu> <200807301404.49015.t.quathamer@gmx.net> <87tze7bjp5.fsf@benfinney.id.au> <8b2d7b4d0807300615m129c35f8x7789b376b958e35a@mail.gmail.com> <20080730193744.GM21393@volo.donarmstrong.com> <20080730203438.GF4563@ikibiki.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+In-Reply-To: <20080730203438.GF4563@ikibiki.org>
+User-Agent: Mutt/1.5.18 (2008-05-17)
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-2.88 tagged_above=3.6 required=5.3
+	tests=[FVGT_m_MULTI_ODD=0.02, LDO_WHITELIST=-5, MDO_DATING2=0.1,
+	ONEWORD=2]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <M-Z4T_G3k4F.A.wSE.DiNkIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42401
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Wed, 30 Jul 2008 21:09:23 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.30.205520
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1700_1799 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __C230066_P1_2 0, __CD 0, __CP_URI_IN_BODY 0, __CT 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+On Wed, 30 Jul 2008, Cyril Brulebois wrote:
+> Don Armstrong <don@debian.org> (30/07/2008):
+> > There's no reason not to increment the version. You've made a
+> > release, and have made changes to that release. Whether it
+> > actually hits the archive is immaterial. You just build with the
+> > appropriate -v option, and you're done.
+> 
+> And when one checks in which revision this or that happened, that's
+> quite misleading not to see any upload in the archive matching those
+> revisions (yeah for QA work!).
+
+In QA work you're always comparing revisions. There's no difference
+between dealing with versions which skipped the archive because they
+were QAed elsewhere, or versions which are no longer in the archive
+because they have been superseded. Furthemore, in this case, there was
+an upload, it just never made it out of NEW.
+ 
+> > Moreover, a new revision makes it easier for everyone to follow
+> > what had changed between a version which was reviewed by the
+> > ftpmasters and the next version that was uploaded.
+> 
+> That was already discussed at length in another mentors.d.n thread
+> (other threads actually).
+
+There's a significant difference between uploads to mentors.d.n and
+uploads to debian.org. If you actually uploaded to the archive, even
+if it never made it out of NEW, you should never elide changelogs.
+
+
+Don Armstrong
+
+-- 
+Three little words. (In descending order of importance.)
+I
+love
+you
+ -- hugh macleod http://www.gapingvoid.com/graphics/batch35.php
+
+http://www.donarmstrong.com              http://rzlab.ucr.edu
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

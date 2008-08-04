@@ -1,0 +1,99 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Sun Aug 03 15:06:20 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Sun, 03 Aug 2008 15:06:20 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KPhyG-0007xf-DY
+	for bremner@pivot.cs.unb.ca; Sun, 03 Aug 2008 15:06:20 -0300
+Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m73I6CAN021737
+	for <bremner@unb.ca>; Sun, 3 Aug 2008 15:06:15 -0300
+Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id C54DE444038
+	for <bremner@unb.ca>; Sun,  3 Aug 2008 15:06:12 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id 8FC21444028
+	for <bremner@unb.ca>; Sun,  3 Aug 2008 15:06:12 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 0004813A512C; Sun,  3 Aug 2008 18:06:10 +0000 (UTC)
+Old-Return-Path: <c.hey@web.de>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.3 required=4.0 tests=LDO_WHITELIST,MENTORSRFS
+	autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id D7E6413A54BD
+	for <lists-debian-mentors@liszt.debian.org>; Sun,  3 Aug 2008 17:49:48 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 32697-65 for <lists-debian-mentors@liszt.debian.org>;
+	Sun, 3 Aug 2008 17:49:46 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_IP=-2 (check from: .web. - helo: .fmmailgate03.web. - helo-domain: .web.)  FROM/MX_MATCHES_HELO(DOMAIN)=-2 <client=217.72.192.234> <helo=fmmailgate03.web.de> <from=c.hey@web.de> <to=debian-mentors@lists.debian.org>, rate: -7
+Received: from fmmailgate03.web.de (fmmailgate03.web.de [217.72.192.234])
+	by liszt.debian.org (Postfix) with ESMTP id 21D9613A54A8
+	for <debian-mentors@lists.debian.org>; Sun,  3 Aug 2008 17:49:39 +0000 (UTC)
+Received: from smtp06.web.de (fmsmtp06.dlan.cinetic.de [172.20.5.172])
+	by fmmailgate03.web.de (Postfix) with ESMTP id 828DBE5D78E0
+	for <debian-mentors@lists.debian.org>; Sun,  3 Aug 2008 19:49:37 +0200 (CEST)
+Received: from [84.16.224.152] (helo=localhost)
+	by smtp06.web.de with esmtp (TLSv1:AES128-SHA:128)
+	(WEB.DE 4.109 #226)
+	id 1KPhi5-00032w-00; Sun, 03 Aug 2008 19:49:37 +0200
+Date: Sun, 3 Aug 2008 19:49:36 +0200
+From: Carsten Hey <c.hey@web.de>
+To: debian-mentors <debian-mentors@lists.debian.org>
+Subject: Re: RFS: pal (done)
+Message-ID: <20080803174936.GE7301@foghorn.stateful.de>
+References: <20080803161148.GC7301@foghorn.stateful.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20080803161148.GC7301@foghorn.stateful.de>
+User-Agent: Mutt/1.5.16 (2007-06-11)
+Sender: c.hey@web.de
+X-Sender: c.hey@web.de
+X-Provags-ID: V01U2FsdGVkX19SYyFXU79/HwCHtuVeC/MCvr+hXKjuA6mPxWkK
+	hLNF0bcjqlDhzNyOsSY/LAdIlUxwn3T53JVIsRyJF374xfZS8f
+	ie75DLiBk=
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-7.3 tagged_above=3.6 required=5.3
+	tests=[BAYES_00=-2, LDO_WHITELIST=-5, MENTORSRFS=-0.3]
+X-Rc-Spam: 2007-10-04_01
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <UeATzFtiPKE.A._XD.SOflIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42482
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Sun,  3 Aug 2008 18:06:10 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.8.3.175200
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_LESS 0, BODY_SIZE_300_399 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __CD 0, __CT 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+On Sun, Aug 03, 2008 at 06:11:48PM +0200, Carsten Hey wrote:
+> I am looking for a sponsor for the new version 0.4.3-1 of my package "pal".
+
+I just found a sponsor, thanks!
+
+Carsten
+
+
+-- 
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

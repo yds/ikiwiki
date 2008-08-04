@@ -1,0 +1,137 @@
+From bounce-debian-mentors=bremner=unb.ca@lists.debian.org Fri Aug 01 20:39:06 2008
+Return-path: <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Fri, 01 Aug 2008 20:39:06 -0300
+Received: from mailserv4.its.unb.ca ([131.202.1.27])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bounce-debian-mentors=bremner=unb.ca@lists.debian.org>)
+	id 1KP4DA-0004Ja-Mw
+	for bremner@pivot.cs.unb.ca; Fri, 01 Aug 2008 20:39:06 -0300
+Received: from mx3.nbpei-ecn.ca (mx3.nbpei-ecn.ca [198.164.163.196])
+	by mailserv4.its.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m71NcuIT004349
+	for <bremner@unb.ca>; Fri, 1 Aug 2008 20:38:59 -0300
+Received: from mx3.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id DFE09F6D17
+	for <bremner@unb.ca>; Fri,  1 Aug 2008 20:38:56 -0300 (ADT)
+Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
+	by mx3.nbpei-ecn.ca (Postfix) with ESMTP id 7ECC3F5142
+	for <bremner@unb.ca>; Fri,  1 Aug 2008 20:38:56 -0300 (ADT)
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 12C1C13A5842; Fri,  1 Aug 2008 23:38:54 +0000 (UTC)
+Old-Return-Path: <debian-mentors@m.gmane.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-11.3 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST,
+	MENTORSRFS autolearn=failed version=3.2.3
+X-Original-To: lists-debian-mentors@liszt.debian.org
+Delivered-To: lists-debian-mentors@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 1E97A13A5806
+	for <lists-debian-mentors@liszt.debian.org>; Fri,  1 Aug 2008 23:38:48 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 21567-70 for <lists-debian-mentors@liszt.debian.org>;
+	Fri, 1 Aug 2008 23:38:45 +0000 (UTC)
+X-policyd-weight: using cached result; rate: -7
+Received: from ciao.gmane.org (main.gmane.org [80.91.229.2])
+	(using TLSv1 with cipher AES256-SHA (256/256 bits))
+	(Client did not present a certificate)
+	by liszt.debian.org (Postfix) with ESMTP id 37D9A13A57E4
+	for <debian-mentors@lists.debian.org>; Fri,  1 Aug 2008 23:38:38 +0000 (UTC)
+Received: from list by ciao.gmane.org with local (Exim 4.43)
+	id 1KP4Cg-0000dR-0f
+	for debian-mentors@lists.debian.org; Fri, 01 Aug 2008 23:38:34 +0000
+Received: from eth595.vic.adsl.internode.on.net ([150.101.214.82])
+        by main.gmane.org with esmtp (Gmexim 0.1 (Debian))
+        id 1AlnuQ-0007hv-00
+        for <debian-mentors@lists.debian.org>; Fri, 01 Aug 2008 23:38:34 +0000
+Received: from ben+debian by eth595.vic.adsl.internode.on.net with local (Gmexim 0.1 (Debian))
+        id 1AlnuQ-0007hv-00
+        for <debian-mentors@lists.debian.org>; Fri, 01 Aug 2008 23:38:34 +0000
+X-Injected-Via-Gmane: http://gmane.org/
+To: debian-mentors@lists.debian.org
+From: Ben Finney <ben+debian@benfinney.id.au>
+Subject:  Re: RFS: procinfo-ng
+Date:  Sat, 02 Aug 2008 09:38:24 +1000
+Lines: 30
+Message-ID:  <87vdyk9uhb.fsf@benfinney.id.au>
+References:  <48932274.8030000@iuculano.it>
+Mime-Version:  1.0
+Content-Type:  text/plain; charset=utf-8
+X-Complaints-To: usenet@ger.gmane.org
+X-Gmane-NNTP-Posting-Host: eth595.vic.adsl.internode.on.net
+X-Public-Key-ID: 0xBD41714B
+X-Public-Key-Fingerprint: 9CFE 12B0 791A 4267 887F  520C B7AC 2E51 BD41 714B
+X-Public-Key-URL: http://www.benfinney.id.au/contact/bfinney-gpg.asc
+X-Post-From: Ben Finney <bignose+hates-spam@benfinney.id.au>
+User-Agent: Gnus/5.11 (Gnus v5.11) Emacs/22.2 (gnu/linux)
+Cancel-Lock: sha1:GhjBGuy4ddNsknvXddhCRKq5KT8=
+Sender: news <news@ger.gmane.org>
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv4.its.unb.ca
+X-Virus-Scanned: at lists.debian.org with policy bank en-lt
+X-Amavis-Spam-Status: No, score=-5.3 tagged_above=3.6 required=5.3
+	tests=[LDO_WHITELIST=-5, MENTORSRFS=-0.3]
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+Resent-Message-ID: <8yPqlWNjCN.A.bAB.N65kIB@liszt>
+Resent-From: debian-mentors@lists.debian.org
+X-Mailing-List: <debian-mentors@lists.debian.org> archive/latest/42441
+X-Loop: debian-mentors@lists.debian.org
+List-Id: <debian-mentors.lists.debian.org>
+List-Post: <mailto:debian-mentors@lists.debian.org>
+List-Help: <mailto:debian-mentors-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-mentors-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-mentors-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-mentors-request@lists.debian.org
+Resent-Date: Fri,  1 Aug 2008 23:38:54 +0000 (UTC)
+X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.8.1.231629
+X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1200_1299 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __HIGHBITS 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __STOCK_PHRASE_24 0, __USER_AGENT 0'
+X-Virus-Status: Clean
+Content-Transfer-Encoding: quoted-printable
+X-MIME-Autoconverted: from 8bit to quoted-printable by mailserv4.its.unb.ca id m71NcuIT004349
+X-Sender-Verified: bounce-debian-mentors=bremner=unb.ca@lists.debian.org
+
+Giuseppe Iuculano <giuseppe@iuculano.it> writes:
+
+> Dear mentors,
+>=20
+> I am looking for a sponsor for my package "procinfo-ng".
+>=20
+> * Package name    : procinfo-ng
+>   Version         : 2.0.196-1+svn204
+>   Upstream Author : Thaddeus Messenger <tabrisnet@users.sourceforge.net=
+>
+> * URL             : http://procinfo-ng.sourceforge.net
+> * License         : GPL
+>   Section         : utils
+>=20
+> It builds these binary packages:
+> procinfo-ng - Displays system information from /proc and /sys
+
+Please rewrite the synopsis as guided by the Best Packaging Practices
+<URL:http://www.debian.org/doc/developers-reference/ch-best-pkging-practi=
+ces#s-bpp-pkg-synopsis>.
+The synopsis should be an appositive clause (see that reference for
+more).
+
+Suggested improved synopsis:
+
+    reporter for system information from /proc and /sys
+
+--=20
+ \       =E2=80=9CTwo possibilities exist: Either we are alone in the Uni=
+verse |
+  `\   or we are not. Both are equally terrifying.=E2=80=9D =E2=80=94Arth=
+ur C. Clarke, |
+_o__)                                                             1999 |
+Ben Finney
+
+
+--=20
+To UNSUBSCRIBE, email to debian-mentors-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+
