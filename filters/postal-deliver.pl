@@ -34,7 +34,7 @@ if ($to =~ m/$prefix($Convert::YText::valid_rex)/){
     my @path=split(qr{/},$key);
     map { $_=encode_ytext($_); s/\./@/g } @path;
     
-    my $mailbox=$maildir . "/.".join(".",@path)."/" ;
+    my $mailbox=$maildir . ".".join(".",@path)."/" ;
     
     $mail->accept($mailbox);
 
