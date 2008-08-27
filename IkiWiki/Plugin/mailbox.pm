@@ -4,6 +4,7 @@
 # Copyright (c) 2008 David Bremner <bremner@unb.ca>
 # This file is distributed under the Artistic License/GPL2+
 
+use Email::FolderType qw(folder_type);
 use Email::MIME;
 package Email::MIMEFolder;
 use base 'Email::Folder';
@@ -12,7 +13,6 @@ sub bless_message { return  Email::MIME->new($_[1]) };
 
 package IkiWiki::Plugin::mailbox;
 
-use Email::FolderType qw(folder_type);
 use IkiWiki 2.00;
 use Email::Thread;
 use CGI 'escapeHTML';
@@ -27,6 +27,7 @@ sub import { #{{{
 	hook(type => "preprocess", id => "mailbox", call => \&preprocess);
 	hook(type => "scan", id => "mailbox", call => \&scan);
 	hook(type => "pagetemplate", id=>"mailbox", call => \&pagetemplate);
+	IkiWiki::loadplugin("filecheck");
 } # }}}
 
 sub scan(@){
@@ -128,6 +129,8 @@ sub format_message(@){
 
     $template->param(HEADERS=>[@headers]);
 
+    my $filter=$params{filter} ||  "maxsize(100k) and mimetype(text/plain)";
+    my @good_parts=filter_parts($filter,$message->parts;
 
     my $body= join("\n", map { $_->body }  $message->parts);
 
