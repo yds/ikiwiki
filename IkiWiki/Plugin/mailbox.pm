@@ -16,8 +16,8 @@ use Email::FolderType qw(folder_type);
 use IkiWiki 2.00;
 use Email::Thread;
 use CGI 'escapeHTML';
-use Data::Dumper;
-
+use File::Temp qw/tempfile/;
+use File::MimeInfo::Magic;
 
 
 my %metaheaders;
@@ -71,7 +71,7 @@ sub format_mailbox(@){
 
     $threader->thread();
 
-    return join "\n", map { format_thread(thread=>$_) } $threader->rootset;
+    return join "\n", map { format_thread(%params,thread=>$_) } $threader->rootset;
 }
 
 sub format_thread(@){
@@ -82,19 +82,19 @@ sub format_thread(@){
     my $output="";
 
     if ($thread->message) {
-	$output .= format_message(message=>$thread->message);
+	$output .= format_message(%params,message=>$thread->message);
     } else {
 	$output .= sprintf gettext("Message %s not available"), $thread->messageid;
     }
 
     if ($thread->child){
 	$output .= '<div class="emailthreadindent">' .
-	    format_thread(thread=>$thread->child).
+	    format_thread(%params,thread=>$thread->child).
 	    '</div>';
     }
 
     if ($thread->next){
-	$output .= format_thread(thread=>$thread->next);
+	$output .= format_thread(%params,thread=>$thread->next);
     }
     return $output;
 }
@@ -115,6 +115,10 @@ sub format_message(@){
     my $message=$params{message} || 
 	error gettext("missing parameter"). "message";
 
+
+    my $dest=$params{destpage} || 
+	error gettext("missing parameter"). "destpage";
+
     my $keep_headers=$params{headers} || qr/^(subject|from|date)[:]?$/i;
     
     my $template= 
@@ -128,8 +132,31 @@ sub format_message(@){
 
     $template->param(HEADERS=>[@headers]);
 
+    my $allowed_attachments=$params{allowed_attachments} || 
+	"maxsize(100kb) and mimetype(text/plain)";
 
-    my $body= join("\n", map { $_->body }  $message->parts);
+    my @parts=$message->parts;
+
+    my $partcount=1;
+    foreach(@parts){
+	#this sucks. But someone would need to modify filecheck to
+	#accept a blob of content. Or maybe hacking with IO::Scalar
+	my $tmpfile=File::Temp->new();
+	print $tmpfile $_;
+
+	debug("checking ".$allowed_attachments);
+
+	my $allowed=pagespec_match($dest, $allowed_attachments, file=>$tmpfile);
+	debug("pagespec_return = ". $allowed);
+	debug("mimetype = ".File::MimeInfo::Magic::magic($tmpfile));
+
+	if (+!$allowed) {
+	    debug("clobbering attachment");
+	    $_->body_set("skipping part $partcount: $allowed");
+	}
+	$partcount++;
+    }
+    my $body= join("\n", map { $_->body }  @parts);
 
     $template->param(body=>format_body($body));
 
