@@ -139,9 +139,7 @@ use IkiWiki::Setup::Standard {
 	#multimarkdown => 1,
 
 	# To add plugins, list them here.
-	# you probably want filecheck if you are getting mail from someone 
-	# other than yourself.
-	    add_plugins=>[qw{filecheck mailbox}],
+	    add_plugins=>[qw{mailbox}],
 	#add_plugins => [qw{goodstuff search wikitext camelcase
 	#                   htmltidy fortune sidebar map rst anonok}],
 	# If you want to disable any of the default plugins, list them here.
