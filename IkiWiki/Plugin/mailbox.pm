@@ -5,6 +5,7 @@
 # This file is distributed under the Artistic License/GPL2+
 
 use Email::MIME;
+use Email::MIME::Modifier;
 package Email::MIMEFolder;
 use base 'Email::Folder';
 sub bless_message { return  Email::MIME->new($_[1]) };
@@ -141,18 +142,22 @@ sub format_message(@){
     foreach(@parts){
 	#this sucks. But someone would need to modify filecheck to
 	#accept a blob of content. Or maybe hacking with IO::Scalar
-	my $tmpfile=File::Temp->new();
-	print $tmpfile $_;
-
-	debug("checking ".$allowed_attachments);
+	my $tmpfile=File::Temp->new(UNLINK=>0);
+	binmode $tmpfile,':utf8';
+	print $tmpfile $_->body();
+	my $msgid=$_->header('Message-ID');
+	debug("checking $msgid part $partcount ".$allowed_attachments);
 
 	my $allowed=pagespec_match($dest, $allowed_attachments, file=>$tmpfile);
-	debug("pagespec_return = ". $allowed);
-	debug("mimetype = ".File::MimeInfo::Magic::magic($tmpfile));
+	debug("pagespec_return= ". $allowed);
+	debug("magic= ".File::MimeInfo::Magic::magic($tmpfile));
+	debug("default= ".File::MimeInfo::Magic::default($tmpfile));
 
-	if (+!$allowed) {
+	if (!$allowed) {
 	    debug("clobbering attachment");
-	    $_->body_set("skipping part $partcount: $allowed");
+	    $_->content_type_set('text/plain');
+	    $_->body_set("[ omitting part $partcount: $allowed ]");
+
 	}
 	$partcount++;
     }
