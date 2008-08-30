@@ -1,0 +1,7 @@
+
+* tag 0.1
+
+  - kinda sorta working.
+  - HTML attachement handling could be improved. Most text/html 
+  are deleted by default. Bad html is recognized as text/plain.
+
