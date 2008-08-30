@@ -1,0 +1,73 @@
+From bremner-dated-1220706519.8348a9@unb.ca Sat Aug 30 10:08:51 2008
+Return-path: <bremner-dated-1220706519.8348a9@unb.ca>
+Envelope-to: bremner@pivot.cs.unb.ca
+Delivery-date: Sat, 30 Aug 2008 10:08:51 -0300
+Received: from mailserv2.unb.ca ([131.202.1.10])
+	by pivot.cs.unb.ca with esmtp (Exim 4.69)
+	(envelope-from <bremner-dated-1220706519.8348a9@unb.ca>)
+	id 1KZQCB-0006yT-Bn
+	for bremner@pivot.cs.unb.ca; Sat, 30 Aug 2008 10:08:51 -0300
+Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
+	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m7UD8ecM002527
+	for <bremner@unb.ca>; Sat, 30 Aug 2008 10:08:43 -0300
+Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 820F65343BC
+	for <bremner@unb.ca>; Sat, 30 Aug 2008 10:08:40 -0300 (ADT)
+Received: from pivot.cs.unb.ca (pivot.cs.unb.ca [131.202.240.57])
+	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id 0CF395343A0
+	for <bremner@unb.ca>; Sat, 30 Aug 2008 10:08:40 -0300 (ADT)
+Received: from bremner by pivot.cs.unb.ca with local (Exim 4.69)
+	(envelope-from <bremner-dated-1220706519.8348a9@unb.ca>)
+	id 1KZQC0-0006yP-0L
+	for bremner@unb.ca; Sat, 30 Aug 2008 10:08:40 -0300
+Received: by pivot.cs.unb.ca (tmda-sendmail, from uid 1266);
+	Sat, 30 Aug 2008 10:08:38 -0300
+Received: from fctnnbsc27w-142166200054.pppoe-dynamic.nb.aliant.net
+	([142.166.200.54] helo=[192.168.2.28])
+	by pivot.cs.unb.ca with esmtpsa (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.69) (envelope-from <bremner@unb.ca>) id 1KZQBy-0006yG-8I
+	for bremner@unb.ca; Sat, 30 Aug 2008 10:08:38 -0300
+Message-ID: <48B94650.9070603@unb.ca>
+Date: Sat, 30 Aug 2008 10:08:32 -0300
+User-Agent: Mozilla-Thunderbird 2.0.0.16 (X11/20080724)
+MIME-Version: 1.0
+To: bremner@unb.ca
+Subject: testing HTML mail
+Content-Type: multipart/alternative;
+	boundary="------------080901080000080500080104"
+X-Sender-Verified: bremner@unb.ca
+X-Delivery-Agent: TMDA/1.1.11 (Ladyburn)
+From: David Bremner <bremner@unb.ca>
+X-TMDA-Fingerprint: BBNzY+PbYCI4Txp3FREGQX/LJVw
+X-Primary-Address: bremner@unb.ca
+Reply-To: David Bremner <bremner-dated-1221311319.776bea@unb.ca>
+X-Tmda-Bare: David Bremner <bremner@unb.ca>
+X-PMX-Version: 5.4.4.348488, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.8.30.124307
+X-PerlMx-Spam: Gauge=IIIIIIII, Probability=8%, Report='HTML_70_90 0.1, HTML_NO_HTTP 0.1, BODY_SIZE_1000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_600_699 0, SMALL_BODY 0, __BAT_BOUNDARY 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0, __HAS_MSGID 0, __MIME_HTML 0, __MIME_VERSION 0, __SANE_MSGID 0, __TAG_EXISTS_HTML 0, __USER_AGENT 0'
+X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
+X-Virus-Status: Clean
+X-Sender-Verification-Failure: recipient
+
+This is a multi-part message in MIME format.
+--------------080901080000080500080104
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+This is some *groovy* _HTML_ /text/
+
+--------------080901080000080500080104
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+</head>
+<body bgcolor="#ffffff" text="#000000">
+This is <font color="#cc9933">some </font><b>groovy</b> <u>HTML</u> <i>text</i><br>
+</body>
+</html>
+
+--------------080901080000080500080104--
+
+
