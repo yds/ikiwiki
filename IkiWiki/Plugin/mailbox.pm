@@ -142,19 +142,15 @@ sub format_message(@){
     foreach(@parts){
 	#this sucks. But someone would need to modify filecheck to
 	#accept a blob of content. Or maybe hacking with IO::Scalar
-	my $tmpfile=File::Temp->new(UNLINK=>0);
+	my $tmpfile=File::Temp->new();
+
 	binmode $tmpfile,':utf8';
 	print $tmpfile $_->body();
-	my $msgid=$_->header('Message-ID');
-	debug("checking $msgid part $partcount ".$allowed_attachments);
 
 	my $allowed=pagespec_match($dest, $allowed_attachments, file=>$tmpfile);
-	debug("pagespec_return= ". $allowed);
-	debug("magic= ".File::MimeInfo::Magic::magic($tmpfile));
-	debug("default= ".File::MimeInfo::Magic::default($tmpfile));
 
 	if (!$allowed) {
-	    debug("clobbering attachment");
+	    debug("clobbering attachment $partcount");
 	    $_->content_type_set('text/plain');
 	    $_->body_set("[ omitting part $partcount: $allowed ]");
 
