@@ -1,6 +1,8 @@
 #!/usr/bin/perl
 
 use Email::Folder;
+use Email::LocalDelivery;
+
 use Convert::YText qw(decode_ytext encode_ytext);
 
 # we need at least version 2.54 of IkiWiki for the new config api
@@ -37,17 +39,30 @@ for my $messages  ($folder->messages){
 
 	$msg_file= $comment_folder->write($message);
 
-	# update vcs
+	# update vcs, copied from Ikiwiki::Plugins::attachment
     
-	IkiWIki::rcs_add($msg_file);
-	
+	if ($config{rcs}) {
+	    IkiWiki::rcs_add($filename);
+	    IkiWiki::disable_commit_hook();
+	    IkiWiki::rcs_commit($filename, gettext("attachment upload"),
+				IkiWiki::rcs_prepedit($filename),
+				$session->param("name"), $ENV{REMOTE_ADDR});
+	    IkiWiki::enable_commit_hook();
+	    IkiWiki::rcs_update();
+	}
+
 	# tag for deletion
 	
 	push (@must_die, $message->message-id);
 	
 	$folder->delete($message);
-	    
+
     }
+
+    
+    # refresh wiki
+    IkiWiki::refresh();
+    IkiWiki::saveindex();
  
     # make regex for message-id
 
