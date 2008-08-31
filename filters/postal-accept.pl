@@ -28,6 +28,8 @@ die "configuration file is mandatory" unless ($config_file);
 
 IkiWiki::Setup::load($config_file);
 
+my $prefix=$config{postal_prefix} || die "prefix not set";
+
 $message=Email::Filter->new();
 
 my $to=$message->to;
