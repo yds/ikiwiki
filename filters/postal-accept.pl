@@ -2,15 +2,15 @@
 
 # Take message on stdin, write to appropiate comment folder, 
 # update wiki
-
+use strict;
 use Email::LocalDelivery;
 use Email::Filter;
+use Data::Dumper;
 
-use Convert::YText qw(decode_ytext encode_ytext);
+use Convert::YText qw(decode_ytext);
 
 # we need at least version 2.54 of IkiWiki for the new config api
 BEGIN { require IkiWiki; die unless ($IkiWiki::version >= 2.54) }
-
 use IkiWiki;
 use IkiWiki::Setup;
 use Getopt::Long;
@@ -25,34 +25,36 @@ GetOptions('config=s'=>\$config_file);
 die "configuration file is mandatory" unless ($config_file);
 
 %config=IkiWiki::defaultconfig();
-
 IkiWiki::Setup::load($config_file);
+IkiWiki::checkconfig();
+
 
 my $prefix=$config{postal_prefix} || die "prefix not set";
 
-$message=Email::Filter->new();
+my $message=Email::Filter->new();
 
 my $to=$message->to;
 if ($to =~ m/$prefix($Convert::YText::valid_rex)/){
     my $page=decode_ytext($1);
+
+    IkiWiki::loadindex();
+
+# hmm, not sure why pagesource is indexed by page.ext, but it is awkward here    
+#    die("page ".$page." does not exist") if (!exists $IkiWiki::pagesources{$page});
     
-    die("page ".$page." does not exist") if !($pagesources{$page});
-    
-    my $comments_folder=$page."/comments".$folder_ext;
+    my $comments_folder=$config{srcdir}."/".$page."/comments".$folder_ext;
 
     # write the message to the comment
 
-    my ($delivered) = Email::LocalDeliver($config{srcdir}."/".$comments_folder);
-    
-    die ("delivery failed") if (!defined ($delivered));
+    $message->accept($comments_folder) || die("delivery failed");
     
     # update vcs, copied from Ikiwiki::Plugins::attachment
     
     if ($config{rcs}) {
-	IkiWiki::rcs_add($delivered);
+	IkiWiki::rcs_add($comments_folder);
 	IkiWiki::disable_commit_hook();
-	IkiWiki::rcs_commit($delivered, gettext("postal delivery"),
-			    IkiWiki::rcs_prepedit($delivered));
+	IkiWiki::rcs_commit($comments_folder, gettext("postal delivery"),
+			    IkiWiki::rcs_prepedit($comments_folder));
 	IkiWiki::enable_commit_hook();
 	IkiWiki::rcs_update();
     }
