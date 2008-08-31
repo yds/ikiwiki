@@ -139,7 +139,7 @@ use IkiWiki::Setup::Standard {
 	#multimarkdown => 1,
 
 	# To add plugins, list them here.
-	    add_plugins=>[qw{mailbox postal}],
+	    add_plugins=>[qw{mailbox postal goodstuff}],
 	#add_plugins => [qw{goodstuff search wikitext camelcase
 	#                   htmltidy fortune sidebar map rst anonok}],
 	# If you want to disable any of the default plugins, list them here.
@@ -204,4 +204,6 @@ use IkiWiki::Setup::Standard {
 	# For use with the attachment plugin, a program that returns
 	# nonzero if its standard input contains an virus.
 	#virus_checker => "clamdscan -",
+        postal_prefix=>"bremner-testwiki-",
+
 }
