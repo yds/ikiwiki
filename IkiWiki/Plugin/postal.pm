@@ -56,7 +56,7 @@ sub pagetemplate (@)
 
 
 	my $content;
-	my $comment_page = bestlink ($page, "comments") || return;
+	my $comment_page = bestlink ($page, "_comments") || return;
 	my $comment_file = $pagesources{$comment_page} || return;
 
 	$content = readfile (srcfile ($comment_file));
