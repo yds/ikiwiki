@@ -1,3 +1,4 @@
-* Convert comments.mdwn to a template
-* use prefix in filling in comments template
 * Clean up debugging cruft
+* Add pagespec for which pages get comments
+* Test VCS adding for postal-accept
+
