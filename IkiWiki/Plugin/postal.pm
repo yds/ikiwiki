@@ -67,10 +67,11 @@ sub pagetemplate (@)
 
 	    debug("comment blurb: ". $content);
 
-	    $template->param (comments =>
-			      IkiWiki::linkify ($page, $destpage, $content)) 
-	}
-    }
+    $template->param(POSTAL_COMMENTS=>1,
+		     POSTAL_PREFIX=>$config{postal_prefix},
+		     POSTAL_KEY=>$key,
+		     POSTAL_HOST=>$config{postal_host},
+		     POSTAL_COMMENT_LINK=>$comment_link	);
 }
 
 

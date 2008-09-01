@@ -1,3 +1,0 @@
-<a href="mailto:user-comment-%%KEY%%@host.some.org">Send Comment</a>
-
-[[Read Comments|%%PAGE%%/comments]]

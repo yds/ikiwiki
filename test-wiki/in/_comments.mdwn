@@ -1,4 +1,0 @@
-
-<a href="mailto:bremner-testwiki-%%KEY%%@pivot.cs.unb.ca">Send Comment</a>
-
-[[Read Comments|%%PAGE%%/comments]]
