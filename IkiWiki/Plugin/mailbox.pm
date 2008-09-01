@@ -28,7 +28,6 @@ sub import { #{{{
 	hook(type => "preprocess", id => "mailbox", call => \&preprocess);
 	hook(type => "scan", id => "mailbox", call => \&scan);
 	hook(type => "pagetemplate", id=>"mailbox", call => \&pagetemplate);
-	hook(type => "htmlize",id=>"mbox",call => \&mbox_htmlize);
 	IkiWiki::loadplugin("filecheck");
 } # }}}
 
