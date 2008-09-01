@@ -35,9 +35,11 @@ sub import { #{{{
 sub scan(@){
 	my %params=@_;
 	my $page=$params{page};
+	
+	my $linktext=$config{url}.'/mailbox.css';
 
 	push @{$metaheaders{$page}}, 
-	       '<link rel="stylesheet" href="mailbox.css" type="text/css"/>'
+	       '<link rel="stylesheet" href="'.$linktext.'" type="text/css"/>'
 }
 
 sub preprocess (@) { #{{{
