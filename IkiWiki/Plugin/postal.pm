@@ -18,14 +18,6 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
-# A footer with comment information will be added to every rendered page
-# a file `comments.html' or 'comments.mdwn' is found (using the
-# same rules as for the sidebar plugin).
-
-# You'll need a full wiki-rebuild if your comment header file is changed.
-#
-# You can use wiki links in `comments.html'.
-
 package IkiWiki::Plugin::postal;
 
 use warnings;
@@ -44,34 +36,29 @@ sub pagetemplate (@)
     my %params = @_;
     my $page = IkiWiki::pagetitle($params{page});
     my $destpage = $params{destpage};
-
     my $template = $params{template};
 
-    if ($template->query (name => "comments") &&
-	! defined $template->param ('comments'))
-    {
-	debug("adding comments to ".$page);
-	my $key = encode_ytext($page);
-	debug("using key ".$key);
+    my $key = encode_ytext($page);
 
+    debug("key=".$key);
 
-	my $content;
-	my $comment_page = bestlink ($page, "_comments") || return;
-	my $comment_file = $pagesources{$comment_page} || return;
+    my $subpage_name=$config{postal_pagename} || "comments";
 
-	$content = readfile (srcfile ($comment_file));
-	if (defined $content && length $content)
-	{
-	    $content =~ s/%%KEY%%/$key/g;
-	    $content =~ s/%%PAGE%%/$page/g;
+    my $comment_page=$destpage . "/" . $subpage_name;
 
-	    debug("comment blurb: ". $content);
+    my $comment_link=undef;
+    if (exists $pagesources{$comment_page}){
+	$comment_link=htmllink($page,$destpage,$comment_page,
+			       linktext=>gettext("Read Comments"));
+    }
 
-    $template->param(POSTAL_COMMENTS=>1,
+    debug("comment_link=".$comment_link) if (defined($comment_link));
+
+    $template->param(POSTAL_DIV=>1,
 		     POSTAL_PREFIX=>$config{postal_prefix},
 		     POSTAL_KEY=>$key,
 		     POSTAL_HOST=>$config{postal_host},
-		     POSTAL_COMMENT_LINK=>$comment_link	);
+		     defined($comment_link) ? (POSTAL_COMMENT_LINK=>$comment_link) :());
 }
 
 

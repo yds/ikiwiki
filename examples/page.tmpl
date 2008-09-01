@@ -87,12 +87,12 @@ Links:
 </div>
 </TMPL_IF>
 
-<TMPL_IF POSTAL_COMMENTS>
+<TMPL_IF POSTAL_DIV>
 <div class="pagecomments">
 <a name="pagecomments"></a>
 <a href="mailto:<TMPL_VAR NAME="POSTAL_PREFIX"><TMPL_VAR NAME="POSTAL_KEY">@<TMPL_VAR NAME="POSTAL_HOST">">Send Comment</a>
-<TMPL_IF POSTAL_COMMENTS_LINK>
-  <a href="<TMPL_VAR NAME="POSTAL_COMMENTS_LINK">">Read Comments</a>
+<TMPL_IF POSTAL_COMMENT_LINK>
+<TMPL_VAR NAME="POSTAL_COMMENT_LINK">
 </TMPL_IF>
 </div>
 </TMPL_IF>
