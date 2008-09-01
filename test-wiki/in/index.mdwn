@@ -1,1 +1,3 @@
-this is the root page
+this is the root page; it has a subpage named [[test]]
+
+
