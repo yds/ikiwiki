@@ -1,11 +1,10 @@
 
-/* ikiwiki local style sheet */
 
-/* Add local styling here, instead of modifying style.css. */
+div.mailmessage{
+    border-top: 1px solid;
+    margin-top: 1%
 
-
-
-
+}
 .headername {
 font-weight: bold;
   }
