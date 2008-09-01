@@ -1,3 +1,6 @@
+* tag 0.3
+  - fix link to mailbox.css
+	
 * tag 0.2
   - put back loadplugin of filecheck, without which everything fails
   weirdly.
