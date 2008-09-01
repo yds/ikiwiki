@@ -28,6 +28,7 @@ sub import { #{{{
 	hook(type => "preprocess", id => "mailbox", call => \&preprocess);
 	hook(type => "scan", id => "mailbox", call => \&scan);
 	hook(type => "pagetemplate", id=>"mailbox", call => \&pagetemplate);
+	hook(type => "htmlize",id=>"mbox",call => \&mbox_htmlize);
 	IkiWiki::loadplugin("filecheck");
 } # }}}
 
@@ -59,6 +60,12 @@ sub preprocess (@) { #{{{
 
 } # }}}
 
+sub mbox_htmlize(@){
+    my %params=@_;
+    
+    my $path=$config{srcdir} . '/' . $params{page}.".mbox";
+    return format_mailbox(path=>$path,type=>'Mbox',destpage=>$params{page});
+}
 
 ### The guts of the plugin
 ### parameters 
