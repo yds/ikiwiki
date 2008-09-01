@@ -126,7 +126,7 @@ use IkiWiki::Setup::Standard {
 	# Cost of generating a password using Authen::Passphrase::BlowfishCrypt
 	#password_cost => 8,
 	# Uncomment to force ikiwiki to run with a particular umask.
-	#umask => 022,
+	umask => 022,
 	# Default settings for the recentchanges page.
 	#recentchangespage => "recentchanges",
 	#recentchangesnum => 100,
