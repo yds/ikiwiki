@@ -40,7 +40,11 @@ sub pagetemplate (@)
 
     my $key = encode_ytext($page);
 
-    debug("key=".$key);
+    my $pagespec=$config{postal_pagespec} || "!*/comments";
+
+    if (!pagespec_match($page,$pagespec)){
+	return;
+    }
 
     my $subpage_name=$config{postal_pagename} || "comments";
 
