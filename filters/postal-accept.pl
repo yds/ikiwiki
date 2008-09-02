@@ -44,7 +44,7 @@ if ($to =~ m/$prefix($Convert::YText::valid_rex)/){
 # hmm, not sure why pagesource is indexed by page.ext, but it is awkward here    
 #    die("page ".$page." does not exist") if (!exists $IkiWiki::pagesources{$page});
     
-    my $comments_folder=$config{srcdir}."/".$page."/comments".$folder_ext;
+    my $comments_folder=$page."/comments".$folder_ext;
 
     # write the message to the comment
     
