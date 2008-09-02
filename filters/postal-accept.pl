@@ -27,11 +27,13 @@ die "configuration file is mandatory" unless ($config_file);
 %config=IkiWiki::defaultconfig();
 IkiWiki::Setup::load($config_file);
 IkiWiki::checkconfig();
-
+IkiWiki::loadplugins();
 
 my $prefix=$config{postal_prefix} || die "prefix not set";
 
 my $message=Email::Filter->new();
+
+$message->exit(0); # do not exit after delivery
 
 my $to=$message->to;
 if ($to =~ m/$prefix($Convert::YText::valid_rex)/){
@@ -45,7 +47,7 @@ if ($to =~ m/$prefix($Convert::YText::valid_rex)/){
     my $comments_folder=$config{srcdir}."/".$page."/comments".$folder_ext;
 
     # write the message to the comment
-
+    
     $message->accept($comments_folder) || die("delivery failed");
     
     # update vcs, copied from Ikiwiki::Plugins::attachment
