@@ -6,6 +6,6 @@
 ## An Mh Folder
 [[!mailbox path="mhdir" type="MH"]]
 
-## An Mbox
+## An Mbox, no directive
 
-[[!mailbox path="mbox" type="Mbox"]]
+[[test]]
