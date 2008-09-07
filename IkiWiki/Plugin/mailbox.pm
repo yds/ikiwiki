@@ -19,7 +19,7 @@ use Email::Thread;
 use CGI 'escapeHTML';
 use File::Temp qw/tempfile/;
 use File::MimeInfo::Magic;
-
+use Date::Parse;
 
 my %metaheaders;
 
@@ -82,7 +82,11 @@ sub format_mailbox(@){
 
     $threader->thread();
 
-    return join "\n", map { format_thread(%params,thread=>$_) } $threader->rootset;
+    my @roots= sort  { str2time($a->header('Date'))  <=> 
+			   str2time($b->header('Date'))}  ($threader->rootset);
+
+    return join "\n", map { format_thread(%params,thread=>$_) } @roots; 
+
 }
 
 sub format_thread(@){
