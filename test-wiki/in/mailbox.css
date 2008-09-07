@@ -1,15 +1,1 @@
-
-
-div.mailmessage{
-    border-top: 1px solid;
-    margin-top: 1%
-
-}
-.headername {
-font-weight: bold;
-  }
-
-.emailthreadindent{
-position: relative;
-left: 5%;
-}
+../../examples/mailbox.css
