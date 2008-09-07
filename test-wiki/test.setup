@@ -11,8 +11,8 @@ use IkiWiki::Setup::Standard {
 	adminemail => 'me@example.org',
 
 	# Be sure to customise these..
-	srcdir => "in",
-	destdir => "/tmp/postaltest-wiki",
+	srcdir => "test-src",
+	destdir => "/tmp/postal-test",
 
 	url => "file:///tmp/postaltest-wiki/",
 	#cgiurl => "http://example.org/wiki/ikiwiki.cgi",
@@ -204,7 +204,7 @@ use IkiWiki::Setup::Standard {
 	# For use with the attachment plugin, a program that returns
 	# nonzero if its standard input contains an virus.
 	#virus_checker => "clamdscan -",
-        postal_prefix=>"user-testwiki-",
+        postal_prefix=>"auser-testwiki-",
         postal_host=>"we.love.spam.com"
 	    
 }
