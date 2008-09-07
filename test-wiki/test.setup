@@ -11,7 +11,7 @@ use IkiWiki::Setup::Standard {
 	adminemail => 'me@example.org',
 
 	# Be sure to customise these..
-	srcdir => "test-src",
+	srcdir => $ENV{PWD}."/test-src",
 	destdir => "/tmp/postal-test",
 
 	url => "file:///tmp/postaltest-wiki/",
@@ -30,8 +30,8 @@ use IkiWiki::Setup::Standard {
 	rcs => "git",
 	#historyurl => "http://git.example.org/gitweb.cgi?p=wiki.git;a=history;f=[[file]]",
 	#diffurl => "http://git.example.org/gitweb.cgi?p=wiki.git;a=blobdiff;h=[[sha1_to]];hp=[[sha1_from]];hb=[[sha1_parent]];f=[[file]]",
-	#gitorigin_branch => "origin",
-	gitmaster_branch => "testvcs",
+	gitorigin_branch => "origin",
+	gitmaster_branch => "master",
 
 	# Tla stuff.
 	#rcs => "tla"

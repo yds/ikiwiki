@@ -43,13 +43,16 @@ if ($to =~ m/$prefix($Convert::YText::valid_rex)/){
 
 # hmm, not sure why pagesource is indexed by page.ext, but it is awkward here    
 #    die("page ".$page." does not exist") if (!exists $IkiWiki::pagesources{$page});
-    
+
+    chdir $config{srcdir} || die ("chdir $config{srcdir}: $!");
+
     my $comments_folder=$page."/comments".$folder_ext;
 
     # write the message to the comment
     
     $message->accept($comments_folder) || die("delivery failed");
     
+    debug("delivered to $comments_folder\n");
     # update vcs, copied from Ikiwiki::Plugins::attachment
     
     if ($config{rcs}) {
@@ -63,7 +66,7 @@ if ($to =~ m/$prefix($Convert::YText::valid_rex)/){
 
     
     # refresh wiki
-    IkiWiki::refresh();
+#    IkiWiki::refresh();
     IkiWiki::saveindex();
 } 
 
