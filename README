@@ -1,3 +1,5 @@
+PREREQUISITES
+-------------
 
 Required perl modules (only top level dependencies are listed)
 
@@ -7,7 +9,7 @@ Email::Mime
 CGI (distributed with perl 5.10.0; maybe before?)
 
 You also need a very new version of ikiwiki: post 2.62.1, with the following 
-patch or equivalant applied:
+patch or equivalant applied (this is included in ikiwiki git as 2008/09/08):
 
 From 84f40d7fa822c6cc09506cca2dbf38a8b19f8bb7 Mon Sep 17 00:00:00 2001
 From: David Bremner <bremner@unb.ca>
@@ -33,4 +35,12 @@ index 9c7a8db..a94c02b 100644
  	my $regexp=IkiWiki::glob2re($wanted);
 -- 
 1.5.6.3
+
+
+ISSUES
+------
+
+- text/html is just discarded
+- body text is just dumped in a <pre></pre> block
+- If multiple messages have the same message-id, only one is kept.
 
