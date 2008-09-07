@@ -9,3 +9,7 @@
 ## An Mbox, no directive
 
 [[test]]
+
+## A second mailbox, inlined
+
+[[!mailbox path="test2.mbox" type="Mbox"]]
