@@ -1,4 +1,4 @@
-From auser@spam.com  Sun Sep  7 16:13:21 2008
+From auser@spam.com  Sun Sep  7 16:41:44 2008
 Return-path: <auser@spam.com>
 Envelope-to: user-testwiki-test@we.love.spam.com
 Delivery-date: Sun, 31 Aug 2008 19:49:27 -0300
@@ -22,12 +22,11 @@ Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 Message-Id: <200808311949.21799.auser@spam.com>
 X-Sender-Verified: auser@spam.com
-Status: O
 
 Really, I mean it.
 
 
-From auser@spam.com  Sun Sep  7 16:13:22 2008
+From auser@spam.com  Sun Sep  7 16:41:45 2008
 Return-path: <auser@spam.com>
 Envelope-to: user-testwiki-index@we.love.spam.com
 Delivery-date: Sun, 31 Aug 2008 19:49:27 -0300
@@ -43,7 +42,7 @@ From: David Auser <auser@spam.com>
 Organization: University of New Brunswick, Alpha Centurai Campus
 To: auser-testwiki-test@we.love.spam.com
 Subject: This page is wonderful
-Date: Sun, 31 Aug 2008 19:49:21 -0300
+Date: Sun, 31 Aug 2008 20:49:21 -0300
 User-Agent: KMail/1.9.9
 MIME-Version: 1.0
 Content-Type: text/plain; charset="us-ascii"
@@ -51,12 +50,11 @@ Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 Message-Id: <200808311949.21899.auser@spam.com>
 X-Sender-Verified: auser@spam.com
-Status: O
 
 Really, I love it.
 
 
-From auser@spam.com  Sun Sep  7 16:13:22 2008
+From auser@spam.com  Sun Sep  7 16:41:45 2008
 Return-path: <auser@spam.com>
 Envelope-to: user-testwiki-index@we.love.spam.com
 Delivery-date: Sun, 31 Aug 2008 19:49:27 -0300
@@ -72,7 +70,7 @@ From: David Auser <auser@spam.com>
 Organization: University of New Brunswick, Alpha Centurai Campus
 To: auser-testwiki-test@we.love.spam.com
 Subject: This page is really wonderful
-Date: Sun, 31 Aug 2008 19:49:21 -0300
+Date: Sun, 31 Aug 2008 21:49:21 -0300
 User-Agent: KMail/1.9.9
 MIME-Version: 1.0
 Content-Type: text/plain; charset="us-ascii"
@@ -80,7 +78,6 @@ Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 Message-Id: <200808411949.21799.auser@spam.com>
 X-Sender-Verified: auser@spam.com
-Status: O
 
 Really, I love it so much I am telling you again.
 
