@@ -1,10 +1,25 @@
 
-dependencies:
+There are several steps to using this plugin.
 
-Module				Debian Package
-------	        		--------------
+- Add the plugin 'postal'  to your setup file.
+- Add the plugin 'mailbox' (packaged seperately)
 
-IkiWiki 			ikiwiki
-Compress::LZF 			not yet
-MIME::Base64::URLSafe 		libmime-base64-urlsafe-perl
-Mail::Internet			libmailtools-perl	
+- update your template(s).  See examples/page.tmpl. Look for POSTAL_DIV
+
+- Manditory configuration
+
+  + postal_prefix	first part of email address i.e. user-wiki-
+  + postal_host		where to send the mail
+
+- Optional configuration:
+
+  +  postal_pagespec  what pages to add comments to.
+
+- the script filters/postal-accept.pl takes a mail message on standard in 
+  and files it in the appropriate comment box.
+
+    perl -c path/to/my/ikiwiki-setup  < mail-message
+
+This would all get somewhat easier if and when these plugins are 
+distributed with ikiwiki.
+
