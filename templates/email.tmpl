@@ -13,4 +13,11 @@
     <TMPL_VAR NAME="BODY">
   </div><!--.mailbody-->
 
+  <TMPL_IF POSTAL_DIV>
+  <div class="pagecomments">
+  <a name="pagecomments"></a>
+  <a href="mailto:<TMPL_VAR NAME="POSTAL_PREFIX"><TMPL_VAR NAME="POSTAL_KEY">@<TMPL_VAR NAME="POSTAL_HOST">">Reply</a>
+</div>
+</TMPL_IF>
+
 </div><!--.mailmessage-->
