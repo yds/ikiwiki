@@ -7,4 +7,4 @@ ikiwiki --rebuild --setup test.setup
 perl ../filters/postal-accept.pl -c test.setup < test1.eml
 perl ../filters/postal-accept.pl -c test.setup < test2.eml
 perl ../filters/postal-accept.pl -c test.setup < test3.eml
-ikiwiki --setup test.setup --refresh
+#ikiwiki --setup test.setup --refresh

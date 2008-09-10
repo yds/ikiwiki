@@ -66,7 +66,7 @@ if ($to =~ m/$prefix($Convert::YText::valid_rex)/){
 
     
     # refresh wiki
-#    IkiWiki::refresh();
+    IkiWiki::refresh();
     IkiWiki::saveindex();
 } 
 
