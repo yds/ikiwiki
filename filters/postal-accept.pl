@@ -10,7 +10,7 @@ use Data::Dumper;
 use Convert::YText qw(decode_ytext);
 
 # we need at least version 2.54 of IkiWiki for the new config api
-BEGIN { require IkiWiki; die unless ($IkiWiki::version >= 2.54) }
+BEGIN { require IkiWiki; die unless ($IkiWiki::version >= 2.63) }
 use IkiWiki;
 use IkiWiki::Setup;
 use Getopt::Long;
@@ -24,10 +24,12 @@ GetOptions('config=s'=>\$config_file);
 
 die "configuration file is mandatory" unless ($config_file);
 
-%config=IkiWiki::defaultconfig();
+%IkiWiki::config=IkiWiki::defaultconfig();
 IkiWiki::Setup::load($config_file);
-IkiWiki::checkconfig();
+
 IkiWiki::loadplugins();
+IkiWiki::checkconfig();
+
 
 my $prefix=$config{postal_prefix} || die "prefix not set";
 
