@@ -14,7 +14,7 @@ use IkiWiki::Setup::Standard {
 	srcdir => $ENV{PWD}."/test-src",
 	destdir => "/tmp/postal-test",
 
-	url => "file:///tmp/postaltest-wiki/",
+	url => "file:///tmp/postal-test/",
 	#cgiurl => "http://example.org/wiki/ikiwiki.cgi",
 	templatedir => $ENV{PWD}."/../examples",
 	#underlaydir => "/usr/share/ikiwiki/basewiki",

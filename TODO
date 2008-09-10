@@ -1,7 +1,5 @@
 * support threading (comments on comments)
 * Clean up debugging cruft
 * put dependencies list in README
-* creating a comment mailbox does not add link to parent page
-  until next rebuild
 * adding a message does not refresh
 

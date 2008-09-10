@@ -50,6 +50,8 @@ sub pagetemplate (@)
 
     my $comment_page=$destpage . "/" . $subpage_name;
 
+    add_depends($params{page},$comment_page);
+
     my $comment_link=undef;
     if (exists $pagesources{$comment_page}){
 	$comment_link=htmllink($page,$destpage,$comment_page,
