@@ -9,7 +9,7 @@ use Data::Dumper;
 
 use Convert::YText qw(decode_ytext);
 
-# we need at least version 2.54 of IkiWiki for the new config api
+# we need at least version 2.63 of IkiWiki 
 BEGIN { require IkiWiki; die unless ($IkiWiki::version >= 2.63) }
 use IkiWiki;
 use IkiWiki::Setup;
