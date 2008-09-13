@@ -118,11 +118,20 @@ sub format_thread(@){
 sub sanitize_address($$){
     my $hdrname=shift;
     my $val=shift;
+    my $strategy= $config{mailbox_obfuscation_strategy} || "delete";
+
+    return $val if ($strategy eq  "none");
 
     if ($hdrname =~ qr/From|To|Reply-To|CC/){
 	my @addrs=Email::Address->parse($val);
 	foreach my $addr (@addrs){
-	    $addr->address("DELETED");
+	    if ($strategy eq "rot13"){
+		my $orig=$addr->address;
+		$orig =~ y/A-Za-z/N-ZA-Mn-za-m/;
+		$addr->address($orig); 
+	    } else {
+		$addr->address(gettext("address deleted"));
+	    }
 	}
 	$val=join(",",map {$_->format;} @addrs);
     }
