@@ -20,6 +20,7 @@ use CGI 'escapeHTML';
 use File::Temp qw/tempfile/;
 use File::MimeInfo::Magic;
 use Date::Parse;
+use Email::Address;
 
 my %metaheaders;
 
@@ -114,11 +115,27 @@ sub format_thread(@){
     return $output;
 }
 
+sub sanitize_address($$){
+    my $hdrname=shift;
+    my $val=shift;
+
+    if ($hdrname =~ qr/From|To|Reply-To|CC/){
+	my @addrs=Email::Address->parse($val);
+	foreach my $addr (@addrs){
+	    $addr->address("DELETED");
+	}
+	$val=join(",",map {$_->format;} @addrs);
+    }
+    return $val;
+		     }
+
 sub make_pair($$){
     my $message=shift;
     my $name=shift;
-    my $val=$message->header($_);
-    
+    my $val=$message->header($name);
+
+    $val = sanitize_address($name,$val);
+
     $val = escapeHTML($val);
 
     my $hash={'HEADERNAME'=>$name,'VAL'=>$val};
@@ -142,7 +159,9 @@ sub format_message(@){
     my $output="";
 
     my @names = grep  {m/$keep_headers/;}  ($message->header_names);
+    
     my @headers=map { make_pair($message,$_) } @names;
+    
     
 
     $template->param(HEADERS=>[@headers]);
