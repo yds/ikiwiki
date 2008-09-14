@@ -204,5 +204,8 @@ use IkiWiki::Setup::Standard {
 	# For use with the attachment plugin, a program that returns
 	# nonzero if its standard input contains an virus.
 	#virus_checker => "clamdscan -",
-	    mailbox_obfuscation_strategy=>"rot13"
+	    mailbox_obfuscation_strategy=>"delete",
+#	    mailbox_obfuscation_strategy=>"rot13",
+#	    mailbox_obfuscation_strategy=>"none"
+	    
 }
