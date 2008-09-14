@@ -41,9 +41,9 @@ local part of an address: "!#$%&'*+-/=?^_`{|}~". On the other hand, it
 seems common in practice to block addresses having "%!/|`#&?" in the
 local part.  The idea is to restrict ourselves to basic ASCII
 alphanumerics, plus a small set of printable ASCII, namely "=_+-~.".
-Spaces are replaced with "_", "/" with "~", the characters
-"A-Za-z0-9.\+\-~" encode as themselves, and everything else is written
-"=USTR=" where USTR is the base64 (using "A-Za-z0-9\+\-\." as digits)
+Spaces are replaced with "+", "/" with "~", the characters
+"A-Za-z0-9_.-" encode as themselves, and everything else is written
+"=USTR=" where USTR is the base64 (using "A-Za-z0-9_." as digits)
 encoding of the unicode character code.
 
 The characters '+' and '-' are pretty widely used to attach suffixes
@@ -56,9 +56,11 @@ a regular character. The character '.' also seems mostly permissable.
 
 =cut
 
-our $digit_string="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-.";
+our $digit_string="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_.";
 
-our $valid_rex=qr{[A-Za-z0-9\+\-\.\=\_\~]+};
+our $must_base64=qr{[^a-zA-Z0-9\.\-\/_ ]};
+our $digit_rex=qr{[$digit_string]+};
+our $valid_rex=qr{[A-Za-z0-9.\=\_\~]+};
 
 our @digits=split "",$digit_string;
 
@@ -88,7 +90,6 @@ sub decode_str($){
 
 	$num=$num << 6;
 	$num+=$remainder;
-	print STDERR "num=$num\n";
 	shift @chars;
     }
     
@@ -96,20 +97,22 @@ sub decode_str($){
 }
 sub encode_ytext($){
     my $str=shift;
-    # "=" we use as an escape, and '_' for space
-    $str=~ s/([^a-zA-Z0-9+\-\/. ])/"=".encode_num(ord($1))."="/ge;
+
+    # "=" we use as an escape, and '+' for space
+    $str=~ s/($must_base64)/"=".encode_num(ord($1))."="/ge;
     
-    $str=~ s|/|~|g;
-    $str=~ s/ /_/g;
+    $str=~ s|/|~|g;    
+    $str=~ s/ /+/g;
     
     return $str;
 };
 
 sub decode_ytext($){
     my $str = shift;
-    $str=~ s/=([a-zA-Z0-9+\-\.])+=/ decode_str($1)/eg;
-    $str=~ s/_/ /g;
+    
+    $str=~ s/\+/ /g;
     $str=~ s|~|/|g;
+    $str=~ s/=($digit_rex)+=/ decode_str($1)/eg;
     return $str;
 }
 
