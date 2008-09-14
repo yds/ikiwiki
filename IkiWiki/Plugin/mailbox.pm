@@ -255,6 +255,11 @@ sub pagetemplate (@) { #{{{
         my $destpage=$params{destpage};
         my $template=$params{template};
 
+
+	if (defined($config{mailbox_copyright})){
+	    $template->param(COPYRIGHT=>$config{mailbox_copyright});
+	}
+
 	if (exists $metaheaders{$page} && $template->query(name => "meta")) {
 		# avoid duplicate meta lines
 		my %seen;
