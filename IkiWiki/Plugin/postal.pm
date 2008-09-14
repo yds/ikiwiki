@@ -49,21 +49,28 @@ sub pagetemplate (@)
     my $subpage_name=$config{postal_pagename} || "comments";
 
     my $comment_page=$destpage . "/" . $subpage_name;
-
     add_depends($params{page},$comment_page);
 
+
+    my $about_link=undef;
+    my $about_page=bestlink($page,"about_comments");
+
+    if ($about_page){
+	$about_link=htmllink($page,$destpage,$about_page,
+			       linktext=>gettext("About Comments"));
+    }	
+    
     my $comment_link=undef;
     if (exists $pagesources{$comment_page}){
 	$comment_link=htmllink($page,$destpage,$comment_page,
 			       linktext=>gettext("Read Comments"));
     }
 
-    debug("comment_link=".$comment_link) if (defined($comment_link));
-
     $template->param(POSTAL_DIV=>1,
 		     POSTAL_PREFIX=>$config{postal_prefix},
 		     POSTAL_KEY=>$key,
 		     POSTAL_HOST=>$config{postal_host},
+		     defined($about_link) ? (POSTAL_ABOUT_LINK=>$about_link):(),
 		     defined($comment_link) ? (POSTAL_COMMENT_LINK=>$comment_link) :());
 }
 

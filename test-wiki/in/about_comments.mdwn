@@ -1,0 +1,5 @@
+
+Comments on this wiki are sent by email, and will be read by a human
+before posting.  Your email address will not be displayed on the
+wiki. If you don't want your real name to be displayed either, don't
+put it in the From: header.
