@@ -256,7 +256,7 @@ sub pagetemplate (@) { #{{{
         my $template=$params{template};
 
 
-	if (defined($config{mailbox_copyright})){
+	if ($page =~ /.*comments/  && defined($config{mailbox_copyright})){
 	    $template->param(COPYRIGHT=>$config{mailbox_copyright});
 	}
 
