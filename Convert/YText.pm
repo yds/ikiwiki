@@ -60,7 +60,7 @@ our $digit_string="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345678
 
 our $must_base64=qr{[^a-zA-Z0-9\.\-\/_ ]};
 our $digit_rex=qr{[$digit_string]+};
-our $valid_rex=qr{[A-Za-z0-9.\=\_\~]+};
+our $valid_rex=qr{[A-Za-z0-9.\=\_\~\-]+};
 
 our @digits=split "",$digit_string;
 
