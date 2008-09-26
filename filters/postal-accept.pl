@@ -49,12 +49,14 @@ if ($to =~ m/$prefix($Convert::YText::valid_rex)/){
     chdir $config{srcdir} || die ("chdir $config{srcdir}: $!");
 
     my $comments_folder=$page."/comments".$folder_ext;
-
+    my $comments_page=$page."/comments";
     # write the message to the comment
     
     $message->accept($comments_folder) || die("delivery failed");
     
     debug("delivered to $comments_folder\n");
+    
+    IkiWiki::add_depends($page,$comments_page);
     # update vcs, copied from Ikiwiki::Plugins::attachment
     
     if ($config{rcs}) {

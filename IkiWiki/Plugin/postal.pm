@@ -48,7 +48,7 @@ sub pagetemplate (@)
 
     my $subpage_name=$config{postal_pagename} || "comments";
 
-    my $comment_page=$destpage . "/" . $subpage_name;
+    my $comment_page=$page . "/" . $subpage_name;
     add_depends($params{page},$comment_page);
 
 
@@ -61,7 +61,9 @@ sub pagetemplate (@)
     }	
     
     my $comment_link=undef;
+#    debug("pagesources{$comment_page}=$pagesources{$comment_page}\n");
     if (exists $pagesources{$comment_page}){
+#	debug("looking for htmlink $page $destpage $comment_page\n");
 	$comment_link=htmllink($page,$destpage,$comment_page,
 			       linktext=>gettext("Read Comments"));
     }

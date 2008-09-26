@@ -1,19 +1,20 @@
 #!/usr/bin/perl
 
-use Mail::Internet;
-use Convert::YText 'decode_ytext';
+use lib "..";
+use strict;
+use Email::Filter;
+use Convert::YText qw(decode_ytext);
 
 my $prefix="-comment-";
-my $mail = Mail::Internet->new([<>]);
+my $message=Email::Filter->new();
 
-my $to = $mail->get('To:');
+$message->exit(0); # do not exit after delivery
 
-if ($to =~ m/$prefix([A-Za-z0-9\.\+\=\-_\~]+)\@/){
-    my $key=$1;
-    my $page=decode_ytext($key);
-    $mail->replace('X-IkiWiki-Page:',$page);
+my $to=$message->to;
+if ($to =~ m/$prefix($Convert::YText::valid_rex)/){
+    my $page=decode_ytext($1);
+
+    print STDERR "page=$page";
 }
-
-$mail->print(\*STDOUT);
 
 
