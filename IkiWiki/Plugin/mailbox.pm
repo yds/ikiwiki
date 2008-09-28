@@ -171,35 +171,36 @@ sub format_message(@){
     
     my @headers=map { make_pair($message,$_) } @names;
     
-    
-
     $template->param(HEADERS=>[@headers]);
 
     my $allowed_attachments=$params{allowed_attachments} || 
-	"maxsize(100kb) and mimetype(text/plain)";
+	"maxsize(100kb) and (mimetype(text/plain) or mimetype(text/html))";
 
-    my @parts=$message->parts;
+    my @rawparts=$message->parts;
+    my @parts=();
 
-    my $partcount=1;
-    foreach(@parts){
-	#this sucks. But someone would need to modify filecheck to
-	#accept a blob of content. Or maybe hacking with IO::Scalar
-	my $tmpfile=File::Temp->new();
-
-	binmode $tmpfile,':utf8';
-	print $tmpfile $_->body();
-
-	my $allowed=pagespec_match($dest, $allowed_attachments, file=>$tmpfile);
-
-	if (!$allowed) {
-	    debug("clobbering attachment $partcount");
-	    $_->content_type_set('text/plain');
-	    $_->body_set("[ omitting part $partcount: $allowed ]");
-
-	} 	    
-
-	$partcount++;
+    if ($message->content_type =~ m|^multipart/alternative|){
+	#according to RFC 1521, the last part is the most 'faithful'
+	while (scalar(@rawparts) && !scalar(@parts)){
+	    my $part=pop(@rawparts);
+	    if (check_part($part,$dest,$allowed_attachments)){
+		push(@parts,$part);
+	    }
+	}
+    } else {
+	my $partcount=1;
+	foreach(@rawparts){
+	    my $allowed=check_part($_,$dest,$allowed_attachments );
+	    if (!$allowed) {
+		$_->content_type_set('text/plain');
+		$_->body_set("[ omitting part $partcount: $allowed ]");
+		
+	    } 	    
+	    push(@parts,$_);
+	    $partcount++;
+	}
     }
+
     my $body= join("\n", map { format_part($_->content_type, $_->body) } 
 		   @parts);
 
@@ -209,6 +210,22 @@ sub format_message(@){
     return $output;
 }
 
+sub check_part($$$){
+    my $part=shift;
+    my $dest=shift;
+    my $allowed_attachments=shift;
+
+
+    #this sucks. But someone would need to modify filecheck to
+    #accept a blob of content. Or maybe hacking with IO::Scalar
+
+    my $tmpfile=File::Temp->new();
+    binmode $tmpfile,':utf8';
+    print $tmpfile $part->body();
+
+    return pagespec_match($dest, $allowed_attachments, file=>$tmpfile);
+}
+
 sub format_part($$){
     my $mime_type=shift;
     my $body=shift;
@@ -216,7 +233,7 @@ sub format_part($$){
     my $rval="";
 
     # for debugging:
-    $rval .= "[ $mime_type ]\n";
+#     $rval .= "[ $mime_type ]\n";
 
     if ($mime_type =~ "^text/html"){
 	$rval.= $body;
