@@ -1,1304 +1,1064 @@
-From - Sun Aug 03 21:06:32 2008
-X-Mozilla-Status: 0011
-X-Mozilla-Status2: 00000000
-X-Mozilla-Keys:                                                                                 
->From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 06:44:00 2008
-Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
-Envelope-to: bremner@pivot.cs.unb.ca
-Delivery-date: Thu, 31 Jul 2008 06:44:00 -0300
-Received: from mailserv2.unb.ca ([131.202.1.10])
-	by pivot.cs.unb.ca with esmtp (Exim 4.69)
-	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
-	id 1KOUhT-0004Mn-8O
-	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 06:44:00 -0300
-Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
-	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6V9hpij017380
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 06:43:54 -0300
-Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
-	by localhost (Postfix) with SMTP id 7FCF2444018
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 06:43:51 -0300 (ADT)
-Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
-	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id 1F1F044404E
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 06:43:51 -0300 (ADT)
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with QMQP
-	id D01AE13A6323; Thu, 31 Jul 2008 09:43:48 +0000 (UTC)
-Old-Return-Path: <debian-kde@m.gmane.org>
-X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+From anton@piatek.co.uk  Fri Sep 26 11:17:15 2008
+Return-path: <anton@piatek.co.uk>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 10:26:16 -0300
+Received: from kalimdor.tastycake.net ([212.13.201.165]) by pivot.cs.unb.ca
+ with esmtp (Exim 4.69) (envelope-from <anton@piatek.co.uk>) id
+ 1KjDKq-0004Bl-NZ for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 10:26:16 -0300
+Received: from blueice2n1.uk.ibm.com ([195.212.29.75] helo=[9.20.235.16]) by
+ kalimdor.tastycake.net with esmtpsa (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+ (Exim 4.63) (envelope-from <anton@piatek.co.uk>) id 1KjDKf-0008EK-3i for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 14:26:10 +0100
+Message-ID: <48DCE2E7.1060708@piatek.co.uk>
+Date: Fri, 26 Sep 2008 14:25:59 +0100
+From: Anton Piatek <anton@piatek.co.uk>
+User-Agent: Mozilla-Thunderbird 2.0.0.16 (X11/20080724)
+MIME-Version: 1.0
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+X-SA-Exim-Connect-IP: 195.212.29.75
+X-SA-Exim-Mail-From: anton@piatek.co.uk
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on
+ kalimdor.tastycake.net
 X-Spam-Level: 
-X-Spam-Status: No, score=-11.0 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST
-	autolearn=failed version=3.2.3
-X-Original-To: lists-debian-kde@liszt.debian.org
-Delivered-To: lists-debian-kde@liszt.debian.org
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with ESMTP id 9F4D613A631A
-	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 09:43:42 +0000 (UTC)
-Received: from liszt.debian.org ([127.0.0.1])
-	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
-	with ESMTP id 05963-61 for <lists-debian-kde@liszt.debian.org>;
-	Thu, 31 Jul 2008 09:43:39 +0000 (UTC)
-X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_FROM_IP=-2 (check from: .gmane. - helo: .ciao.gmane. - helo-domain: .gmane.)  FROM/MX_MATCHES_HELO(DOMAIN)=-2 <client=80.91.229.2> <helo=ciao.gmane.org> <from=debian@m.gmane.org> <to=debian-kde@lists.debian.org>, rate: -7
-Received: from ciao.gmane.org (main.gmane.org [80.91.229.2])
-	(using TLSv1 with cipher AES256-SHA (256/256 bits))
-	(Client did not present a certificate)
-	by liszt.debian.org (Postfix) with ESMTP id AA8DB13A630C
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 09:43:33 +0000 (UTC)
-Received: from list by ciao.gmane.org with local (Exim 4.43)
-	id 1KOUh0-0006p9-Ng
-	for debian-kde@lists.debian.org; Thu, 31 Jul 2008 09:43:30 +0000
-Received: from x1-6-00-1b-2f-09-8e-4f.k132.webspeed.dk ([80.163.18.233])
-        by main.gmane.org with esmtp (Gmexim 0.1 (Debian))
-        id 1AlnuQ-0007hv-00
-        for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 09:43:30 +0000
-Received: from bofhenator by x1-6-00-1b-2f-09-8e-4f.k132.webspeed.dk with local (Gmexim 0.1 (Debian))
-        id 1AlnuQ-0007hv-00
-        for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 09:43:30 +0000
-X-Injected-Via-Gmane: http://gmane.org/
-To: debian-kde@lists.debian.org
-From: Magnus Pedersen <bofhenator@gmail.com>
-Subject:  Re: Do you now when amarok 2 pakages in experimental?
-Date:  Thu, 31 Jul 2008 11:43:18 +0200
-Lines: 34
-Message-ID: <g6s1fp$2hr$1@ger.gmane.org>
-References:  <200807311046.37761.basaburu@basatu.org>
-Mime-Version:  1.0
-Content-Type:  text/plain; charset=ISO-8859-1; format=flowed
-Content-Transfer-Encoding:  7bit
-X-Complaints-To: usenet@ger.gmane.org
-X-Gmane-NNTP-Posting-Host: x1-6-00-1b-2f-09-8e-4f.k132.webspeed.dk
-User-Agent: Mozilla-Thunderbird 2.0.0.14 (X11/20080509)
-In-Reply-To: <200807311046.37761.basaburu@basatu.org>
-Sender: news <news@ger.gmane.org>
-X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
-X-Virus-Scanned: at lists.debian.org with policy bank en-ht
-X-Amavis-Spam-Status: No, score=-5 tagged_above=3.6 required=5.3
-	tests=[LDO_WHITELIST=-5]
-X-Rc-Virus: 2007-09-13_01
-X-Rc-Spam: 2007-10-04_01
-Resent-Message-ID: <ZKeL8o55GxM.A.qPB.UlYkIB@liszt>
-Resent-From: debian-kde@lists.debian.org
-X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28961
-X-Loop: debian-kde@lists.debian.org
-List-Id: <debian-kde.lists.debian.org>
-List-Post: <mailto:debian-kde@lists.debian.org>
-List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
-List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
-List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
-Precedence: list
-Resent-Sender: debian-kde-request@lists.debian.org
-Resent-Date: Thu, 31 Jul 2008 09:43:48 +0000 (UTC)
-X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.93122
-X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1200_1299 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __CP_MEDIA_2_BODY 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __FRAUD_419_WEBMAIL 0, __FRAUD_419_WEBMAIL_FROM 0, __FROM_GMAIL 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
-X-Virus-Status: Clean
-X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
+X-Spam-Status: No, score=-1.0 required=5.0 tests=ALL_TRUSTED,AWL,BAYES_00
+ autolearn=ham version=3.2.3
+Subject: I gave up
+X-SA-Exim-Version: 4.2.1 (built Tue, 09 Jan 2007 17:23:22 +0000)
+X-SA-Exim-Scanned: Yes (on kalimdor.tastycake.net)
+X-Sender-Verified: anton@piatek.co.uk
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
 
-BasaBuru wrote:
-> Aupa
-> 
-> I liked amarok, and i look any pages with them, amarok 2 beta, is prety.
-> 
-> I'm compile beta 2 but isn't boot.
-> 
-> the message is very extrange.
-> 
-> said:
-> 
-> Amarok could not find any collection plugins. Amarok is now updating the KDE 
-> configuration database. Please wait a couple of minutes, then restart Amarok.
-> If this does not help, it is likely that Amarok is installed under the wrong 
-> prefix, please fix your installation using:
-> $ cd /path/to/amarok/source-code/
-> $ su -c "make uninstall"
-> $ ./configure --prefix=`kde-config --prefix` && su -c "make install"
-> $ kbuildsycoca4
-> $ amarok
-> the solution is absurd, for compile beta 2 you must be use cmake, isn't 
-> .configure
-> I'm look for information on the net and nothing. :) i'm a few inutil, think so
-> I'm think is more well and confiable if the kde team, compile packages for us.
-> izan funtsa
-> BasaBuru
-> 
-> 
-> 
-> 
-You could try these: 
-http://www.kde-apps.org/content/show.php/Amarok+2?content=85474
+I gave up on local clients and moved to online RSS readers like google 
+reader or bloglines...
 
-/Magnus
+Anton
 
 
--- 
-To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
-with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+From smith.matthew.s@gmail.com  Fri Sep 26 11:18:09 2008
+Return-path: <smith.matthew.s@gmail.com>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 10:34:14 -0300
+Received: from wf-out-1314.google.com ([209.85.200.172]) by pivot.cs.unb.ca
+ with esmtp (Exim 4.69) (envelope-from <smith.matthew.s@gmail.com>) id
+ 1KjDSY-0004Cw-6M for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 10:34:14 -0300
+Received: by wf-out-1314.google.com with SMTP id 25so1117525wfc.28 for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Fri, 26 Sep 2008 06:34:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+ h=domainkey-signature:received:received:message-id:date:from:to
+ :subject:mime-version:content-type;
+ bh=oqF1VsOdlwFDFV32LNINHU/AKGat1HL7I/5M4PSVBZo=;
+ b=ZA9w6Kkwd2t/ZP0dKYeeQV82MpavZSEJgHUD9M25ZDMft+YeIR7Jc+tGw/06I8/96K
+ XKyFqHwUtsdBGj5qMv1xbwuXM+Vcnq4w78Nrvewr3/rW8/wmIKO327uk0sfn4SMIEGRu
+ erVB/WPjGbQj32g4ccD3ydcHbtWTsBkYnx5hI=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+ h=message-id:date:from:to:subject:mime-version:content-type;
+ b=oIq42byjWKUqpfWyxCg/TtwMG1hhaOX3QPiXE98YJuXYx+9ocuxvBZH9kDQiw4Faxe
+ qChf5HAKYsI4E0qOenlC2Irw7EU246qhNUB3lzg6AVSFAmXuqJbYQ5THAaIugQgApFbY
+ RLMQo6fzuYadrh07RbTTiw1nvY5SdJWZMftu0=
+Received: by 10.143.31.11 with SMTP id i11mr562530wfj.328.1222436049482; Fri,
+ 26 Sep 2008 06:34:09 -0700 (PDT)
+Received: by 10.142.44.10 with HTTP; Fri, 26 Sep 2008 06:34:09 -0700 (PDT)
+Message-ID: <18d2f5d10809260634y3fa19e18m846e4e3eac61d825@mail.gmail.com>
+Date: Fri, 26 Sep 2008 08:34:09 -0500
+From: "Matthew S. Smith" <smith.matthew.s@gmail.com>
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Subject: May be what you are looking for...
+MIME-Version: 1.0
+Content-Type: multipart/alternative;  boundary="----=_Part_9869_3478967.1222436049477"
+X-Sender-Verified: smith.matthew.s@gmail.com
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+
+------=_Part_9869_3478967.1222436049477
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+www.google.com/reader
+
+------=_Part_9869_3478967.1222436049477
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+<div dir="ltr"><a href="http://www.google.com/reader">www.google.com/reader</a><br></div>
+
+------=_Part_9869_3478967.1222436049477--
 
 
+From chris@mretc.net  Fri Sep 26 11:31:53 2008
+Return-path: <chris@mretc.net>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 10:55:45 -0300
+Received: from mretc.net ([38.116.136.226] helo=mail.mretc.net) by
+ pivot.cs.unb.ca with esmtps (TLS1.0:DHE_RSA_AES_256_CBC_SHA1:32) (Exim 4.69)
+ (envelope-from <chris@mretc.net>) id 1KjDnN-0004ID-HG for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 10:55:45 -0300
+Received: from localhost (localhost [127.0.0.1]) by mail.mretc.net (Postfix)
+ with ESMTP id EC44F83615F for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Fri, 26 Sep 2008 07:55:32 -0600 (MDT)
+Received: from mail.mretc.net ([127.0.0.1]) by localhost (macmini.mretc.net
+ [127.0.0.1]) (amavisd-new, port 10026) with ESMTP id acYgdI3vdxY0 for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Fri, 26 Sep 2008 07:55:32 -0600 (MDT)
+Received: from [192.168.0.103] (unknown [192.168.0.103]) by mail.mretc.net
+ (Postfix) with ESMTP id 6AB6183615C for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Fri, 26 Sep 2008 07:55:32 -0600 (MDT)
+Message-ID: <48DCE9D1.1000405@mretc.net>
+Date: Fri, 26 Sep 2008 07:55:29 -0600
+From: Chris Burkhardt <chris@mretc.net>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.16)
+ Gecko/20080724 Thunderbird/2.0.0.16 Mnenhy/0.7.5.0
+MIME-Version: 1.0
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Subject: NewsGator service
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Sender-Verified: chris@mretc.net
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
 
-From - Sun Aug 03 21:06:32 2008
-X-Mozilla-Status: 0011
-X-Mozilla-Status2: 00000000
-X-Mozilla-Keys:                                                                                 
->From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 07:09:23 2008
-Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
-Envelope-to: bremner@pivot.cs.unb.ca
-Delivery-date: Thu, 31 Jul 2008 07:09:23 -0300
-Received: from mailserv2.unb.ca ([131.202.1.10])
-	by pivot.cs.unb.ca with esmtp (Exim 4.69)
-	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
-	id 1KOV63-0004Oh-UI
-	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 07:09:23 -0300
-Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
-	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VA9GrH022248
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 07:09:18 -0300
-Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
-	by localhost (Postfix) with SMTP id 396E8444059
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 07:09:16 -0300 (ADT)
-Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
-	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id CC84C444007
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 07:09:15 -0300 (ADT)
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with QMQP
-	id A633013A637E; Thu, 31 Jul 2008 10:09:13 +0000 (UTC)
-Old-Return-Path: <ana@debian.org>
-X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
-X-Spam-Level: 
-X-Spam-Status: No, score=0.0 required=4.0 tests=none autolearn=no version=3.2.3
-X-Original-To: lists-debian-kde@liszt.debian.org
-Delivered-To: lists-debian-kde@liszt.debian.org
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with ESMTP id B525D13A631A
-	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 09:51:42 +0000 (UTC)
-Received: from liszt.debian.org ([127.0.0.1])
-	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
-	with ESMTP id 32688-36 for <lists-debian-kde@liszt.debian.org>;
-	Thu, 31 Jul 2008 09:51:39 +0000 (UTC)
-X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_MX=-3.1 (check from: .debian. - helo: .ekaia. - helo-domain: .ekaia.)  FROM/MX_MATCHES_NOT_HELO(DOMAIN)=0 <client=70.87.222.228> <helo=ekaia.org> <from=ana@debian.org> <to=debian-kde@lists.debian.org>, rate: -6.1
-Received: from ekaia.org (ekaia.org [70.87.222.228])
-	by liszt.debian.org (Postfix) with ESMTP id BD45313A631D
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 09:51:33 +0000 (UTC)
-Received: by ekaia.org (Postfix, from userid 1001)
-	id AA39F298202; Thu, 31 Jul 2008 11:51:28 +0200 (CEST)
-Date: Thu, 31 Jul 2008 11:51:28 +0200
-From: Ana Guerrero <ana@debian.org>
-To: Magnus Pedersen <bofhenator@gmail.com>
-Cc: debian-kde@lists.debian.org
-Subject: Re: Do you now when amarok 2 pakages in experimental?
-Message-ID: <20080731095128.GA13782@ekaia.org>
-References: <200807311046.37761.basaburu@basatu.org> <g6s1fp$2hr$1@ger.gmane.org>
+All of the NewsGator RSS readers can sync automatically to the NewsGator
+server:
+
+http://www.newsgator.com/INDIVIDUALS/default.aspx
+
+I don't think any Linux clients support it currently, but there is an
+open API, so they could:
+
+http://www.newsgator.com/ngs/api/
+
+- Chris
+
+
+From javierdimauro@gmail.com  Fri Sep 26 11:32:07 2008
+Return-path: <javierdimauro@gmail.com>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 11:05:44 -0300
+Received: from rv-out-0708.google.com ([209.85.198.246]) by pivot.cs.unb.ca
+ with esmtp (Exim 4.69) (envelope-from <javierdimauro@gmail.com>) id
+ 1KjDx2-0004Jx-P6 for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 11:05:44 -0300
+Received: by rv-out-0708.google.com with SMTP id k29so951612rvb.4 for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Fri, 26 Sep 2008 07:05:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+ h=domainkey-signature:received:received:message-id:date:from:to
+ :subject:mime-version:content-type;
+ bh=mlcghm/RDZ7RwVRitMxLjlpDBsiU4XD3vKxXS6rgf48=;
+ b=UNQYD2dhyXygajHqb3/r8wxYPIn6a74xenYxe2iwTZjaFlXVxe467N/DApXxjgOy+3
+ 2i48p/o3hBOHKm5gyXvO0nxJnE54/jfn6cZpUv5SdJOrGCHICjT6bibYrzJKg8UXsbKg
+ r5zm/jQH/WDOkatiQJ/BXyi5bV7Ply2n2tnhA=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+ h=message-id:date:from:to:subject:mime-version:content-type;
+ b=CDFLQtJVcI96+JyVr0rI1ftAkdVtJiUE1RdHSfby4crSmsPyntX6WtNSrEx2T64ZHB
+ IVsAuXqx+hsVlxiDKBaZeD5XjMZLV2xzqBKKuIkZdd9KvmUMQIXHO0NhKs4QTPBSIjGe
+ NnOZRY0onmj9GpeDO9Ee67suvRtn9nJsjly6A=
+Received: by 10.140.249.20 with SMTP id w20mr686081rvh.21.1222437931168; Fri,
+ 26 Sep 2008 07:05:31 -0700 (PDT)
+Received: by 10.141.26.10 with HTTP; Fri, 26 Sep 2008 07:05:31 -0700 (PDT)
+Message-ID: <c448ad330809260705q245dcb6icfc664425aa17123@mail.gmail.com>
+Date: Fri, 26 Sep 2008 11:05:31 -0300
+From: "Javier Di Mauro" <javierdimauro@gmail.com>
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Subject: Why not Google Reader?
+MIME-Version: 1.0
+Content-Type: multipart/alternative;  boundary="----=_Part_17888_15364858.1222437931155"
+X-Sender-Verified: javierdimauro@gmail.com
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+
+------=_Part_17888_15364858.1222437931155
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+I read feeds on both home and work, and this is my preferred method to do
+it. I think it's the simpler way to centralize what you've read and what
+not.
+I choose Google Reader, but maybe are others like this out there. The bad
+news is that google knows even more about myself, but i believe i can afford
+it.
+
+------=_Part_17888_15364858.1222437931155
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+<div dir="ltr">I read feeds on both home and work, and this is my preferred method to do it. I think it&#39;s the simpler way to centralize what you&#39;ve read and what not.<br>I choose Google Reader, but maybe are others like this out there. The bad news is that google knows even more about myself, but i believe i can afford it.<br>
+</div>
+
+------=_Part_17888_15364858.1222437931155--
+
+
+From rswarbrick@googlemail.com  Fri Sep 26 11:39:22 2008
+Return-path: <rswarbrick@googlemail.com>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 11:32:29 -0300
+Received: from nf-out-0910.google.com ([64.233.182.185]) by pivot.cs.unb.ca
+ with esmtp (Exim 4.69) (envelope-from <rswarbrick@googlemail.com>) id
+ 1KjEMv-0004m8-48 for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 11:32:29 -0300
+Received: by nf-out-0910.google.com with SMTP id b21so386242nfd.4 for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Fri, 26 Sep 2008 07:32:25 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=googlemail.com;
+ s=gamma; h=domainkey-signature:received:received:to:subject:user-agent:date
+ :message-id:mime-version:content-type:from;
+ bh=jH9aXSi5hQOf1O5iByTfiY8HeLfqlQa+H75E9e7Ogfs=;
+ b=oSnv7M5Md35ZyBc8/c6jUDAVWqmNluiUyDb+k4lHNzM8bQ9Obp1fcqwVGIqi0jyxzb
+ 0h41Kd5DuSqVXI3bLKYEuvvg4LRZA9d5DFmivx1Go0T76ujLjbL/2YbdrmnYQgSwVGPU
+ UKt8HksFO9h0v83gVfvmwbPSGreuE6WkVFVxs=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=googlemail.com; s=gamma;
+ h=to:subject:user-agent:date:message-id:mime-version:content-type :from;
+ b=DhJM3n1rzllEGHEcfbTqYwr75ynY/Gurn2mSjGdu0Wa7QNutsVsIHBDr7bLYx/qgui
+ 7Uemp3UGg2Pj0O+lN5mGnm48r2L/92e6r5M6Cfzqzu1NZ6Hikl7ByEX9bG54Z4wB8ka4
+ QGpL/BDvxcZoEryrIB/BRdqbrpyOpROh5yqko=
+Received: by 10.210.66.1 with SMTP id o1mr1581984eba.42.1222439545787; Fri,
+ 26 Sep 2008 07:32:25 -0700 (PDT)
+Received: from hake ( [86.20.34.2]) by mx.google.com with ESMTPS id
+ m5sm3804637gve.3.2008.09.26.07.32.23 (version=TLSv1/SSLv3 cipher=RC4-MD5);
+ Fri, 26 Sep 2008 07:32:24 -0700 (PDT)
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Subject: Google?
+User-Agent: Gnus/5.110011 (No Gnus v0.11) Emacs/22.2 (gnu/linux)
+Date: Fri, 26 Sep 2008 15:32:20 +0100
+Message-ID: <87iqsjj7uz.fsf@gmail.com>
 MIME-Version: 1.0
 Content-Type: text/plain; charset=us-ascii
-Content-Disposition: inline
-In-Reply-To: <g6s1fp$2hr$1@ger.gmane.org>
-User-Agent: Mutt/1.5.13 (2006-08-11)
-X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
-X-Virus-Scanned: at lists.debian.org with policy bank en-ht
-X-Amavis-Spam-Status: No, score=0 tagged_above=3.6 required=5.3 tests=[none]
-X-Rc-Spam: 2007-10-04_01
-X-Rc-Virus: 2007-09-13_01
-X-Rc-Spam: 2007-10-04_01
-Resent-Message-ID: <qyLe6HB8GQ.A.KtG.J9YkIB@liszt>
-Resent-From: debian-kde@lists.debian.org
-X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28962
-X-Loop: debian-kde@lists.debian.org
-List-Id: <debian-kde.lists.debian.org>
-List-Post: <mailto:debian-kde@lists.debian.org>
-List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
-List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
-List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
-Precedence: list
-Resent-Sender: debian-kde-request@lists.debian.org
-Resent-Date: Thu, 31 Jul 2008 10:09:13 +0000 (UTC)
-X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.95517
-X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1500_1599 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __CD 0, __CP_MEDIA_2_BODY 0, __CP_URI_IN_BODY 0, __CT 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
-X-Virus-Status: Clean
-X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
-
-On Thu, Jul 31, 2008 at 11:43:18AM +0200, Magnus Pedersen wrote:
-> BasaBuru wrote:
-> >Aupa
-> >
-> >I liked amarok, and i look any pages with them, amarok 2 beta, is prety.
-> >
-> >I'm compile beta 2 but isn't boot.
-> >
-> >the message is very extrange.
-> >
-> >said:
-> >
-> >Amarok could not find any collection plugins. Amarok is now updating the 
-> >KDE configuration database. Please wait a couple of minutes, then restart 
-> >Amarok.
-> >If this does not help, it is likely that Amarok is installed under the 
-> >wrong prefix, please fix your installation using:
-> >$ cd /path/to/amarok/source-code/
-> >$ su -c "make uninstall"
-> >$ ./configure --prefix=`kde-config --prefix` && su -c "make install"
-> >$ kbuildsycoca4
-> >$ amarok
-> >the solution is absurd, for compile beta 2 you must be use cmake, isn't 
-> >.configure
-> >I'm look for information on the net and nothing. :) i'm a few inutil, 
-> >think so
-> >I'm think is more well and confiable if the kde team, compile packages for 
-> >us.
-> >izan funtsa
-> >BasaBuru
-> >
-> >
-> >
-> >
-> You could try these: 
-> http://www.kde-apps.org/content/show.php/Amarok+2?content=85474
->
-
-Please do not recommend non official stuff... quality can be good or not so
-good, and they can break your system.
-AFAIK, current amarok's mantainer have not uploaded packages yet because they
-are too much experimental :) 
-
-Ana
+From: Rupert Swarbrick <rswarbrick@googlemail.com>
+X-Sender-Verified: rswarbrick@googlemail.com
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
 
 
--- 
-To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
-with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+... as the subject line: I'm a Uni student, so use desktop PCs at Uni
+and have a laptop which I sometimes carry with me and always use at
+home. The only solutions I've managed to find are Google Reader and
+Bloglines. And Google's one was nicer 12 months ago.
+
+Rupert
 
 
-
-From - Sun Aug 03 21:06:32 2008
-X-Mozilla-Status: 0011
-X-Mozilla-Status2: 00000000
-X-Mozilla-Keys:                                                                                 
->From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 07:38:39 2008
-Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
-Envelope-to: bremner@pivot.cs.unb.ca
-Delivery-date: Thu, 31 Jul 2008 07:38:39 -0300
-Received: from mailserv2.unb.ca ([131.202.1.10])
-	by pivot.cs.unb.ca with esmtp (Exim 4.69)
-	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
-	id 1KOVYN-0004S8-MM
-	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 07:38:39 -0300
-Received: from mx3.nbpei-ecn.ca (mx3.nbpei-ecn.ca [198.164.163.196])
-	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VAcWDr029707
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 07:38:34 -0300
-Received: from mx3.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
-	by localhost (Postfix) with SMTP id 1559FDADBF
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 07:38:32 -0300 (ADT)
-Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
-	by mx3.nbpei-ecn.ca (Postfix) with ESMTP id 97B02DAD99
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 07:38:31 -0300 (ADT)
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with QMQP
-	id CE6F713A58A7; Thu, 31 Jul 2008 10:38:29 +0000 (UTC)
-Old-Return-Path: <debian-kde@m.gmane.org>
-X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
-X-Spam-Level: 
-X-Spam-Status: No, score=-10.9 required=4.0 tests=FOURLA,LDOSUBSCRIBER,
-	LDO_WHITELIST autolearn=failed version=3.2.3
-X-Original-To: lists-debian-kde@liszt.debian.org
-Delivered-To: lists-debian-kde@liszt.debian.org
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with ESMTP id 770A313A581A
-	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 10:38:23 +0000 (UTC)
-Received: from liszt.debian.org ([127.0.0.1])
-	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
-	with ESMTP id 30550-27 for <lists-debian-kde@liszt.debian.org>;
-	Thu, 31 Jul 2008 10:38:20 +0000 (UTC)
-X-policyd-weight: using cached result; rate: -7
-Received: from ciao.gmane.org (main.gmane.org [80.91.229.2])
-	(using TLSv1 with cipher AES256-SHA (256/256 bits))
-	(Client did not present a certificate)
-	by liszt.debian.org (Postfix) with ESMTP id 48E3A13A5824
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 10:38:14 +0000 (UTC)
-Received: from list by ciao.gmane.org with local (Exim 4.43)
-	id 1KOVXs-0000mQ-K3
-	for debian-kde@lists.debian.org; Thu, 31 Jul 2008 10:38:08 +0000
-Received: from x1-6-00-1b-2f-09-8e-4f.k132.webspeed.dk ([80.163.18.233])
-        by main.gmane.org with esmtp (Gmexim 0.1 (Debian))
-        id 1AlnuQ-0007hv-00
-        for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 10:38:08 +0000
-Received: from bofhenator by x1-6-00-1b-2f-09-8e-4f.k132.webspeed.dk with local (Gmexim 0.1 (Debian))
-        id 1AlnuQ-0007hv-00
-        for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 10:38:08 +0000
-X-Injected-Via-Gmane: http://gmane.org/
-To: debian-kde@lists.debian.org
-From: Magnus Pedersen <bofhenator@gmail.com>
-Subject:  Re: Do you now when amarok 2 pakages in experimental?
-Date:  Thu, 31 Jul 2008 12:37:55 +0200
-Lines: 14
-Message-ID: <g6s4m6$d3t$1@ger.gmane.org>
-References:  <200807311046.37761.basaburu@basatu.org> <g6s1fp$2hr$1@ger.gmane.org> <20080731095128.GA13782@ekaia.org>
-Mime-Version:  1.0
-Content-Type:  text/plain; charset=ISO-8859-1; format=flowed
-Content-Transfer-Encoding:  7bit
-X-Complaints-To: usenet@ger.gmane.org
-X-Gmane-NNTP-Posting-Host: x1-6-00-1b-2f-09-8e-4f.k132.webspeed.dk
-User-Agent: Mozilla-Thunderbird 2.0.0.14 (X11/20080509)
-In-Reply-To: <20080731095128.GA13782@ekaia.org>
-Sender: news <news@ger.gmane.org>
-X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
-X-Virus-Scanned: at lists.debian.org with policy bank en-ht
-X-Amavis-Spam-Status: No, score=-4.9 tagged_above=3.6 required=5.3 tests=[FOURLA=0.1,
-	LDO_WHITELIST=-5]
-X-Rc-Virus: 2007-09-13_01
-X-Rc-Spam: 2007-10-04_01
-Resent-Message-ID: <tEIX1g15Q4O.A.VZF.lYZkIB@liszt>
-Resent-From: debian-kde@lists.debian.org
-X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28963
-X-Loop: debian-kde@lists.debian.org
-List-Id: <debian-kde.lists.debian.org>
-List-Post: <mailto:debian-kde@lists.debian.org>
-List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
-List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
-List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
-Precedence: list
-Resent-Sender: debian-kde-request@lists.debian.org
-Resent-Date: Thu, 31 Jul 2008 10:38:29 +0000 (UTC)
-X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.101655
-X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_600_699 0, __BOUNCE_CHALLENGE_SUBJ 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __FRAUD_419_WEBMAIL 0, __FRAUD_419_WEBMAIL_FROM 0, __FROM_GMAIL 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
-X-Virus-Status: Clean
-X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
-
-Ana Guerrero wrote:
->> You could try these: 
->> http://www.kde-apps.org/content/show.php/Amarok+2?content=85474
->>
-> 
-> Please do not recommend non official stuff... quality can be good or not so
-> good, and they can break your system.
-> AFAIK, current amarok's mantainer have not uploaded packages yet because they
-> are too much experimental :) 
-
-I agree that the quality of non-official packages is an unknown, but 
-from there to not link to them is, IMHO, a long way?
-
-/Magnus
-
-
--- 
-To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
-with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
-
-
-
-From - Sun Aug 03 21:06:32 2008
-X-Mozilla-Status: 0011
-X-Mozilla-Status2: 00000000
-X-Mozilla-Keys:                                                                                 
->From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 09:09:20 2008
-Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
-Envelope-to: bremner@pivot.cs.unb.ca
-Delivery-date: Thu, 31 Jul 2008 09:09:20 -0300
-Received: from mailserv2.unb.ca ([131.202.1.10])
-	by pivot.cs.unb.ca with esmtp (Exim 4.69)
-	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
-	id 1KOWy8-0004ac-PJ
-	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 09:09:20 -0300
-Received: from mx4.nbpei-ecn.ca (mx4.nbpei-ecn.ca [198.164.163.197])
-	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VC9Ccr023473
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 09:09:15 -0300
-Received: from mx4.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
-	by localhost (Postfix) with SMTP id E22E87C4048
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 09:09:12 -0300 (ADT)
-Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
-	by mx4.nbpei-ecn.ca (Postfix) with ESMTP id 9E01F7C4045
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 09:09:12 -0300 (ADT)
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with QMQP
-	id E0CF713A61D2; Thu, 31 Jul 2008 12:09:10 +0000 (UTC)
-Old-Return-Path: <ana@debian.org>
-X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
-X-Spam-Level: 
-X-Spam-Status: No, score=0.1 required=4.0 tests=FOURLA autolearn=no
-	version=3.2.3
-X-Original-To: lists-debian-kde@liszt.debian.org
-Delivered-To: lists-debian-kde@liszt.debian.org
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with ESMTP id 06CDD13A58BE
-	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 11:51:53 +0000 (UTC)
-Received: from liszt.debian.org ([127.0.0.1])
-	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
-	with ESMTP id 10922-70 for <lists-debian-kde@liszt.debian.org>;
-	Thu, 31 Jul 2008 11:51:50 +0000 (UTC)
-X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_MX=-3.1 (check from: .debian. - helo: .ekaia. - helo-domain: .ekaia.)  FROM/MX_MATCHES_NOT_HELO(DOMAIN)=0 <client=70.87.222.228> <helo=ekaia.org> <from=ana@debian.org> <to=debian-kde@lists.debian.org>, rate: -6.1
-Received: from ekaia.org (ekaia.org [70.87.222.228])
-	by liszt.debian.org (Postfix) with ESMTP id 05A3613A588D
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 11:51:43 +0000 (UTC)
-Received: by ekaia.org (Postfix, from userid 1001)
-	id 33B91298201; Thu, 31 Jul 2008 13:51:41 +0200 (CEST)
-Date: Thu, 31 Jul 2008 13:51:41 +0200
-From: Ana Guerrero <ana@debian.org>
-To: Magnus Pedersen <bofhenator@gmail.com>
-Cc: debian-kde@lists.debian.org
-Subject: Re: Do you now when amarok 2 pakages in experimental?
-Message-ID: <20080731115140.GA14760@ekaia.org>
-References: <200807311046.37761.basaburu@basatu.org> <g6s1fp$2hr$1@ger.gmane.org> <20080731095128.GA13782@ekaia.org> <g6s4m6$d3t$1@ger.gmane.org>
+From madduck@piper.oerlikon.madduck.net  Fri Sep 26 13:36:10 2008
+Return-path: <madduck@piper.oerlikon.madduck.net>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 11:59:28 -0300
+Received: from clegg.madduck.net ([193.242.105.96]) by pivot.cs.unb.ca with
+ esmtps (TLS1.0:DHE_RSA_AES_256_CBC_SHA1:32) (Exim 4.69) (envelope-from
+ <madduck@piper.oerlikon.madduck.net>) id 1KjEn1-0004t1-Lm for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 11:59:28 -0300
+Received: from wall.oerlikon.madduck.net (wall.oerlikon.madduck.net
+ [IPv6:2001:41e0:ff12::1]) (using TLSv1 with cipher DHE-RSA-AES256-SHA
+ (256/256 bits)) (Client CN "wall.oerlikon.madduck.net", Issuer "CAcert Class
+ 3 Root" (verified OK)) by clegg.madduck.net (postfix) with ESMTPS id
+ D16681D40A6 for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Fri, 26 Sep 2008 16:59:15 +0200 (CEST)
+Received: from piper.oerlikon.madduck.net (piper.oerlikon.madduck.net
+ [IPv6:2001:41e0:ff12:0:211:2fff:fe6b:c869]) by wall.oerlikon.madduck.net
+ (Postfix) with ESMTP id D513E9F245 for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Fri, 26 Sep 2008 16:59:13 +0200 (CEST)
+Received: by piper.oerlikon.madduck.net (Postfix, from userid 1000) id
+ 63E3644B3; Fri, 26 Sep 2008 16:59:13 +0200 (CEST)
+Date: Fri, 26 Sep 2008 16:59:13 +0200
+From: martin f krafft <madduck@madduck.net>
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Subject: distributed news reader
+Message-ID: <20080926145913.GA8389@piper.oerlikon.madduck.net>
 MIME-Version: 1.0
-Content-Type: text/plain; charset=us-ascii
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="5mCyUwZo2JvN/JJP"
 Content-Disposition: inline
-In-Reply-To: <g6s4m6$d3t$1@ger.gmane.org>
-User-Agent: Mutt/1.5.13 (2006-08-11)
-X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
-X-Virus-Scanned: at lists.debian.org with policy bank en-ht
-X-Amavis-Spam-Status: No, score=0.1 tagged_above=3.6 required=5.3 tests=[FOURLA=0.1]
-X-Rc-Spam: 2007-10-04_01
-X-Rc-Virus: 2007-09-13_01
-X-Rc-Spam: 2007-10-04_01
-Resent-Message-ID: <kNQq8hTIx8B.A.-JG.mtakIB@liszt>
-Resent-From: debian-kde@lists.debian.org
-X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28964
-X-Loop: debian-kde@lists.debian.org
-List-Id: <debian-kde.lists.debian.org>
-List-Post: <mailto:debian-kde@lists.debian.org>
-List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
-List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
-List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
-Precedence: list
-Resent-Sender: debian-kde-request@lists.debian.org
-Resent-Date: Thu, 31 Jul 2008 12:09:10 +0000 (UTC)
-X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.115652
-X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_1099 0, BODY_SIZE_5000_LESS 0, __BOUNCE_CHALLENGE_SUBJ 0, __CD 0, __CP_URI_IN_BODY 0, __CT 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
+X-Motto: Keep the good times rollin'
+X-OS: Debian GNU/Linux lenny/sid kernel 2.6.26-1-amd64 x86_64
+X-Spamtrap: madduck.bogus@madduck.net
+X-Subliminal-Message: debian/rules!
+User-Agent: Mutt/1.5.18 (2008-05-17)
+X-Virus-Scanned: ClamAV 0.94/8343/Fri Sep 26 11:43:08 2008 on
+ clegg.madduck.net
 X-Virus-Status: Clean
-X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
-
-On Thu, Jul 31, 2008 at 12:37:55PM +0200, Magnus Pedersen wrote:
-> Ana Guerrero wrote:
-> >>You could try these: 
-> >>http://www.kde-apps.org/content/show.php/Amarok+2?content=85474
-> >>
-> >
-> >Please do not recommend non official stuff... quality can be good or not so
-> >good, and they can break your system.
-> >AFAIK, current amarok's mantainer have not uploaded packages yet because 
-> >they
-> >are too much experimental :) 
-> 
-> I agree that the quality of non-official packages is an unknown, but 
-> from there to not link to them is, IMHO, a long way?
->
-
-who said you can not link it? you do not know the knowledge of the person who
-you are answering so making a notice about it coming from non official repos
-(that are not supported), is a very good idea.
-I guess a better rewording of my email would be:" do not recommend non offcial
-stuff without stating it is non official and it could break your system".
-
-Ana
+X-Sender-Verified: madduck@piper.oerlikon.madduck.net
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
 
 
--- 
-To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
-with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
-
-
-
-From - Sun Aug 03 21:06:32 2008
-X-Mozilla-Status: 0011
-X-Mozilla-Status2: 00000000
-X-Mozilla-Keys:                                                                                 
->From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 09:45:19 2008
-Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
-Envelope-to: bremner@pivot.cs.unb.ca
-Delivery-date: Thu, 31 Jul 2008 09:45:19 -0300
-Received: from mailserv2.unb.ca ([131.202.1.10])
-	by pivot.cs.unb.ca with esmtp (Exim 4.69)
-	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
-	id 1KOXWx-0004eP-8y
-	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 09:45:19 -0300
-Received: from mx3.nbpei-ecn.ca (mx3.nbpei-ecn.ca [198.164.163.196])
-	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VCjBF1007758
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 09:45:14 -0300
-Received: from mx3.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
-	by localhost (Postfix) with SMTP id B3C59DCC9E
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 09:45:10 -0300 (ADT)
-Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
-	by mx3.nbpei-ecn.ca (Postfix) with ESMTP id 5623CDCC9D
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 09:45:10 -0300 (ADT)
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with QMQP
-	id 83A4313A6343; Thu, 31 Jul 2008 12:45:04 +0000 (UTC)
-Old-Return-Path: <basaburu@basatu.org>
-X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
-X-Spam-Level: 
-X-Spam-Status: No, score=-11.0 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST
-	autolearn=failed version=3.2.3
-X-Original-To: lists-debian-kde@liszt.debian.org
-Delivered-To: lists-debian-kde@liszt.debian.org
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with ESMTP id F34EF13A6098
-	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 12:44:57 +0000 (UTC)
-Received: from liszt.debian.org ([127.0.0.1])
-	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
-	with ESMTP id 32041-99 for <lists-debian-kde@liszt.debian.org>;
-	Thu, 31 Jul 2008 12:44:55 +0000 (UTC)
-X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_IP=-2 (check from: .basatu. - helo: .mx1.grupoikusnet. - helo-domain: .grupoikusnet.)  FROM/MX_MATCHES_NOT_HELO(DOMAIN)=0 <client=91.121.11.45> <helo=mx1.grupoikusnet.com> <from=basaburu@basatu.org> <to=debian-kde@lists.debian.org>, rate: -5
-Received: from mx1.grupoikusnet.com (extranet.grupoikusnet.com [91.121.11.45])
-	by liszt.debian.org (Postfix) with ESMTP id 2814713A61D3
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 12:44:45 +0000 (UTC)
-Received: from localhost (localhost.localdomain [127.0.0.1])
-	by mx1.grupoikusnet.com (Postfix) with ESMTP id F03181FA06
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 14:44:42 +0200 (CEST)
-X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
-X-Virus-Scanned: Debian amavisd-new at mx1.grupoikusnet.com
-Received: from mx1.grupoikusnet.com ([127.0.0.1])
-	by localhost (extranet.grupoikusnet.com [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id WEpXQrDzqn3W for <debian-kde@lists.debian.org>;
-	Thu, 31 Jul 2008 14:44:36 +0200 (CEST)
-Received: from hal.ikusnet.com (unknown [217.76.134.179])
-	by mx1.grupoikusnet.com (Postfix) with ESMTP id 8DBA3A9FE4
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 14:44:36 +0200 (CEST)
-Received: from localhost (localhost.localdomain [127.0.0.1])
-	by hal.ikusnet.com (Postfix) with ESMTP id EACF72FA868
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 14:44:35 +0200 (CEST)
-Received: from hal.ikusnet.com ([127.0.0.1])
-	by localhost (hal.ikusnet.com [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id 19871-05 for <debian-kde@lists.debian.org>;
-	Thu, 31 Jul 2008 14:44:21 +0200 (CEST)
-Received: from basatu.localnet (238.Red-83-61-23.staticIP.rima-tde.net [83.61.23.238])
-	by hal.ikusnet.com (Postfix) with ESMTP id AFA352FA859
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 14:44:08 +0200 (CEST)
-From: BasaBuru <basaburu@basatu.org>
-To: debian-kde@lists.debian.org
-Subject: Re: Do you now when amarok 2 pakages in experimental?
-Date: Thu, 31 Jul 2008 14:44:22 +0200
-User-Agent: KMail/1.10.0 (Linux/2.6.26; KDE/4.1.0; x86_64; ; )
-References: <200807311046.37761.basaburu@basatu.org> <g6s1fp$2hr$1@ger.gmane.org>
-In-Reply-To: <g6s1fp$2hr$1@ger.gmane.org>
-MIME-Version: 1.0
-Content-Type: text/plain;
-  charset="iso-8859-1"
+--5mCyUwZo2JvN/JJP
+Content-Type: text/plain; charset=iso-8859-1
+Content-Disposition: inline
 Content-Transfer-Encoding: quoted-printable
+
+rss2email and offlineimap.
+
+And you are lucky I replied because when I read "Can I haz...",
+I cringed. :)
+
+--=20
+martin | http://madduck.net/ | http://two.sentenc.es/
+=20
+"wer schmetterlinge lachen h=F6rt,
+ der weiss wie wolken schmecken."
+                                  -- freiherr friedrich von hardenberg
+=20
+spamtraps: madduck.bogus@madduck.net
+
+--5mCyUwZo2JvN/JJP
+Content-Type: application/pgp-signature; name="digital_signature_gpg.asc"
+Content-Description: Digital signature (see http://martin-krafft.net/gpg/)
 Content-Disposition: inline
-Message-Id: <200807311444.22470.basaburu@basatu.org>
-X-Virus-Scanned: by amavisd-new-20030616-p10 (Debian) at ikusnet.com
-X-Virus-Scanned: at lists.debian.org with policy bank en-ht
-X-Amavis-Spam-Status: No, score=-5 tagged_above=3.6 required=5.3
-	tests=[LDO_WHITELIST=-5]
-X-Rc-Virus: 2007-09-13_01
-X-Rc-Spam: 2007-10-04_01
-Resent-Message-ID: <rwvWICmFaYI.A._dG.QPbkIB@liszt>
-Resent-From: debian-kde@lists.debian.org
-X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28965
-X-Loop: debian-kde@lists.debian.org
-List-Id: <debian-kde.lists.debian.org>
-List-Post: <mailto:debian-kde@lists.debian.org>
-List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
-List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
-List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
-Precedence: list
-Resent-Sender: debian-kde-request@lists.debian.org
-Resent-Date: Thu, 31 Jul 2008 12:45:04 +0000 (UTC)
-X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.123116
-X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='FROM_NAME_ONE_WORD 0.05, BODY_SIZE_1000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_500_599 0, __BOUNCE_CHALLENGE_SUBJ 0, __CD 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
-X-Virus-Status: Clean
-X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
 
-El Thursday 31 July 2008 11:43:18 Magnus Pedersen escribi=F3:
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
 
->
-> You could try these:
-> http://www.kde-apps.org/content/show.php/Amarok+2?content=3D85474
+iEYEARECAAYFAkjc+MEACgkQIgvIgzMMSnVihgCg1hH61WcfC49zFTUTMQGxx4E2
+Ar0AoL+I/SOGeV8AnxDPfOMlBRvXe9iH
+=yHD/
+-----END PGP SIGNATURE-----
 
-Yes i now. but...
-
-1. Is unoffical, then you maybe have any problems.
-
-2. Is only for i386 i can't probe
-
-3. i'm not sure what is make compile.=20
-
-4. If official package is not, i prefer compile it's my self
-
-thanks for link
-
-BasaBuru
+--5mCyUwZo2JvN/JJP--
 
 
+From loz.hurst@gmail.com  Fri Sep 26 13:36:19 2008
+Return-path: <loz.hurst@gmail.com>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 12:10:29 -0300
+Received: from nf-out-0910.google.com ([64.233.182.184]) by pivot.cs.unb.ca
+ with esmtp (Exim 4.69) (envelope-from <loz.hurst@gmail.com>) id
+ 1KjExh-0004uO-71 for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 12:10:29 -0300
+Received: by nf-out-0910.google.com with SMTP id b21so395018nfd.4 for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Fri, 26 Sep 2008 08:10:26 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+ h=domainkey-signature:received:received:message-id:from:to
+ :content-type:content-transfer-encoding:mime-version:subject:date :x-mailer;
+ bh=AgRz9hMFiuKqMWRMStnS6VXC5Irm7NIXswZ4FgSsBvo=;
+ b=KgNGDJKXSy0jHW7xNW2E9N16DKifSxlXTlMFNVCjd/DJ5nq+4RcX2RJR875OPWImkF
+ d9BOB1V8fTA77NqQYav9yzGn469eHIwYUMT6uN1HSiPHmdDhbv/DSu23bjZWwzrZW60t
+ YC5vXOIjsQsNKpr5wjm3hvXDv8/ESPOzxkR7o=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+ h=message-id:from:to:content-type:content-transfer-encoding
+ :mime-version:subject:date:x-mailer;
+ b=nqiR52APUaNlVqJSKnEr41lFH4/hWLZ2klfHcZ8Yq8xREgLGNnLWaEa6JTLjB4ZJ+L
+ bsro+ehkoMnzjOUAjkC4jtkJLAaotrLt0AmNC7O1/RROUqY3JbUA64MYAttxKheYbcmc
+ NY1Y2uMoOmMYizhgbcbWayEallCKTihy4K1uc=
+Received: by 10.210.37.16 with SMTP id k16mr1590166ebk.131.1222441826755;
+ Fri, 26 Sep 2008 08:10:26 -0700 (PDT)
+Received: from ?192.47.108.138? ( [84.45.213.95]) by mx.google.com with
+ ESMTPS id m5sm3886524gve.3.2008.09.26.08.10.23 (version=SSLv3
+ cipher=RC4-MD5); Fri, 26 Sep 2008 08:10:25 -0700 (PDT)
+Message-Id: <5A82B066-0E57-41D9-9CA8-DCFD8DE31F28@gmail.com>
+From: Laurence Hurst <loz.hurst@gmail.com>
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Content-Type: text/plain; charset=US-ASCII; format=flowed; delsp=yes
+Content-Transfer-Encoding: 7bit
+Mime-Version: 1.0 (Apple Message framework v926)
+Subject: rss2email
+Date: Fri, 26 Sep 2008 16:10:21 +0100
+X-Mailer: Apple Mail (2.926)
+X-Sender-Verified: loz.hurst@gmail.com
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
 
--- 
-To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
-with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+I, personally, use rss2email to read rss feeds via my existing email  
+infrastructure. I can read the rss anywhere I can get at my email from  
+(which is anywhere with a web-browser, thanks to webmail) and as my  
+email is accessed via imap the 'read' status is also maintained  
+centrally on my mail server.
+--
+Laurence Hurst
+loz.hurst@gmail.com
+
+The contents of this email are strictly confidential and intended for  
+the named addressee only.
+If you have received this email in error please delete it immediately  
+and inform the sender of the error.
 
 
 
-From - Sun Aug 03 21:06:32 2008
-X-Mozilla-Status: 0001
-X-Mozilla-Status2: 00000000
-X-Mozilla-Keys:                                                                                 
->From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 12:58:24 2008
-Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
-Envelope-to: bremner@pivot.cs.unb.ca
-Delivery-date: Thu, 31 Jul 2008 12:58:24 -0300
-Received: from mailserv2.unb.ca ([131.202.1.10])
-	by pivot.cs.unb.ca with esmtp (Exim 4.69)
-	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
-	id 1KOaXo-0004xa-Dy
-	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 12:58:24 -0300
-Received: from mx4.nbpei-ecn.ca (mx4.nbpei-ecn.ca [198.164.163.197])
-	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VFwDcw019086
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 12:58:19 -0300
-Received: from mx4.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
-	by localhost (Postfix) with SMTP id 500E47C4050
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 12:58:18 -0300 (ADT)
-Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
-	by mx4.nbpei-ecn.ca (Postfix) with ESMTP id E51617C4047
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 12:58:17 -0300 (ADT)
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with QMQP
-	id 4E2CD13A6442; Thu, 31 Jul 2008 15:58:16 +0000 (UTC)
-Old-Return-Path: <ferdinand@telegraafnet.nl>
-X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
-X-Spam-Level: 
-X-Spam-Status: No, score=-11.0 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST
-	autolearn=failed version=3.2.3
-X-Original-To: lists-debian-kde@liszt.debian.org
-Delivered-To: lists-debian-kde@liszt.debian.org
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with ESMTP id 2927513A5B97
-	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 15:58:10 +0000 (UTC)
-Received: from liszt.debian.org ([127.0.0.1])
-	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
-	with ESMTP id 20657-36 for <lists-debian-kde@liszt.debian.org>;
-	Thu, 31 Jul 2008 15:58:07 +0000 (UTC)
-X-policyd-weight: using cached result; rate: -6.1
-X-Greylist: delayed 474 seconds by postgrey-1.27 at liszt; Thu, 31 Jul 2008 15:58:07 UTC
-Received: from smtp0.telegraaf.nl (smtp0.telegraaf.nl [217.196.45.192])
-	by liszt.debian.org (Postfix) with ESMTP id 3BE8013A5213
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 15:58:01 +0000 (UTC)
-Received: from smtp0.telegraaf.nl (localhost [127.0.0.1])
-	by smtp0.telegraaf.nl (Postfix) with ESMTP id BDCB33682B0
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 17:49:58 +0200 (CEST)
-Received: from office.telegraafnet.nl (olijfje.telegraafnet.nl [10.41.0.9])
-	by smtp0.telegraaf.nl (Postfix) with ESMTP id B120F3680FD
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 17:49:58 +0200 (CEST)
-Received: by office.telegraafnet.nl (Postfix, from userid 1136)
-	id A25C81618E1; Thu, 31 Jul 2008 17:49:58 +0200 (CEST)
-Date: Thu, 31 Jul 2008 17:49:58 +0200
-To: debian-kde@lists.debian.org
-Subject: Upgrade was mostly fine, but a few problems left
-Message-ID: <20080731154958.GA5100@telegraafnet.nl>
+
+
+
+From nicoe@nutellux.ath.cx  Fri Sep 26 13:36:29 2008
+Return-path: <nicoe@nutellux.ath.cx>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 12:12:46 -0300
+Received: from eir.is.scarlet.be ([193.74.71.27]) by pivot.cs.unb.ca with
+ esmtps (TLS1.0:DHE_RSA_AES_256_CBC_SHA1:32) (Exim 4.69) (envelope-from
+ <nicoe@nutellux.ath.cx>) id 1KjEzu-0004uo-8e for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 12:12:46 -0300
+Received: from kinder.nutellux.ath.cx (ip-80-236-194-22.dsl.scarlet.be
+ [80.236.194.22]) (authenticated bits=0) by eir.is.scarlet.be (8.14.2/8.14.2)
+ with ESMTP id m8QFCfpT028458 (version=TLSv1/SSLv3 cipher=AES256-SHA bits=256
+ verify=NOT) for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Fri, 26 Sep 2008 17:12:42 +0200
+Received: from nicoe by kinder.nutellux.ath.cx with local (Exim 4.69)
+ (envelope-from <nicoe@kinder.nutellux.ath.cx>) id 1KjEzo-0002tK-Nr for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 17:12:40 +0200
+Date: Fri, 26 Sep 2008 17:12:40 +0200
+From: Nicolas =?iso-8859-15?Q?=C9vrard?= <nicolas.evrard@openhex.com>
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Subject: rss2email
+Message-ID: <20080926151240.GA11106@kinder.nutellux.ath.cx>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-15; format=flowed
+Content-Disposition: inline
+X-OS: GNU/Linux
+User-Agent: Mutt/1.5.18 (2008-05-17)
+X-DCC-scarlet.be-Metrics: eir 20001; Body=1 Fuz1=1 Fuz2=1
+Content-Transfer-Encoding: quoted-printable
+X-MIME-Autoconverted: from 8bit to quoted-printable by eir.is.scarlet.be id
+ m8QFCfpT028458
+X-Sender-Verified: nicoe@nutellux.ath.cx
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+
+Hi,
+
+I had the same kind of problem (added to the fact that I find=20
+newsreader so slow). So instead of using the google news reader I=20
+decided to use rss2email to receive each blog post as an email in an=20
+imap folder sync with mbsync. It works for me.
+
+--=20
+Nicolas =C9vrard     |   Web: http://www.openhex.com
+Li=E8ge - Belgique
+
+
+From Peter.Mann@tuke.sk  Fri Sep 26 13:36:40 2008
+Return-path: <Peter.Mann@tuke.sk>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 12:20:11 -0300
+Received: from smtp.tuke.sk ([147.232.3.25]) by pivot.cs.unb.ca with esmtp
+ (Exim 4.69) (envelope-from <Peter.Mann@tuke.sk>) id 1KjF75-0004vu-Pu for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 12:20:11 -0300
+X-Virus-Scanned: by Clam AntiVirus at SMTP.TUKE
+X-Sagator-Scanner: 1.1.0-1 at smtp.tuke.sk;
+ log_syslog(status(report(drop(add_header(buffer2mbox(libclam()))))))
+X-Sagator-ID: 20080926-171904-0001-08386-RhEMSW@smtp.tuke.sk
+Received: from pm0.uvt.tuke.sk (pm0.uvt.tuke.sk [147.232.3.123]) (using TLSv1
+ with cipher AES128-SHA (128/128 bits)) (No client certificate requested) by
+ smtp.tuke.sk (Postfix) with ESMTP id 2E87C4B4969 for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Fri, 26 Sep 2008 17:19:03 +0200 (CEST)
+Date: Fri, 26 Sep 2008 17:19:03 +0200
+From: Peter Mann <Peter.Mann@tuke.sk>
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Subject: rss2email
+Message-ID: <20080926151903.GA3140@pm0.uvt.tuke.sk>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.18 (2008-05-17)
+X-Sender-Verified: Peter.Mann@tuke.sk
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+
+Heyaaa!!!
+
+i'm using rss2email together with IMAP account (offlineimap + mutt)
+
+Peter.Mann 
+
+
+
+
+From david@planetwatson.co.uk  Fri Sep 26 13:36:54 2008
+Return-path: <david@planetwatson.co.uk>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 12:40:26 -0300
+Received: from ptb-relay03.plus.net ([212.159.14.147]) by pivot.cs.unb.ca
+ with esmtp (Exim 4.69) (envelope-from <david@planetwatson.co.uk>) id
+ 1KjFQg-0004yw-8m for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 12:40:26 -0300
+Received: from [212.159.12.103] (helo=bert.planetwatson.co.uk) by
+ ptb-relay03.plus.net with esmtp (Exim) id 1KjFQO-000830-75 for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 16:40:08 +0100
+Received: from [192.168.0.32] (helo=mavro) by bert.planetwatson.co.uk with
+ esmtpsa (TLS1.0:DHE_RSA_AES_256_CBC_SHA1:32) (Exim 4.69) (envelope-from
+ <david@planetwatson.co.uk>) id 1KjFQJ-0005fS-R2; Fri, 26 Sep 2008 16:40:05
+ +0100
+Date: Fri, 26 Sep 2008 16:40:12 +0100
+From: David Watson <david@planetwatson.co.uk>
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Subject: rss2email
+Message-ID: <20080926164012.421ce6b9@mavro>
+X-Mailer: Claws Mail 3.5.0 (GTK+ 2.12.11; x86_64-pc-linux-gnu)
 Mime-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Spam_score: -4.4
+X-Spam_score_int: -43
+X-Spam_bar: ----
+X-Spam_report: Spam detection software, running on the system
+ "bert.planetwatson.co.uk", has identified this incoming email as possible
+ spam.  The original message has been attached to this so you can view it (if
+ it isn't spam) or label similar future email.  If you have any questions, see
+ the administrator of that system for details. Content preview:  I had the
+ same problem until I started using rss2email, so now I can read my feeds from
+ any computer using imap. -- David Watson - Debian GNU/Linux Developer
+ david@xxxxxxxxxxxxxxxxxx, xxxxxxx@debian.org [...]  Content analysis details:
+ (-4.4 points, 5.0 required) pts rule name              description ----
+ ---------------------- --------------------------------------------------
+ -1.8 ALL_TRUSTED            Passed through trusted hosts only via SMTP -2.6
+ BAYES_00               BODY: Bayesian spam probability is 0 to 1% [score:
+ 0.0000]
+X-Plusnet-Relay: d3b7afcc28deada4532558cec33dfcf0
+X-Sender-Verified: david@planetwatson.co.uk
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+
+I had the same problem until I started using rss2email, so now I can
+read my feeds from any computer using imap.
+
+
+-- 
+David Watson - Debian GNU/Linux Developer
+xxxxxxxxxxxxxxxxxxxxxxxx, xxxxxxx@debian.org
+
+Jabber: dwatson@planetwatson.co.uk
+Web: http://planetwatson.co.uk/blog
+
+
+From kbloom@gmail.com  Fri Sep 26 13:37:09 2008
+Return-path: <kbloom@gmail.com>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 13:05:22 -0300
+Received: from an-out-0708.google.com ([209.85.132.242]) by pivot.cs.unb.ca
+ with esmtp (Exim 4.69) (envelope-from <kbloom@gmail.com>) id 1KjFoo-000531-9l
+ for bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca;
+ Fri, 26 Sep 2008 13:05:22 -0300
+Received: by an-out-0708.google.com with SMTP id d11so56850and.100 for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Fri, 26 Sep 2008 09:05:19 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+ h=domainkey-signature:received:received:received:subject:from:to
+ :content-type:date:message-id:mime-version:x-mailer;
+ bh=FRatL/ZF8OrgKRiRFbRn370KjKEAM5iPo0rYRJBE6Vg=;
+ b=lK6QDhBYoKSGRCEI+DSOSdavWuZOW5RFvrdhXc12eDgZf//cXegOYvX1R6TZP/6iEJ
+ /l6hi72pw71JCOl5M0ag5tJId8TtgwRG+XQMZKh489y8rnMZxzmnFVZSkP5+bBiFefSd
+ GzFSDUYASegEHkpl9Hk6vTCBXX/SqoU43nM1c=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+ h=subject:from:to:content-type:date:message-id:mime-version:x-mailer;
+ b=k9+6UmCyIvuEajHCOcn6aV4Unkv+cepkEMfKwyGnnWSFFpRO/2izZIluYvUMrVQXJT
+ Nb70H2kbT4hnQTz/cRUwZKk55gGW5Z+yn9DryaPrGH7OeX6bMGKpo27GlYu1G27ZJyHl
+ o/PTodGaFWIouRAWusRjzGTJCt44JErvAxkRA=
+Received: by 10.100.198.13 with SMTP id v13mr1339268anf.125.1222445119506;
+ Fri, 26 Sep 2008 09:05:19 -0700 (PDT)
+Received: from localhost.localdomain ( [69.211.51.92]) by mx.google.com with
+ ESMTPS id d25sm4084191and.15.2008.09.26.09.05.18 (version=TLSv1/SSLv3
+ cipher=RC4-MD5); Fri, 26 Sep 2008 09:05:18 -0700 (PDT)
+Received: by localhost.localdomain (Postfix, from userid 1000) id
+ 25BB413EF9D; Fri, 26 Sep 2008 11:05:15 -0500 (CDT)
+Subject: NNTP and RSS on multiple computers is just a special case
+From: Ken Bloom <kbloom@gmail.com>
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-Cv+thgZ+f+6d/BWZJm/R"
+Date: Fri, 26 Sep 2008 11:05:14 -0500
+Message-Id: <1222445114.9293.11.camel@localhost.localdomain>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.22.3.1 
+X-Sender-Verified: kbloom@gmail.com
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+
+
+--=-Cv+thgZ+f+6d/BWZJm/R
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+While it is definitely true that one wastes time on multiple computers,
+and NNTP and RSS suffer the same problem, so do most other programs.
+There has been a push lately for bookmark sharing (usually through
+something like del.icio.us), email sharing (IMAP), calendar sharing, and
+contact sharing (several protocols for this, but none is exactly
+"standard"), there's no general solution for "sharing all the data I
+might need".
+
+Personally, I find that by keeping my $HOME in subversion, I can
+synchronize my .newsrc, just by checking the .newsrc into my repository
+just like everything else. An RSS reader's list of read messages would
+just be another config file to check in to my repository.
+
+Now, when one checks a config file into a version control system, there
+is a small matter of reconciling conflicts, where we could stand to do a
+lot better. However, having solved the general problem, the specific
+problem of avoiding conflicts with a specific application can always be
+solved by adjusting your working habits to commit and update when moving
+computers, if no more automatic and permissive solution can be found.
+
+--Ken
+
+--=20
+Ken (Chanoch) Bloom. PhD candidate. Linguistic Cognition Laboratory.
+Department of Computer Science. Illinois Institute of Technology.
+http://www.iit.edu/~kbloom1/
+
+--=-Cv+thgZ+f+6d/BWZJm/R
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEABECAAYFAkjdCDcACgkQoTHBsEud5gkbPQCfWYK86eUMP/O6iDbvPwNy2pdS
+DwkAninDU0NssU3laJdrxsj42kHScgJW
+=dtAE
+-----END PGP SIGNATURE-----
+
+--=-Cv+thgZ+f+6d/BWZJm/R--
+
+
+From perezmeyer@gmail.com  Fri Sep 26 13:37:25 2008
+Return-path: <perezmeyer@gmail.com>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 13:20:18 -0300
+Received: from an-out-0708.google.com ([209.85.132.244]) by pivot.cs.unb.ca
+ with esmtp (Exim 4.69) (envelope-from <perezmeyer@gmail.com>) id
+ 1KjG3G-00054w-KY for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 13:20:18 -0300
+Received: by an-out-0708.google.com with SMTP id d11so57622and.100 for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Fri, 26 Sep 2008 09:20:16 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+ h=domainkey-signature:received:received:from:to:subject:date
+ :user-agent:x-face:mime-version:content-type
+ :content-transfer-encoding:content-disposition:message-id;
+ bh=VTYLFZ+nJR9VsBvpkdzQkh21vMUt4VltdS2B1TJScG0=;
+ b=Aqb2mTQKPTzbx48t7zj7MGSIswA5TLN2TDrYdRzh76QNo7mM4uZTziQHZzrzBqEUSb
+ soKiqqHlEYHICTr1V5QjUZ5Wor3/NgDjHHLRA+IsvoSmDA3oVleV3sO2YjUnPhbRRCRx
+ i5HYO+JdfG+J9aKdo8wGNaqjuUph3sul3aT3E=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+ h=from:to:subject:date:user-agent:x-face:mime-version:content-type
+ :content-transfer-encoding:content-disposition:message-id;
+ b=uLWkletqc3M9jH9IjpaY/scNamaMIbuK3iiPn0261ylz3x5qTn5NgqUOAy+NLQs2gG
+ e1iGK3yl7TUv0wZhWHoaT0vAdyGNNY4OpcyH6zYdS5fnxjVf3JJsdqRksuDG0XhV1Q0R
+ fB1g4PfOI5ob9c5TF4wAldJFVZwSQ1dQw4hBA=
+Received: by 10.100.94.14 with SMTP id r14mr1378417anb.88.1222446015918; Fri,
+ 26 Sep 2008 09:20:15 -0700 (PDT)
+Received: from luna.localnet ( [190.1.22.76]) by mx.google.com with ESMTPS id
+ b3sm3668830ana.7.2008.09.26.09.20.14 (version=TLSv1/SSLv3 cipher=RC4-MD5);
+ Fri, 26 Sep 2008 09:20:15 -0700 (PDT)
+From: Lisandro =?iso-8859-1?q?Dami=E1n_Nicanor_P=E9rez_Meyer?=
+ <perezmeyer@gmail.com>
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Subject: Yes, but...
+Date: Fri, 26 Sep 2008 13:20:11 -0300
+User-Agent: KMail/1.10.1 (Linux/2.6.26-1-686; KDE/4.1.1; i686; ; )
+X-Face: &O7POA^t$8Gq0El|^zM9V:*jgn,ETU\1A73;Zdeojd,G(a";/Y0Fu|/*_jQF+@3';#.O@
+ =?utf-8?q?=26=0A=09=2ET?="FaLh+5o_F,\lrKg~{JYYVM20<P[J.ve7:7m;51A=i@"XBI].=`ZFX4h@tGL> =?utf-8?q?Q1I=26fUN=0A=094?=<\TGcR5=
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Message-Id: <200809261320.12036.perezmeyer@gmail.com>
+X-Sender-Verified: perezmeyer@gmail.com
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+
+That's why I use Google reader. OK, It's not _the_ reader, and someone may say 
+(most surely correctly) that that gives Google more data, but for now it's a 
+tradeoff :-( 
+
+
+From mbanck@gmx.net  Fri Sep 26 14:13:53 2008
+Return-path: <mbanck@gmx.net>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 13:32:50 -0300
+Received: from mail.gmx.net ([213.165.64.20]) by pivot.cs.unb.ca with smtp
+ (Exim 4.69) (envelope-from <mbanck@gmx.net>) id 1KjGFO-00056X-D3 for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 13:32:50 -0300
+Received: (qmail invoked by alias); 26 Sep 2008 16:32:41 -0000
+Received: from ppp-82-135-73-108.dynamic.mnet-online.de (EHLO
+ nighthawk.chemicalconnection.dyndns.org) [82.135.73.108] by mail.gmx.net
+ (mp005) with SMTP; 26 Sep 2008 18:32:41 +0200
+X-Authenticated: #686195
+X-Provags-ID: V01U2FsdGVkX1+YKskEXKGYKhgMi11UQp6IugzoSS30Fdl6s8va3E
+ sFPHuWGy9U1IGs
+Received: from mbanck by nighthawk.chemicalconnection.dyndns.org with local
+ (Exim 4.69) (envelope-from <mbanck@gmx.net>) id 1KjG9T-0004mS-Kc for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 18:26:43 +0200
+Date: Fri, 26 Sep 2008 18:26:43 +0200
+From: Michael Banck <mbanck@debian.org>
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Subject: .
+Message-ID: <20080926162643.GA18281@nighthawk.chemicalconnection.dyndns.org>
+MIME-Version: 1.0
 Content-Type: text/plain; charset=us-ascii
 Content-Disposition: inline
-User-Agent: Mutt/1.5.9i
-From: ferdinand@telegraafnet.nl (Ferdinand Smit)
-X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
-X-Virus-Scanned: ClamAV using ClamSMTP
-X-Virus-Scanned: at lists.debian.org with policy bank en-ht
-X-Amavis-Spam-Status: No, score=-5 tagged_above=3.6 required=5.3
-	tests=[LDO_WHITELIST=-5]
-X-Rc-Virus: 2007-09-13_01
-X-Rc-Spam: 2007-10-04_01
-Resent-Message-ID: <mW8r_3DbNiE.A.lWC.YEekIB@liszt>
-Resent-From: debian-kde@lists.debian.org
-X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28966
-X-Loop: debian-kde@lists.debian.org
-List-Id: <debian-kde.lists.debian.org>
-List-Post: <mailto:debian-kde@lists.debian.org>
-List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
-List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
-List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
-Precedence: list
-Resent-Sender: debian-kde-request@lists.debian.org
-Resent-Date: Thu, 31 Jul 2008 15:58:16 +0000 (UTC)
-X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.154524
-X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_1099 0, BODY_SIZE_5000_LESS 0, __CD 0, __CT 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
-X-Virus-Status: Clean
-X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
+User-Agent: Mutt/1.5.18 (2008-05-17)
+X-Y-GMX-Trusted: 0
+X-FuHaFi: 0.00
+X-Sender-Verified: mbanck@gmx.net
 
-Hi,
-
-I've upgraded my system to 4.1 by aptitude -t experimental install kde4.
-It 
-looks a bit scary so i created backup and got the install done.
-
-The upgrade was fine ! Great job ! KDE 4.1 looks and works nice !
-
-But ... there are a few problems left, that i can not fix:
-* Where did my address book and my calender go in kontact ? Can i import
-* them 
-again in kontact 4.1 ? My mail and my mail settings seems fine.
-* At First my alt-tab was working accordingly the settings of "Desktop
-* Effects 
-Settings" but now is it only using some old alt-tab behavior and does it
-not 
-listen to changes in the "Desktop Effect Settings". Probably it's just a 
-setting somewhere, but i can not find it.
-* How do i added programs (-links) to the panel ?
-* The effects are a little bit slow on a 'Intel(R) Core(TM)2 Duo CPU
-* 2Gz, Intel 
-Mobile GM965/GL960'. Is that normal ?
-
-Regards,
-Ferdinand
+Google Reader.
 
 
--- 
-To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
-with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
-
-
-
-From - Sun Aug 03 21:06:32 2008
-X-Mozilla-Status: 0011
-X-Mozilla-Status2: 00000000
-X-Mozilla-Keys:                                                                                 
->From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 13:13:17 2008
-Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
-Envelope-to: bremner@pivot.cs.unb.ca
-Delivery-date: Thu, 31 Jul 2008 13:13:17 -0300
-Received: from mailserv2.unb.ca ([131.202.1.10])
-	by pivot.cs.unb.ca with esmtp (Exim 4.69)
-	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
-	id 1KOamD-0004zE-4u
-	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 13:13:17 -0300
-Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
-	by mailserv2.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VGD9kd024398
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 13:13:12 -0300
-Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
-	by localhost (Postfix) with SMTP id 80493444072
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 13:13:09 -0300 (ADT)
-Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
-	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id 1E96544406B
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 13:13:09 -0300 (ADT)
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with QMQP
-	id B7B0C13A6429; Thu, 31 Jul 2008 16:13:07 +0000 (UTC)
-Old-Return-Path: <perezmeyer@gmail.com>
-X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
-X-Spam-Level: 
-X-Spam-Status: No, score=-8.0 required=4.0 tests=BLOGSPOT,LDOSUBSCRIBER,
-	LDO_WHITELIST autolearn=failed version=3.2.3
-X-Original-To: lists-debian-kde@liszt.debian.org
-Delivered-To: lists-debian-kde@liszt.debian.org
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with ESMTP id 6E3D513A641E
-	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 16:13:01 +0000 (UTC)
-Received: from liszt.debian.org ([127.0.0.1])
-	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
-	with ESMTP id 09963-17 for <lists-debian-kde@liszt.debian.org>;
-	Thu, 31 Jul 2008 16:12:58 +0000 (UTC)
-X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_IP=-2 (check from: .gmail. - helo: .yw-out-1718.google. - helo-domain: .google.)  FROM/MX_MATCHES_HELO(DOMAIN)=-2 IN_PM_RFCI=0.1 <client=74.125.46.152> <helo=yw-out-1718.google.com> <from=perezmeyer@gmail.com> <to=debian-kde@lists.debian.org>, rate: -6.9
-Received: from yw-out-1718.google.com (yw-out-1718.google.com [74.125.46.152])
-	by liszt.debian.org (Postfix) with ESMTP id 74E1413A640E
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 16:12:43 +0000 (UTC)
-Received: by yw-out-1718.google.com with SMTP id 5so325711ywr.30
-        for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 09:12:41 -0700 (PDT)
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
-        d=gmail.com; s=gamma;
-        h=domainkey-signature:received:received:from:to:subject:date
-         :user-agent:references:in-reply-to:x-face:mime-version:content-type
-         :content-transfer-encoding:message-id;
-        bh=+we4wAcRrH4ag8iPbvJhCKRs3Q7nc0bhm1sKf9KizQ0=;
-        b=TsQ5oqNsVyqLoqOA37pwZhtHDDRUgjkio3RtTwy8l6CtDTYVhsUNVoDuohjbY8tlmG
-         NCuaJF3eo/wwPALzjPDaUu64TsDyrWyM5p1KwhO0g5lk4lMt6/uShkOpR2OH+99gbYyo
-         HIYnsNtalHkocPDcJBY/GAmNzIF3SqwUroMNs=
-DomainKey-Signature: a=rsa-sha1; c=nofws;
-        d=gmail.com; s=gamma;
-        h=from:to:subject:date:user-agent:references:in-reply-to:x-face
-         :mime-version:content-type:content-transfer-encoding:message-id;
-        b=gNdQgzWEHj53XDmkNd8MOWLFgEi/xgvjzDMLGPfNab5Y65XXbodC2HAtOnhsgOgS+0
-         7LaWAbPPVOUaKRg12aH8IQyodKjZ9K+jOJ6YDGjw9OYI1MKoCWvb9ozM7nIBABmvqlw3
-         1homfskVCy3TYcGNotrQgzRUFFeNVFexSX/9w=
-Received: by 10.114.159.17 with SMTP id h17mr10332650wae.227.1217520760498;
-        Thu, 31 Jul 2008 09:12:40 -0700 (PDT)
-Received: from dumbledore.localnet ( [190.1.22.76])
-        by mx.google.com with ESMTPS id 5sm23293ywd.8.2008.07.31.09.12.38
-        (version=TLSv1/SSLv3 cipher=RC4-MD5);
-        Thu, 31 Jul 2008 09:12:39 -0700 (PDT)
-From: Lisandro =?iso-8859-1?q?Dami=E1n_Nicanor_P=E9rez_Meyer?= <perezmeyer@gmail.com>
-To: debian-kde@lists.debian.org
-Subject: Re: Upgrade was mostly fine, but a few problems left
-Date: Thu, 31 Jul 2008 13:12:34 -0300
-User-Agent: KMail/1.10.0 (Linux/2.6.25-2-686; KDE/4.1.0; i686; ; )
-References: <20080731154958.GA5100@telegraafnet.nl>
-In-Reply-To: <20080731154958.GA5100@telegraafnet.nl>
-X-Face: &O7POA^t$8Gq0El|^zM9V:*jgn,ETU\1A73;Zdeojd,G(a";/Y0Fu|/*_jQF+@3';#.O@
- =?utf-8?q?=26=0A=09=2ET?="FaLh+5o_F,\lrKg~{JYYVM20<P[J.ve7:7m;51A=i@"XBI].=`ZFX4h@tGL>
- =?utf-8?q?Q1I=26fUN=0A=094?=<\TGcR5=
+From wbruna@yahoo.com  Fri Sep 26 14:20:43 2008
+Return-path: <wbruna@yahoo.com>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 13:45:21 -0300
+Received: from web31505.mail.mud.yahoo.com ([68.142.198.134]) by
+ pivot.cs.unb.ca with smtp (Exim 4.69) (envelope-from <wbruna@yahoo.com>) id
+ 1KjGRV-00058a-LQ for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 13:45:21 -0300
+Received: (qmail 85115 invoked by uid 60001); 26 Sep 2008 16:45:14 -0000
+DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws; s=s1024; d=yahoo.com;
+ h=X-YMail-OSG:Received:X-Mailer:Date:From:To:MIME-Version:Content-Type:Message-ID; b=Xy/B8DryNgHQ9Ib5C5QfAqBloKheih08TS8/gafC8IZHIyvDCvQs7o9gYDsVHw5X/X3vAjj2cIEFYwUTWP+bThWu084pp1lfZOPF3SBLnXSo60Vw0RhPetmrHroDDnywOvTvB2LMMOx1LBEyy5p/WiADcnj2xOGGDp6BfSW7vXA=;
+X-YMail-OSG:
+ HwONAL8VM1kwJGeZ8F.XvKw5rXp0f6Dkb9lI4MPtmLfGFPXMe86i_TeuSc6X7fz7qN7um_4kgfJv5iBkZe2spG3ILn1WMT05xBDMAvCjWSD2ZrxFizDO77Oj6RaPMw7jJ8pzHKWJWgFd2xsQBq0gnqSjPBI9
+Received: from [72.55.133.138] by web31505.mail.mud.yahoo.com via HTTP; Fri,
+ 26 Sep 2008 09:45:14 PDT
+X-Mailer: YahooMailWebService/0.7.218.2
+Date: Fri, 26 Sep 2008 09:45:14 -0700 (PDT)
+From: Wagner Bruna <wbruna@yahoo.com>
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
 MIME-Version: 1.0
-Content-Type: multipart/signed;
-  boundary="nextPart4479863.OBGFDyufmS";
-  protocol="application/pgp-signature";
-  micalg=pgp-sha1
+Content-Type: text/plain; charset=us-ascii
+Message-ID: <841125.84595.qm@web31505.mail.mud.yahoo.com>
+X-Sender-Verified: wbruna@yahoo.com
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+
+I use Thunderbird, rss2email and an IMAP account.
+
+
+      
+
+
+From christoph.langner@gmail.com  Fri Sep 26 14:21:07 2008
+Return-path: <christoph.langner@gmail.com>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 13:56:23 -0300
+Received: from rv-out-0708.google.com ([209.85.198.246]) by pivot.cs.unb.ca
+ with esmtp (Exim 4.69) (envelope-from <christoph.langner@gmail.com>) id
+ 1KjGcB-0005AG-E6 for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 13:56:23 -0300
+Received: by rv-out-0708.google.com with SMTP id k29so1013684rvb.4 for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Fri, 26 Sep 2008 09:56:15 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+ h=domainkey-signature:received:received:message-id:date:from:sender
+ :to:subject:mime-version:content-type:content-transfer-encoding
+ :content-disposition:x-google-sender-auth;
+ bh=U89FqhP145eyOrXi/I4dBfWPa2OeiCiCBGMyjm1JH+Y=;
+ b=Kh9uLxkVwhGHepDNAnB0WLELt5y+giFXGcSkPm5UvzysUnfIE92IKhS2nPT8AjPAlQ
+ r6zIdmAyu0IuoCsjDyXDkrQyVUAnI+Y0e7W7t8VjUoLnnnTWGqkdDTJpbTiRVqIm78CM
+ cfJFLvDXGyEURHnM2fTwbmwpjtgefFnnLBKpA=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+ h=message-id:date:from:sender:to:subject:mime-version:content-type
+ :content-transfer-encoding:content-disposition:x-google-sender-auth;
+ b=GdP3fHVj31sfJxSY2sr+zJtaPCSFzaBsZ87qv+ECMP/VqZh0/sB+yN3MBawgAtfkoY
+ xNZMkwku5k5eS0B0UJGJCYF52mixYox9lm52EhI9oarwbkHgQoYSyoB/YmvP6Yad5x5M
+ WOUopHnIYQUnC3Y2sHKVqS0I1yaLyljfeV6mQ=
+Received: by 10.141.48.6 with SMTP id a6mr810372rvk.236.1222448174805; Fri,
+ 26 Sep 2008 09:56:14 -0700 (PDT)
+Received: by 10.141.88.9 with HTTP; Fri, 26 Sep 2008 09:56:14 -0700 (PDT)
+Message-ID: <a31bf27a0809260956t4a21845fsbf5adc5b36e64322@mail.gmail.com>
+Date: Fri, 26 Sep 2008 18:56:14 +0200
+From: "Christoph Langner" <mail@christoph-langner.de>
+Sender: christoph.langner@gmail.com
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Subject: Distributed RSS
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 7bit
-Message-Id: <200807311312.34725.perezmeyer@gmail.com>
-X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv2.unb.ca
-X-Virus-Scanned: at lists.debian.org with policy bank en-ht
-X-Amavis-Spam-Status: No, score=-2 tagged_above=3.6 required=5.3 tests=[BLOGSPOT=3,
-	LDO_WHITELIST=-5]
-X-Rc-Virus: 2007-09-13_01
-X-Rc-Spam: 2007-10-04_01
-Resent-Message-ID: <gX2fvl-LMpM.A.j6F.TSekIB@liszt>
-Resent-From: debian-kde@lists.debian.org
-X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28967
-X-Loop: debian-kde@lists.debian.org
-List-Id: <debian-kde.lists.debian.org>
-List-Post: <mailto:debian-kde@lists.debian.org>
-List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
-List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
-List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
-Precedence: list
-Resent-Sender: debian-kde-request@lists.debian.org
-Resent-Date: Thu, 31 Jul 2008 16:13:07 +0000 (UTC)
-X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.155821
-X-PerlMx-Spam: Gauge=IIIIIIIII, Probability=9%, Report='BLOGSPOT_URI 0.5, BODY_ENDS_IN_URL_NOT_WWW 0, BODY_SIZE_1700_1799 0, BODY_SIZE_5000_LESS 0, ECARD_WORD 0, __BOUNCE_CHALLENGE_SUBJ 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __FRAUD_419_WEBMAIL 0, __FRAUD_419_WEBMAIL_FROM 0, __FROM_GMAIL 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
-X-Virus-Status: Clean
-X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
-
---nextPart4479863.OBGFDyufmS
-Content-Type: text/plain;
-  charset="iso-8859-1"
-Content-Transfer-Encoding: quoted-printable
 Content-Disposition: inline
+X-Google-Sender-Auth: 9ca07a848dbe1d59
+X-Sender-Verified: christoph.langner@gmail.com
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
 
-On Thursday 31 July 2008 12:49:58 Ferdinand Smit wrote:
-> Hi,
->
-> I've upgraded my system to 4.1 by aptitude -t experimental install kde4.
-> It
-> looks a bit scary so i created backup and got the install done.
->
-> The upgrade was fine ! Great job ! KDE 4.1 looks and works nice !
->
-> But ... there are a few problems left, that i can not fix:
-> * Where did my address book and my calender go in kontact ? Can i import
-> * them
-> again in kontact 4.1 ? My mail and my mail settings seems fine.
+Hello David!
 
-They didn't go. KDE 4 is using ~/.kde4 to store all data, while KDE 3 uses=
-=20
-~/.kde
+You've got a couple of choices
 
-What I did was to copy ~./kde/share/ to ~./kd/share, in a console without k=
-de=20
-running. It is not the best solution I guess, but it worked for me.
+Webservices
 
-The rest I cannot say. I don't use effects as I have a %$&$%&$% NVidia card=
-=20
+  * Google Reader: http://www.google.com/reader
+  * http://www.bloglines.com/
 
-=2D-=20
-La ciencia sin la religi=F3n es renga,
-la religi=F3n sin la ciencia es ciega.
- Albert Einstein
+FOSS:
 
-Lisandro Dami=E1n Nicanor P=E9rez Meyer
-http://perezmeyer.com.ar/
-http://perezmeyer.blogspot.com/
+ * Tiny Tiny RSS: http://tt-rss.org/trac/
+ * Gregarius: http://gregarius.net/
+
+Gragarius is afaik pretty dead, tt-rss is really nice, but i do prefer
+Google Reader. I save a LOT of time using it :)
+
+CU
+Christoph
 
 
---nextPart4479863.OBGFDyufmS
-Content-Type: application/pgp-signature; name=signature.asc 
-Content-Description: This is a digitally signed message part.
+From marius@gedmin.as  Fri Sep 26 18:13:58 2008
+Return-path: <marius@gedmin.as>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 16:33:13 -0300
+Received: from office.pov.lt ([195.182.77.65] helo=mail.pov.lt) by
+ pivot.cs.unb.ca with esmtp (Exim 4.69) (envelope-from <marius@gedmin.as>) id
+ 1KjJ3w-0006IN-Qd for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 16:33:13 -0300
+Received: from platonas (musmire.b4net.lt [212.59.24.222]) by mail.pov.lt
+ (Postfix) with ESMTP id 25B17BC04 for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Fri, 26 Sep 2008 22:33:06 +0300 (EEST)
+Received: by platonas (Postfix, from userid 1000) id 29B0B10C4BF; Fri, 26 Sep
+ 2008 22:33:05 +0300 (EEST)
+Date: Fri, 26 Sep 2008 22:33:05 +0300
+From: Marius Gedminas <marius@gedmin.as>
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Subject: Distributed news reader
+Message-ID: <20080926193305.GA8889@platonas>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="TB36FDmn/VVEgNH/"
+Content-Disposition: inline
+X-GPG-Fingerprint: 8121 AD32 F00A 8094 748A  6CD0 9157 445D E7A6 D78F
+X-GPG-Key: http://gedmin.as/mg-pgp-key.txt
+X-URL: http://gedmin.as/
+X-Message-Flag: If you do not see this message correctly, stop using Outlook.
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+X-Sender-Verified: marius@gedmin.as
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+
+
+--TB36FDmn/VVEgNH/
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+This is why I finally bit the bullet and started using Google Reader.
+
+Offline operation is a bit painful, though.
+
+Marius Gedminas
+--=20
+Any sufficiently advanced bug is indistinguishable from a feature.
+                -- Rich Kulawiec
+
+--TB36FDmn/VVEgNH/
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
 
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.9 (GNU/Linux)
+Version: GnuPG v1.4.6 (GNU/Linux)
 
-iEYEABECAAYFAkiR5HIACgkQXGiQYciCD6cqhwCgiyYRq4EMSOvoG1kJxMapT0rw
-aR0An1kb8XxgZLnDXzNWmIh0woU4T+tQ
-=kHwS
+iD8DBQFI3TjukVdEXeem148RAr14AJ9CoCNdVbZ7e7ZikoiyeBLy+O9RQgCfdTGi
+Rg0Npp/I0APpfEmrkhvX+2A=
+=dGvw
 -----END PGP SIGNATURE-----
 
---nextPart4479863.OBGFDyufmS--
+--TB36FDmn/VVEgNH/--
 
 
--- 
-To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
-with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
-
-
-
-From - Sun Aug 03 21:06:32 2008
-X-Mozilla-Status: 0011
-X-Mozilla-Status2: 00000000
-X-Mozilla-Keys:                                                                                 
->From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 13:57:15 2008
-Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
-Envelope-to: bremner@pivot.cs.unb.ca
-Delivery-date: Thu, 31 Jul 2008 13:57:15 -0300
-Received: from mailserv4.its.unb.ca ([131.202.1.27])
-	by pivot.cs.unb.ca with esmtp (Exim 4.69)
-	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
-	id 1KObSl-00054l-Fd
-	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 13:57:15 -0300
-Received: from mx4.nbpei-ecn.ca (mx4.nbpei-ecn.ca [198.164.163.197])
-	by mailserv4.its.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VGv56w017425
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 13:57:10 -0300
-Received: from mx4.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
-	by localhost (Postfix) with SMTP id 1259C7C402F
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 13:57:09 -0300 (ADT)
-Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
-	by mx4.nbpei-ecn.ca (Postfix) with ESMTP id AACC67C4028
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 13:57:08 -0300 (ADT)
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with QMQP
-	id E3E2913A6460; Thu, 31 Jul 2008 16:55:27 +0000 (UTC)
-Old-Return-Path: <basaburu@basatu.org>
-X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
-X-Spam-Level: 
-X-Spam-Status: No, score=-11.0 required=4.0 tests=LDOSUBSCRIBER,LDO_WHITELIST
-	autolearn=failed version=3.2.3
-X-Original-To: lists-debian-kde@liszt.debian.org
-Delivered-To: lists-debian-kde@liszt.debian.org
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with ESMTP id 02D9513A6451
-	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 16:55:20 +0000 (UTC)
-Received: from liszt.debian.org ([127.0.0.1])
-	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
-	with ESMTP id 09963-68 for <lists-debian-kde@liszt.debian.org>;
-	Thu, 31 Jul 2008 16:55:14 +0000 (UTC)
-X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_IP=-2 (check from: .basatu. - helo: .mx1.grupoikusnet. - helo-domain: .grupoikusnet.)  FROM/MX_MATCHES_NOT_HELO(DOMAIN)=0 <client=91.121.11.45> <helo=mx1.grupoikusnet.com> <from=basaburu@basatu.org> <to=debian-kde@lists.debian.org>, rate: -5
-Received: from mx1.grupoikusnet.com (extranet.grupoikusnet.com [91.121.11.45])
-	by liszt.debian.org (Postfix) with ESMTP id 4026A13A6465
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 16:54:53 +0000 (UTC)
-Received: from localhost (localhost.localdomain [127.0.0.1])
-	by mx1.grupoikusnet.com (Postfix) with ESMTP id 907111FA10
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 18:54:46 +0200 (CEST)
-X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv4.its.unb.ca
-X-Virus-Scanned: Debian amavisd-new at mx1.grupoikusnet.com
-Received: from mx1.grupoikusnet.com ([127.0.0.1])
-	by localhost (extranet.grupoikusnet.com [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id cz0CbvjYj-yn for <debian-kde@lists.debian.org>;
-	Thu, 31 Jul 2008 18:54:39 +0200 (CEST)
-Received: from hal.ikusnet.com (unknown [217.76.134.179])
-	by mx1.grupoikusnet.com (Postfix) with ESMTP id 5AE19A9FDD
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 18:54:39 +0200 (CEST)
-Received: from localhost (localhost.localdomain [127.0.0.1])
-	by hal.ikusnet.com (Postfix) with ESMTP id B44E42FA824
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 18:54:38 +0200 (CEST)
-Received: from hal.ikusnet.com ([127.0.0.1])
-	by localhost (hal.ikusnet.com [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id 32414-09 for <debian-kde@lists.debian.org>;
-	Thu, 31 Jul 2008 18:54:27 +0200 (CEST)
-Received: from basatu.localnet (238.Red-83-61-23.staticIP.rima-tde.net [83.61.23.238])
-	by hal.ikusnet.com (Postfix) with ESMTP id 7F4D62FA858
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 18:54:26 +0200 (CEST)
-From: BasaBuru <basaburu@basatu.org>
-To: debian-kde@lists.debian.org
-Subject: Re: Upgrade was mostly fine, but a few problems left
-Date: Thu, 31 Jul 2008 18:54:43 +0200
-User-Agent: KMail/1.10.0 (Linux/2.6.26; KDE/4.1.0; x86_64; ; )
-References: <20080731154958.GA5100@telegraafnet.nl> <200807311312.34725.perezmeyer@gmail.com>
-In-Reply-To: <200807311312.34725.perezmeyer@gmail.com>
+From greg.grossmeier@gmail.com  Fri Sep 26 18:14:16 2008
+Return-path: <greg.grossmeier@gmail.com>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Fri, 26 Sep 2008 17:14:38 -0300
+Received: from wf-out-1314.google.com ([209.85.200.169]) by pivot.cs.unb.ca
+ with esmtp (Exim 4.69) (envelope-from <greg.grossmeier@gmail.com>) id
+ 1KjJi1-0006Mo-T0 for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Fri,
+ 26 Sep 2008 17:14:38 -0300
+Received: by wf-out-1314.google.com with SMTP id 25so1298968wfc.28 for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Fri, 26 Sep 2008 13:14:30 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+ h=domainkey-signature:received:received:message-id:date:from
+ :user-agent:mime-version:to:subject:x-enigmail-version:content-type
+ :content-transfer-encoding; bh=dsriHUIBNkNMr/tdJPk44i83QxI6zV52lWurJ6SldMw=;
+ b=b54yGv2/bpKEZKlYCNjD/iZ0cSaDyeHJVekhIBsgJ45qfP7HeA552cgURvWTL4rx/F
+ cpsY2spdp/0zq0AKI8IUoVLGaW4DonxOmsgYVhwTGDOo+CFOkGbs2jN3HsUgC3Fm/6Zn
+ 0EvVDtlan9qxoTqzQJt9rK2U/uXE58bn5bUGY=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+ h=message-id:date:from:user-agent:mime-version:to:subject
+ :x-enigmail-version:content-type:content-transfer-encoding;
+ b=q2T2FaGQD7jltLenpQ/xDGc5V9/kf/dw7RCd2TTZZJ7tAcIpzEghsH6uRvXPMSEm+1
+ JCE3zvG8vACh1EiJ8m67YNcxT+NJXbmakeBrV0igkEf8GGtn7CbNCYS8phLT621Nu/RI
+ 42Z96V1WT2W85cNea+AjF0N70JVsn43hqXIyM=
+Received: by 10.114.124.1 with SMTP id w1mr2052411wac.73.1222460069478; Fri,
+ 26 Sep 2008 13:14:29 -0700 (PDT)
+Received: from ?67.194.50.185? ( [67.194.50.185]) by mx.google.com with
+ ESMTPS id 34sm3049611yxl.8.2008.09.26.13.14.28 (version=TLSv1/SSLv3
+ cipher=RC4-MD5); Fri, 26 Sep 2008 13:14:28 -0700 (PDT)
+Message-ID: <48DD42A3.80002@gmail.com>
+Date: Fri, 26 Sep 2008 16:14:27 -0400
+From: Greg Grossmeier <greg.grossmeier@gmail.com>
+User-Agent: Thunderbird 2.0.0.17 (X11/20080925)
 MIME-Version: 1.0
-Content-Type: text/plain;
-  charset="iso-8859-15"
-Content-Transfer-Encoding: quoted-printable
-Content-Disposition: inline
-Message-Id: <200807311854.44009.basaburu@basatu.org>
-X-Virus-Scanned: by amavisd-new-20030616-p10 (Debian) at ikusnet.com
-X-Virus-Scanned: at lists.debian.org with policy bank en-ht
-X-Amavis-Spam-Status: No, score=-5 tagged_above=3.6 required=5.3
-	tests=[LDO_WHITELIST=-5]
-X-Rc-Virus: 2007-09-13_01
-X-Rc-Spam: 2007-10-04_01
-Resent-Message-ID: <BFy2o13htAB.A.o8H._5ekIB@liszt>
-Resent-From: debian-kde@lists.debian.org
-X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28968
-X-Loop: debian-kde@lists.debian.org
-List-Id: <debian-kde.lists.debian.org>
-List-Post: <mailto:debian-kde@lists.debian.org>
-List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
-List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
-List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
-Precedence: list
-Resent-Sender: debian-kde-request@lists.debian.org
-Resent-Date: Thu, 31 Jul 2008 16:55:27 +0000 (UTC)
-X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.164418
-X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='FROM_NAME_ONE_WORD 0.05, BODY_SIZE_1000_LESS 0, BODY_SIZE_300_399 0, BODY_SIZE_5000_LESS 0, ECARD_WORD 0, __BOUNCE_CHALLENGE_SUBJ 0, __CD 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
-X-Virus-Status: Clean
-X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
-
-El Thursday 31 July 2008 18:12:34 Lisandro Dami=E1n Nicanor P=E9rez Meyer=20
-escribi=F3:
-
-> The rest I cannot say. I don't use effects as I have a %$&$%&$% NVidia ca=
-rd
-
-Do you true the new nvidia driver???
-
-It's no work?
-
-BasaBuru
-
-
--- 
-To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
-with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
-
-
-
-From - Sun Aug 03 21:06:32 2008
-X-Mozilla-Status: 0011
-X-Mozilla-Status2: 00000000
-X-Mozilla-Keys:                                                                                 
->From bounce-debian-kde=bremner=unb.ca@lists.debian.org Thu Jul 31 14:20:21 2008
-Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
-Envelope-to: bremner@pivot.cs.unb.ca
-Delivery-date: Thu, 31 Jul 2008 14:20:21 -0300
-Received: from mailserv4.its.unb.ca ([131.202.1.27])
-	by pivot.cs.unb.ca with esmtp (Exim 4.69)
-	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
-	id 1KObp7-0005AM-HA
-	for bremner@pivot.cs.unb.ca; Thu, 31 Jul 2008 14:20:21 -0300
-Received: from mx3.nbpei-ecn.ca (mx3.nbpei-ecn.ca [198.164.163.196])
-	by mailserv4.its.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m6VHKD1X026376
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 14:20:16 -0300
-Received: from mx3.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
-	by localhost (Postfix) with SMTP id BC9E9E126E
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 14:20:13 -0300 (ADT)
-Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
-	by mx3.nbpei-ecn.ca (Postfix) with ESMTP id 4E858E11AE
-	for <bremner@unb.ca>; Thu, 31 Jul 2008 14:20:13 -0300 (ADT)
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with QMQP
-	id 15E9913A648F; Thu, 31 Jul 2008 17:20:11 +0000 (UTC)
-Old-Return-Path: <perezmeyer@gmail.com>
-X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
-X-Spam-Level: 
-X-Spam-Status: No, score=-7.9 required=4.0 tests=BLOGSPOT,FOURLA,LDOSUBSCRIBER,
-	LDO_WHITELIST autolearn=failed version=3.2.3
-X-Original-To: lists-debian-kde@liszt.debian.org
-Delivered-To: lists-debian-kde@liszt.debian.org
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with ESMTP id 1B56213A6487
-	for <lists-debian-kde@liszt.debian.org>; Thu, 31 Jul 2008 17:20:04 +0000 (UTC)
-Received: from liszt.debian.org ([127.0.0.1])
-	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
-	with ESMTP id 09963-91 for <lists-debian-kde@liszt.debian.org>;
-	Thu, 31 Jul 2008 17:20:01 +0000 (UTC)
-X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_IP=-2 (check from: .gmail. - helo: .qw-out-1920.google. - helo-domain: .google.)  FROM/MX_MATCHES_HELO(DOMAIN)=-2 IN_PM_RFCI=0.1 <client=74.125.92.146> <helo=qw-out-1920.google.com> <from=perezmeyer@gmail.com> <to=debian-kde@lists.debian.org>, rate: -6.9
-Received: from qw-out-1920.google.com (qw-out-1920.google.com [74.125.92.146])
-	by liszt.debian.org (Postfix) with ESMTP id B8F1E13A6458
-	for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 17:19:54 +0000 (UTC)
-Received: by qw-out-1920.google.com with SMTP id 4so105670qwk.18
-        for <debian-kde@lists.debian.org>; Thu, 31 Jul 2008 10:19:51 -0700 (PDT)
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
-        d=gmail.com; s=gamma;
-        h=domainkey-signature:received:received:from:to:subject:date
-         :user-agent:references:in-reply-to:x-face:mime-version:content-type
-         :content-transfer-encoding:message-id;
-        bh=NBniFi5IX6jJxPMydTm2ot/H5CnYBzFknkDlUyefVTc=;
-        b=g99RVa8lRbBwDiKtQwHTiMI+vQUHQfOIIXA00xtNZy99uIVsOzFHtoUcH56UdrGV22
-         9uh+fuJc0F8/+fPyw8pd+Ajvj7dHAFOeco+wv+OGgSkmYxPgpnwfttcHg5jVGj6UMJjm
-         lAIMoefjwL5RxXkD9pQ1CMEKf0HLAJIPJvG5A=
-DomainKey-Signature: a=rsa-sha1; c=nofws;
-        d=gmail.com; s=gamma;
-        h=from:to:subject:date:user-agent:references:in-reply-to:x-face
-         :mime-version:content-type:content-transfer-encoding:message-id;
-        b=I77AeAkatiTtf66n0iX/CEGwLCNMxk0HFvLlVCJOIw+TJg5M7v1IVBRun11yUKvtYn
-         99eqM8gYGnnjKkHtYqNOxPYrrCz6ikAIrlf6zBTzBsuGIRD8AwmGzyezm4hVEwrWko2o
-         URR8UCXkkypFiPR0vN7oKQjsAj4jTgji7CC6w=
-Received: by 10.215.14.5 with SMTP id r5mr6545234qai.41.1217524791670;
-        Thu, 31 Jul 2008 10:19:51 -0700 (PDT)
-Received: from dumbledore.localnet ( [190.1.22.76])
-        by mx.google.com with ESMTPS id 7sm52137ywo.7.2008.07.31.10.19.48
-        (version=TLSv1/SSLv3 cipher=RC4-MD5);
-        Thu, 31 Jul 2008 10:19:50 -0700 (PDT)
-From: Lisandro =?iso-8859-15?q?Dami=E1n_Nicanor_P=E9rez_Meyer?= <perezmeyer@gmail.com>
-To: debian-kde@lists.debian.org
-Subject: Re: Upgrade was mostly fine, but a few problems left
-Date: Thu, 31 Jul 2008 14:19:44 -0300
-User-Agent: KMail/1.10.0 (Linux/2.6.25-2-686; KDE/4.1.0; i686; ; )
-References: <20080731154958.GA5100@telegraafnet.nl> <200807311312.34725.perezmeyer@gmail.com> <200807311854.44009.basaburu@basatu.org>
-In-Reply-To: <200807311854.44009.basaburu@basatu.org>
-X-Face: &O7POA^t$8Gq0El|^zM9V:*jgn,ETU\1A73;Zdeojd,G(a";/Y0Fu|/*_jQF+@3';#.O@
- =?utf-8?q?=26=0A=09=2ET?="FaLh+5o_F,\lrKg~{JYYVM20<P[J.ve7:7m;51A=i@"XBI].=`ZFX4h@tGL>
- =?utf-8?q?Q1I=26fUN=0A=094?=<\TGcR5=
-MIME-Version: 1.0
-Content-Type: multipart/signed;
-  boundary="nextPart1338689.gb6M2R9Bna";
-  protocol="application/pgp-signature";
-  micalg=pgp-sha1
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Subject: Tiny Tiny RSS
+X-Enigmail-Version: 0.95.6
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
 Content-Transfer-Encoding: 7bit
-Message-Id: <200807311419.45020.perezmeyer@gmail.com>
-X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv4.its.unb.ca
-X-Virus-Scanned: at lists.debian.org with policy bank en-ht
-X-Amavis-Spam-Status: No, score=-1.9 tagged_above=3.6 required=5.3 tests=[BLOGSPOT=3,
-	FOURLA=0.1, LDO_WHITELIST=-5]
-X-Rc-Virus: 2007-09-13_01
-X-Rc-Spam: 2007-10-04_01
-Resent-Message-ID: <zzd76l5M7dD.A.rKB.KRfkIB@liszt>
-Resent-From: debian-kde@lists.debian.org
-X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28969
-X-Loop: debian-kde@lists.debian.org
-List-Id: <debian-kde.lists.debian.org>
-List-Post: <mailto:debian-kde@lists.debian.org>
-List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
-List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
-List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
-Precedence: list
-Resent-Sender: debian-kde-request@lists.debian.org
-Resent-Date: Thu, 31 Jul 2008 17:20:11 +0000 (UTC)
-X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.7.31.170120
-X-PerlMx-Spam: Gauge=IIIIIIIII, Probability=9%, Report='BLOGSPOT_URI 0.5, BODY_ENDS_IN_URL_NOT_WWW 0, BODY_SIZE_1300_1399 0, BODY_SIZE_5000_LESS 0, ECARD_WORD 0, __BOUNCE_CHALLENGE_SUBJ 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __FRAUD_419_WEBMAIL 0, __FRAUD_419_WEBMAIL_FROM 0, __FROM_GMAIL 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
-X-Virus-Status: Clean
-X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
+X-Sender-Verified: greg.grossmeier@gmail.com
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
 
---nextPart1338689.gb6M2R9Bna
-Content-Type: text/plain;
-  charset="iso-8859-15"
-Content-Transfer-Encoding: quoted-printable
-Content-Disposition: inline
+I use Tiny Tiny RSS, which is a self hosted web-based RSS reader like 
+Google Reader.
 
-On Thursday 31 July 2008 13:54:43 BasaBuru wrote:
-> El Thursday 31 July 2008 18:12:34 Lisandro Dami=E1n Nicanor P=E9rez Meyer
->
-> escribi=F3:
-> > The rest I cannot say. I don't use effects as I have a %$&$%&$% NVidia
-> > card
->
-> Do you true the new nvidia driver???
->
-> It's no work?
-It has always been a disaster on my system, but the only way to get GLSL an=
-d=20
-OpenGL working.
+See my blog post at: http://blog.grossmeier.net/2008/09/02/tiny-tiny-rss/
+
+Best,
+
+Greg
 
 
-=2D-=20
-She got her good looks from her father. He's a plastic surgeon.
- -- Groucho Marx
-
-Lisandro Dami=E1n Nicanor P=E9rez Meyer
-http://perezmeyer.com.ar/
-http://perezmeyer.blogspot.com/
-
-
---nextPart1338689.gb6M2R9Bna
-Content-Type: application/pgp-signature; name=signature.asc 
-Content-Description: This is a digitally signed message part.
-
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.9 (GNU/Linux)
-
-iEYEABECAAYFAkiR9DAACgkQXGiQYciCD6dDVQCg1RT+9URnI0mP+y67Oeee+3cC
-DRsAnibLhKcJ5unWW+/DWObajPcJjyk7
-=zjfo
------END PGP SIGNATURE-----
-
---nextPart1338689.gb6M2R9Bna--
-
-
--- 
-To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
-with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
-
-
-
-From - Sun Aug 03 21:06:32 2008
-X-Mozilla-Status: 0001
-X-Mozilla-Status2: 00000000
-X-Mozilla-Keys:                                                                                 
->From bounce-debian-kde=bremner=unb.ca@lists.debian.org Fri Aug 01 00:42:34 2008
-Return-path: <bounce-debian-kde=bremner=unb.ca@lists.debian.org>
-Envelope-to: bremner@pivot.cs.unb.ca
-Delivery-date: Fri, 01 Aug 2008 00:42:34 -0300
-Received: from mailserv4.its.unb.ca ([131.202.1.27])
-	by pivot.cs.unb.ca with esmtp (Exim 4.69)
-	(envelope-from <bounce-debian-kde=bremner=unb.ca@lists.debian.org>)
-	id 1KOlXG-0006h3-Cw
-	for bremner@pivot.cs.unb.ca; Fri, 01 Aug 2008 00:42:34 -0300
-Received: from mx2.nbpei-ecn.ca (mx2.nbpei-ecn.ca [198.164.163.195])
-	by mailserv4.its.unb.ca (8.13.6.20060614/8.13.6) with ESMTP id m713gQNU008910
-	for <bremner@unb.ca>; Fri, 1 Aug 2008 00:42:29 -0300
-Received: from mx2.nbpei-ecn.ca (localhost.localdomain [127.0.0.1])
-	by localhost (Postfix) with SMTP id AF76E444037
-	for <bremner@unb.ca>; Fri,  1 Aug 2008 00:42:26 -0300 (ADT)
-Received: from liszt.debian.org (liszt.debian.org [82.195.75.100])
-	by mx2.nbpei-ecn.ca (Postfix) with ESMTP id 501BE44407E
-	for <bremner@unb.ca>; Fri,  1 Aug 2008 00:42:26 -0300 (ADT)
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with QMQP
-	id 49CC213A4AD6; Fri,  1 Aug 2008 03:42:07 +0000 (UTC)
-Old-Return-Path: <ferdinand@smitplaza.com>
-X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
-X-Spam-Level: 
-X-Spam-Status: No, score=0.0 required=4.0 tests=none autolearn=no version=3.2.3
-X-Original-To: lists-debian-kde@liszt.debian.org
-Delivered-To: lists-debian-kde@liszt.debian.org
-Received: from localhost (localhost [127.0.0.1])
-	by liszt.debian.org (Postfix) with ESMTP id 0183913A51D9
-	for <lists-debian-kde@liszt.debian.org>; Fri,  1 Aug 2008 03:24:53 +0000 (UTC)
-Received: from liszt.debian.org ([127.0.0.1])
-	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
-	with ESMTP id 23321-92 for <lists-debian-kde@liszt.debian.org>;
-	Fri, 1 Aug 2008 03:24:50 +0000 (UTC)
-X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_HELO_IP=-2 (check from: .smitplaza. - helo: .webmail10.mail.sp.isp-net. - helo-domain: .isp-net.)  FROM/MX_MATCHES_NOT_HELO(DOMAIN)=0 <client=217.149.192.62> <helo=webmail10.mail.sp.isp-net.nl> <from=ferdinand@smitplaza.com> <to=debian-kde@lists.debian.org>, rate: -5
-X-Greylist: delayed 47414 seconds by postgrey-1.27 at liszt; Fri, 01 Aug 2008 03:24:50 UTC
-Received: from webmail10.mail.sp.isp-net.nl (webmail10.mail.sp.isp-net.nl [217.149.192.62])
-	by liszt.debian.org (Postfix) with ESMTP id 19BCE13A5176
-	for <debian-kde@lists.debian.org>; Fri,  1 Aug 2008 03:24:43 +0000 (UTC)
-Received: from william.smitplaza.com by webmail10.mail.sp.isp-net.nl
-	via 39-48-223.ftth.xms.internl.net [85.223.48.39] with ESMTP for <debian-kde@lists.debian.org>
-	id m6VEERvL028669 (8.13.2/2.04); Thu, 31 Jul 2008 16:14:27 +0200 (MEST)
-Received: from wlan.smitplaza.com ([10.0.0.100] helo=fertop.localnet)
-	by william.smitplaza.com with esmtp (Exim 4.69)
-	(envelope-from <ferdinand@smitplaza.com>)
-	id 1KOYvC-0004VE-MT
-	for debian-kde@lists.debian.org; Thu, 31 Jul 2008 16:14:27 +0200
-From: Ferdinand Smit <ferdinand@smitplaza.com>
-To: debian-kde@lists.debian.org
-Subject: Upgrade was mostly fine, but a few problems left
-Date: Thu, 31 Jul 2008 16:12:21 +0200
-User-Agent: KMail/1.10.0 (Linux/2.6.25-2-686; KDE/4.1.0; i686; ; )
+From trygve.vea@gmail.com  Sat Sep 27 18:25:18 2008
+Return-path: <trygve.vea@gmail.com>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Sat, 27 Sep 2008 17:43:41 -0300
+Received: from wa-out-1112.google.com ([209.85.146.176]) by pivot.cs.unb.ca
+ with esmtp (Exim 4.69) (envelope-from <trygve.vea@gmail.com>) id
+ 1Kjgdh-0006M2-Or for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Sat,
+ 27 Sep 2008 17:43:41 -0300
+Received: by wa-out-1112.google.com with SMTP id j5so721704wah.4 for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Sat, 27 Sep 2008 13:43:39 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+ h=domainkey-signature:received:received:message-id:date:from:to
+ :subject:mime-version:content-type:content-transfer-encoding
+ :content-disposition; bh=KX3QQmw2mHkVlAPeDvDi76KKCqAC4C4pOyvEGxzCEqQ=;
+ b=bMonuyhBm2VTXeCiQnUcPfmG/i779hAfgKAAcTqIRmA2azUdoUZQANkyI7B/0bGUu3
+ avrOSnLqlnecnoK6aRIMe0e0M2vaQICwtvAsZJAJF70QFl5Ni02qAms2PzzFTrzprLRj
+ P9u4XWzeMmNwlG5cJr73O2Kh82RjxZFs/LWnw=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+ h=message-id:date:from:to:subject:mime-version:content-type
+ :content-transfer-encoding:content-disposition;
+ b=aY1TMgCHhmhIJQ1S8O3w0avh5Tf82phEKAzZEL5IgqbzOMQZDcnLqeKcqFnGbRgBbH
+ 579ootDDdSlWiH+vIlAGasCdQp5FfKv1ZtNen6up93CSjKEW79D0mZVaOl0wNoZe0Fqc
+ HC0aO43Do2BHGJTwS+aYKYpwDxaBy1wWcRQ4s=
+Received: by 10.114.120.1 with SMTP id s1mr3440501wac.31.1222548219428; Sat,
+ 27 Sep 2008 13:43:39 -0700 (PDT)
+Received: by 10.115.23.2 with HTTP; Sat, 27 Sep 2008 13:43:39 -0700 (PDT)
+Message-ID: <881f0100809271343x18d66fe4ob9e9c6eff2dd7ede@mail.gmail.com>
+Date: Sat, 27 Sep 2008 22:43:39 +0200
+From: "Trygve Vea" <trygve.vea@gmail.com>
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Subject: Google Reader
 MIME-Version: 1.0
-Content-Type: text/plain;
-  charset="us-ascii"
+Content-Type: text/plain; charset=ISO-8859-1
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
-Message-Id: <200807311612.21314.ferdinand@smitplaza.com>
-X-Spam_score: -1.8
-X-Spam_score_int: -17
-X-Spam_bar: -
-X-Virus-Scanned: ClamAV version 0.93.3, clamav-milter version 0.93.3 on mailserv4.its.unb.ca
-X-Virus-Scanned: at lists.debian.org with policy bank en-ht
-X-Amavis-Spam-Status: No, score=0 tagged_above=3.6 required=5.3 tests=[none]
-X-Rc-Spam: 2007-10-04_01
-X-Rc-Virus: 2007-09-13_01
-X-Rc-Spam: 2007-10-04_01
-Resent-Message-ID: <9mw5mblLErO.A.7ZH.PYokIB@liszt>
-Resent-From: debian-kde@lists.debian.org
-X-Mailing-List: <debian-kde@lists.debian.org> archive/latest/28973
-X-Loop: debian-kde@lists.debian.org
-List-Id: <debian-kde.lists.debian.org>
-List-Post: <mailto:debian-kde@lists.debian.org>
-List-Help: <mailto:debian-kde-request@lists.debian.org?subject=help>
-List-Subscribe: <mailto:debian-kde-request@lists.debian.org?subject=subscribe>
-List-Unsubscribe: <mailto:debian-kde-request@lists.debian.org?subject=unsubscribe>
-Precedence: list
-Resent-Sender: debian-kde-request@lists.debian.org
-Resent-Date: Fri,  1 Aug 2008 03:42:07 +0000 (UTC)
-X-PMX-Version: 5.4.2.338381, Antispam-Engine: 2.6.0.325393, Antispam-Data: 2008.8.1.32448
-X-PerlMx-Spam: Gauge=IIIIIII, Probability=7%, Report='BODY_SIZE_1000_1099 0, BODY_SIZE_5000_LESS 0, __CD 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __MIME_VERSION 0, __SANE_MSGID 0, __USER_AGENT 0'
-X-Virus-Status: Clean
-X-Sender-Verified: bounce-debian-kde=bremner=unb.ca@lists.debian.org
+X-Sender-Verified: trygve.vea@gmail.com
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
 
-Hi,
-
-I've upgraded my system to 4.1 by aptitude -t experimental install kde4. It 
-looks a bit scary so i created backup and got the install done.
-
-The upgrade was fine ! Great job ! KDE 4.1 looks and works nice !
-
-But ... there are a few problems left, that i can not fix:
-* Where did my address book and my calender go in kontact ? Can i import them 
-again in kontact 4.1 ? My mail and my mail settings seems fine.
-* At First my alt-tab was working accordingly the settings of "Desktop Effects 
-Settings" but now is it only using some old alt-tab behavior and does it not 
-listen to changes in the "Desktop Effect Settings". Probably it's just a 
-setting somewhere, but i can not find it.
-* How do i added programs (-links) to the panel ?
-* The effects are a little bit slow on a 'Intel(R) Core(TM)2 Duo CPU 2Gz, Intel 
-Mobile GM965/GL960'. Is that normal ?
-
-Regards,
-Ferdinand
-
+Google Reader is a service who covers what you say you're looking for.
 
 -- 
-To UNSUBSCRIBE, email to debian-kde-REQUEST@lists.debian.org
-with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+Trygve Vea
 
 
+From clee991@gmail.com  Sun Sep 28 07:53:18 2008
+Return-path: <clee991@gmail.com>
+Envelope-to:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Delivery-date: Sun, 28 Sep 2008 06:24:19 -0300
+Received: from fg-out-1718.google.com ([72.14.220.154]) by pivot.cs.unb.ca
+ with esmtp (Exim 4.69) (envelope-from <clee991@gmail.com>) id
+ 1KjsVn-0007Kt-NP for
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca; Sun,
+ 28 Sep 2008 06:24:19 -0300
+Received: by fg-out-1718.google.com with SMTP id l26so1260705fgb.38 for
+ <bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca>;
+ Sun, 28 Sep 2008 02:24:18 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+ h=domainkey-signature:received:received:message-id:date:from:sender
+ :to:subject:mime-version:content-type:x-google-sender-auth;
+ bh=mHjXDeFT2GwNppa1gQY8B9MW2Qob6RK02H6DGJAuvJ4=;
+ b=uHWpjx5xWB1hHk3mxAgeuFY40pZdRno+MK/qa/hA30sZsEkpW040VJAmpXvsBqdU/x
+ Xg3ZwwW+4XYtR+BYns075ToSfVQhd8HQ27H+M39xjZU/r9loe+mE+YRcK7XiNq/yx/84
+ HWVxfVNEs8RWXnUZlBo4+PYSNJvGuLv2+Qg7g=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+ h=message-id:date:from:sender:to:subject:mime-version:content-type
+ :x-google-sender-auth;
+ b=hXuomthJZ3IG/tQlUioDLcLtIVY/C2d/Z2dnhnPz49vZCpEJ/71QVTBS+OdIkvJ+GS
+ JZj4pGS0l44l8i0gd/j85E/n12K29nW4zy3nx0sDTt1L9ZT4341559w/foDiak+uiFz9
+ FnapmLG2NcoUoXZKEUGKEwPR0jPK6hG8Sto+Q=
+Received: by 10.187.179.4 with SMTP id g4mr446592fap.25.1222593858185; Sun,
+ 28 Sep 2008 02:24:18 -0700 (PDT)
+Received: by 10.187.206.8 with HTTP; Sun, 28 Sep 2008 02:24:18 -0700 (PDT)
+Message-ID: <f60315990809280224w2a12c25an88c701460d29e1b6@mail.gmail.com>
+Date: Sun, 28 Sep 2008 05:24:18 -0400
+From: "Chris Lee" <chris@motocrosscanada.ca>
+Sender: clee991@gmail.com
+To: bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+Subject: Portable RSS reader
+MIME-Version: 1.0
+Content-Type: multipart/alternative;  boundary="----=_Part_35500_14710146.1222593858188"
+X-Google-Sender-Auth: d0b4f84bbeb8cf6c
+X-Sender-Verified: clee991@gmail.com
+X-TMDA-Recipient:
+ bremner-comment-blog~posts~can-i-haz-a-distributed-rss@pivot.cs.unb.ca
+
+------=_Part_35500_14710146.1222593858188
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+https://www.google.com/reader/ does that trick for me wherever I am - even
+has a Blackberry client. Yahoo has something similar too.
+
+Tiny Tiny RSS certainly looks interesting though
+
+------=_Part_35500_14710146.1222593858188
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+<div dir="ltr"><a href="https://www.google.com/reader/">https://www.google.com/reader/</a> does that trick for me wherever I am - even has a Blackberry client. Yahoo has something similar too.&nbsp; <br><br>Tiny Tiny RSS certainly looks interesting though<br clear="all">
+<br>
+</div>
+
+------=_Part_35500_14710146.1222593858188--
 
