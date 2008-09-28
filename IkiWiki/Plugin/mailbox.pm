@@ -196,10 +196,12 @@ sub format_message(@){
 	    $_->content_type_set('text/plain');
 	    $_->body_set("[ omitting part $partcount: $allowed ]");
 
-	}
+	} 	    
+
 	$partcount++;
     }
-    my $body= join("\n", map { $_->body }  @parts);
+    my $body= join("\n", map { format_part($_->content_type, $_->body) } 
+		   @parts);
 
     $template->param(body=>format_body($body));
 
@@ -207,13 +209,27 @@ sub format_message(@){
     return $output;
 }
 
+sub format_part($$){
+    my $mime_type=shift;
+    my $body=shift;
+
+    my $rval="";
+
+    # for debugging:
+    $rval .= "[ $mime_type ]\n";
+
+    if ($mime_type =~ "^text/html"){
+	$rval.= $body;
+    } else {
+	$rval .= "<pre>".escapeHTML($body)."</pre>";
+    }
+    return $rval;
+}
 sub format_body($){
     my $body=shift;
 
-    # it is not completely clear to me the right way to go here.  
-    # passing things straight to markdown is not working all that
-    # well.
-    return "<pre>".escapeHTML($body)."</pre>";
+    return $body;
+
 }
 ### Utilities
 
