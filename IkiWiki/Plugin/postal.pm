@@ -34,7 +34,7 @@ sub import
 sub pagetemplate (@)
 {
     my %params = @_;
-    my $page = IkiWiki::pagetitle($params{page});
+    my $page = $params{page};
     my $destpage = $params{destpage};
     my $template = $params{template};
 
