@@ -721,6 +721,10 @@ sub readfile ($;$$) { #{{{
 	binmode($in) if ($binary);
 	return \*$in if $wantfd;
 	my $ret=<$in>;
+	# check for invalid utf-8, and toss it back to avoid crashes
+	if (! utf8::valid($ret)) {
+		$ret=encode_utf8($ret);
+	}
 	close $in || error("failed to read $file: $!");
 	return $ret;
 } #}}}
@@ -1280,8 +1284,7 @@ sub indexlink () { #{{{
 
 my $wikilock;
 
-sub lockwiki (;$) { #{{{
-	my $wait=@_ ? shift : 1;
+sub lockwiki () { #{{{
 	# Take an exclusive lock on the wiki to prevent multiple concurrent
 	# run issues. The lock will be dropped on program exit.
 	if (! -d $config{wikistatedir}) {
@@ -1289,25 +1292,14 @@ sub lockwiki (;$) { #{{{
 	}
 	open($wikilock, '>', "$config{wikistatedir}/lockfile") ||
 		error ("cannot write to $config{wikistatedir}/lockfile: $!");
-	if (! flock($wikilock, 2 | 4)) { # LOCK_EX | LOCK_NB
-		if ($wait) {
-			debug("wiki seems to be locked, waiting for lock");
-			my $wait=600; # arbitrary, but don't hang forever to 
-			              # prevent process pileup
-			for (1..$wait) {
-				return if flock($wikilock, 2 | 4);
-				sleep 1;
-			}
-			error("wiki is locked; waited $wait seconds without lock being freed (possible stuck process or stale lock?)");
-		}
-		else {
-			return 0;
-		}
+	if (! flock($wikilock, 2)) { # LOCK_EX
+		error("failed to get lock");
 	}
 	return 1;
 } #}}}
 
 sub unlockwiki () { #{{{
+	POSIX::close($ENV{IKIWIKI_CGILOCK_FD}) if exists $ENV{IKIWIKI_CGILOCK_FD};
 	return close($wikilock) if $wikilock;
 	return;
 } #}}}
