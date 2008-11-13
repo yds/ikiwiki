@@ -44,6 +44,7 @@ EOF
 	}
 
 	my $check_commit_hook="";
+	my $pre_exec="";
 	if ($config{post_commit}) {
 		# Optimise checking !commit_hook_enabled() , 
 		# so that ikiwiki does not have to be started if the
@@ -58,11 +59,28 @@ EOF
 		# the benefit of this optimisation.
 		$check_commit_hook=<<"EOF";
 	{
-		int fd=open("$config{wikistatedir}/commitlock", O_CREAT | O_RDWR);
+		int fd=open("$config{wikistatedir}/commitlock", O_CREAT | O_RDWR, 0666);
 		if (fd != -1) {
 			if (flock(fd, LOCK_SH | LOCK_NB) != 0)
 				exit(0);
 			close(fd);
+		}
+	}
+EOF
+	}
+	elsif ($config{cgi}) {
+		# Avoid more than one ikiwiki cgi running at a time by
+		# taking a cgi lock. Since ikiwiki uses several MB of
+		# memory, a pile up of processes could cause thrashing
+		# otherwise. The fd of the lock is stored in
+		# IKIWIKI_CGILOCK_FD so unlockwiki can close it.
+		$pre_exec=<<"EOF";
+	{
+		int fd=open("$config{wikistatedir}/cgilock", O_CREAT | O_RDWR, 0666);
+		if (fd != -1 && flock(fd, LOCK_EX) == 0) {
+			char *fd_s;
+			asprintf(&fd_s, "%i", fd);
+			setenv("IKIWIKI_CGILOCK_FD", fd_s, 1);
 		}
 	}
 EOF
@@ -122,6 +140,7 @@ $envsave
 		exit(1);
 	}
 
+$pre_exec
 	execl("$this", "$this", NULL);
 	perror("exec $this");
 	exit(1);
