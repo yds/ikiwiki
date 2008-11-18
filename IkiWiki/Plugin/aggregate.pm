@@ -496,15 +496,19 @@ sub aggregate (@) { #{{{
 			# that contains invalid UTF-8 sequences. Convert
 			# feed to ascii to try to work around.
 			$feed->{message}.=" ".sprintf(gettext("(invalid UTF-8 stripped from feed)"));
-			$content=Encode::decode_utf8($content, 0);
-			$f=eval{XML::Feed->parse(\$content)};
+			$f=eval {
+				$content=Encode::decode_utf8($content, 0);
+				XML::Feed->parse(\$content)
+			};
 		}
 		if ($@) {
 			# Another possibility is badly escaped entities.
 			$feed->{message}.=" ".sprintf(gettext("(feed entities escaped)"));
 			$content=~s/\&(?!amp)(\w+);/&amp;$1;/g;
-			$content=Encode::decode_utf8($content, 0);
-			$f=eval{XML::Feed->parse(\$content)};
+			$f=eval {
+				$content=Encode::decode_utf8($content, 0);
+				XML::Feed->parse(\$content)
+			};
 		}
 		if ($@) {
 			$feed->{message}=gettext("feed crashed XML::Feed!")." ($@)";
@@ -531,7 +535,7 @@ sub aggregate (@) { #{{{
 				copyright => $f->copyright,
 				title => defined $entry->title ? decode_entities($entry->title) : "untitled",
 				link => $entry->link,
-				content => defined $c ? $c->body : "",
+				content => (defined $c && defined $c->body) ? $c->body : "",
 				guid => defined $entry->id ? $entry->id : time."_".$feed->{name},
 				ctime => $entry->issued ? ($entry->issued->epoch || time) : time,
 				base => (defined $c && $c->can("base")) ? $c->base : undef,
@@ -606,7 +610,7 @@ sub add_page (@) { #{{{
 	my $template=template($feed->{template}, blind_cache => 1);
 	$template->param(title => $params{title})
 		if defined $params{title} && length($params{title});
-	$template->param(content => htmlescape(htmlabs($params{content},
+	$template->param(content => wikiescape(htmlabs($params{content},
 		defined $params{base} ? $params{base} : $feed->{feedurl})));
 	$template->param(name => $feed->{name});
 	$template->param(url => $feed->{url});
@@ -633,11 +637,9 @@ sub add_page (@) { #{{{
 	}
 } #}}}
 
-sub htmlescape ($) { #{{{
+sub wikiescape ($) { #{{{
 	# escape accidental wikilinks and preprocessor stuff
-	my $html=shift;
-	$html=~s/(?<!\\)\[\[/\\\[\[/g;
-	return $html;
+	return encode_entities(shift, '\[\]');
 } #}}}
 
 sub urlabs ($$) { #{{{

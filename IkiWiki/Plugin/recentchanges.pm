@@ -5,6 +5,7 @@ use warnings;
 use strict;
 use IkiWiki 2.00;
 use Encode;
+use HTML::Entities;
 
 sub import { #{{{
 	hook(type => "getsetup", id => "recentchanges", call => \&getsetup);
@@ -159,11 +160,13 @@ sub store ($$$) { #{{{
 		);
 	}
 
-	# escape wikilinks and preprocessor stuff in commit messages
 	if (ref $change->{message}) {
 		foreach my $field (@{$change->{message}}) {
 			if (exists $field->{line}) {
-				$field->{line} =~ s/(?<!\\)\[\[/\\\[\[/g;
+				# escape html
+				$field->{line} = encode_entities($field->{line});
+				# escape links and preprocessor stuff
+				$field->{line} = encode_entities($field->{line}, '\[\]');
 			}
 		}
 	}
