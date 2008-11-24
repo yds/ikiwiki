@@ -4,6 +4,7 @@ package IkiWiki::Plugin::recentchangesdiff;
 use warnings;
 use strict;
 use IkiWiki 2.00;
+use HTML::Entities;
 
 my $maxlines=200;
 
@@ -38,8 +39,10 @@ sub pagetemplate (@) { #{{{
 			else {
 				$diff=join("", @lines);
 			}
+			# escape html
+			$diff = encode_entities($diff);
 			# escape links and preprocessor stuff
-			$diff =~ s/(?<!\\)\[\[/\\\[\[/g;
+			$diff = encode_entities($diff, '\[\]');
 			$template->param(diff => $diff);
 		}
 	}
