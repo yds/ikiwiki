@@ -40,6 +40,7 @@ sub getconfig () { #{{{
 			"post-commit" => \$config{post_commit},
 			"render=s" => \$config{render},
 			"wrappers!" => \$config{genwrappers},
+			"wrappergroup=s" => \$config{wrappergroup},
 			"usedirs!" => \$config{usedirs},
 			"prefix-directives!" => \$config{prefix_directives},
 			"getctime" => \$config{getctime},
@@ -162,7 +163,8 @@ sub main () { #{{{
 	}
 
 	if ($config{dumpsetup}) {
-		$config{srdir}=$config{destdir}="";
+		$config{srcdir}="" if ! defined $config{srcdir};
+		$config{destdir}="" if ! defined $config{destdir};
 		$config{syslog}=1 if $config{setupsyslog};
 		require IkiWiki::Setup;
 		IkiWiki::Setup::dump($config{dumpsetup});
