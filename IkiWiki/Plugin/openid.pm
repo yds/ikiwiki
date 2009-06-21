@@ -21,9 +21,22 @@ sub getopt () {
 	GetOptions("openidsignup=s" => \$config{openidsignup});
 }
 
+sub checkconfig () {
+	if (! defined $config{openidenabled}) {
+		$config{openidenabled} = 1;
+	}
+}
+
 sub getsetup () {
 	return
 		plugin => {
+			safe => 1,
+			rebuild => 0,
+		},
+		openidenabled => {
+			type => "boolean",
+			example => 1,
+			description => "allow OpenID logins if openid plugin is loaded?",
 			safe => 1,
 			rebuild => 0,
 		},
@@ -44,6 +57,8 @@ sub formbuilder_setup (@) {
 	my $cgi=$params{cgi};
 	
 	if ($form->title eq "signin") {
+		return unless $config{openidenabled};
+
 		# Give up if module is unavailable to avoid
 		# needing to depend on it.
 		eval q{use Net::OpenID::Consumer};
