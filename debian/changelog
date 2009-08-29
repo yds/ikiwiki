@@ -1,3 +1,10 @@
+ikiwiki (2.53.4) UNRELEASED; urgency=low
+
+  * img: Don't generate new verison of image if it is scaled to be
+    larger in either dimension. 
+
+ -- Joey Hess <joeyh@debian.org>  Fri, 28 Aug 2009 23:42:51 -0400
+
 ikiwiki (2.53.3) testing-proposed-updates; urgency=low
 
   * Avoid crash on malformed utf-8 discovered by intrigeri.

@@ -51,6 +51,8 @@ sub preprocess (@) { #{{{
 	my $imglink;
 	my $r;
 
+	my ($dwidth, $dheight);
+
 	if ($params{size} ne 'full') {
 		my ($w, $h) = ($params{size} =~ /^(\d+)x(\d+)$/);
 		return "[[img ".sprintf(gettext('bad size "%s"'), $params{size})."]]"
@@ -69,7 +71,15 @@ sub preprocess (@) { #{{{
 			$r = $im->Read(srcfile($file));
 			return "[[img ".sprintf(gettext("failed to read %s: %s"), $file, $r)."]]" if $r;
 
-			$r = $im->Resize(geometry => "${w}x${h}");
+			# don't resize any larger
+			my ($rw, $rh) = ($w, $h);
+			if ($rw > $im->Get("width") ||
+			    $rh > $im->Get("height")) {
+				$rw=$im->Get("width");
+				$rh=$im->Get("height");
+			}
+
+			$r = $im->Resize(geometry => "${rw}x${rh}");
 			return "[[img ".sprintf(gettext("failed to resize: %s"), $r)."]]" if $r;
 
 			# don't actually write file in preview mode
@@ -81,11 +91,17 @@ sub preprocess (@) { #{{{
 				$imglink = $file;
 			}
 		}
+
+		# since we don't really resize larger, set the display
+		# size, so the browser can scale the image up if necessary
+		($dwidth, $dheight)=($w, $h);
 	}
 	else {
 		$r = $im->Read(srcfile($file));
 		return "[[img ".sprintf(gettext("failed to read %s: %s"), $file, $r)."]]" if $r;
 		$imglink = $file;
+		$dwidth = $im->Get("width");
+		$dheight = $im->Get("height");
 	}
 
 	add_depends($imglink, $params{page});
@@ -106,8 +122,8 @@ sub preprocess (@) { #{{{
 
 	my $imgtag='<img src="'.$imgurl.
 		'" alt="'.(exists $params{alt} ? $params{alt} : '').
-		'" width="'.$im->Get("width").
-		'" height="'.$im->Get("height").'"'.
+		'" width="'.$dwidth.
+		'" height="'.$dheight.'"'.
 		(exists $params{title} ? ' title="'.$params{title}.'"' : '').
 		(exists $params{class} ? ' class="'.$params{class}.'"' : '').
 		(exists $params{id} ? ' id="'.$params{id}.'"' : '').
