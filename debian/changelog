@@ -1,4 +1,4 @@
-ikiwiki (2.53.4) UNRELEASED; urgency=low
+ikiwiki (2.53.4) stable-security; urgency=high
 
   * teximg: Replace the insufficient blacklist with the built-in security
     mechanisms of TeX.
