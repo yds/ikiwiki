@@ -29,13 +29,7 @@ sub preprocess (@) { #{{{
 	if (! defined $code && ! length $code) {
 		return "[[teximg ".gettext("missing tex code"). "]]";
 	}
-
-	if (check($code)) {
-		return create($code, check_height($height), \%params);
-	}
-	else {
-		return "[[teximg ".gettext("code includes disallowed latex commands"). "]]";
-	}
+	return create($code, check_height($height), \%params);
 } #}}}
 
 sub check_height ($) { #{{{
@@ -110,7 +104,7 @@ sub gen_image ($$$$) { #{{{
 	my $tmp = eval { create_tmp_dir($digest) };
 	if (! $@ &&
 	    writefile("$digest.tex", $tmp, $tex) &&
-	    system("cd $tmp; latex --interaction=nonstopmode $tmp/$digest.tex > /dev/null") == 0 &&
+	    system("cd $tmp; shell_escape=f openout_any=p openin_any=p latex --interaction=nonstopmode $digest.tex < /dev/null > /dev/null") == 0 &&
 	    system("dvips -E $tmp/$digest.dvi -o $tmp/$digest.ps 2> $tmp/$digest.log") == 0 &&
 	    # ensure destination directory exists
 	    writefile("$imagedir/$digest.png", $config{destdir}, "") &&
@@ -140,36 +134,6 @@ sub create_tmp_dir ($) { #{{{
 	my $template = $base.".XXXXXXXXXX";
 	my $tmpdir = tempdir($template, TMPDIR => 1, CLEANUP => 1);
 	return $tmpdir;
-} #}}}
-
-sub check ($) { #{{{
-	# Check if the code is ok
-	my $code = shift;
-
-	my @badthings = (
-		qr/\$\$/,
-		qr/\\include/,
-		qr/\\includegraphic/,
-		qr/\\usepackage/,
-		qr/\\newcommand/, 
-		qr/\\renewcommand/,
-		qr/\\def/,
-		qr/\\input/,
-		qr/\\open/,
-		qr/\\loop/,
-		qr/\\errorstopmode/,
-		qr/\\scrollmode/,
-		qr/\\batchmode/,
-		qr/\\read/,
-		qr/\\write/,
-	);
-	
-	foreach my $thing (@badthings) {
-		if ($code =~ m/$thing/ ) {
-			return 0;
-		}
-	}
-	return 1;
 } #}}}
 
 1
