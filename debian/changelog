@@ -1,3 +1,10 @@
+ikiwiki (2.53.5) stable-security; urgency=high
+
+  * htmlscrubber: Security fix: In data:image/* uris, only allow a few
+    whitelisted image types. No svg.
+
+ -- Joey Hess <joeyh@debian.org>  Fri, 12 Mar 2010 15:19:29 -0500
+
 ikiwiki (2.53.4) stable-security; urgency=high
 
   * teximg: Replace the insufficient blacklist with the built-in security
