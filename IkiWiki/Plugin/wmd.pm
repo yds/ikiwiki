@@ -35,8 +35,7 @@ sub formbuilder_setup (@) {
 	$form->tmpl_param("wmd_preview", "<div id=\"wmd-preview\" class=\"wmd-panel\"></div>\n".
 		include_javascript(undef, 1));
 
-	$form->field(name => "editcontent", class => "wmd-panel", id =>
-		"wmd-input");
+	$form->field(name => "editcontent", id => "wmd-input");
 }
 
 sub include_javascript ($;$) {
