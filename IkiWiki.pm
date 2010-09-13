@@ -2628,6 +2628,10 @@ sub match_ip ($$;@) {
 	}
 }
 
+sub match_currentlang ($$;@) {
+	return 1; # stub
+}
+
 package IkiWiki::SortSpec;
 
 # This is in the SortSpec namespace so that the $a and $b that sort() uses

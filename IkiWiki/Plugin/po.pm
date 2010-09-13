@@ -1305,6 +1305,7 @@ sub match_lang ($$;@) {
 	}
 }
 
+no warnings 'redefine'; # overriding stub version
 sub match_currentlang ($$;@) {
 	my $page=shift;
 	shift;
@@ -1322,6 +1323,7 @@ sub match_currentlang ($$;@) {
 		return IkiWiki::FailReason->new("file language is $lang, whereas current language is $currentlang");
 	}
 }
+use warnings 'redefine';
 
 sub match_needstranslation ($$;@) {
 	my $page=shift;
