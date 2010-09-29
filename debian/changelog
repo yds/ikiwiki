@@ -1,3 +1,9 @@
+ikiwiki (3.20100927) UNRELEASED; urgency=low
+
+  * Fix test suite failure on other side of date line.
+
+ -- Joey Hess <joeyh@debian.org>  Wed, 29 Sep 2010 11:58:23 -0400
+
 ikiwiki (3.20100815.2) UNRELEASED; urgency=low
 
   * openid: Syntax tweak to the javascript code to make it work with MSIE 7
