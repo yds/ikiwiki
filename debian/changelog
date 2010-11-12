@@ -19,6 +19,7 @@ ikiwiki (3.20100815.2) UNRELEASED; urgency=low
   * websetup: Fix defaults of checkboxes in advanced mode.
   * Fix test suite failure on other side of date line.
   * Set isPermaLink="no" for guids in rss feeds. 
+  * sortnaturally: Added missing registration of checkconfig hook.
 
  -- Joey Hess <joeyh@debian.org>  Sun, 15 Aug 2010 11:42:55 -0400
 
