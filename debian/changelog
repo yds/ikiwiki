@@ -16,6 +16,8 @@ ikiwiki (3.20100815.2) UNRELEASED; urgency=low
     comments, but leave your blog posts unscrubbed, etc.
   * comments: Make postcomment() pagespec work when previewing a comment,
     including during moderation.
+  * comments: Make comment() pagespec also match comments that are being
+    posted.
 
  -- Joey Hess <joeyh@debian.org>  Sun, 15 Aug 2010 11:42:55 -0400
 
