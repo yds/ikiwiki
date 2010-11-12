@@ -7,6 +7,7 @@ ikiwiki (3.20100815.2) UNRELEASED; urgency=low
   * external: Disable RPC::XML's "smart" encoding, which sent ints
     for strings that contained only a number, fixing a longstanding crash
     of the rst plugin.
+  * websetup: Fix saving of advanced mode changes.
 
  -- Joey Hess <joeyh@debian.org>  Sun, 15 Aug 2010 11:42:55 -0400
 
