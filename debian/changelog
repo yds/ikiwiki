@@ -1,9 +1,3 @@
-ikiwiki (3.20100927) UNRELEASED; urgency=low
-
-  * Fix test suite failure on other side of date line.
-
- -- Joey Hess <joeyh@debian.org>  Wed, 29 Sep 2010 11:58:23 -0400
-
 ikiwiki (3.20100815.2) UNRELEASED; urgency=low
 
   * openid: Syntax tweak to the javascript code to make it work with MSIE 7
@@ -15,6 +9,8 @@ ikiwiki (3.20100815.2) UNRELEASED; urgency=low
     of the rst plugin.
   * websetup: Fix saving of advanced mode changes.
   * websetup: Fix defaults of checkboxes in advanced mode.
+  * Fix test suite failure on other side of date line.
+  * Set isPermaLink="no" for guids in rss feeds. 
 
  -- Joey Hess <joeyh@debian.org>  Sun, 15 Aug 2010 11:42:55 -0400
 
