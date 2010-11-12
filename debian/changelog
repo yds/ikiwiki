@@ -1,4 +1,4 @@
-ikiwiki (3.20100815.2) UNRELEASED; urgency=low
+ikiwiki (3.20100815.2) testing; urgency=low
 
   * Bugfix-only cherry-pick release for Debian squeeze.
   * Fix htmlscrubber_skip to be matched on the source page, not the page it is
@@ -21,7 +21,7 @@ ikiwiki (3.20100815.2) UNRELEASED; urgency=low
   * Set isPermaLink="no" for guids in rss feeds. 
   * sortnaturally: Added missing registration of checkconfig hook.
 
- -- Joey Hess <joeyh@debian.org>  Sun, 15 Aug 2010 11:42:55 -0400
+ -- Joey Hess <joeyh@debian.org>  Fri, 12 Nov 2010 11:09:39 -0400
 
 ikiwiki (3.20100815) unstable; urgency=medium
 
