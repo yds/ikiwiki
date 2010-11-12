@@ -3,11 +3,11 @@ ikiwiki (3.20100815.2) UNRELEASED; urgency=low
   * Bugfix-only cherry-pick release for Debian squeeze.
   * Fix htmlscrubber_skip to be matched on the source page, not the page it is
     inlined into. Should allow setting to "* and !comment(*)" to scrub
-    comments, but leave your blog posts unscrubbed, etc.
+    comments, but leave your blog posts unscrubbed, etc. CVE-2010-1673
   * comments: Make postcomment() pagespec work when previewing a comment,
-    including during moderation.
+    including during moderation. CVE-2010-1673
   * comments: Make comment() pagespec also match comments that are being
-    posted.
+    posted. CVE-2010-1673
   * openid: Syntax tweak to the javascript code to make it work with MSIE 7
     (and MSIE 8 in compat mode). Thanks to Iain McLaren for reporting
     the bug and providing access to debug it.
