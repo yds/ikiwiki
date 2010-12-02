@@ -1,3 +1,11 @@
+ikiwiki (3.20100815.3) testing; urgency=low
+
+  * meta: Fix calling of htmlscrubber to pass the page parameter.
+    The change of the htmlscrubber to look at page rather than destpage
+    caused htmlscrubber_skip to not work for meta directives.
+
+ -- Joey Hess <joeyh@debian.org>  Mon, 29 Nov 2010 14:44:13 -0400
+
 ikiwiki (3.20100815.2) testing; urgency=low
 
   * Bugfix-only cherry-pick release for Debian squeeze.
