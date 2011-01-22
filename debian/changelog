@@ -1,3 +1,10 @@
+ikiwiki (3.20100815.5) testing; urgency=low
+
+  * comments: Fix XSS security hole due to missing validation of page name.
+    CVE-2011-0428 (Thanks, Dave B.)
+
+ -- Joey Hess <joeyh@debian.org>  Sat, 22 Jan 2011 11:02:59 -0400
+
 ikiwiki (3.20100815.4) testing; urgency=low
 
   * meta: Fix calling of htmlscrubber to pass the page parameter.
