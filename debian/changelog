@@ -1,4 +1,4 @@
-ikiwiki (3.20110124) UNRELEASED; urgency=low
+ikiwiki (3.20100815.6) testing; urgency=low
 
   * comments: Fix commenting, broken by security fix.
 
