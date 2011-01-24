@@ -1,3 +1,9 @@
+ikiwiki (3.20110124) UNRELEASED; urgency=low
+
+  * comments: Fix commenting, broken by security fix.
+
+ -- Joey Hess <joeyh@debian.org>  Mon, 24 Jan 2011 16:56:05 -0400
+
 ikiwiki (3.20100815.5) testing; urgency=low
 
   * comments: Fix XSS security hole due to missing validation of page name.
