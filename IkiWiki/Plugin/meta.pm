@@ -136,10 +136,10 @@ sub preprocess (@) { #{{{
 		if (! length $stylesheet) {
 			return "[[meta ".gettext("stylesheet not found")."]]";
 		}
-		push @{$metaheaders{$page}}, '<link href="'.urlto($stylesheet, $page).
+		push @{$metaheaders{$page}}, scrub('<link href="'.urlto($stylesheet, $page).
 			'" rel="'.encode_entities($rel).
 			'" title="'.encode_entities($title).
-			"\" type=\"text/css\" />";
+			"\" type=\"text/css\" />");
 	}
 	elsif ($key eq 'openid') {
 		if (exists $params{server} && safeurl($params{server})) {

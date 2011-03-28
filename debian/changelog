@@ -1,3 +1,10 @@
+ikiwiki (2.53.6) oldstable-security; urgency=low
+
+  * meta: Security fix; don't allow alternative stylesheets to be added on
+    pages where the htmlscrubber is enabled.
+
+ -- Joey Hess <joeyh@debian.org>  Mon, 28 Mar 2011 12:35:13 -0400
+
 ikiwiki (2.53.5) stable-security; urgency=high
 
   * htmlscrubber: Security fix: In data:image/* uris, only allow a few
