@@ -1,7 +1,7 @@
 ikiwiki (3.20100815.7) stable-security; urgency=high
 
   * meta: Security fix; don't allow alternative stylesheets to be added on
-    pages where the htmlscrubber is enabled.
+    pages where the htmlscrubber is enabled. CVE-2011-1401
 
  -- Joey Hess <joeyh@debian.org>  Mon, 28 Mar 2011 12:35:13 -0400
 
