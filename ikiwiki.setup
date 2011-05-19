@@ -68,8 +68,23 @@ cgi_wrappermode: 0755
 rcs: git
 # plugins to add to the default configuration
 add_plugins:
+  - sidebar
   - goodstuff
   - websetup
+  - table
+  - haiku
+  - html
+  - polygen
+  - fortune
+  - linkmap
+  - favicon
+  - poll
+  - postsparkline
+  - sparkline
+  - version
+  - testpagespec
+  - edittemplate
+  - recentchangesdiff
   - 404
   - ikiwikihosting
   - branchable
@@ -90,6 +105,9 @@ add_plugins:
   - testpagespec
   - version
   - theme
+  - repolist
+  - highlight
+  - comments
 # plugins to disable
 disable_plugins: []
 # additional directory to search for template files
@@ -123,7 +141,7 @@ timeformat: '%c'
 # UTF-8 locale to use
 #locale: en_US.UTF-8
 # put user pages below specified page
-userdir: ''
+userdir: users
 # how many backlinks to show before hiding excess (0 to show all)
 numbacklinks: 10
 # attempt to hardlink source files? (optimisation for large files)
@@ -189,7 +207,7 @@ gitmaster_branch: master
 
 # htmlscrubber plugin
 # PageSpec specifying pages not to scrub
-#htmlscrubber_skip: '!*/Discussion'
+htmlscrubber_skip: tipjar
 
 # ikiwikihosting plugin
 # list of urls that alias to the main url
@@ -211,11 +229,11 @@ ipv6_disabled: 0
 # enable rss feeds by default?
 rss: 1
 # enable atom feeds by default?
-atom: 1
+atom: 0
 # allow rss feeds to be used?
 #allowrss: 0
 # allow atom feeds to be used?
-#allowatom: 0
+allowatom: 1
 # urls to ping (using XML-RPC) on feed update
 pingurl: []
 
@@ -245,7 +263,7 @@ pingurl: []
 
 # lockedit plugin
 # PageSpec controlling which pages are locked
-#locked_pages: '!*/Discussion'
+locked_pages: tipjar
 
 # moderatedcomments plugin
 # PageSpec matching users or comment locations to moderate
@@ -314,7 +332,7 @@ virus_checker: clamdscan -
 
 # comments plugin
 # PageSpec of pages where comments are allowed
-#comments_pagespec: blog/* and !*/Discussion
+comments_pagespec: forum/* and !*/Discussion
 # PageSpec of pages where posting new comments is not allowed
 #comments_closed_pagespec: blog/controversial or blog/flamewar
 # Base name for comments, e.g. "comment_" for pages like "sandbox/comment_12"
@@ -322,7 +340,7 @@ virus_checker: clamdscan -
 # Interpret directives in comments?
 #comments_allowdirectives: 0
 # Allow anonymous commenters to set an author name?
-#comments_allowauthor: 0
+comments_allowauthor: 0
 # commit comments to the VCS
 #comments_commit: 1
 
@@ -455,7 +473,7 @@ recentchangesnum: 100
 
 # sidebar plugin
 # show sidebar page on all pages?
-#global_sidebars: 1
+global_sidebars: 0
 
 # tag plugin
 # parent page tags are located under
