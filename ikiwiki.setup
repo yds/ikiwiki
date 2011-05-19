@@ -10,12 +10,48 @@
 # name of the wiki
 wikiname: ikiwiki
 # contact email for wiki
-adminemail: joey@kitenet.net
+adminemail: joey@ikiwiki.info
 # users who are wiki admins
 adminuser:
   - http://joey.kitenet.net/
 # users who are banned from the wiki
-banned_users: []
+banned_users:
+  - https://me.yahoo.com/a/3hUnH9Qi24uk3RwCwHATJBWKVyqc#7d8b8
+  - ip(95.65.50.150)
+  - https://me.yahoo.com/a/2.Pjpm0G0Z6F9LiGW4cYO84pIrb.Lg--#137de
+  - https://www.google.com/accounts/o8/id?id=AItOawkuR0eo_HO1s1hs49h0Y_4Bzm08l9evMEc
+  - https://www.google.com/accounts/o8/id?id=AItOawlYXeKSEBoSCzES7o5VYiSratG5RfNucL0
+  - ip(115.43.30.149)
+  - ikiwikiweb
+  - webkatalog
+  - ip(117.201.35.183)
+  - adrianna
+  - ip(94.179.251.118)
+  - capitaine
+  - ip(74.63.117.196)
+  - ip(74.63.117.195)
+  - testerer
+  - ip(86.103.200.90)
+  - AlbertF
+  - ip(71.132.208.155)
+  - MariaJackson
+  - ip(208.75.10.42)
+  - HelenOliver
+  - ip(222.127.197.140)
+  - GraceTemplman46
+  - diannetyron
+  - ip(119.111.124.194)
+  - http://cmelbye.myopenid.com/
+  - autobahnned
+  - icerain321
+  - shoesorder
+  - AdamMeyars
+  - essaywriter
+  - blahgrad
+  - alicia.warner
+  - WikiJeanHawkins
+  - nicole.adams
+  - Smith
 # where the source of the wiki is located
 srcdir: /home/b-ikiwiki/source
 # where to build the wiki
