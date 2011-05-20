@@ -215,6 +215,8 @@ htmlscrubber_skip: tipjar
 # list of urls that alias to the main url
 urlalias:
   - http://ikiwiki.branchable.com/
+  - http://ikiwiki.branchable.com/
+  - http://git.ikiwiki.info/
   - http://www.ikiwiki.info/
 # openid of primary site owner
 owner: http://joey.kitenet.net/
@@ -323,8 +325,9 @@ po_link_to: default
 
 ######################################################################
 # web plugins
-#   (404, attachment, comments, editdiff, edittemplate, google, goto,
-#    mirrorlist, remove, rename, repolist, search, theme, websetup, wmd)
+#   (404, attachment, comments, editdiff, edittemplate, getsource, google,
+#    goto, mirrorlist, remove, rename, repolist, search, theme, websetup,
+#    wmd)
 ######################################################################
 
 # attachment plugin
@@ -346,6 +349,10 @@ comments_pagename: comment_
 comments_allowauthor: 0
 # commit comments to the VCS
 comments_commit: 1
+
+# getsource plugin
+# Mime type for returned source.
+#getsource_mimetype: text/plain; charset=utf-8
 
 # mirrorlist plugin
 # list of mirrors
