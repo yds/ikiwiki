@@ -10,7 +10,7 @@ There are many other [[features]], including support for
 
 [[Setup]] has a tutorial for setting up ikiwiki, or you can read the
 [[man_page|usage]]. There are some [[examples]] of things you can do
-with ikiwiki, and some [[tips]].
+with ikiwiki, and some [[tips]]. Use the [[forum]] for discussions.
 
 All wikis are supposed to have a [[SandBox]], so this one does too.
 
@@ -20,7 +20,6 @@ ikiwiki [[!version ]].
 ## developer resources
 
 The [[RoadMap]] describes where the project is going.
-The [[forum]] is open for discussions.
 [[Bugs]], [[TODO]] items, [[wishlist]] items, and [[patches|patch]]
 can be submitted and tracked using this wiki.
 
