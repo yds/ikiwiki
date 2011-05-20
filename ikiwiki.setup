@@ -57,9 +57,9 @@ srcdir: /home/b-ikiwiki/source/doc
 # where to build the wiki
 destdir: /home/b-ikiwiki/public_html
 # base url to the wiki
-url: http://ikiwiki.branchable.com
+url: http://ikiwiki.info
 # url to the ikiwiki.cgi
-cgiurl: http://ikiwiki.branchable.com/ikiwiki.cgi
+cgiurl: http://ikiwiki.info/ikiwiki.cgi
 # filename of cgi wrapper to generate
 cgi_wrapper: /var/www/b-ikiwiki/ikiwiki.cgi
 # mode for cgi_wrapper (can safely be made suid)
@@ -211,7 +211,9 @@ htmlscrubber_skip: tipjar
 
 # ikiwikihosting plugin
 # list of urls that alias to the main url
-#urlalias: []
+urlalias:
+  - http://ikiwiki.branchable.com/
+  - http://www.ikiwiki.info/
 # openid of primary site owner
 owner: http://joey.kitenet.net/
 # optional hostname of site this one was branched from
@@ -334,15 +336,15 @@ virus_checker: clamdscan -
 # PageSpec of pages where comments are allowed
 comments_pagespec: forum/* and !*/Discussion
 # PageSpec of pages where posting new comments is not allowed
-#comments_closed_pagespec: blog/controversial or blog/flamewar
+comments_closed_pagespec: ''
 # Base name for comments, e.g. "comment_" for pages like "sandbox/comment_12"
-#comments_pagename: ''
+comments_pagename: comment_
 # Interpret directives in comments?
 #comments_allowdirectives: 0
 # Allow anonymous commenters to set an author name?
 comments_allowauthor: 0
 # commit comments to the VCS
-#comments_commit: 1
+comments_commit: 1
 
 # getsource plugin
 # Mime type for returned source.
