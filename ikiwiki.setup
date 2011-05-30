@@ -205,6 +205,7 @@ gitmaster_branch: master
 # gitpush plugin
 # git repository urls that changes are pushed to
 git_push_to:
+  - git@github.com:joeyh/ikiwiki.git
   - joey@git.kitenet.net:/srv/git/ikiwiki.git
 
 # htmlscrubber plugin
@@ -325,9 +326,8 @@ po_link_to: default
 
 ######################################################################
 # web plugins
-#   (404, attachment, comments, editdiff, edittemplate, getsource, google,
-#    goto, mirrorlist, remove, rename, repolist, search, theme, websetup,
-#    wmd)
+#   (404, attachment, comments, editdiff, edittemplate, google, goto,
+#    mirrorlist, remove, rename, repolist, search, theme, websetup, wmd)
 ######################################################################
 
 # attachment plugin
@@ -349,10 +349,6 @@ comments_pagename: comment_
 comments_allowauthor: 0
 # commit comments to the VCS
 comments_commit: 1
-
-# getsource plugin
-# Mime type for returned source.
-#getsource_mimetype: text/plain; charset=utf-8
 
 # mirrorlist plugin
 # list of mirrors
