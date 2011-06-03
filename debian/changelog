@@ -1,3 +1,9 @@
+ikiwiki (3.20100815.8) UNRELEASED; urgency=low
+
+  * po: Make po4a warn, not error on a malformed document. (intrigeri)
+
+ -- Joey Hess <joeyh@debian.org>  Fri, 03 Jun 2011 12:39:45 -0400
+
 ikiwiki (3.20100815.7) stable-security; urgency=high
 
   * meta: Security fix; don't allow alternative stylesheets to be added on
