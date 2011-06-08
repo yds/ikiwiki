@@ -1,3 +1,11 @@
+ikiwiki (2.53.7) oldstable-security; urgency=low
+
+  * ikiwiki-mass-rebuild: Fix tty hijacking vulnerability by using su.
+    (Once su's related bug #628843 is fixed.) Thanks, Ludwig Nussel.
+    (CVE-2011-1408) 
+
+ -- Joey Hess <joeyh@debian.org>  Wed, 08 Jun 2011 17:39:14 -0400
+
 ikiwiki (2.53.6) oldstable-security; urgency=low
 
   * meta: Security fix; don't allow alternative stylesheets to be added on
