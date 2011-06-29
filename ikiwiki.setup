@@ -16,6 +16,7 @@ adminuser:
   - http://joey.kitenet.net/
 # users who are banned from the wiki
 banned_users:
+  - https://www.google.com/accounts/o8/id?id=AItOawkaL6e6GtpyD7gJyqHphon_5ES1ACDLJgg
   - https://www.google.com/accounts/o8/id?id=AItOawnv-w7GplWln2P55lnzc6Ds-ltzk6sNxDY
   - https://me.yahoo.com/a/3hUnH9Qi24uk3RwCwHATJBWKVyqc#7d8b8
   - ip(95.65.50.150)
