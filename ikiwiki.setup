@@ -54,6 +54,7 @@ banned_users:
   - WikiJeanHawkins
   - nicole.adams
   - Smith
+  - quentin
 # where the source of the wiki is located
 srcdir: /home/b-ikiwiki/source/doc
 # where to build the wiki
