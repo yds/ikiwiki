@@ -1,0 +1,45 @@
+[[!template id=plugin name=pagedown author="[[yds]]"]]
+[[!tag type/web]]
+
+[PageDown][] is a What You See Is What You Mean editor for [[mdwn]].
+This plugin makes [PageDown][] be used for editing pages in the wiki.
+
+To use the plugin, you will need to install [PageDown][] using [mercurial][].
+You can automagically fetch and patch the required
+`/usr/share/ikiwiki/pagedown/pagedown/* underlaydir`:
+
+	cd /usr/share/ikiwiki/pagedown && make
+
+Or manually clone and patch the [PageDown][] source:
+
+	cd /usr/share/ikiwiki/pagedown
+	hg clone https://code.google.com/p/pagedown/
+	cd pagedown
+	rm -rf .hg demo resources README.txt
+	perl -pi -e 's/"wmd-input"/"editcontent"/' Markdown.Editor.js
+
+Either way you should now have the `/usr/share/ikiwiki/pagedown/pagedown/Markdown.*.js`
+files as well as the LICENSE.txt and a wmd-buttons.png image file in the same place.
+
+To automagically update to the latest [PageDown][] source:
+
+	cd /usr/share/ikiwiki/pagedown/pagedown && make update
+
+The `makefile` could be deleted once the [PageDown][] source is installed.
+It moves itself into `pagedown/pagedown` to avoid getting published into
+the root of your wiki and to facilitate easy updating.
+
+Be careful as the `makefile` is a bit of a hack.  It moves itself into and
+out of `pagedown/pagedown` and assumes you will not run a `make clean` when
+the `pagedown/pagedown` directory does not exist (i.e. the [PageDown][] source
+has **not** been installed yet).  Likewise running make when the [PageDown][]
+source **has** been installed will just create another `/pagedown` inside
+`pagedown/pagedown`, use `make update` instead.
+
+Note that the [PageDown][] plugin does **not** handle [[ikiwiki]] [[directive]]s.
+For this reason the normal `preview` button remains.  This plugin **does**
+strip \[[!meta&nbsp;]] and \[[!tag&nbsp;]] directives to make the live preview
+resemble the `preview` button output more closely.
+
+[PageDown]:	http://Code.Google.com/p/pagedown/wiki/PageDown "Markdown-to-HTML converter and an in-page Markdown editor with live preview"
+[mercurial]:	http://mercurial.selenic.com/			"Mercurial is a free, distributed source control management tool"

@@ -1,5 +1,6 @@
 <TMPL_VAR JAVASCRIPT>
 <TMPL_VAR MESSAGE>
+<TMPL_VAR WMD_PREVIEW>
 <br />
 <TMPL_VAR FORM-START>
 <TMPL_VAR FIELD-DO>
@@ -15,7 +16,8 @@
 <TMPL_VAR FIELD-TYPE>
 </TMPL_IF>
 <div class="editcontentdiv">
-<TMPL_VAR FIELD-EDITCONTENT><br />
+<TMPL_VAR WMD_BUTTON_BAR>
+<TMPL_VAR FIELD-EDITCONTENT>
 </div>
 <TMPL_IF NAME="CAN_COMMIT">
 <label for="editmessage" class="block">Optional comment about this change:</label>
@@ -67,7 +69,7 @@ $(function () { $('#fileupload').fileupload(); }); // initialize upload widget
 </div>
 </TMPL_IF>
 <TMPL_VAR FORM-END>
-<TMPL_VAR WMD_PREVIEW>
+<TMPL_VAR WMD_EDITOR>
 <TMPL_IF NAME="PAGE_PREVIEW">
 <hr />
 <div class="header">
